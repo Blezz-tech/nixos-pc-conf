@@ -117,6 +117,7 @@
     # kalzium
     baobab
     libsForQt5.filelight
+    bottles
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
