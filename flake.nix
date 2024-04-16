@@ -31,7 +31,7 @@
         "pc-full" = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
-            ./host/pc
+            ./host
             home-manager.nixosModules.home-manager
             {
               home-manager = {
@@ -45,7 +45,7 @@
         };
         "pc-minimal" = nixpkgs.lib.nixosSystem {
           modules = [
-            ./host/pc
+            ./host
           ];
         };
       };
