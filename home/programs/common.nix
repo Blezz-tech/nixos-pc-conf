@@ -115,9 +115,9 @@
     # poppler_utils
     # ocrmypdf
     # stack
-    nheko
-    libsForQt5.neochat
-    fractal
+    # nheko
+    # libsForQt5.neochat
+    # fractal
     tor-browser
     # kalzium
 
