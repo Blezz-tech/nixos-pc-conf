@@ -101,8 +101,8 @@
     # figma-linux
     ventoy-full
     # appimage-run
-    age
-    sops
+    # age
+    # sops
     imagemagick
     crow-translate
     zoom-us
