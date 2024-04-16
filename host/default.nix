@@ -27,7 +27,7 @@
   ];
 
   # amd utils
-  programs.corectrl.enable = true;
+  programs.corectrl.enable = false;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -126,7 +126,13 @@
   users.users.jenya = {
     isNormalUser = true;
     description = "jenya";
-    extraGroups = [ "networkmanager" "wheel" "video" "audio" "corectrl" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "video"
+      "audio"
+      # "corectrl"
+    ];
     packages = with pkgs; [ ];
   };
 
