@@ -26,6 +26,9 @@
     })
   ];
 
+  # amd utils
+  programs.corectrl.enable = true;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -123,7 +126,7 @@
   users.users.jenya = {
     isNormalUser = true;
     description = "jenya";
-    extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
+    extraGroups = [ "networkmanager" "wheel" "video" "audio" "corectrl" ];
     packages = with pkgs; [ ];
   };
 
