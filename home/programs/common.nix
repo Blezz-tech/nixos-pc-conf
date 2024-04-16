@@ -54,7 +54,7 @@
     vivaldi
 
     # Запись видео и потоковое вещание
-    # obs-studio
+    obs-studio
 
     # Игры
     prismlauncher
