@@ -85,7 +85,7 @@
     sqlitebrowser
     nixpkgs-fmt
     nixd
-    gnumake
+    # gnumake
     nushellFull
     pandoc
     # tiled
