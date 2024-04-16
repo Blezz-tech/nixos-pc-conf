@@ -82,13 +82,9 @@
     # На сортировку
     python3
     nodejs
-    # jetbrains.pycharm-community
     sqlitebrowser
-
     nixpkgs-fmt
     nixd
-    # go-task
-    # cargo-make
     gnumake
     nushellFull
     pandoc
