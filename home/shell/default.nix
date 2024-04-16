@@ -20,7 +20,7 @@
       # myViewConf = "cd myConf && nvim .";
       # myGit = "~/git-repos";
       # myServicesOption = "nixos-option services";
-      myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-pc-conf#laptop-full";
+      myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-pc-conf#pc-full";
       myErrors = "journalctl -p 3 -xb";
       myGenerations = "nix profile history --profile /nix/var/nix/profiles/system";
       myDeleteGenerations = ''
