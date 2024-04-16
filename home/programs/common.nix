@@ -30,7 +30,7 @@
     blender
 
     # Музыкальные редакторы
-    # musescore
+    musescore
 
     # Месседжеры
     discord
