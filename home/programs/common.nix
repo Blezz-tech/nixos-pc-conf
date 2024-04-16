@@ -111,7 +111,6 @@
     crow-translate
     zoom-us
     element-desktop
-    omegat
     # poppler_utils
     # ocrmypdf
     # stack
@@ -193,5 +192,8 @@
     # Не нужно
     # github-desktop
     # cmake
+
+    # Не работает
+    # omegat
   ];
 }
