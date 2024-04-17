@@ -30,6 +30,9 @@
         sudo journalctl --rotate
         sudo journalctl --vacuum-time=1s
       '';
+      myNixbuild = ''
+        nix-build -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'
+      '';
 
       Desktop = "cd ~/media/desktop";
       Downloads = "cd ~/downloads";
