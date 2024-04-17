@@ -3,6 +3,7 @@
 , fetchFromGitHub
 , jre
 , jdk
+, copyDesktopItems
 , makeDesktopItem
 , lib
 }:
@@ -21,7 +22,11 @@ stdenv.mkDerivation rec {
 
   dontUnpack = true;
 
-  nativeBuildInputs = [ makeWrapper jdk ];
+  nativeBuildInputs = [
+    makeWrapper
+    jdk
+    copyDesktopItems
+  ];
 
   desktopItems = [
     (makeDesktopItem {
