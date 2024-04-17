@@ -1,0 +1,48 @@
+{ stdenv
+, makeWrapper
+, fetchFromGitHub
+, jre
+, jdk
+}:
+stdenv.mkDerivation rec {
+  name = "gt-vein-info";
+  version = "210606";
+
+  src = fetchFromGitHub {
+    owner = "Techlone";
+    repo = "GTVeinInfo";
+    rev = version;
+    hash = "sha256-UIvu4JdgtG/UyzQGtXT3CpMLgyU24pa3YysjtF2i8x4=";
+  };
+
+  env.PROGRAM_NAME = "${name}-${version}.jar";
+
+  dontUnpack = true;
+
+  nativeBuildInputs = [ makeWrapper jdk ];
+
+  buildPhase = ''
+    cp -pr $src/src /build
+
+    mkdir -p build
+
+    javac -d build @<(find -name "*.java")
+
+    cd build
+
+    jar cvfm $PROGRAM_NAME /build/src/META-INF/MANIFEST.MF *  
+  '';
+
+  installPhase = ''
+    runHook preInstall
+
+    mkdir -pv $out/share/java $out/bin
+
+    cp $PROGRAM_NAME $out/share/java/$PROGRAM_NAME
+
+    makeWrapper ${jre}/bin/java $out/bin/gt-vein-info \
+      --add-flags "-jar $out/share/java/$PROGRAM_NAME"
+    
+    runHook postInstall
+  '';
+}
