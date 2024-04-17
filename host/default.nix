@@ -134,7 +134,10 @@
       "audio"
       # "corectrl"
     ];
-    packages = with pkgs; [ ];
+    packages = with pkgs; [
+      (pkgs.callPackage ./gt-vein-info { })
+
+    ];
   };
 
   # Чтобы не было ошибок
