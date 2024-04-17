@@ -3,6 +3,7 @@
 , fetchFromGitHub
 , jre
 , jdk
+, makeDesktopItem
 , lib
 }:
 stdenv.mkDerivation rec {
@@ -21,6 +22,18 @@ stdenv.mkDerivation rec {
   dontUnpack = true;
 
   nativeBuildInputs = [ makeWrapper jdk ];
+
+  desktopItems = [
+    (makeDesktopItem {
+      name = "gt-vein-info";
+      exec = "gt-vein-info";
+      icon = "gt-vein-info";
+      comment = meta.description;
+      genericName = "gt-vein-info";
+      desktopName = "gt-vein-info";
+      categories = [ "Game" ];
+    })
+  ];
 
   buildPhase = ''
     cp -pr $src/src /build
