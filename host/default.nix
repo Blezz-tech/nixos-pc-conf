@@ -21,7 +21,8 @@
     (self: super: {
       vivaldi = super.vivaldi.override {
         commandLineArgs =
-          "--disable-features=AllowQt";
+          # "--disable-features=AllowQt --enable-blink-features=MiddleClickAutoscroll";
+          "--enable-blink-features=MiddleClickAutoscroll";
       };
     })
   ];
