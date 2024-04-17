@@ -4,9 +4,9 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
-    # TODO add your cusotm bashrc here
     bashrcExtra = ''
-      export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
+      # By default java does not enable antialiasing for font rendering. By exporting environment variables, this can be fixed:
+      export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
     '';
 
     # set some aliases, feel free to add more or remove some
