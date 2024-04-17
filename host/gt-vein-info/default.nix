@@ -3,6 +3,7 @@
 , fetchFromGitHub
 , jre
 , jdk
+, lib
 }:
 stdenv.mkDerivation rec {
   name = "gt-vein-info";
@@ -45,4 +46,14 @@ stdenv.mkDerivation rec {
     
     runHook postInstall
   '';
+
+
+  meta = with lib; {
+    description = ''
+      A program that finds ore veins for Minecraft Gregtech
+    '';
+    # sourceProvenance = with sourceTypes; [ binaryBytecode ];
+    # license = licenses.unfree;
+    # maintainers = with maintainers; [ bbigras rafaelrc ];
+  };
 }
