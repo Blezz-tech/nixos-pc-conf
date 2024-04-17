@@ -32,7 +32,7 @@ stdenv.mkDerivation rec {
     (makeDesktopItem {
       name = "gt-vein-info";
       exec = "gt-vein-info";
-      icon = "gt-vein-info";
+      icon = "minecraft";
       comment = meta.description;
       genericName = "gt-vein-info";
       desktopName = "gt-vein-info";
