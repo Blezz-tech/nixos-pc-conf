@@ -7,18 +7,18 @@
 , makeDesktopItem
 , lib
 }:
-stdenv.mkDerivation rec {
+stdenv.mkDerivation (finalAttrs: {
   name = "gt-vein-info";
   version = "210606";
 
   src = fetchFromGitHub {
     owner = "Techlone";
     repo = "GTVeinInfo";
-    rev = version;
+    rev = finalAttrs.version;
     hash = "sha256-UIvu4JdgtG/UyzQGtXT3CpMLgyU24pa3YysjtF2i8x4=";
   };
 
-  env.PROGRAM_NAME = "${name}-${version}.jar";
+  env.PROGRAM_NAME = "${finalAttrs.name}-${finalAttrs.version}.jar";
 
   dontUnpack = true;
 
@@ -33,7 +33,7 @@ stdenv.mkDerivation rec {
       name = "gt-vein-info";
       exec = "gt-vein-info";
       icon = "minecraft";
-      comment = meta.description;
+      comment = finalAttrs.meta.description;
       genericName = "gt-vein-info";
       desktopName = "gt-vein-info";
       categories = [ "Game" ];
@@ -74,4 +74,4 @@ stdenv.mkDerivation rec {
     # license = licenses.unfree;
     # maintainers = with maintainers; [ bbigras rafaelrc ];
   };
-}
+})
