@@ -76,10 +76,6 @@
     xdgOpenUsePortal = true;
   };
 
-  # services.desktopManager.plasma6 = {
-  #     enable = true;
-  #     # enableQt5Integration = true;
-  # };
   services.xserver = {
     enable = true;
     videoDrivers = [ "amdgpu" ];
@@ -92,8 +88,6 @@
   };
 
   services.displayManager = {
-    # defaultSession = "plasma";
-    # sddm.wayland.enable = true;
     sddm.enable = true;
     autoLogin = {
       enable = true;
