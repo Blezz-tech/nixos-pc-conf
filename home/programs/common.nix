@@ -129,7 +129,7 @@
     whatsapp-for-linux
     kdenlive
     glaxnimate
-    
+    google-chrome
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
