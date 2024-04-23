@@ -27,6 +27,9 @@
     })
   ];
 
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
   # amd utils
   programs.corectrl.enable = false;
 
@@ -126,6 +129,7 @@
       "wheel"
       "video"
       "audio"
+      "libvirtd"
       # "corectrl"
     ];
     packages = with pkgs; [
