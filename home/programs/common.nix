@@ -47,8 +47,8 @@
 
     # Текстовые редакторы
     kate
-    # libreoffice
-    onlyoffice-bin
+    libreoffice-qt-fresh
+    onlyoffice-bin_latest
 
     # Браузеры
     vivaldi
