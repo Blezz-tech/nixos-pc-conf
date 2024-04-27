@@ -138,11 +138,6 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
-  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-    konsole
-    oxygen
-  ];
-
   environment.systemPackages = with pkgs; [
     xdg_utils
     git
