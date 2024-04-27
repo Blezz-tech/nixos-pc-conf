@@ -51,7 +51,6 @@
     onlyoffice-bin_latest
 
     # Браузеры
-    vivaldi
     google-chrome
 
     # Запись видео и потоковое вещание

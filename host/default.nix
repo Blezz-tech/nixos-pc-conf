@@ -17,16 +17,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  nixpkgs.overlays = [
-    (self: super: {
-      vivaldi = super.vivaldi.override {
-        commandLineArgs =
-          # "--disable-features=AllowQt --enable-blink-features=MiddleClickAutoscroll";
-          "--enable-blink-features=MiddleClickAutoscroll";
-      };
-    })
-  ];
-
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
 
@@ -154,10 +144,8 @@
     git
     wget
     curl
-    # chromium
     firefox
     vscode
-    vivaldi
     pwgen
     keepassxc
 
