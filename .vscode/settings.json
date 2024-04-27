@@ -4,23 +4,17 @@
     "nix.serverSettings": {
         // settings for 'nixd' LSP
         "nixd": {
-            "eval": {
-                // stuff
-            },
             "formatting": {
-                "command": "nixpkgs-fmt"
+                "command": [
+                    "nixpkgs-fmt"
+                ]
             },
             "options": {
-                "enable": true,
-                "target": {
-                    // tweak arguments here
-                    "args": [],
-                    // NixOS options
-                    "installable": "<flakeref>#nixosConfigurations.<name>.options"
-                    // Flake-parts options
-                    // "installable": "<flakeref>#debug.options"
-                    // Home-manager options
-                    // "installable": "<flakeref>#homeConfigurations.<name>.options"
+                "nixos": {
+                    "expr": "(builtins.getFlake \"/home/jenya/nixos-pc-conf/flake.nix\").nixosConfigurations.pc-full.options"
+                },
+                "home-manager": {
+                    "expr": "(builtins.getFlake \"/home/jenya/nixos-pc-conf/flake.nix\").homeConfigurations.pc-full.options"
                 }
             }
         }
