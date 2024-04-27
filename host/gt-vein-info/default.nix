@@ -5,7 +5,6 @@
 , jdk
 , copyDesktopItems
 , makeDesktopItem
-, lib
 }:
 stdenv.mkDerivation (finalAttrs: {
   name = "gt-vein-info";
@@ -66,7 +65,7 @@ stdenv.mkDerivation (finalAttrs: {
   '';
 
 
-  meta = with lib; {
+  meta = {
     description = ''
       A program that finds ore veins for Minecraft Gregtech
     '';

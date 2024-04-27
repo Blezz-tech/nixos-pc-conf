@@ -1,5 +1,4 @@
-{ config
-, pkgs
+{ pkgs
 , ...
 }:
 {
@@ -122,9 +121,8 @@
       "libvirtd"
       # "corectrl"
     ];
-    packages = with pkgs; [
+    packages = [
       (pkgs.callPackage ./gt-vein-info { })
-
     ];
   };
 

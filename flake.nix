@@ -17,15 +17,11 @@
   };
 
   outputs =
-    { self
-    , nixpkgs
+    { nixpkgs
     , home-manager
     # , nixvim
     , ...
     }@inputs:
-    let
-      system = "x86_64-linux";
-    in
     {
       nixosConfigurations = {
         "pc-full" = nixpkgs.lib.nixosSystem {

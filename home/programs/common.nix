@@ -1,10 +1,6 @@
 { pkgs
-, config
 , ...
 }: {
-
-  # programs.helix.enable = true;
-
   programs.direnv = {
     enable = true;
     enableZshIntegration = true;

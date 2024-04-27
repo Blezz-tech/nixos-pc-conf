@@ -1,9 +1,5 @@
-{ pkgs
-, ...
+{ ...
 }:
-
-# terminals
-
 let
   font = "Hack";
 in

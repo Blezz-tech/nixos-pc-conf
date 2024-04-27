@@ -1,11 +1,6 @@
-{ config
-, pkgs
-, inputs
-, ...
+{ ...
 }:
-
 {
-
   imports = [
     ./programs
     ./shell

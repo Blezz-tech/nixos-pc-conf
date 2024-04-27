@@ -1,5 +1,4 @@
-{ config
-, ...
+{ ...
 }: {
   # starship - an customizable prompt for any shell
   programs.starship = {

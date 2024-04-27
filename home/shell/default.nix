@@ -1,5 +1,4 @@
-{ config
-, ...
+{ ...
 }: {
   imports = [
     ./starship.nix
