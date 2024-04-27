@@ -52,6 +52,7 @@
 
     # Браузеры
     vivaldi
+    google-chrome
 
     # Запись видео и потоковое вещание
     obs-studio
@@ -129,7 +130,6 @@
     whatsapp-for-linux
     kdenlive
     glaxnimate
-    google-chrome
     appimage-run
     calibre
     gpu-viewer
