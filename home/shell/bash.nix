@@ -32,7 +32,7 @@
       '';
       myNixbuild = "nix-build -E 'with import <nixpkgs> {}; callPackage ./default.nix {}' ";
       # myPasswordGenerator = "date +%s | sha256sum | base64 | head -c 32 ; echo";
-      myPasswordGenerator = "pwgen -c 25";
+      myPasswordGenerator = "pwgen -c 30";
 
       Desktop = "cd ~/media/desktop";
       Downloads = "cd ~/downloads";
