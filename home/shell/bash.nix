@@ -30,12 +30,8 @@
         sudo journalctl --rotate
         sudo journalctl --vacuum-time=1s
       '';
-      myNixbuild = ''
-        nix-build -E 'with import <nixpkgs> {}; callPackage ./default.nix {}'
-      '';
-      myPasswordGenerator = ''
-        date +%s | sha256sum | base64 | head -c 32 ; echo
-      '';
+      myNixbuild = "nix-build -E 'with import <nixpkgs> {}; callPackage ./default.nix {}' ";
+      myPasswordGenerator = "date +%s | sha256sum | base64 | head -c 32 ; echo";
 
       Desktop = "cd ~/media/desktop";
       Downloads = "cd ~/downloads";
