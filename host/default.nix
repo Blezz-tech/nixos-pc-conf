@@ -83,7 +83,7 @@
 
   services.displayManager = {
     sddm.enable = true;
-    defaultSession = "plasmawayland";
+#    defaultSession = "plasmawayland";
     autoLogin = {
       enable = true;
       user = "jenya";
