@@ -54,7 +54,7 @@
 
     # Игры
     prismlauncher
-    # cataclysm-dda
+    cataclysm-dda
     cmatrix
     # keeperrl
     # minetest
