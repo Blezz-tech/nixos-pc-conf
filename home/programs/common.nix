@@ -69,7 +69,6 @@
     nixpkgs-fmt
     nixd
     # gnumake
-    pandoc
     # tiled
     unityhub
     # pdfarranger
