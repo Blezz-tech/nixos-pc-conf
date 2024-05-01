@@ -75,7 +75,6 @@
     nixpkgs-fmt
     nixd
     # gnumake
-    nushellFull
     pandoc
     # tiled
     unityhub
