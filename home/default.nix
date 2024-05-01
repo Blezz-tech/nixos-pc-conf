@@ -2,6 +2,7 @@
   imports = [
     ./programs
     ./shell
+    ./sway.nix
     ./XDG
     # ./fcitx5
     # ./i3
