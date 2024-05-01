@@ -190,10 +190,6 @@
     pciutils # lspci
     usbutils # lsusb
 
-    # Не нужно
-    # github-desktop
-    # cmake
-
     # Не работает
     # omegat
   ];
