@@ -9,9 +9,6 @@
     # Torrent
     qbittorrent
 
-    # Скачивание видео с ютуба
-    yt-dlp
-
     # Альтернатива Postman'у
     insomnia
 

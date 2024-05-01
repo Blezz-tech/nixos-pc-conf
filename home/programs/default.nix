@@ -9,6 +9,7 @@
     ./neovim.nix
     ./nushell.nix
     ./vscode.nix
+    ./yt-dlp.nix
     # ./nixvim.nix
     # ./browsers.nix
     # ./media.nix
