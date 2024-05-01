@@ -1,7 +1,7 @@
 {
   imports = [
     ./bootloader.nix
-    ./env
+    ./env.nix
     ./nm.nix
     ./sound.nix
   ];
