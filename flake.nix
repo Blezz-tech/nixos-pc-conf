@@ -45,5 +45,9 @@
           ];
         };
       };
+
+      # homeConfigurations.jenya = home-manager.lib.homeManagerConfiguration {
+      #   modules = [ ./home ];
+      # };
     };
 }
