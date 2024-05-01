@@ -17,7 +17,7 @@
       terminal = "alacritty";
       startup = [
         # Launch Firefox on start
-        { command = "vivaldi"; }
+        { command = "alacritty"; }
       ];
     };
   };
