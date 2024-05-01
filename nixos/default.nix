@@ -10,12 +10,6 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  
-
-
-  # amd utils
-  programs.corectrl.enable = false;
-
   networking.hostName = "nixos-jenya";
 
   time.timeZone = "Europe/Moscow";
