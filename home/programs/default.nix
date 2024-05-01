@@ -3,6 +3,7 @@
   imports = [
     ./browser.nix
     ./common.nix
+    ./direnv.nix
     ./eza.nix
     ./fzf.nix
     ./git.nix

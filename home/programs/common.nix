@@ -1,13 +1,6 @@
 { pkgs
 , ...
 }: {
-  programs.direnv = {
-    enable = true;
-    enableZshIntegration = true;
-    nix-direnv.enable = true;
-  };
-
-  # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     # LaTeX
     # texlive.combined.scheme-full
@@ -61,7 +54,7 @@
     # wesnoth
     # openspades
     airshipper
-    
+
     # kdePackages.kolf
     # kdePackages.kmahjongg
     # kdePackages.knights
@@ -153,7 +146,7 @@
     ripgrep # recursively searches directories for a regex pattern
     # jq # A lightweight and flexible command-line JSON processor
     # yq-go # yaml processer https://github.com/mikefarah/yq
-    
+
 
     # networking tools
     # mtr # A network diagnostic tool
