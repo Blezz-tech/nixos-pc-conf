@@ -3,6 +3,7 @@
 }:
 {
   imports = [
+    ./modules
     ./hardware-configuration.nix
   ];
 
@@ -95,7 +96,7 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  
+
   users.users.jenya = {
     isNormalUser = true;
     description = "jenya";
