@@ -5,7 +5,7 @@
     enable = true;
     package = pkgs.vivaldi;
     commandLineArgs = [
-      # "--disable-features=AllowQt --enable-blink-features=MiddleClickAutoscroll"
+      "--disable-features=AllowQt --enable-blink-features=MiddleClickAutoscroll"
       "--enable-blink-features=MiddleClickAutoscroll"
     ];
   };
