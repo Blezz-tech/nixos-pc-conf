@@ -125,6 +125,12 @@
     nufmt
     omegat
 
+    # wayland app
+    grim # screenshot functionality
+    slurp # screenshot functionality
+    wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
+    mako # notification system developed by swaywm maintainer
+
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
 
