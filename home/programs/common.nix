@@ -62,18 +62,18 @@
     # openspades
     airshipper
     
-    # libsForQt5.kolf
-    # libsForQt5.kmahjongg
-    # libsForQt5.knights
-    # libsForQt5.knavalbattle
-    # libsForQt5.kmines
-    # libsForQt5.picmi
-    # libsForQt5.ksudoku
-    # libsForQt5.kpat
+    # kdePackages.kolf
+    # kdePackages.kmahjongg
+    # kdePackages.knights
+    # kdePackages.knavalbattle
+    # kdePackages.kmines
+    # kdePackages.picmi
+    # kdePackages.ksudoku
+    # kdePackages.kpat
 
-    # libsForQt5.ksirk
-    # libsForQt5.kajongg
-    # libsForQt5.kwordquiz
+    # kdePackages.ksirk
+    # kdePackages.kajongg
+    # kdePackages.kwordquiz
 
     # На сортировку
     python3
@@ -107,12 +107,12 @@
     # ocrmypdf
     # stack
     # nheko
-    # libsForQt5.neochat
+    # kdePackages.neochat
     # fractal
     tor-browser
     # kalzium
     baobab
-    libsForQt5.filelight
+    kdePackages.filelight
     bottles
     protonup-qt
     r2modman
