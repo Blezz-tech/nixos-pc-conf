@@ -3,6 +3,7 @@
   # starship - an customizable prompt for any shell
   programs.starship = {
     enable = true;
+    enableZshIntegration = true;
     # custom settings
     settings = {
       add_newline = false;
