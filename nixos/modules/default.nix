@@ -6,6 +6,7 @@
     ./nm.nix
     ./openssh.nix
     ./sound.nix
+    ./steam.nix
     ./user.nix
     ./virtmanager.nix
     ./waydroid.nix
