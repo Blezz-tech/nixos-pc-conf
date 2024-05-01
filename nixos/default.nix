@@ -64,22 +64,6 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  users.users.jenya = {
-    isNormalUser = true;
-    description = "jenya";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-      "video"
-      "audio"
-      "libvirtd"
-      # "corectrl"
-    ];
-    packages = [
-      (pkgs.callPackage ./gt-vein-info { })
-    ];
-  };
-
   # Чтобы не было ошибок
   programs.dconf.enable = true;
 
