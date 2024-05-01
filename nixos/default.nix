@@ -25,21 +25,7 @@
   # amd utils
   programs.corectrl.enable = false;
 
-  networking = {
-    hostName = "nixos-jenya";
-    networkmanager.enable = true;
-
-    # Configure network proxy if necessary
-    # proxy.default = "http://user:password@proxy:port/";
-    # proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-    # Open ports in the firewall.
-    # firewall = {
-    #   enable = false;
-    #   allowedTCPPorts = [ ... ];
-    #   allowedUDPPorts = [ ... ];
-    # };
-  };
+  networking.hostName = "nixos-jenya";
 
   time.timeZone = "Europe/Moscow";
 
