@@ -8,6 +8,7 @@
     ./git.nix
     ./neovim.nix
     ./nushell.nix
+    ./obs-studio.nix
     ./vscode.nix
     ./yt-dlp.nix
     # ./nixvim.nix

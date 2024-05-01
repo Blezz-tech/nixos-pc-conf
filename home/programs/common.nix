@@ -39,9 +39,6 @@
     # Браузеры
     google-chrome
 
-    # Запись видео и потоковое вещание
-    obs-studio
-
     # Игры
     prismlauncher
     cataclysm-dda
