@@ -22,7 +22,7 @@
 
   # Сетевой менеждер
   networking.networkmanager.enable = true;
-  
+
   # Переменные окружения
   environment.variables.EDITOR = "nvim";
 
@@ -35,4 +35,7 @@
 
   # Эмулятор Android
   virtualisation.waydroid.enable = true;
+
+  # Enable touchpad support (enabled default in most desktopManager).
+  # libinput.enable = true;
 }
