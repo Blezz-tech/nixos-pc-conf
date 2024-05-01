@@ -123,6 +123,7 @@
     ryujinx
     github-desktop
     nufmt
+    omegat
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
@@ -189,8 +190,5 @@
     # ethtool
     pciutils # lspci
     usbutils # lsusb
-
-    # Не работает
-    # omegat
   ];
 }
