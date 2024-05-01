@@ -58,13 +58,5 @@
     # libinput.enable = true;
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Чтобы не было ошибок
-  programs.dconf.enable = true;
-
-  programs.partition-manager.enable = true;
-
   system.stateVersion = "23.11";
 }
