@@ -1,12 +1,14 @@
 { ...
 }: {
-  programs.bash = {
+  programs.zsh = {
     enable = true;
     enableCompletion = true;
-    bashrcExtra = ''
-      # By default java does not enable antialiasing for font rendering. By exporting environment variables, this can be fixed:
-      export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
-    '';
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    # bashrcExtra = ''
+    #   # By default java does not enable antialiasing for font rendering. By exporting environment variables, this can be fixed:
+    #   export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
+    # '';
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
