@@ -20,6 +20,7 @@
 
     # Месседжеры
     discord
+    element-desktop
     telegram-desktop
     discord-screenaudio
     webcord-vencord
@@ -42,6 +43,7 @@
 
     # Браузеры
     google-chrome
+    tor-browser
 
     # Игры
     prismlauncher
@@ -91,14 +93,14 @@
     imagemagick
     crow-translate
     zoom-us
-    element-desktop
+    
     # poppler_utils
     # ocrmypdf
     # stack
     # nheko
     # kdePackages.neochat
     # fractal
-    tor-browser
+    
     # kalzium
     baobab
     kdePackages.filelight
