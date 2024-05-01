@@ -127,6 +127,7 @@
     ryujinx
     discord-screenaudio
     github-desktop
+    nufmt
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
