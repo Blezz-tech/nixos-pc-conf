@@ -21,6 +21,10 @@
     # Месседжеры
     discord
     telegram-desktop
+    discord-screenaudio
+    webcord-vencord
+    vesktop
+    whatsapp-for-linux
 
     # Редакторы epub
     # sigil
@@ -106,8 +110,6 @@
     digikam
     exiftool
 
-    vesktop
-    whatsapp-for-linux
     kdenlive
     glaxnimate
     appimage-run
@@ -116,9 +118,7 @@
     vulkan-tools
     pwgen
     coppwr
-    webcord-vencord
     ryujinx
-    discord-screenaudio
     github-desktop
     nufmt
 
