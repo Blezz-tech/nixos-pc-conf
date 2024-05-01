@@ -16,38 +16,28 @@
     # };
   };
 
-  outputs =
-    { nixpkgs
-    , home-manager
-    # , nixvim
-    , ...
-    }@inputs:
-    {
-      nixosConfigurations = {
-        "pc-full" = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
-          modules = [
-            ./nixos
-            home-manager.nixosModules.home-manager
-            {
-              home-manager = {
-                useGlobalPkgs = true;
-                useUserPackages = true;
-                users.jenya = import ./home;
-                extraSpecialArgs.inputs = inputs;
-              };
-            }
-          ];
-        };
-        "pc-minimal" = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./nixos
-          ];
-        };
+  outputs = { nixpkgs, home-manager, ... }@inputs: {
+    nixosConfigurations = {
+      "pc-full" = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./nixos
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.jenya = import ./home;
+              extraSpecialArgs.inputs = inputs;
+            };
+          }
+        ];
       };
-
-      # homeConfigurations.jenya = home-manager.lib.homeManagerConfiguration {
-      #   modules = [ ./home ];
-      # };
+      "pc-minimal" = nixpkgs.lib.nixosSystem {
+        modules = [
+          ./nixos
+        ];
+      };
     };
+  };
 }
