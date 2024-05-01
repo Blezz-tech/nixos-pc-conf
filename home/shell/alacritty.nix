@@ -1,5 +1,3 @@
-{ ...
-}:
 let
   font = "Hack";
 in
