@@ -4,9 +4,7 @@
 {
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = [
-      "nix-2.16.2" # for nixd
-    ];
+    permittedInsecurePackages = [ ];
   };
 
   environment.systemPackages = with pkgs; [
