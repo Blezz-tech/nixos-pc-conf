@@ -4,6 +4,7 @@
 {
   imports = [
     ./modules
+    ./packages.nix
     ./hardware-configuration.nix
   ];
 
@@ -11,11 +12,6 @@
     experimental-features = [ "nix-command" "flakes" ];
   };
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "nix-2.16.2" # for nixd
-  ];
-
-  nixpkgs.config.allowUnfree = true;
 
   virtualisation.waydroid.enable = true;
   
@@ -105,50 +101,6 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   };
 
-  environment.systemPackages = with pkgs; [
-    xdg_utils
-    git
-    wget
-    curl
-    firefox
-    vscode
-    pwgen
-    keepassxc
-
-    home-manager
-
-    steam-run
-    lutris
-
-    # Аудио видео проигрыватели
-    vlc
-
-    # Диспеер раздеов дисков
-    partition-manager
-  ];
-
-  fonts.packages = with pkgs; [
-    # Шрифты paratype
-    paratype-pt-sans
-    paratype-pt-mono
-    paratype-pt-serif
-
-    # Шрифты terminus
-    terminus_font
-
-    # Шрифты noto
-    noto-fonts
-    noto-fonts-cjk-serif
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-
-    # Шрифты windows
-    corefonts
-    vistafonts
-
-    # Mono
-    hack-font
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
