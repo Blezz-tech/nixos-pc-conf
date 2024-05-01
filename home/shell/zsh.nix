@@ -5,7 +5,7 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-    zshExtra = ''
+    envExtra = ''
       # By default java does not enable antialiasing for font rendering. By exporting environment variables, this can be fixed:
       export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
     '';
