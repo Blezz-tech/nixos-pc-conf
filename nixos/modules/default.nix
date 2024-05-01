@@ -5,5 +5,6 @@
     ./nm.nix
     ./sound.nix
     ./virtmanager.nix
+    ./waydroid.nix
   ];
 }
