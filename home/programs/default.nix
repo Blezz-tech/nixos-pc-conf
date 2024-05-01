@@ -7,6 +7,7 @@
     ./fzf.nix
     ./git.nix
     ./neovim.nix
+    ./vscode.nix
     # ./nixvim.nix
     # ./browsers.nix
     # ./media.nix
