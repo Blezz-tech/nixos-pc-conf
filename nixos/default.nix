@@ -25,15 +25,18 @@
     enable = true;
     videoDrivers = [ "amdgpu" ];
 
-    desktopManager.plasma5.enable = true;
+    # desktopManager.plasma5.enable = true;
 
     # Configure keymap in X11
     xkb.layout = "us,ru";
     xkb.variant = "";
   };
 
+  services.desktopManager.plasma6.enable = true;
+
   services.displayManager = {
-    sddm.enable = true;
+    # sddm.enable = true;
+    sddm.wayland.enable = true;
     # defaultSession = "plasmawayland";
     autoLogin = {
       enable = true;
