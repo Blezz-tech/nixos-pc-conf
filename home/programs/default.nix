@@ -1,11 +1,12 @@
 { ...
 }: {
   imports = [
-    ./common.nix
-    ./git.nix
-    ./fzf.nix
-    ./neovim.nix
     ./browser.nix
+    ./common.nix
+    ./eza.nix
+    ./fzf.nix
+    ./git.nix
+    ./neovim.nix
     # ./nixvim.nix
     # ./browsers.nix
     # ./media.nix
