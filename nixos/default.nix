@@ -5,11 +5,14 @@
     ./hardware-configuration.nix
   ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
   networking.hostName = "nixos-jenya";
 
   time.timeZone = "Europe/Moscow";
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  system.stateVersion = "23.11";
+
 
   # xdg_open should work in steam_run this way… well it’s not 
   # https://github.com/NixOS/nixpkgs/issues/160923
@@ -40,6 +43,4 @@
     # Enable touchpad support (enabled default in most desktopManager).
     # libinput.enable = true;
   };
-
-  system.stateVersion = "23.11";
 }
