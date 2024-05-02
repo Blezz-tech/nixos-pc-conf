@@ -124,6 +124,7 @@
     github-desktop
     nufmt
     omegat
+    ghc
 
     # wayland app
     grim # screenshot functionality
