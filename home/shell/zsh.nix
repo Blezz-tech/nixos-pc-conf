@@ -47,5 +47,11 @@
       # Public   = "~/media/public";
       # Template = "~/media/templates";
     };
+
+    oh-my-zsh = {
+      enable = false;
+      plugins = [ "git" "sudo" ];
+      theme = "agnoster";
+    };
   };
 }
