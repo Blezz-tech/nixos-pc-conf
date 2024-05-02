@@ -1,6 +1,3 @@
-{ inputs
-, ...
-}:
 {
   imports = [
     ./plasma-manager
