@@ -299,6 +299,12 @@
       "kwinrc"."Tiling/16ba6f39-07d2-55e7-90db-102699112209"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/ba5f8c3d-a7f4-50be-826b-caf385eadf31"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Xwayland"."Scale" = 1;
+      "kxkbrc"."Layout"."DisplayNames" = ",";
+      "kxkbrc"."Layout"."LayoutList" = "ru,us";
+      "kxkbrc"."Layout"."Options" = "grp:alt_shift_toggle";
+      "kxkbrc"."Layout"."ResetOldOptions" = true;
+      "kxkbrc"."Layout"."Use" = true;
+      "kxkbrc"."Layout"."VariantList" = ",";
       "plasma-localerc"."Formats"."LANG" = "ru_RU.UTF-8";
     };
   };
