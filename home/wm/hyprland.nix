@@ -121,16 +121,16 @@
       ];
 
       bind = [
-        #   "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
+        "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
 
         "$mainMod, Return, exec, alacritty"
         "$mainMod, Q, killactive,"
         "$mainMod, M, exit,"
         "$mainMod, E, exec, dolphin"
         "$mainMod, F, togglefloating,"
-        # "$mainMod, D, exec, wofi --show drun"
-        # "$mainMod, P, pseudo, # dwindle"
-        # "$mainMod, J, togglesplit, # dwindle"
+        "$mainMod, D, exec, wofi --show drun"
+        "$mainMod, P, pseudo, # dwindle"
+        "$mainMod, J, togglesplit, # dwindle"
 
         # Move focus with mainMod + arrow keys
         "$mainMod, left,  movefocus, l"
@@ -175,12 +175,12 @@
         "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
 
         # Scroll through existing workspaces with mainMod + scroll
-        # "$mainMod, mouse_down, workspace, e+1"
-        # "$mainMod, mouse_up, workspace, e-1"
+        "$mainMod, mouse_down, workspace, e+1"
+        "$mainMod, mouse_up, workspace, e-1"
 
         # Keyboard backlight
-        # "$mainMod, F3, exec, brightnessctl -d *::kbd_backlight set +33%"
-        # "$mainMod, F2, exec, brightnessctl -d *::kbd_backlight set 33%-"
+        "$mainMod, F3, exec, brightnessctl -d *::kbd_backlight set +33%"
+        "$mainMod, F2, exec, brightnessctl -d *::kbd_backlight set 33%-"
 
         # Volume and Media Control
         # ", XF86AudioRaiseVolume, exec, pamixer -i 5 "
@@ -200,8 +200,8 @@
         # '', Print, exec, grim -g "$(slurp)" - | swappy -f -''
 
         # Waybar
-        # "$mainMod, B, exec, pkill -SIGUSR1 waybar"
-        # "$mainMod, W, exec, pkill -SIGUSR2 waybar"
+        "$mainMod, B, exec, pkill -SIGUSR1 waybar"
+        "$mainMod, W, exec, pkill -SIGUSR2 waybar"
 
         # # Disable all effects
         # "$mainMod Shift, G, exec, ~/.config/hypr/gamemode.sh "
