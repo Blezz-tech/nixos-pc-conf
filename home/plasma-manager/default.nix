@@ -3,6 +3,7 @@
     enable = true;
     shortcuts = {
       "ActivityManager"."switch-to-activity-f8324495-f37c-41ba-a813-0b76d72b2209" = [ ];
+      "ActivityManager"."switch-to-activity-fde5bfb1-0999-4aa6-8cfa-ea53179667d4" = [ ];
       "KDE Keyboard Layout Switcher"."Switch keyboard layout to English (US)" = [ ];
       "KDE Keyboard Layout Switcher"."Switch keyboard layout to Russian" = [ ];
       "KDE Keyboard Layout Switcher"."Switch to Last-Used Keyboard Layout" = "Meta+Alt+L";
@@ -250,6 +251,29 @@
       "baloofilerc"."General"."exclude filters version" = 8;
       "dolphinrc"."KFileDialog Settings"."Places Icons Auto-resize" = false;
       "dolphinrc"."KFileDialog Settings"."Places Icons Static Size" = 22;
+      "kactivitymanagerdrc"."activities"."fde5bfb1-0999-4aa6-8cfa-ea53179667d4" = "Начальная комната";
+      "kactivitymanagerdrc"."main"."currentActivity" = "fde5bfb1-0999-4aa6-8cfa-ea53179667d4";
+      "kded5rc"."Module-device_automounter"."autoload" = false;
+      "kdeglobals"."General"."AllowKDEAppsToRememberWindowPositions" = true;
+      "kdeglobals"."KDE"."SingleClick" = true;
+      "kdeglobals"."KFileDialog Settings"."Allow Expansion" = false;
+      "kdeglobals"."KFileDialog Settings"."Automatically select filename extension" = true;
+      "kdeglobals"."KFileDialog Settings"."Breadcrumb Navigation" = true;
+      "kdeglobals"."KFileDialog Settings"."Decoration position" = 2;
+      "kdeglobals"."KFileDialog Settings"."LocationCombo Completionmode" = 5;
+      "kdeglobals"."KFileDialog Settings"."PathCombo Completionmode" = 5;
+      "kdeglobals"."KFileDialog Settings"."Show Bookmarks" = false;
+      "kdeglobals"."KFileDialog Settings"."Show Full Path" = false;
+      "kdeglobals"."KFileDialog Settings"."Show Inline Previews" = true;
+      "kdeglobals"."KFileDialog Settings"."Show Preview" = false;
+      "kdeglobals"."KFileDialog Settings"."Show Speedbar" = true;
+      "kdeglobals"."KFileDialog Settings"."Show hidden files" = false;
+      "kdeglobals"."KFileDialog Settings"."Sort by" = "Name";
+      "kdeglobals"."KFileDialog Settings"."Sort directories first" = true;
+      "kdeglobals"."KFileDialog Settings"."Sort hidden files last" = false;
+      "kdeglobals"."KFileDialog Settings"."Sort reversed" = false;
+      "kdeglobals"."KFileDialog Settings"."Speedbar Width" = 203;
+      "kdeglobals"."KFileDialog Settings"."View Style" = "DetailTree";
       "kdeglobals"."WM"."activeBackground" = "49,54,59";
       "kdeglobals"."WM"."activeBlend" = "252,252,252";
       "kdeglobals"."WM"."activeForeground" = "252,252,252";
@@ -267,6 +291,15 @@
       "kglobalshortcutsrc"."mediacontrol"."_k_friendly_name" = "Управление медиапроигрывателем";
       "kglobalshortcutsrc"."org_kde_powerdevil"."_k_friendly_name" = "Система управления питанием KDE";
       "kglobalshortcutsrc"."plasmashell"."_k_friendly_name" = "plasmashell";
+      "kwalletrc"."Wallet"."First Use" = false;
+      "kwinrc"."Desktops"."Id_1" = "4e92a3ef-62c8-4b62-abb6-259c99eaa856";
+      "kwinrc"."Desktops"."Number" = 1;
+      "kwinrc"."Desktops"."Rows" = 1;
+      "kwinrc"."Tiling"."padding" = 4;
+      "kwinrc"."Tiling/16ba6f39-07d2-55e7-90db-102699112209"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling/ba5f8c3d-a7f4-50be-826b-caf385eadf31"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Xwayland"."Scale" = 1;
+      "plasma-localerc"."Formats"."LANG" = "ru_RU.UTF-8";
     };
   };
 }
