@@ -1,6 +1,6 @@
 {
   wayland.windowManager.sway = {
-    enable = true;
+    enable = false;
     config = {
       modifier = "Mod4";
       # Use kitty as default terminal
