@@ -1,3 +1,6 @@
+{ pkgs
+, ...
+}:
 {
   imports = [
     ./modules
@@ -21,6 +24,8 @@
     xdgOpenUsePortal = true;
   };
 
+  programs.hyprland.enable = true;
+
   services.xserver = {
     enable = true;
     videoDrivers = [ "amdgpu" ];
@@ -33,6 +38,9 @@
   };
 
   services.desktopManager.plasma6.enable = true;
+  environment.plasma6.excludePackages = [
+    pkgs.kdePackages.konsole
+  ];
 
   services.displayManager = {
     # sddm.enable = true;
