@@ -2,7 +2,6 @@
   programs.plasma = {
     enable = true;
     shortcuts = {
-      "ActivityManager"."switch-to-activity-f8324495-f37c-41ba-a813-0b76d72b2209" = [ ];
       "ActivityManager"."switch-to-activity-fde5bfb1-0999-4aa6-8cfa-ea53179667d4" = [ ];
       "KDE Keyboard Layout Switcher"."Switch keyboard layout to English (US)" = [ ];
       "KDE Keyboard Layout Switcher"."Switch keyboard layout to Russian" = [ ];
@@ -12,7 +11,6 @@
       "kcm_touchpad"."Disable Touchpad" = "Touchpad Off";
       "kcm_touchpad"."Enable Touchpad" = "Touchpad On";
       "kcm_touchpad"."Toggle Touchpad" = "Touchpad Toggle";
-      "khotkeys"."{d03619b6-9b3c-48cc-9d9c-a2aadb485550}" = [ ];
       "kmix"."decrease_microphone_volume" = "Microphone Volume Down";
       "kmix"."decrease_volume" = "Volume Down";
       "kmix"."decrease_volume_small" = "Shift+Volume Down";
@@ -234,16 +232,13 @@
       "plasmashell"."switch to next activity" = [ ];
       "plasmashell"."switch to previous activity" = [ ];
       "plasmashell"."toggle do not disturb" = [ ];
-      "services/Alacritty.desktop"."New" = "Ctrl+Alt+T";
-      "services/org.kde.konsole.desktop"."_launch" = [ ];
-      "services/org.kde.spectacle.desktop"."ActiveWindowScreenShot" = [ ];
-      "services/org.kde.spectacle.desktop"."FullScreenScreenShot" = [ ];
+      "services/alacritty.desktop"."_launch" = "Ctrl+Alt+T";
       "services/org.kde.spectacle.desktop"."RecordRegion" = [ ];
       "services/org.kde.spectacle.desktop"."RecordScreen" = [ ];
       "services/org.kde.spectacle.desktop"."RecordWindow" = [ ];
       "services/org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Meta+Shift+S";
       "services/org.kde.spectacle.desktop"."WindowUnderCursorScreenShot" = [ ];
-      "services/org.kde.spectacle.desktop"."_launch" = "Print";
+      "services/org.kde.spectacle.desktop"."_launch" = [ ];
     };
     configFile = {
       "baloofilerc"."General"."dbVersion" = 2;
@@ -255,7 +250,6 @@
       "kactivitymanagerdrc"."main"."currentActivity" = "fde5bfb1-0999-4aa6-8cfa-ea53179667d4";
       "kded5rc"."Module-device_automounter"."autoload" = false;
       "kdeglobals"."General"."AllowKDEAppsToRememberWindowPositions" = true;
-      "kdeglobals"."KDE"."SingleClick" = true;
       "kdeglobals"."KFileDialog Settings"."Allow Expansion" = false;
       "kdeglobals"."KFileDialog Settings"."Automatically select filename extension" = true;
       "kdeglobals"."KFileDialog Settings"."Breadcrumb Navigation" = true;
@@ -284,7 +278,6 @@
       "kglobalshortcutsrc"."KDE Keyboard Layout Switcher"."_k_friendly_name" = "Переключение раскладки клавиатуры";
       "kglobalshortcutsrc"."kaccess"."_k_friendly_name" = "Специальные возможности";
       "kglobalshortcutsrc"."kcm_touchpad"."_k_friendly_name" = "Сенсорная панель";
-      "kglobalshortcutsrc"."khotkeys"."_k_friendly_name" = "Custom Shortcuts Service";
       "kglobalshortcutsrc"."kmix"."_k_friendly_name" = "Громкость";
       "kglobalshortcutsrc"."ksmserver"."_k_friendly_name" = "Управление сеансами";
       "kglobalshortcutsrc"."kwin"."_k_friendly_name" = "KWin";
