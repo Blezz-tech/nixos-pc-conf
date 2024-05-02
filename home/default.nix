@@ -1,6 +1,5 @@
 {
   imports = [
-    ./plasma-manager
     ./programs
     ./shell
     ./wm
