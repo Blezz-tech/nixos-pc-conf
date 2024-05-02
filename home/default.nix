@@ -2,8 +2,7 @@
   imports = [
     ./programs
     ./shell
-    ./wm/hyprland
-    ./wm/sway
+    ./wm
     ./XDG
     # ./fcitx5
     # ./i3
