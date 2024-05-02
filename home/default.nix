@@ -13,7 +13,6 @@
     # ./rofi
 
     # Other
-    inputs.plasma-manager.homeManagerModules.plasma-manager
   ];
 
   home = {
