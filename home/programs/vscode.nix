@@ -14,6 +14,7 @@
       "git.confirmSync" = false;
       "git.autofetch" = true;
       "editor.minimap.enabled" = false;
+      "git.enableSmartCommit"= true;
     };
   };
 }
