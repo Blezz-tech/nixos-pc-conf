@@ -24,7 +24,7 @@
     xdgOpenUsePortal = true;
   };
 
-  programs.hyprland.enable = true;
+  programs.hyprland.enable = false;
 
   services.xserver = {
     enable = true;
