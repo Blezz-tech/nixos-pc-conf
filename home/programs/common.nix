@@ -103,7 +103,7 @@
     
     # kalzium
     baobab
-    kdePackages.filelight
+    # kdePackages.filelight
     bottles
     protonup-qt
     r2modman
