@@ -20,7 +20,7 @@
 
     # Месседжеры
     discord
-    element-desktop
+    # element-desktop
     telegram-desktop
     discord-screenaudio
     webcord-vencord
