@@ -1,6 +1,7 @@
 {
   imports = [
     ./i18n.nix
+    ./nix-ld.nix
     ./openssh.nix
     ./sound.nix
     ./steam.nix
