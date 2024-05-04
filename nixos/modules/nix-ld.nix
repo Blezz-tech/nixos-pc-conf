@@ -3,7 +3,7 @@
 }:
 {
   programs.nix-ld = {
-    enable = true;
+    enable = false;
     libraries = with pkgs; [
       alsa-lib
       at-spi2-atk
