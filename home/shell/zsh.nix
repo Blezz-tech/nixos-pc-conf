@@ -19,10 +19,10 @@
       # myViewConf = "cd myConf && nvim .";
       # myGit = "~/git-repos";
       # myServicesOption = "nixos-option services";
-      myBuildSystem = ''
-        sudo nixos-rebuild switch --show-trace --flake ~/nixos-pc-conf
-        home-manager switch --flake ~/nixos-pc-conf
-      '';
+      myBuildSystem = "sudo nixos-rebuild switch --show-trace --flake ~/nixos-pc-conf#pc";
+      myBuildHome = "home-manager switch --flake ~/nixos-pc-conf";
+      myBuildAll = "myBuildSystem ; myBuildHome";
+      
       myErrors = "journalctl -p 3 -xb";
       myGenerations = "nix profile history --profile /nix/var/nix/profiles/system";
       myDeleteGenerations = ''
