@@ -1,3 +1,6 @@
+{ username,
+...
+}:
 {
   imports = [
     ./programs
@@ -12,10 +15,12 @@
   ];
 
   home = {
-    username = "jenya";
-    homeDirectory = "/home/jenya";
+    username = "${username}";
+    homeDirectory = "/home/${username}";
     stateVersion = "23.11";
   };
+
+  nixpkgs.config.allowUnfree = true;
 
   # Let home Manager install and manage itself.
   programs.home-manager.enable = true;
