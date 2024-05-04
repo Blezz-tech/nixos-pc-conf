@@ -17,33 +17,15 @@
       username = "jenya";
     in
     {
-      nixosConfigurations = {
-        "pc-full" = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs username; };
-          modules = [
-            ./nixos
-            home-manager.nixosModules.home-manager
-            {
-              home-manager = {
-                useGlobalPkgs = true;
-                useUserPackages = true;
-                users.jenya = import ./home;
-                extraSpecialArgs.inputs = inputs;
-              };
-            }
-          ];
-        };
-        "pc-minimal" = nixpkgs.lib.nixosSystem {
-          modules = [
-            ./nixos
-          ];
-        };
+      nixosConfigurations."pc" = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs username; };
+        modules = [ ./nixos ];
       };
       homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         modules = [ ./home ];
         extraSpecialArgs = {
-          inherit system username;
+          inherit inputs system username;
         };
       };
     };
