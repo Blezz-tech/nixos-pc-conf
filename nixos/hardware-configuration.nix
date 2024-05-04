@@ -28,10 +28,10 @@
     options = [ "fmask=0022" "dmask=0022" ];
   };
 
-  # fileSystems."/home/jenya/disk_d" = {
-  #   device = "/dev/disk/by-uuid/f9f12cb8-504b-44da-8b7e-a653cf1518c3";
-  #   fsType = "ext4";
-  # };
+  fileSystems."/run/media/disk_d" = {
+    device = "/dev/disk/by-uuid/f9f12cb8-504b-44da-8b7e-a653cf1518c3";
+    fsType = "ext4";
+  };
 
   swapDevices = [ ];
 
