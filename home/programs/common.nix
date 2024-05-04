@@ -70,7 +70,7 @@
 
     # На сортировку
     python3
-    nodejs
+    # nodejs
     sqlitebrowser
     nixpkgs-fmt
     nixd
