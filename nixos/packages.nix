@@ -8,6 +8,9 @@
   };
 
   environment.systemPackages = with pkgs; [
+    testdisk-qt
+    ddrescue
+    ext4magic
     xdg_utils
     git
     wget
