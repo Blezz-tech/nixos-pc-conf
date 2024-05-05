@@ -4,6 +4,7 @@
     ./common.nix
     ./direnv.nix
     ./eza.nix
+    ./freetube.nix
     ./fzf.nix
     ./git.nix
     ./neovim.nix
