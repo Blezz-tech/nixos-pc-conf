@@ -9,6 +9,7 @@
 
   environment.systemPackages = with pkgs; [
     alacritty
+    telegram-desktop
 
     testdisk-qt
     ddrescue
