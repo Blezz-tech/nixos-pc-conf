@@ -78,7 +78,7 @@
     # tiled
     unityhub
     # pdfarranger
-    ihp-new
+    # ihp-new
     cachix
     # vengi-tools
     # ldtk
@@ -86,12 +86,12 @@
     # rhvoice
     # speechd
     # figma-linux
-    ventoy-full
+    # ventoy-full
     # appimage-run
     # age
     # sops
     imagemagick
-    crow-translate
+    # crow-translate
     zoom-us
     
     # poppler_utils
