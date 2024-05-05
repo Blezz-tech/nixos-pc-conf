@@ -10,7 +10,7 @@
     qbittorrent
 
     # Альтернатива Postman'у
-    insomnia
+    # insomnia
 
     # 3D редакторы
     blender
@@ -31,18 +31,18 @@
     # sigil
 
     # Графические редакторы
-    gimp
-    inkscape
-    krita
+    # gimp
+    # inkscape
+    # krita
     drawio
 
     # Текстовые редакторы
-    kate
+    # kate
     libreoffice-qt-fresh
     onlyoffice-bin_latest
 
     # Браузеры
-    google-chrome
+    # google-chrome
     tor-browser
 
     # Игры
