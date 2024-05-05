@@ -51,8 +51,8 @@
     noto-fonts-emoji
 
     # Шрифты windows
-    corefonts
-    vistafonts
+    # corefonts
+    # vistafonts
 
     # Mono
     hack-font
