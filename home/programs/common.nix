@@ -47,13 +47,13 @@
 
     # Игры
     prismlauncher
-    cataclysm-dda
-    cmatrix
+    # cataclysm-dda
+    # cmatrix
     # keeperrl
     # minetest
     # wesnoth
     # openspades
-    airshipper
+    # airshipper
 
     # kdePackages.kolf
     # kdePackages.kmahjongg
