@@ -52,7 +52,7 @@
 
     # Шрифты windows
     # corefonts
-    # vistafonts
+    vistafonts
 
     # Mono
     hack-font
