@@ -16,6 +16,7 @@
       "editor.minimap.enabled" = false;
       "git.enableSmartCommit" = true;
       "workbench.startupEditor" = "none";
+      "git.openRepositoryInParentFolders" = "always";
     };
   };
 }
