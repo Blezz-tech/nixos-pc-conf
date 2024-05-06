@@ -3,6 +3,7 @@
     ./i18n.nix
     ./nix-ld.nix
     ./openssh.nix
+    ./podman.nix
     ./sound.nix
     ./steam.nix
     ./user.nix
