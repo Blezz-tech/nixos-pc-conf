@@ -57,5 +57,8 @@
 
     # Mono
     hack-font
+
+    # Остальные
+    ibm-plex
   ];
 }
