@@ -125,6 +125,7 @@
     nufmt
     omegat
     ghc
+    toolbox
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
