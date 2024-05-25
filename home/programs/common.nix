@@ -115,6 +115,8 @@
     kdenlive
     glaxnimate
     appimage-run
+    mdbook
+    mdbook-epub
     calibre
     gpu-viewer
     vulkan-tools
