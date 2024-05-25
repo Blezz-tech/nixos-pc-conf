@@ -27,7 +27,7 @@
 
   # Переменные окружения
   environment.variables.EDITOR = "nvim";
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Для ГПУ AMD 
   programs.corectrl.enable = false;
