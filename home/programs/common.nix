@@ -143,6 +143,7 @@
     fd
     gcc
     kdePackages.kolourpaint
+    gnome.iagno
 
     black # python formattier
 
