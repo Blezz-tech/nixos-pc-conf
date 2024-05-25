@@ -145,6 +145,7 @@
     gcc
     kdePackages.kolourpaint
     gnome.iagno
+    lunarvim
 
     black # python formattier
 
