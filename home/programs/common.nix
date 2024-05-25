@@ -1,6 +1,12 @@
 { pkgs
 , ...
 }: {
+
+  programs = {
+    bun = true;
+    java = true;
+  };
+
   home.packages = with pkgs; [
     # LaTeX
     # texlive.combined.scheme-full
