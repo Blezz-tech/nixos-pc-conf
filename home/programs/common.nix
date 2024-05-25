@@ -138,6 +138,11 @@
     omegat
     ghc
     # rustdesk
+    anilibria-winmaclinux
+    anime4k
+    fd
+    gcc
+    kdePackages.kolourpaint
 
     black # python formattier
 
