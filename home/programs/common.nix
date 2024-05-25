@@ -3,8 +3,8 @@
 }: {
 
   programs = {
-    bun = true;
-    java = true;
+    bun.enable = true;
+    java.enable = true;
   };
 
   home.packages = with pkgs; [
