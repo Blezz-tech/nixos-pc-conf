@@ -151,6 +151,7 @@
     kdePackages.kcalc
     kdePackages.kclock
     # flameshot
+    unciv
 
     black # python formattier
 
