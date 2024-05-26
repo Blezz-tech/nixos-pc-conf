@@ -149,6 +149,7 @@
     lunarvim
     remmina
     kdePackages.kcalc
+    kdePackages.kclock
 
     black # python formattier
 
