@@ -4,6 +4,6 @@
     enableZshIntegration = true;
     enableNushellIntegration = true;
     git = true;
-    icons = true;
+    # icons = true;
   };
 }
