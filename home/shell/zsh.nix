@@ -15,7 +15,7 @@
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
-      # myConf = "cd ~/nixos-pc-conf";
+      myZ = "cd ~/nixos-pc-conf; code .; exit";
       # myViewConf = "cd myConf && nvim .";
       # myGit = "~/git-repos";
       # myServicesOption = "nixos-option services";
