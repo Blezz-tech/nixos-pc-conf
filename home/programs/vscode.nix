@@ -17,6 +17,7 @@
       "git.enableSmartCommit" = true;
       "workbench.startupEditor" = "none";
       "git.openRepositoryInParentFolders" = "always";
+      "explorer.confirmDragAndDrop" = false;
     };
   };
 }
