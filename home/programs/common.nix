@@ -146,6 +146,7 @@
     kdePackages.kolourpaint
     gnome.iagno
     lunarvim
+    remmina
 
     black # python formattier
 
