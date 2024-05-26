@@ -153,6 +153,7 @@
     # flameshot
     unciv
     endless-sky
+    openra
 
     black # python formattier
 
