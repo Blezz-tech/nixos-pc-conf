@@ -128,6 +128,7 @@
     appimage-run
     mdbook
     mdbook-epub
+    mdbook-pdf
     calibre
     gpu-viewer
     vulkan-tools
