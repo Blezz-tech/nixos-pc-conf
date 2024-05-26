@@ -152,6 +152,7 @@
     kdePackages.kclock
     # flameshot
     unciv
+    endless-sky
 
     black # python formattier
 
