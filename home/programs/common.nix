@@ -148,6 +148,7 @@
     gnome.iagno
     lunarvim
     remmina
+    kdePackages.kcalc
 
     black # python formattier
 
