@@ -150,7 +150,7 @@
     remmina
     kdePackages.kcalc
     kdePackages.kclock
-    flameshot
+    # flameshot
 
     black # python formattier
 
