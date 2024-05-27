@@ -18,6 +18,7 @@
       "workbench.startupEditor" = "none";
       "git.openRepositoryInParentFolders" = "always";
       "explorer.confirmDragAndDrop" = false;
+      "editor.rulers" = [ 80 ];
     };
   };
 }
