@@ -65,6 +65,10 @@
     # wesnoth
     # openspades
     # airshipper
+    unciv
+    endless-sky
+    openra
+    
 
     # kdePackages.kolf
     # kdePackages.kmahjongg
@@ -151,9 +155,6 @@
     kdePackages.kcalc
     kdePackages.kclock
     # flameshot
-    unciv
-    endless-sky
-    openra
 
     black # python formattier
 
