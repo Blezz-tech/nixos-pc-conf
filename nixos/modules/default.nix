@@ -8,14 +8,7 @@
     ./steam.nix
     ./user.nix
   ];
-
-  # vr
-  programs.alvr.enable = true;
-  services.monado = {
-    enable = true;
-    defaultRuntime = true; # Register as default OpenXR runtime
-  };
-
+  
   # bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
