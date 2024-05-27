@@ -9,6 +9,12 @@
     ./user.nix
   ];
 
+  # vr
+  services.monado = {
+    enable = true;
+    defaultRuntime = true; # Register as default OpenXR runtime
+  };
+
   # bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
