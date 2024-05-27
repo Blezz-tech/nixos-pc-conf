@@ -23,6 +23,7 @@
     vscode
     pwgen
     keepassxc
+    alvr
 
     home-manager
 
