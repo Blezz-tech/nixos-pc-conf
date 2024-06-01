@@ -1,10 +1,9 @@
 # nixos-conf
 
-Моя декларируемая система
+Моя никсось
 
-Пользуюсь смотрю на данную репу и [учусь](https://github.com/ryan4yin/nix-config/tree/main)
+# Сделать потом
 
-## Временно отключено
-
-1. cataclysm-dda
-2. easyocr
+```nix
+programs.steam.gamescopeSession.enable = true;
+```
