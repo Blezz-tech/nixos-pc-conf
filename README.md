@@ -30,3 +30,14 @@ Defaults to system fonts, but could be overridden to use other fonts — useful 
 ```nix
 kdePackages.ksystemlog
 ```
+
+## Поменять sddm
+
+```nix
+services.displayManager.sddm = {
+  enable = true;
+  wayland.enable = true;
+  wayland.compositor = "kwin";
+  package = pkgs.kdePackages.sddm;
+};
+```
