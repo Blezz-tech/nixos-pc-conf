@@ -41,3 +41,15 @@ services.displayManager.sddm = {
   package = pkgs.kdePackages.sddm;
 };
 ```
+## Home Manager
+
+Включить где можно
+
+```nix
+enableBashIntegration = true;
+enableZshIntegration = true;
+enableNushellIntegration = true;
+```
+
+
+
