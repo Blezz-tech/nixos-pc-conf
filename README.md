@@ -35,6 +35,7 @@ Defaults to system fonts, but could be overridden to use other fonts — useful 
 
 ```nix
 kdePackages.ksystemlog
+wechat-uos
 ```
 
 ## Поменять sddm
