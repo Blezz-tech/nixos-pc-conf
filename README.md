@@ -35,7 +35,10 @@ Defaults to system fonts, but could be overridden to use other fonts — useful 
 
 ```nix
 kdePackages.ksystemlog
-wechat-uos
+bilibili
+qq
+wechat-uos # license.tar.gz можно взять с репозиторя archlinux 
+qqwing
 ```
 
 ## Поменять sddm
