@@ -20,6 +20,7 @@ programs.steam.gamescopeSession.enable = true;
 
 ```nix
 source-han-sans
+font-awesome
 ```
 
 ## Таки реши проблему с шрифтами в стиме
