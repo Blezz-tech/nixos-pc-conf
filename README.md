@@ -43,6 +43,7 @@ bilibili
 qq
 wechat-uos # license.tar.gz можно взять с репозиторя archlinux 
 qqwing
+smassh
 ```
 
 ## Поменять sddm
