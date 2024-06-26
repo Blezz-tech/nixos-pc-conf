@@ -23,6 +23,7 @@ source-han-sans
 font-awesome
 source-sans
 source-sans-pro
+nerdfonts
 ```
 
 ## Таки реши проблему с шрифтами в стиме
