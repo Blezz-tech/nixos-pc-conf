@@ -74,6 +74,34 @@ environment.plasma6.excludePackages = with pkgs; [ kdePackages.konsole ];
 # Убать alacritty из системы и hm
 # оставить konsole
 
+### Добавить пакет обоев
+# { stdenv
+# , fetchFromGitHub
+# }:
+# stdenv.mkDerivation (finalAttrs: {
+#   name = "blezz-tech-wallpapers";
+#   version = "v0.1";
+# 
+#   src = fetchFromGitHub {
+#     owner = "Blezz-tech";
+#     repo = "wallpapers";
+#     rev = finalAttrs.version;
+#     hash = "sha256-AUH32T5mH6bXtwGXv/vuuYK5BDgOQ1SMjZKXh6WDPqw=";
+#   };
+# 
+#   buildPhase = ''cp -pr $src/ $out/'';
+# 
+#   meta = {
+#     description = ''
+#       My wallpapers
+#     '';
+#   };
+# })
+
+### сделать пакет обоев доступным для пользователя
+# Чтобы home manager делал симлинк в xdg.userDirs.pictures/pkgs/
+
+
 ## Пакеты
 
 ### Добавить к системным шрифтам
