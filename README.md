@@ -128,6 +128,9 @@ environment.plasma6.excludePackages = with pkgs; [ kdePackages.konsole ];
 #     }
 # }
 
+### Починить nushell
+# pkgs.nushellFull ->  pkgs.nushell
+
 ## Пакеты
 
 ### Добавить к системным шрифтам
