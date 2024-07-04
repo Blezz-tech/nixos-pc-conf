@@ -101,6 +101,32 @@ environment.plasma6.excludePackages = with pkgs; [ kdePackages.konsole ];
 ### сделать пакет обоев доступным для пользователя
 # Чтобы home manager делал симлинк в xdg.userDirs.pictures/pkgs/
 
+### Отключи podman
+# Закоментируй импорт
+# nixos/modules/default.nix
+
+### Добавить пакеты для nix-ld
+# Добавить пакеты для wayland 
+
+### Перенести gt-vein-info
+# /nixos/modules/gt-vein-info -> /nixos/pkgs/gt-vein-info
+# перенести callPackages для gt-vein-info из /nixos/modules/user.nix -> /nixos/packages.nix
+
+### Разнести конфиги из /nixos/default
+# programs.hyprland перенести в /nixos/modules/default
+# Разнести соответствующие сервисы в файлы
+# xserver.nix desktopManagerv displayManager.nix nix-conf.nix
+
+### Убрать standalone home manager
+# Убрать найстройку для nixd из .vecode/settings.json:
+# "options": {
+#     "nixos": {
+#         "expr": "(builtins.getFlake \"/home/jenya/nixos-pc-conf/\").nixosConfigurations.pc.options"
+#     },
+#     "home-manager": {
+#         "expr": "(builtins.getFlake \"/home/jenya/nixos-pc-conf/\").homeConfigurations.jenya.options"
+#     }
+# }
 
 ## Пакеты
 
