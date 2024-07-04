@@ -131,6 +131,21 @@ environment.plasma6.excludePackages = with pkgs; [ kdePackages.konsole ];
 ### Починить nushell
 # pkgs.nushellFull ->  pkgs.nushell
 
+### Починить hardware.opengl
+# hardware.opengl -> hardware.graphics
+# 
+# Удалить
+# driSupport = true;
+# driSupport32Bit = true;
+# 
+# Добавить:
+# enable32Bit = true;
+
+### yakuake
+# Подумать, нужен ли yakuake
+
+### 
+
 ## Пакеты
 
 ### Добавить к системным шрифтам
@@ -157,7 +172,13 @@ aria2
 media-downloader
 kdePackages.krdc
 libreoffice-qt6-fresh # Заменить обычный libreoffice на qt6
+onlyoffice-bin_latest # Заменить обычный onlyoffice на latest
 kdenlive
+typst
+typstfmt
+typst-lsp
+typst-live
+typst-preview
 glaxnimate # Для kdenlive (проверить, без и с этип пакетом, чтобы не было ошибки)
 # Словари для libreoffice
 hunspell
