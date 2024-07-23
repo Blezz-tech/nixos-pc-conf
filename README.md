@@ -32,7 +32,7 @@ services.displayManager.sddm = {
   enable = true;
   wayland.enable = true;
   wayland.compositor = "kwin";
-  package = pkgs.kdePackages.sddm;
+  package = lib.mkDefault pkgs.kdePackages.sddm;
 };
 
 ### Добавить оптимизации
@@ -144,7 +144,14 @@ environment.plasma6.excludePackages = with pkgs; [ kdePackages.konsole ];
 ### yakuake
 # Подумать, нужен ли yakuake
 
-### 
+### gtk dark breeze:
+# gtk = {
+#   enable = true;
+#   theme = {
+#     name = "Breeze-Dark";
+#     package = pkgs.kdePackages.breeze-gtk;
+#   };
+# };
 
 ## Пакеты
 
@@ -179,6 +186,9 @@ typstfmt
 typst-lsp
 typst-live
 typst-preview
+stirling-pdf
+naps2
+kicad
 glaxnimate # Для kdenlive (проверить, без и с этип пакетом, чтобы не было ошибки)
 # Словари для libreoffice
 hunspell
@@ -194,6 +204,53 @@ glxinfo
 vulkan-tools
 wayland-utils
 
+### Добавить производительность
+powerManagement.enable = true;
+powerManagement.cpuFreqGovernor = "performance";
+
+### Найти ПО для сканирования от KDE и добавить naps2
+naps2
+
+### сделать перенос всякого мусора из ~ в папку ~/.uwucache
+# Например, ~/.cargo -> ~/.uwucache/.cargo
+# сделать для всего мусора, что скапливается в системе (если конечно не прибито гвоздями)
+# https://stackoverflow.com/questions/38050995/how-can-the-location-of-cargos-configuration-directory-be-overridden
+
+### попробовать использовать keyd
+
+### Загрузочный экран (boot splash screen.)
+# И его настройка. Или найти альтернативу
+# boot.plymouth.enable = true;
+
+### Попробовать САПРы
+# cadzinho
+# freecad
+# librecad
+# kompass3d
+# OpenSCAD
+
+### Попробовать ПОшки от KDE
+# KColorChooser
+# KolourPaint
+# KCharSelect
+# KGpg
+# Kompare
+# KRDC
+# Skanlite
+# Sweeper
+# Elisa
+# KTimer
+# KCachegrind
+# Kamoso
+# Kalzium
+# KGeography
+# KMouseTool
+# KGet
+# KOrganizer
+# KMail
+# Marble
+# KDiamond
+# Kookbook
 
 ## Home Manager
 
