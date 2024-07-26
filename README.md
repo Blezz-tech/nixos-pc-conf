@@ -252,6 +252,32 @@ naps2
 # KDiamond
 # Kookbook
 
+### Сначала закомментировать модуль xdg и проверить, нормально ли работают вещи, потом попробовать ещё что-то. Попробовать добавить к конфигурации 
+# xdg.portal = {
+#   enable = true;
+#   extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
+#   configPackages = mkDefault [ pkgs.kdePackages.xdg-desktop-portal-kde ];
+# };
+
+### nix helper
+# programs.nh.enable
+
+### Добавить к git'у
+# core.autocrlf=input
+# core.filemode=false
+
+### Проверить, что за хренотень
+
+system.activationScripts.diff = {
+  supportsDryActivation = true;
+  text = ''
+    if [[ -e /run/current-system ]]; then
+      ${pkgs.nix}/bin/nix store diff-closures /run/current-system "$systemConfig"
+    fi
+  '';
+};
+
+
 ## Home Manager
 
 ### Включить где можно
