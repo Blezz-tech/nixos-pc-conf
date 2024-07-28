@@ -203,6 +203,9 @@ clinfo
 glxinfo
 vulkan-tools
 wayland-utils
+# ЯП nim
+nim
+nimlsp
 
 ### Добавить производительность
 powerManagement.enable = true;
