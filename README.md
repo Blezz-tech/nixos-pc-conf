@@ -265,9 +265,15 @@ naps2
 ### nix helper
 # programs.nh.enable
 
-### Добавить к git'у
+### Добавить к git'у 
+## Не помню
 # core.autocrlf=input
+## Убрать отслеживание разрешений файлов
 # core.filemode=false
+## Автоподписание коммитов gpg ключем
+# commit.gpgsign=true
+## Автоподписание тегов gpg ключем
+# tag.gpgsign=true
 
 ### Проверить, что за хренотень
 
@@ -288,4 +294,10 @@ enableBashIntegration = true;
 enableZshIntegration = true;
 enableNushellIntegration = true;
 }
+
+
+### Создать репо с гайдиками
+
+#  git Не нужно подписывать все репо ключем gpg, достаточно подписать последний коммит
+# > Since commits contain cryptographic hashes of their parents all the way back to the beginning of the repo history, signing the last commit is equivalent to signing all of the commits.
 ```
