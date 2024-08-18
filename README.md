@@ -367,6 +367,8 @@ enableNushellIntegration = true;
 ## Найти как включить отпимизациюю
 # мой гайд: https://gist.github.com/Blezz-tech/07db8fc68ab57ff844ae795bcf0c28f8
 
+## Astrovim vs Lunarvim
+# Сравнить и выбрать
 
 ### Создать репо с гайдиками
 
