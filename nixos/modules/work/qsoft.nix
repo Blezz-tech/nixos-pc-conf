@@ -12,6 +12,6 @@
   environment.systemPackages = [
     pkgs.nodejs_22
 
-    pkgs.jetbrains-toolbox
+    # pkgs.jetbrains-toolbox
   ];
 }
