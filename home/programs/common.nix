@@ -48,7 +48,6 @@
     drawio
 
     # Текстовые редакторы
-    # kate
     libreoffice-qt-fresh
     onlyoffice-bin_latest
 

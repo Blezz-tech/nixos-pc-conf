@@ -55,9 +55,6 @@ extraPackages = with pkgs; [
 ### Может быть добавить
 services.fwupd.enable = true; # Нужна для просмотра информации о системе kde
 
-# Поменять в пакет
-# kate -> kdePackages.kate
-
 ###  alacritty -> konsole
 # Убать alacritty из системы и hm
 # оставить konsole
