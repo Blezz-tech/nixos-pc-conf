@@ -39,7 +39,7 @@
   programs.virt-manager.enable = true;
 
   # Эмулятор Android
-  virtualisation.waydroid.enable = false;
+  virtualisation.waydroid.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # libinput.enable = true;
