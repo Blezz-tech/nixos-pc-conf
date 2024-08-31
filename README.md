@@ -26,18 +26,6 @@ programs.steam.fontPackages
 ### Включить wayland для electron приложений
 environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-### Добавить оптимизации
-nix = {
-  optimise.automatic = true;
-
-  settings.experimental-features = [ "nix-command" "flakes" ];
-  settings.auto-optimise-store = true;
-
-  gc.automatic = true;
-  gc.dates = "daily";
-  gc.options = "--delete-older-than 14d";
-};
-
 ### Добавить ключи для бинарного кеша HIP (Integrated Haskell Platform)
 nix.settings = {
   trusted-public-keys = [ "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE=" ];
