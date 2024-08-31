@@ -58,10 +58,10 @@ in {
     discord
     # element-desktop
     telegram-desktop
-    discord-screenaudio
-    webcord-vencord
+    # discord-screenaudio
+    # webcord-vencord
     vesktop
-    whatsapp-for-linux
+    # whatsapp-for-linux
 
     # Редакторы epub
     # sigil
