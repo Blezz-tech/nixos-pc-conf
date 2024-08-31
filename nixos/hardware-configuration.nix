@@ -28,10 +28,10 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/run/media/disk_d" =
-    { device = "/dev/disk/by-uuid/DC94BABC94BA988A";
-      fsType = "ext4";
-    };
+  # fileSystems."/run/media/disk_d" =
+  #   { device = "/dev/disk/by-uuid/DC94BABC94BA988A";
+  #     fsType = "ext4";
+  #   };
 
   swapDevices = [ ];
 
