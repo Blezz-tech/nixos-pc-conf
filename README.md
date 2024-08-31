@@ -55,9 +55,6 @@ extraPackages = with pkgs; [
 ### Может быть добавить
 services.fwupd.enable = true; # Нужна для просмотра информации о системе kde
 
-### Исправить отключение konsole
-environment.plasma6.excludePackages = with pkgs; [ kdePackages.konsole ];
-
 # Поменять в пакет
 # kate -> kdePackages.kate
 
