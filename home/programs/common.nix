@@ -143,7 +143,7 @@
 
     # kalzium
     baobab
-    # kdePackages.filelight
+    kdePackages.filelight # For Dolphin Integration
     bottles
     protonup-qt
     r2modman
