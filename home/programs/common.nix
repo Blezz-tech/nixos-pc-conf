@@ -174,7 +174,7 @@
     fd
     gcc
     kdePackages.kolourpaint
-    gnome.iagno
+    iagno
     lunarvim
     remmina
     kdePackages.kcalc
