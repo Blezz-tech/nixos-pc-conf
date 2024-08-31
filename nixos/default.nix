@@ -26,7 +26,7 @@
     };
   };
 
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 
 
   # xdg_open should work in steam_run this way… well it’s not 
