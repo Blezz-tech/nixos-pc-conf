@@ -61,5 +61,13 @@
 
     # Остальные
     ibm-plex
+
+    source-han-sans
+    font-awesome
+    source-sans
+    source-sans-pro
+    nerdfonts
+    liberation_ttf
+    scientifica
   ];
 }

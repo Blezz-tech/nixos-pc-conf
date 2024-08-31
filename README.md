@@ -110,16 +110,6 @@ services.fwupd.enable = true; # Нужна для просмотра инфор�
 
 ## Пакеты
 
-### Добавить к системным шрифтам
-source-han-sans
-font-awesome
-source-sans
-source-sans-pro
-nerdfonts
-liberation_ttf
-nerdfonts
-scientifica
-
 ### Добавить ПО
 kdePackages.ksystemlog
 bilibili
