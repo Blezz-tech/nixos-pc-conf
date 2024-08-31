@@ -1,6 +1,24 @@
 { pkgs
 , ...
-}: {
+}:
+
+let
+  myPHPWithExtensions = pkgs.php83.withExtensions ({ enabled, all }: enabled ++ [
+    all.bcmath
+    all.tokenizer
+    all.curl
+    all.gd
+    all.intl
+    all.xml
+    all.mbstring
+    all.zip
+    all.sqlite3
+    all.pdo_mysql
+    all.mysqli
+    all.redis # Для Redis
+  ]);
+  myComposerWithPHPExtensions = myPHPWithExtensions.packages.composer;
+in {
 
   programs = {
     bun.enable = true;
@@ -13,6 +31,13 @@
   };
 
   home.packages = with pkgs; [
+    # FOR QSOFT
+
+    myPHPWithExtensions
+    myComposerWithPHPExtensions
+
+
+
     # LaTeX
     # texlive.combined.scheme-full
     pdf2svg
