@@ -83,16 +83,6 @@ services.fwupd.enable = true; # Нужна для просмотра инфор�
 # Разнести соответствующие сервисы в файлы
 # xserver.nix desktopManagerv displayManager.nix nix-conf.nix
 
-### Починить hardware.opengl
-# hardware.opengl -> hardware.graphics
-# 
-# Удалить
-# driSupport = true;
-# driSupport32Bit = true;
-# 
-# Добавить:
-# enable32Bit = true;
-
 ### yakuake
 # Подумать, нужен ли yakuake
 
