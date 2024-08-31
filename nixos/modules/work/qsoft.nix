@@ -11,15 +11,15 @@
 
   environment.systemPackages = [
     pkgs.nodejs_22
-    pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
-      versions = {
-        x86_64-linux = {
-          idea-ultimate = {
+    # pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
+    #   versions = {
+    #     x86_64-linux = {
+    #       idea-ultimate = {
 
-          };
-        };
-      };
-    })
+    #       };
+    #     };
+    #   };
+    # })
 
 #     {
 #   "x86_64-linux": {
