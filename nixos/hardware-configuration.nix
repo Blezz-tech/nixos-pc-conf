@@ -28,22 +28,10 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-
- # fileSystems."/" = {
- #   device = "/dev/disk/by-uuid/3f22863e-8d34-40fa-8c7b-9f5bc1757486";
- #   fsType = "ext4";
- # };
-
- # fileSystems."/boot" = {
- #   device = "/dev/disk/by-uuid/DAB8-2792";
- #   fsType = "vfat";
- #   options = [ "fmask=0022" "dmask=0022" ];
- # };
-
-#   fileSystems."/run/media/disk_d" = {
-#    device = "/dev/disk/by-uuid/f9f12cb8-504b-44da-8b7e-a653cf1518c3";
-#    fsType = "ext4";
-#  };
+  fileSystems."/run/media/disk_d" =
+    { device = "/dev/disk/by-uuid/DC94BABC94BA988A";
+      fsType = "ext4";
+    };
 
   swapDevices = [ ];
 
