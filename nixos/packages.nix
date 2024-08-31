@@ -28,6 +28,7 @@
 
     steam-run
     lutris
+    lzip # for waydroid
 
     # Аудио видео проигрыватели
     vlc
