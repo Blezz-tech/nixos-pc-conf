@@ -15,9 +15,6 @@
 
 ## Проблемы
 
-### Добавить к стиму
-programs.steam.gamescopeSession.enable = true;
-
 ### Таки реши проблему с шрифтами в стиме
 programs.steam.fontPackages
 # Font packages to use in Steam.

@@ -2,6 +2,9 @@
   programs.steam = {
     enable = true;
 
+    # Enable Game Scope
+    gamescopeSession.enable = true;
+
     # Open ports in the firewall for Steam Remote Play
     remotePlay.openFirewall = true;
     
