@@ -86,9 +86,6 @@ services.fwupd.enable = true; # Нужна для просмотра инфор�
 # Разнести соответствующие сервисы в файлы
 # xserver.nix desktopManagerv displayManager.nix nix-conf.nix
 
-### Починить nushell
-# pkgs.nushellFull ->  pkgs.nushell
-
 ### Починить hardware.opengl
 # hardware.opengl -> hardware.graphics
 # 
