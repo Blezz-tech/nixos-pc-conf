@@ -8,4 +8,8 @@
   services.redis.servers."" = {
     enable = true;
   };
+
+  environment.systemPackages = [
+    pkgs.nodejs_22
+  ];
 }
