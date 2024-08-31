@@ -66,7 +66,7 @@
     font-awesome
     source-sans
     source-sans-pro
-    nerdfonts
+    # nerdfonts
     liberation_ttf
     scientifica
   ];
