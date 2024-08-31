@@ -8,14 +8,6 @@
                 "command": [
                     "nixpkgs-fmt"
                 ]
-            },
-            "options": {
-                "nixos": {
-                    "expr": "(builtins.getFlake \"/home/jenya/nixos-pc-conf/\").nixosConfigurations.pc.options"
-                },
-                "home-manager": {
-                    "expr": "(builtins.getFlake \"/home/jenya/nixos-pc-conf/\").homeConfigurations.jenya.options"
-                }
             }
         }
     }

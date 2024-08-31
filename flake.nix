@@ -13,20 +13,25 @@
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
     let
-      system = "x86_64-linux";
       username = "jenya";
     in
     {
       nixosConfigurations."pc" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username; };
-        modules = [ ./nixos ];
-      };
-      homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        modules = [ ./home ];
-        extraSpecialArgs = {
-          inherit inputs system username;
-        };
+        modules = [
+          ./nixos
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.jenya = import ./home;
+              extraSpecialArgs = {
+                inherit inputs username;
+              };
+            };
+          }
+        ];
       };
     };
 }

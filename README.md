@@ -98,17 +98,6 @@ services.fwupd.enable = true; # Нужна для просмотра инфор�
 # Разнести соответствующие сервисы в файлы
 # xserver.nix desktopManagerv displayManager.nix nix-conf.nix
 
-### Убрать standalone home manager
-# Убрать найстройку для nixd из .vecode/settings.json:
-# "options": {
-#     "nixos": {
-#         "expr": "(builtins.getFlake \"/home/jenya/nixos-pc-conf/\").nixosConfigurations.pc.options"
-#     },
-#     "home-manager": {
-#         "expr": "(builtins.getFlake \"/home/jenya/nixos-pc-conf/\").homeConfigurations.jenya.options"
-#     }
-# }
-
 ### Починить nushell
 # pkgs.nushellFull ->  pkgs.nushell
 
