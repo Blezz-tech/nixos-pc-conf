@@ -1,4 +1,5 @@
 { pkgs
+, lib
 , ...
 }: {
   imports = [
@@ -55,9 +56,12 @@
   ];
 
   services.displayManager = {
-    # sddm.enable = true;
-    sddm.wayland.enable = true;
-    # defaultSession = "plasmawayland";
+    sddm = {
+      enable = true;
+      wayland.enable = true;
+      wayland.compositor = "kwin";
+      package = lib.mkDefault pkgs.kdePackages.sddm;
+    };
     autoLogin = {
       enable = true;
       user = "jenya";

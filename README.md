@@ -26,15 +26,6 @@ programs.steam.fontPackages
 ### Включить wayland для electron приложений
 environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-
-### Поменять sddm
-services.displayManager.sddm = {
-  enable = true;
-  wayland.enable = true;
-  wayland.compositor = "kwin";
-  package = lib.mkDefault pkgs.kdePackages.sddm;
-};
-
 ### Добавить оптимизации
 nix = {
   optimise.automatic = true;
