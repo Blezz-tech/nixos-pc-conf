@@ -5,6 +5,7 @@
 
     userName = "blezz-tech";
     userEmail = "markus.jenya04@yandex.ru";
+    signing.key = "78E9CCD7CF92CD8F";
     extraConfig = {
       core.quotepath = false;
       core.autocrlf = "input";
