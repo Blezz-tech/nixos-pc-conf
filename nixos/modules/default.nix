@@ -1,7 +1,7 @@
 {
   imports = [
     ./i18n.nix
-    # ./nix-ld.nix
+    ./nix-ld.nix
     ./openssh.nix
     # ./podman.nix
     ./sound.nix
