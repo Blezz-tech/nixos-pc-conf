@@ -197,16 +197,6 @@ naps2
 ### nix helper
 # programs.nh.enable
 
-### Добавить к git'у 
-## Не помню
-# core.autocrlf=input
-## Убрать отслеживание разрешений файлов
-# core.filemode=false
-## Автоподписание коммитов gpg ключем
-# commit.gpgsign=true
-## Автоподписание тегов gpg ключем
-# tag.gpgsign=true
-
 ### Проверить, что за хренотень
 
 system.activationScripts.diff = {
