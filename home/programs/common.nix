@@ -156,7 +156,7 @@ in {
     # age
     # sops
     imagemagick
-    # crow-translate
+    crow-translate
     zoom-us
 
     # poppler_utils
