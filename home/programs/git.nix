@@ -16,6 +16,9 @@
       core.filemode = false;
       commit.gpgsign = true;
       tag.gpgsign = true;
+      credential.helper = "store";
+      # TODO: Нужно попробоавть использовать Git Credential Manager
+      # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
     };
   };
 }
