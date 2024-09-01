@@ -27,10 +27,10 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  # fileSystems."/run/media/jenya/disk_d" =
-  #   { device = "/dev/disk/by-uuid/f23f662f-db3e-4fe8-aa13-8597b4b168a7";
-  #     fsType = "ext4";
-  #   };
+  fileSystems."/run/media/jenya/disk_d" =
+    { device = "/dev/disk/by-uuid/f23f662f-db3e-4fe8-aa13-8597b4b168a7";
+      fsType = "ext4";
+    };
 
   swapDevices = [ ];
 
