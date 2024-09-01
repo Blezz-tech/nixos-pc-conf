@@ -18,6 +18,13 @@
         sha256 = "sha256:19hlac1xlc31vdrf3sl20kw90mfsl29qwgh31wdyymlanj2bs0n3";
       };
     }))
+
+    (pkgs.jetbrains.phpstorm.overrideAttrs (oldAttrs: {
+      src = builtins.fetchurl {
+        url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-PHP-2022.3.3.tar.gz";
+        sha256 = "sha256:1a9fvjqnz93w5czsj7zf3j1nmq3107mhiwsgxxnb31gv5l1nd6np";
+      };
+    }))
   ];
 
   # nixpkgs.overlays = [
