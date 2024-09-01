@@ -5,6 +5,7 @@
     ./direnv.nix
     ./eza.nix
     ./fzf.nix
+    ./games.nix
     ./git.nix
     ./neovim.nix
     ./nushell.nix
