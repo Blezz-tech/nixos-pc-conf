@@ -46,7 +46,7 @@ in {
     qbittorrent
 
     # Альтернатива Postman'у
-    # insomnia
+    insomnia
 
     # 3D редакторы
     blender
