@@ -3,7 +3,7 @@
 }:
 
 let
-  myPHPWithExtensions = pkgs.php83.withExtensions ({ enabled, all }: enabled ++ [
+  myPHP.php = pkgs.php83.withExtensions ({ enabled, all }: enabled ++ [
     all.bcmath
     all.tokenizer
     all.curl
@@ -18,7 +18,7 @@ let
     all.redis # Для Redis
   ]);
 
-  myComposerWithPHPExtensions = myPHPWithExtensions.packages.composer;
+  myPHP.composer = myPHP.php.packages.composer;
 
   MURMUR = {
     IDEA = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
@@ -47,8 +47,8 @@ in
   environment.systemPackages = [
     # FOR QSOFT
 
-    myPHPWithExtensions
-    myComposerWithPHPExtensions
+    myPHP.php
+    myPHP.composer
 
     pkgs.postman
 
