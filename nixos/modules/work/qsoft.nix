@@ -21,33 +21,37 @@ let
   myPHP.composer = myPHP.php.packages.composer;
 
   MURMUR = {
-    IDEA_2022_3_3 = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
-      src = builtins.fetchurl {
-        url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-IDEA-2022.3.3.tar.gz";
-        sha256 = "sha256:19hlac1xlc31vdrf3sl20kw90mfsl29qwgh31wdyymlanj2bs0n3";
-      };
-    }));
+    IDEA = {
+      v2022_3_3 = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
+        src = builtins.fetchurl {
+          url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-IDEA-2022.3.3.tar.gz";
+          sha256 = "sha256:19hlac1xlc31vdrf3sl20kw90mfsl29qwgh31wdyymlanj2bs0n3";
+        };
+      }));
 
-    IDEA_2024_2_1 = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
-      src = builtins.fetchurl {
-        url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-IDEA-2024.2.1.tar.gz";
-        sha256 = "sha256:0v9nc7n9xyzrmqlqi4shlnl4gijqcf1f84b26m6q2nxdrwqp90da";
-      };
-    }));
+      v2024_2_1 = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
+        src = builtins.fetchurl {
+          url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-IDEA-2024.2.1.tar.gz";
+          sha256 = "sha256:0v9nc7n9xyzrmqlqi4shlnl4gijqcf1f84b26m6q2nxdrwqp90da";
+        };
+      }));
+    };
 
-    PHP_2022_3_3 = (pkgs.jetbrains.phpstorm.overrideAttrs (oldAttrs: {
-      src = builtins.fetchurl {
-        url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-PHP-2022.3.3.tar.gz";
-        sha256 = "sha256:1a9fvjqnz93w5czsj7zf3j1nmq3107mhiwsgxxnb31gv5l1nd6np";
-      };
-    }));
+    PHP = {
+      v2022_3_3 = (pkgs.jetbrains.phpstorm.overrideAttrs (oldAttrs: {
+        src = builtins.fetchurl {
+          url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-PHP-2022.3.3.tar.gz";
+          sha256 = "sha256:1a9fvjqnz93w5czsj7zf3j1nmq3107mhiwsgxxnb31gv5l1nd6np";
+        };
+      }));
 
-    PHP_2024_2_1 = (pkgs.jetbrains.phpstorm.overrideAttrs (oldAttrs: {
-      src = builtins.fetchurl {
-        url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-PHP-2024.2.1.tar.gz";
-        sha256 = "sha256:00f0n80wazyqilmdi26zfa7xhjsq8c1lyjrjcmdx0p41fnc53px9";
-      };
-    }));
+      v2024_2_1 = (pkgs.jetbrains.phpstorm.overrideAttrs (oldAttrs: {
+        src = builtins.fetchurl {
+          url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-PHP-2024.2.1.tar.gz";
+          sha256 = "sha256:00f0n80wazyqilmdi26zfa7xhjsq8c1lyjrjcmdx0p41fnc53px9";
+        };
+      }));
+    };
   };
 in
 {
@@ -68,8 +72,8 @@ in
 
     pkgs.nodejs_22
 
-    MURMUR.IDEA_2024_2_1
-    MURMUR.PHP_2024_2_1
+    MURMUR.IDEA.v2024_2_1
+    MURMUR.PHP.v2024_2_1
   ];
 
   # nixpkgs.overlays = [
