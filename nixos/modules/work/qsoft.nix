@@ -1,6 +1,24 @@
 { pkgs
 , ...
 }:
+
+let
+  myPHPWithExtensions = pkgs.php83.withExtensions ({ enabled, all }: enabled ++ [
+    all.bcmath
+    all.tokenizer
+    all.curl
+    all.gd
+    all.intl
+    all.xml
+    all.mbstring
+    all.zip
+    all.sqlite3
+    all.pdo_mysql
+    all.mysqli
+    all.redis # Для Redis
+  ]);
+  myComposerWithPHPExtensions = myPHPWithExtensions.packages.composer;
+in
 {
   services.mysql.enable = true;
   services.mysql.package = pkgs.mysql84;
@@ -10,6 +28,11 @@
   };
 
   environment.systemPackages = [
+    # FOR QSOFT
+
+    myPHPWithExtensions
+    myComposerWithPHPExtensions
+
     pkgs.nodejs_22
 
     (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
