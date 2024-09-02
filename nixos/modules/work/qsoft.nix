@@ -33,6 +33,8 @@ in
     myPHPWithExtensions
     myComposerWithPHPExtensions
 
+    pkgs.postman
+
     pkgs.nodejs_22
 
     (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
