@@ -7,7 +7,6 @@
     ./sound.nix
     ./steam.nix
     ./user.nix
-    ./work/learn-kotlin.nix
     ./work/qsoft.nix
   ];
   
