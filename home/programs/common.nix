@@ -1,6 +1,9 @@
 { pkgs
 , ...
 }:
+let
+  blezz-pkgs = pkgs.callPackage ./pkgs { };
+in
 {
 
   programs = {
@@ -14,6 +17,8 @@
   };
 
   home.packages = with pkgs; [
+    blezz-pkgs.gt-vein-info
+
     # LaTeX
     # texlive.combined.scheme-full
     pdf2svg
