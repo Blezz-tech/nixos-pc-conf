@@ -17,9 +17,7 @@
         "libvirtd"
         # "corectrl"
       ];
-      packages = [
-        (pkgs.callPackage ./gt-vein-info { })
-      ];
+      packages = [ ];
     };
   };
 }
