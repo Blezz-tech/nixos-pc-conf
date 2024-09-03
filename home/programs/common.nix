@@ -82,7 +82,7 @@
     crow-translate
     zoom-us
 
-    # poppler_utils
+    poppler_utils
     # ocrmypdf
     # stack
     # nheko
