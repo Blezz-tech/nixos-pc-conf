@@ -133,6 +133,7 @@ in
     kdePackages.kcalc
     kdePackages.kclock
     # flameshot
+    chromium
 
     black # python formattier
 
