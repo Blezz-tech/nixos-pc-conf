@@ -7,68 +7,68 @@
     permittedInsecurePackages = [ ];
   };
 
-  environment.systemPackages = with pkgs; [
-    alacritty
-    telegram-desktop
+  environment.systemPackages = [
+    pkgs.alacritty
+    pkgs.telegram-desktop
 
-    testdisk-qt
-    ddrescue
-    ext4magic
+    pkgs.testdisk-qt
+    pkgs.ddrescue
+    pkgs.ext4magic
 
-    xdg_utils
-    git
-    wget
-    curl
-    firefox
-    vscode
-    pwgen
-    keepassxc
+    pkgs.xdg_utils
+    pkgs.git
+    pkgs.wget
+    pkgs.curl
+    pkgs.firefox
+    pkgs.vscode
+    pkgs.pwgen
+    pkgs.keepassxc
 
-    home-manager
+    pkgs.home-manager
 
-    steam-run
-    lutris
-    lzip # for waydroid
+    pkgs.steam-run
+    pkgs.lutris
+    pkgs.lzip # for waydroid
 
     # Аудио видео проигрыватели
-    vlc
+    pkgs.vlc
 
     # Диспеер раздеов дисков
-    partition-manager
+    pkgs.partition-manager
   ];
 
-  fonts.packages = with pkgs; [
+  fonts.packages = [
     # Шрифты paratype
-    paratype-pt-sans
-    paratype-pt-mono
-    paratype-pt-serif
+    pkgs.paratype-pt-sans
+    pkgs.paratype-pt-mono
+    pkgs.paratype-pt-serif
 
     # Шрифты terminus
-    terminus_font
+    pkgs.terminus_font
 
     # Шрифты noto
-    noto-fonts
-    noto-fonts-lgc-plus
-    noto-fonts-cjk-serif
-    noto-fonts-cjk-sans
-    noto-fonts-color-emoji
+    pkgs.noto-fonts
+    pkgs.noto-fonts-lgc-plus
+    pkgs.noto-fonts-cjk-serif
+    pkgs.noto-fonts-cjk-sans
+    pkgs.noto-fonts-color-emoji
 
     # Шрифты windows
-    # corefonts
-    vistafonts
+    # pkgs.corefonts
+    pkgs.vistafonts
 
     # Mono
-    hack-font
+    pkgs.hack-font
 
     # Остальные
-    ibm-plex
+    pkgs.ibm-plex
 
-    source-han-sans
-    font-awesome
-    source-sans
-    source-sans-pro
-    # nerdfonts
-    liberation_ttf
-    scientifica
+    pkgs.source-han-sans
+    pkgs.font-awesome
+    pkgs.source-sans
+    pkgs.source-sans-pro
+    # pkgs.nerdfonts
+    pkgs.liberation_ttf
+    pkgs.scientifica
   ];
 }

@@ -16,191 +16,191 @@ in
     yt-dlp.enable = true;
   };
 
-  home.packages = with pkgs; [
+  home.packages = [
     blezz-pkgs.gt-vein-info
 
     # LaTeX
-    # texlive.combined.scheme-full
-    pdf2svg
+    # pkgs.texlive.combined.scheme-full
+    pkgs.pdf2svg
 
     # Torrent
-    qbittorrent
+    pkgs.qbittorrent
 
     # Альтернатива Postman'у
-    insomnia
+    pkgs.insomnia
 
     # 3D редакторы
-    blender
+    pkgs.blender
 
     # Музыкальные редакторы
-    musescore
+    pkgs.musescore
 
     # Месседжеры
-    discord
-    # element-desktop
-    telegram-desktop
-    # discord-screenaudio
-    # webcord-vencord
-    vesktop
-    # whatsapp-for-linux
+    pkgs.discord
+    # pkgs.element-desktop
+    pkgs.telegram-desktop
+    # pkgs.discord-screenaudio
+    # pkgs.webcord-vencord
+    pkgs.vesktop
+    # pkgs.whatsapp-for-linux
 
     # Редакторы epub
-    # sigil
+    # pkgs.sigil
 
     # Графические редакторы
-    # gimp
-    # inkscape
-    krita
-    drawio
+    # pkgs.gimp
+    # pkgs.inkscape
+    pkgs.krita
+    pkgs.drawio
 
     # Текстовые редакторы
-    libreoffice-qt-fresh
-    onlyoffice-bin_latest
+    pkgs.libreoffice-qt-fresh
+    pkgs.onlyoffice-bin_latest
 
     # Браузеры
-    # google-chrome
-    tor-browser
+    # pkgs.google-chrome
+    pkgs.tor-browser
 
     # На сортировку
-    python3
-    # nodejs
-    sqlitebrowser
-    nixpkgs-fmt
-    nixd
-    # gnumake
-    # tiled
-    unityhub
-    # pdfarranger
-    # ihp-new
-    cachix
-    # vengi-tools
-    # ldtk
-    # easyocr
-    # rhvoice
-    # speechd
-    # figma-linux
-    # ventoy-full
-    # appimage-run
-    # age
-    # sops
-    imagemagick
-    crow-translate
-    zoom-us
+    pkgs.python3
+    # pkgs.nodejs
+    pkgs.sqlitebrowser
+    pkgs.nixpkgs-fmt
+    pkgs.nixd
+    # pkgs.gnumake
+    # pkgs.tiled
+    pkgs.unityhub
+    # pkgs.pdfarranger
+    # pkgs.ihp-new
+    pkgs.cachix
+    # pkgs.vengi-tools
+    # pkgs.ldtk
+    # pkgs.easyocr
+    # pkgs.rhvoice
+    # pkgs.speechd
+    # pkgs.figma-linux
+    # pkgs.ventoy-full
+    # pkgs.appimage-run
+    # pkgs.age
+    # pkgs.sops
+    pkgs.imagemagick
+    pkgs.crow-translate
+    pkgs.zoom-us
 
-    poppler_utils
-    # ocrmypdf
-    # stack
-    # nheko
-    # kdePackages.neochat
-    # fractal
+    pkgs.poppler_utils
+    # pkgs.ocrmypdf
+    # pkgs.stack
+    # pkgs.nheko
+    # pkgs.kdePackages.neochat
+    # pkgs.fractal
 
-    # kalzium
-    baobab
-    kdePackages.filelight # For Dolphin Integration
-    bottles
-    protonup-qt
-    r2modman
-    audacity
+    # pkgs.kalzium
+    pkgs.baobab
+    pkgs.kdePackages.filelight # For Dolphin Integration
+    pkgs.bottles
+    pkgs.protonup-qt
+    pkgs.r2modman
+    pkgs.audacity
 
-    digikam
-    exiftool
+    pkgs.digikam
+    pkgs.exiftool
 
-    kdenlive
-    glaxnimate
-    appimage-run
-    mdbook
-    mdbook-epub
-    mdbook-pdf
-    calibre
-    gpu-viewer
-    vulkan-tools
-    pwgen
-    coppwr
-    ryujinx
-    github-desktop
-    nufmt
-    omegat
-    ghc
-    # rustdesk
-    anilibria-winmaclinux
-    anime4k
-    fd
-    gcc
-    kdePackages.kolourpaint
-    iagno
-    lunarvim
-    remmina
-    kdePackages.kcalc
-    kdePackages.kclock
-    # flameshot
-    chromium
+    pkgs.kdenlive
+    pkgs.glaxnimate
+    pkgs.appimage-run
+    pkgs.mdbook
+    pkgs.mdbook-epub
+    pkgs.mdbook-pdf
+    pkgs.calibre
+    pkgs.gpu-viewer
+    pkgs.vulkan-tools
+    pkgs.pwgen
+    pkgs.coppwr
+    pkgs.ryujinx
+    pkgs.github-desktop
+    pkgs.nufmt
+    pkgs.omegat
+    pkgs.ghc
+    # pkgs.rustdesk
+    pkgs.anilibria-winmaclinux
+    pkgs.anime4k
+    pkgs.fd
+    pkgs.gcc
+    pkgs.kdePackages.kolourpaint
+    pkgs.iagno
+    pkgs.lunarvim
+    pkgs.remmina
+    pkgs.kdePackages.kcalc
+    pkgs.kdePackages.kclock
+    # pkgs.flameshot
+    pkgs.chromium
 
-    black # python formattier
+    pkgs.black # python formattier
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
 
-    # uwufetch
-    neofetch
-    # nnn # terminal file manager
+    # pkgs.uwufetch
+    pkgs.neofetch
+    # pkgs.nnn # terminal file manager
 
-    # archives
-    zip
-    xz
-    unzip
-    p7zip
+    # pkgs.archives
+    pkgs.zip
+    pkgs.xz
+    pkgs.unzip
+    pkgs.p7zip
 
-    # utils
-    # ripgrep # recursively searches directories for a regex pattern
-    # jq # A lightweight and flexible command-line JSON processor
-    # yq-go # yaml processer https://github.com/mikefarah/yq
+    # pkgs.utils
+    # pkgs.ripgrep # recursively searches directories for a regex pattern
+    # pkgs.jq # A lightweight and flexible command-line JSON processor
+    # pkgs.yq-go # yaml processer https://github.com/mikefarah/yq
 
 
-    # networking tools
-    # mtr # A network diagnostic tool
-    # iperf3
-    # dnsutils # `dig` + `nslookup`
-    # ldns # replacement of `dig`, it provide the command `drill`
-    # aria2 # A lightweight multi-protocol & multi-source command-line download utility
-    # socat # replacement of openbsd-netcat
-    # nmap # A utility for network discovery and security auditing
-    # ipcalc # it is a calculator for the IPv4/v6 addresses
+    # pkgs.networking tools
+    # pkgs.mtr # A network diagnostic tool
+    # pkgs.iperf3
+    # pkgs.dnsutils # `dig` + `nslookup`
+    # pkgs.ldns # replacement of `dig`, it provide the command `drill`
+    # pkgs.aria2 # A lightweight multi-protocol & multi-source command-line download utility
+    # pkgs.socat # replacement of openbsd-netcat
+    # pkgs.nmap # A utility for network discovery and security auditing
+    # pkgs.ipcalc # it is a calculator for the IPv4/v6 addresses
 
     # misc
-    cowsay
-    file
-    which
-    tree
-    gnused
-    gnutar
-    gawk
-    zstd
-    gnupg
+    pkgs.cowsay
+    pkgs.file
+    pkgs.which
+    pkgs.tree
+    pkgs.gnused
+    pkgs.gnutar
+    pkgs.gawk
+    pkgs.zstd
+    pkgs.gnupg
 
     # nix related
     #
     # it provides the command `nom` works just like `nix`
     # with more details log output
-    nix-output-monitor
+    pkgs.nix-output-monitor
 
-    # productivity
-    # hugo # static site generator
-    # glow # markdown previewer in terminal
+    # pkgs.productivity
+    # pkgs.hugo # static site generator
+    # pkgs.glow # markdown previewer in terminal
 
-    btop # replacement of htop/nmon
-    # iotop # io monitoring
-    # iftop # network monitoring
+    pkgs.btop # replacement of htop/nmon
+    # pkgs.iotop # io monitoring
+    # pkgs.iftop # network monitoring
 
     # system call monitoring
-    # strace # system call monitoring
-    # ltrace # library call monitoring
-    # lsof # list open files
+    # pkgs.strace # system call monitoring
+    # pkgs.ltrace # library call monitoring
+    # pkgs.lsof # list open files
 
     # system tools
-    # sysstat
-    # lm_sensors # for `sensors` command
-    # ethtool
-    pciutils # lspci
-    usbutils # lsusb
+    # pkgs.sysstat
+    # pkgs.lm_sensors # for `sensors` command
+    # pkgs.ethtool
+    pkgs.pciutils # lspci
+    pkgs.usbutils # lsusb
   ];
 }

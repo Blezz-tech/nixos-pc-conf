@@ -11,10 +11,10 @@
   
 
   # Useful other development tools
-  environment.systemPackages = with pkgs; [
-    dive # look into docker image layers
-    podman-tui # status of containers in the terminal
-    docker-compose # start group of containers for dev
-    podman-compose # start group of containers for dev
+  environment.systemPackages = [
+    pkgs.dive # look into docker image layers
+    pkgs.podman-tui # status of containers in the terminal
+    pkgs.docker-compose # start group of containers for dev
+    pkgs.podman-compose # start group of containers for dev
   ];
 }
