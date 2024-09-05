@@ -10,9 +10,9 @@
     alsa.support32Bit = true;
     pulse.enable = true;
 
-    extraConfig.pipewire = {
-      "alsa.blacklist" = [ "snd_hda_codec_hdmi" ];
-    };
+    # extraConfig.pipewire = {
+    #   "alsa.blacklist" = [ "snd_hda_codec_hdmi" ];
+    # };
 
     # If you want to use JACK applications, uncomment this
     # jack.enable = true;
