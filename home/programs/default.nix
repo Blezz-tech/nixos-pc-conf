@@ -5,11 +5,12 @@
     ./direnv.nix
     ./eza.nix
     ./fzf.nix
-    ./games.nix
     ./git.nix
     ./neovim.nix
     ./nushell.nix
     ./vscode.nix
+
+    ./packs
     
     # ./nixvim.nix
     # ./browsers.nix
