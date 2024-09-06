@@ -18,6 +18,7 @@ in
 
   home.packages = [
     blezz-pkgs.gt-vein-info
+    blezz-pkgs.alvr
 
     # LaTeX
     # pkgs.texlive.combined.scheme-full
