@@ -297,3 +297,7 @@ enableNushellIntegration = true;
 #  git Не нужно подписывать все репо ключем gpg, достаточно подписать последний коммит
 # > Since commits contain cryptographic hashes of their parents all the way back to the beginning of the repo history, signing the last commit is equivalent to signing all of the commits.
 ```
+
+### Когда сделаю alvr
+
+Использовать alvr из основной репы
