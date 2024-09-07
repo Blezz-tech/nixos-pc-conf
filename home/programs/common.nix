@@ -6,13 +6,13 @@ let
 in
 {
 
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Breeze-Dark";
-      package = pkgs.kdePackages.breeze-gtk;
-    };
-  };
+  # gtk = {
+  #   enable = true;
+  #   theme = {
+  #     name = "Breeze-Dark";
+  #     package = pkgs.kdePackages.breeze-gtk;
+  #   };
+  # };
 
   programs = {
     bun.enable = true;
