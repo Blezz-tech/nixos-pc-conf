@@ -86,15 +86,6 @@ services.fwupd.enable = true; # Нужна для просмотра инфор�
 ### yakuake
 # Подумать, нужен ли yakuake
 
-### gtk dark breeze:
-# gtk = {
-#   enable = true;
-#   theme = {
-#     name = "Breeze-Dark";
-#     package = pkgs.kdePackages.breeze-gtk;
-#   };
-# };
-
 ## Пакеты
 
 ### Добавить ПО
