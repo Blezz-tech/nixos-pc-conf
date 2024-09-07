@@ -63,7 +63,11 @@ in
     pkgs.tor-browser
 
     # На сортировку
-    pkgs.python3
+    # pkgs.python3
+    (pkgs.python312.withPackages (python-pkgs: [
+      python-pkgs.pyautogui
+      python-pkgs.pynput
+    ]))
     # pkgs.nodejs
     pkgs.sqlitebrowser
     pkgs.nixpkgs-fmt
