@@ -70,5 +70,8 @@
     # pkgs.nerdfonts
     pkgs.liberation_ttf
     pkgs.scientifica
+
+    # A (mainly) Chinese Unicode font
+    pkgs.wqy_microhei
   ];
 }
