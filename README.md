@@ -139,10 +139,6 @@ wayland-utils
 nim
 nimlsp
 
-### Добавить производительность
-powerManagement.enable = true;
-powerManagement.cpuFreqGovernor = "performance";
-
 ### Найти ПО для сканирования от KDE и добавить naps2
 naps2
 
