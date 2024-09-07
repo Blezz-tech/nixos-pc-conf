@@ -13,6 +13,8 @@
 
     pulse.enable = true;
 
+    wireplumber.enable = true;
+
     # extraConfig.pipewire = {
     #   "alsa.blacklist" = [ "snd_hda_codec_hdmi" ];
     # };
