@@ -16,7 +16,7 @@
       username = "jenya";
     in
     {
-      nixosConfigurations."pc" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."nixos-jenya" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username; };
         modules = [
           ./nixos
