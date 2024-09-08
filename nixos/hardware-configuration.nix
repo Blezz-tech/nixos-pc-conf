@@ -58,5 +58,7 @@
     #   driversi686Linux.amdvlk
     # ];
   };
+
+  hardware.i2c.enable = true;
 }
 
