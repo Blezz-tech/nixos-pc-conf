@@ -67,4 +67,14 @@
 
   powerManagement.enable = true;
   powerManagement.cpuFreqGovernor = "performance";
+
+  nixpkgs.overlays = [
+    (self: super: {
+      kdePackages = super.kdePackages // {
+        powerdevil = super.kdePackages.powerdevil.overrideAttrs (oldAttrs: {
+          buildInputs = oldAttrs.buildInputs ++ [ self.ddcutil ];
+        });
+      };
+    })
+  ];
 }
