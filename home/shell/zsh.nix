@@ -8,9 +8,6 @@ syntaxHighlighting.enable = true;
 dotDir = ".otherwise/zsh";
 
 envExtra = ''
-      # By default java does not enable antialiasing for font rendering. By exporting environment variables, this can be fixed:
-      export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'
-
       # Возращение НОРМАЛЬНОГО поведения в zsh для Ctrl + Arrow Left/Right
       bindkey "^[[1;5C" forward-word
       bindkey "^[[1;5D" backward-word
