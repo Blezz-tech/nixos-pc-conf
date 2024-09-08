@@ -156,7 +156,7 @@ in
     # feel free to add your own or remove some of them
 
     # pkgs.uwufetch
-    pkgs.neofetch
+    # pkgs.neofetch
     # pkgs.nnn # terminal file manager
 
     # pkgs.archives
