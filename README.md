@@ -204,9 +204,6 @@ enableZshIntegration = true;
 enableNushellIntegration = true;
 }
 
-## Настроить treefmt для данной репы
-#
-
 ## Сделать конфигурацию для neofetch/fastfetch с выводом тянки
 #
 # ⡏⠉⠉⠉⠉⠉⠉⠋⠉⠉⠉⠉⠉⠉⠋⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠙⠉⠉⠉⠹
