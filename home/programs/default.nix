@@ -11,7 +11,7 @@
     ./vscode.nix
 
     ./packs
-    
+
     # ./nixvim.nix
     # ./browsers.nix
     # ./media.nix

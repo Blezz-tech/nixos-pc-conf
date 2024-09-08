@@ -8,7 +8,7 @@
       defaultNetwork.settings.dns_enabled = true;
     };
   };
-  
+
 
   # Useful other development tools
   environment.systemPackages = [

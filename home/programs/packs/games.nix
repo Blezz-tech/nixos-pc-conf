@@ -3,7 +3,7 @@
 }: {
   home.packages = [
     # Игры
-    
+
     pkgs.prismlauncher
     pkgs.cataclysm-dda
     # pkgs.cmatrix
