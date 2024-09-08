@@ -1,6 +1,3 @@
-{ config
-, ...
-}:
 {
 programs.zsh = {
 enable = true;
@@ -8,7 +5,7 @@ enableCompletion = true;
 autosuggestion.enable = true;
 syntaxHighlighting.enable = true;
 
-dotDir = "${config.xdg.userDirs.extraConfig.XDG_MY_OTHERWISE}/zsh";
+dotDir = ".otherwise/zsh";
 
 envExtra = ''
       # By default java does not enable antialiasing for font rendering. By exporting environment variables, this can be fixed:
