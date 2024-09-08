@@ -181,9 +181,6 @@ naps2
 #   configPackages = mkDefault [ pkgs.kdePackages.xdg-desktop-portal-kde ];
 # };
 
-### nix helper
-# programs.nh.enable
-
 ### Проверить, что за хренотень
 
 system.activationScripts.diff = {

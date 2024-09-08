@@ -40,6 +40,10 @@
   # Эмулятор Android
   virtualisation.waydroid.enable = true;
 
+  # nix helper
+  programs.nh.enable = true;
+  programs.nh.flake = "/home/jenya/nixos-pc-conf/";
+
   # Enable touchpad support (enabled default in most desktopManager).
   # libinput.enable = true;
 }
