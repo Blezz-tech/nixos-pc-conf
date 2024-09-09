@@ -147,7 +147,7 @@ in
     pkgs.kdePackages.kclock
     # pkgs.flameshot
     pkgs.chromium
-    pkgs.mysql-workbench
+    # pkgs.mysql-workbench
     pkgs.treefmt2
 
     pkgs.black # python formattier
