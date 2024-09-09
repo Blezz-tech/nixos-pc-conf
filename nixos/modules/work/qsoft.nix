@@ -62,6 +62,31 @@ in
     enable = true;
   };
 
+  # services.nginx = {
+  #   enable = true;
+  #   enableReload = true;
+
+  #   serverTokens = false;
+
+  #   recommendedGzipSettings = true;
+  #   recommendedOptimisation = true;
+  #   recommendedProxySettings = true;
+  #   recommendedTlsSettings = true;
+
+  #   clientMaxBodySize = "32M";
+
+  #   virtualHosts = {
+  #     "qsoft.qsoft" = {
+  #       forceSSL = false;
+  #       enableACME = false;
+  #       locations."/" = {
+
+  #         proxyPass = "http://localhost:3000";
+  #       };
+  #     };
+  #   };
+  # };
+
   environment.systemPackages = [
     # FOR QSOFT
 
