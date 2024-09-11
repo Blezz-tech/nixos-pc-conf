@@ -129,7 +129,6 @@ in
     pkgs.vulkan-tools
     pkgs.pwgen
     pkgs.coppwr
-    pkgs.ryujinx
     pkgs.github-desktop
     pkgs.nufmt
     pkgs.omegat

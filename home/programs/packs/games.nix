@@ -6,6 +6,7 @@
 
     pkgs.prismlauncher
     pkgs.cataclysm-dda
+    pkgs.ryujinx
     # pkgs.cmatrix
     # pkgs.keeperrl
     # pkgs.minetest
