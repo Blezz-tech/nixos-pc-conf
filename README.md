@@ -173,7 +173,6 @@ naps2
 # KGeography
 # KMouseTool
 # KGet
-# KOrganizer
 # Marble
 # KDiamond
 # Kookbook
