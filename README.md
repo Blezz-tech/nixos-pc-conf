@@ -174,7 +174,6 @@ naps2
 # KMouseTool
 # KGet
 # KOrganizer
-# KMail
 # Marble
 # KDiamond
 # Kookbook

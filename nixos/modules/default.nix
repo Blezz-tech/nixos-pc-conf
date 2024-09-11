@@ -45,6 +45,13 @@
   programs.nh.enable = true;
   programs.nh.flake = "/home/jenya/nixos-pc-conf/";
 
+  # kmail
+  programs.kde-pim = {
+    kmail = true;
+    kontact = true;
+    merkuro = true;
+  };
+
   # Enable touchpad support (enabled default in most desktopManager).
   # libinput.enable = true;
 }
