@@ -97,14 +97,11 @@ services.fwupd.enable = true; # Нужна для просмотра инфор�
 ## Пакеты
 
 ### Добавить ПО
-kdePackages.ksystemlog
 bilibili
 qq
 wechat-uos # license.tar.gz можно взять с репозиторя archlinux 
 qqwing
 smassh
-zeal
-rars
 p7zip
 aria2
 media-downloader

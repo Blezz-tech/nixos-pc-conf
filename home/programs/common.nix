@@ -149,6 +149,9 @@ in
     # pkgs.mysql-workbench
     pkgs.dbeaver-bin
     pkgs.treefmt2
+    pkgs.zeal
+    pkgs.kdePackages.ksystemlog
+    pkgs.rars
 
     pkgs.black # python formattier
 
