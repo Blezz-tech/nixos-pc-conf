@@ -8,8 +8,7 @@
     ./steam.nix
     ./user.nix
     ./vr.nix
-    ./work/qsoft.nix
-    ./work/blockchain.nix
+    ./work
   ];
 
   # bootloader
