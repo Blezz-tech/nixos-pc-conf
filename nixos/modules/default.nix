@@ -52,6 +52,9 @@
     merkuro = true;
   };
 
+  programs.alvr.enable = true;
+  programs.alvr.openFirewall = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # libinput.enable = true;
 }
