@@ -7,6 +7,7 @@
     ./sound.nix
     ./steam.nix
     ./user.nix
+    # ./vr.nix
     ./work/qsoft.nix
     ./work/blockchain.nix
   ];
@@ -51,9 +52,6 @@
   #   # kontact = true;
   #   merkuro = true;
   # };
-
-  programs.alvr.enable = true;
-  programs.alvr.openFirewall = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   # libinput.enable = true;
