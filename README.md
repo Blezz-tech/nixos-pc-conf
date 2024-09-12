@@ -282,6 +282,10 @@ enableNushellIntegration = true;
 # > Since commits contain cryptographic hashes of their parents all the way back to the beginning of the repo history, signing the last commit is equivalent to signing all of the commits.
 ```
 
+### js-netfilter
+
+<https://github.com/NixOS/nixpkgs/issues/194114#issuecomment-1859954277>
+
 ### Когда сделаю alvr
 
 Использовать alvr из основной репы
