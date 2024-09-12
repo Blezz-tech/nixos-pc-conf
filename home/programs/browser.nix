@@ -13,7 +13,7 @@
       # "--disable-features=AllowQt"
       "--enable-blink-features=MiddleClickAutoscroll"
 
-      "--proxy-server=http://127.0.0.1:3999"
+      # "--proxy-server=http://127.0.0.1:3999"
 
       "--enable-features=VaapiVideoDecodeLinuxGL"
       "--ignore-gpu-blocklist"
