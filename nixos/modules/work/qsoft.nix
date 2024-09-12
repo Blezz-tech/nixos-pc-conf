@@ -96,9 +96,6 @@ in
     pkgs.postman
 
     pkgs.nodejs_22
-
-    MURMUR.IDEA.v2024_2_1
-    MURMUR.PHP.v2024_2_1
   ];
 
   # nixpkgs.overlays = [
