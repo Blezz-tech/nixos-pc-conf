@@ -156,7 +156,15 @@ in
     pkgs.kdePackages.kcalc
     pkgs.kdePackages.kclock
     # pkgs.flameshot
-    pkgs.chromium
+    (pkgs.chromium.override {
+      commandLineArgs = [
+        "--enable-blink-features=MiddleClickAutoscroll"
+
+        "--enable-features=UseOzonePlatform"
+        "--ozone-platform=wayland"
+        "--proxy-server=http://127.0.0.1:3999"
+      ];
+    })
     # pkgs.mysql-workbench
     pkgs.dbeaver-bin
     pkgs.treefmt2
