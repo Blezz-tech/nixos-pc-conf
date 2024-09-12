@@ -6,13 +6,25 @@ let
 in
 {
 
-  # gtk = {
-  #   enable = true;
-  #   theme = {
-  #     name = "Breeze-Dark";
-  #     package = pkgs.kdePackages.breeze-gtk;
-  #   };
-  # };
+  gtk = {
+    enable = true;
+    font = {
+      name = "Roboto";
+      size = 8;
+    };
+    theme = {
+      name = "Breeze-Dark";
+      package = pkgs.kdePackages.breeze-gtk;
+    };
+    iconTheme = {
+      name = "Papirus-Dark";
+      package = pkgs.papirus-icon-theme;
+    };
+    cursorTheme = {
+      name = "breeze_cursors";
+      size = 24;
+    };
+  };
 
   programs = {
     bun.enable = true;
