@@ -46,11 +46,11 @@
   programs.nh.flake = "/home/jenya/nixos-pc-conf/";
 
   # kmail
-  programs.kde-pim = {
-    # kmail = true;
-    # kontact = true;
-    merkuro = true;
-  };
+  # programs.kde-pim = {
+  #   # kmail = true;
+  #   # kontact = true;
+  #   merkuro = true;
+  # };
 
   programs.alvr.enable = true;
   programs.alvr.openFirewall = true;
