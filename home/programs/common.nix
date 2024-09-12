@@ -159,9 +159,7 @@ in
     (pkgs.chromium.override {
       commandLineArgs = [
         "--enable-blink-features=MiddleClickAutoscroll"
-
-        "--enable-features=UseOzonePlatform"
-        "--ozone-platform=wayland"
+        
         "--proxy-server=http://127.0.0.1:3999"
       ];
     })
