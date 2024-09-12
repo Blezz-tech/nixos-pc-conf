@@ -56,9 +56,7 @@ let
 in
 {
 
-  services.redis.servers."" = {
-    enable = true;
-  };
+  services.redis.servers."".enable = true;
 
   # services.nginx = {
   #   enable = true;
