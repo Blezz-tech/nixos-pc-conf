@@ -159,7 +159,7 @@ in
     (pkgs.chromium.override {
       commandLineArgs = [
         "--enable-blink-features=MiddleClickAutoscroll"
-        
+
         "--proxy-server=http://127.0.0.1:3999"
       ];
     })
