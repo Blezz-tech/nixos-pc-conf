@@ -33,7 +33,7 @@
   # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Для ГПУ AMD 
-  programs.corectrl.enable = false;
+  programs.corectrl.enable = true;
 
   # Менеджер виртуальный машин
   virtualisation.libvirtd.enable = true;

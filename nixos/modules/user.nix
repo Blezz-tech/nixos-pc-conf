@@ -16,7 +16,7 @@
         "audio"
         "libvirtd"
         "i2c"
-        # "corectrl"
+        "corectrl"
       ];
       packages = [ ];
     };
