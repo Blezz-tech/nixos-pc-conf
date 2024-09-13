@@ -7,7 +7,7 @@
     ./sound.nix
     ./steam.nix
     ./user.nix
-    ./vr.nix
+    # ./vr.nix
     ./work
   ];
 
