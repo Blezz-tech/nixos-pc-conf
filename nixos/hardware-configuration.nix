@@ -49,11 +49,11 @@
     enable = true;
     enable32Bit = true;
     extraPackages = [
-      pkgs.amdvlk
+      # pkgs.amdvlk
       pkgs.rocmPackages.clr.icd # OpenCL
     ];
     extraPackages32 = [
-      pkgs.driversi686Linux.amdvlk
+      # pkgs.driversi686Linux.amdvlk
     ];
     # extraPackages = with pkgs; [
     #   intel-media-driver # LIBVA_DRIVER_NAME=iHD
@@ -67,8 +67,13 @@
     # ];
   };
 
-  # Force radv
-  environment.variables.AMD_VULKAN_ICD = "RADV";
+  # environment.variables = [
+    # Use radv
+    # AMD_VULKAN_ICD = "RADV";
+
+    # USE amdvlk
+    # VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/radeon_icd.x86_64.json";
+  # ];
 
   hardware.i2c.enable = true;
 }
