@@ -42,7 +42,7 @@
 
   services.xserver = {
     enable = true;
-    videoDrivers = [ "amdgpu" ];
+    # videoDrivers = [ "amdgpu" ];
 
     # desktopManager.plasma5.enable = true;
 
