@@ -50,6 +50,7 @@
     enable32Bit = true;
     extraPackages = [
       pkgs.amdvlk
+      pkgs.rocmPackages.clr.icd # OpenCL
     ];
     extraPackages32 = [
       pkgs.driversi686Linux.amdvlk
