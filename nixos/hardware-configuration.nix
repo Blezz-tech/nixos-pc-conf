@@ -66,6 +66,9 @@
     # ];
   };
 
+  # Force radv
+  environment.variables.AMD_VULKAN_ICD = "RADV";
+
   hardware.i2c.enable = true;
 }
 
