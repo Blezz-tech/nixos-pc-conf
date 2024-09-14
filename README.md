@@ -201,6 +201,12 @@ enableZshIntegration = true;
 enableNushellIntegration = true;
 }
 
+## попробовать использовать kmscon
+# services.kmscon = {
+#   enable = true;
+#   hwRender = true;
+# };
+
 ## Сделать конфигурацию для neofetch/fastfetch с выводом тянки
 #
 # ⡏⠉⠉⠉⠉⠉⠉⠋⠉⠉⠉⠉⠉⠉⠋⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠙⠉⠉⠉⠹
