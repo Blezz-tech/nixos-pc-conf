@@ -24,8 +24,6 @@
     xdgOpenUsePortal = true;
   };
 
-  programs.hyprland.enable = false;
-
   services.xserver = {
     enable = true;
     # videoDrivers = [ "amdgpu" ];

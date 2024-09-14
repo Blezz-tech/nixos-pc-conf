@@ -5,7 +5,6 @@
   imports = [
     ./programs
     ./shell
-    ./wm
     ./XDG
     # ./fcitx5
     # ./i3

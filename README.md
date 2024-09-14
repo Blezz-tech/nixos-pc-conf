@@ -85,7 +85,6 @@ services.fwupd.enable = true; # Нужна для просмотра инфор�
 # перенести callPackages для gt-vein-info из /nixos/modules/user.nix -> /nixos/packages.nix
 
 ### Разнести конфиги из /nixos/default
-# programs.hyprland перенести в /nixos/modules/default
 # Разнести соответствующие сервисы в файлы
 # xserver.nix desktopManagerv displayManager.nix nix-conf.nix
 
