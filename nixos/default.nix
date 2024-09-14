@@ -4,7 +4,7 @@
 }: {
   imports = [
     ./modules
-    ./services/spoofdpi.nix
+    ./services
     ./packages.nix
     ./hardware-configuration.nix
   ];
