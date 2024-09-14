@@ -148,7 +148,6 @@ naps2
 
 ### Попробовать САПРы
 # cadzinho
-# freecad
 # librecad
 # kompass3d
 # OpenSCAD

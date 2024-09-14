@@ -169,6 +169,7 @@ in
     pkgs.zeal
     pkgs.kdePackages.ksystemlog
     pkgs.rars
+    pkgs.freecad-wayland
 
     pkgs.black # python formattier
 
