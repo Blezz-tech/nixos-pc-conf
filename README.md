@@ -150,7 +150,6 @@ naps2
 # cadzinho
 # librecad
 # kompass3d
-# OpenSCAD
 
 ### Попробовать ПОшки от KDE
 # KColorChooser
