@@ -170,7 +170,7 @@ in
     pkgs.kdePackages.ksystemlog
     pkgs.rars
     pkgs.freecad-wayland
-    pkgs.openscad-unstable
+    pkgs.openscad
     pkgs.openscad-lsp
 
     pkgs.black # python formattier
