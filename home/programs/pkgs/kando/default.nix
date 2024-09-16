@@ -30,16 +30,16 @@ let
 in
 buildNpmPackage' rec {
   pname = "kando";
-  version = "1.3.0";
+  version = "1.4.0";
 
   src = fetchFromGitHub {
     owner = "kando-menu";
     repo = "kando";
     rev = "refs/tags/v${version}";
-    hash = "sha256-FFgfdGGUfKdnX5eJeM/K/Y92Tx+/M1RoP+ofE/d2azc=";
+    hash = "sha256-JcPTplqrMgDsT0HDTh7liChUWvLqe9gwS51ANM3Wsds=";
   };
 
-  npmDepsHash = "sha256-sDiXlPf8ffGJJYcw2mGw5q+q/uNSKGfPwKLmJB5/j/I=";
+  npmDepsHash = "sha256-13NuhGq5Pv5GSLeXASWxbXZYaUb9KzMgR7y5I7mv+MA=";
 
   npmFlags = [ "--ignore-scripts" ];
 
