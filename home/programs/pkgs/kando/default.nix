@@ -15,6 +15,7 @@
   makeWrapper,
 
   wayland,
+  wayland-scanner, # added
   libxkbcommon,
   libX11,
   libXtst,
@@ -52,12 +53,14 @@ buildNpmPackage' rec {
     ]
     ++ lib.optionals stdenv.isLinux [
       wayland
+      wayland-scanner # added
       copyDesktopItems
     ];
 
   buildInputs =
     lib.optionals stdenv.isLinux [
       wayland
+      wayland-scanner # added
       libxkbcommon
       libX11
       libXtst
