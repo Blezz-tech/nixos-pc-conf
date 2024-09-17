@@ -109,11 +109,7 @@ kdePackages.krdc
 libreoffice-qt6-fresh # Заменить обычный libreoffice на qt6
 onlyoffice-bin_latest # Заменить обычный onlyoffice на latest
 kdenlive
-typst
-typstfmt
-typst-lsp
-typst-live
-typst-preview # Заменить на tinymist
+
 stirling-pdf
 naps2
 kicad

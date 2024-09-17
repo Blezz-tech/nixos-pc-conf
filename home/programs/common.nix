@@ -174,6 +174,12 @@ in
     pkgs.openscad
     pkgs.openscad-lsp
 
+    pkgs.typst
+    pkgs.typstfmt
+    pkgs.typst-lsp
+    pkgs.typst-live
+    pkgs.tinymist
+
     pkgs.black # python formattier
 
     # here is some command line tools I use frequently
