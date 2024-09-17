@@ -51,7 +51,7 @@ in
     pkgs.insomnia
 
     # 3D редакторы
-    pkgs.blender
+    pkgs.blender-hip
 
     # Музыкальные редакторы
     pkgs.musescore
