@@ -20,10 +20,6 @@
       # TODO: Нужно попробоавть использовать Git Credential Manager
       # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
 
-      # Истановка параметров для скачки больших репо
-      core.compression = 0;
-      http.postBuffer = 1048576000;
-      http.maxRequestBuffer = "100M";
     };
   };
 }
