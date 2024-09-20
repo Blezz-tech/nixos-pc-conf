@@ -130,6 +130,7 @@ in
     pkgs.digikam
     pkgs.exiftool
 
+    pkgs.lazygit
     pkgs.kdenlive
     pkgs.glaxnimate
     pkgs.appimage-run
