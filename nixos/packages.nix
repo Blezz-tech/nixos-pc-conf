@@ -67,7 +67,7 @@
     pkgs.font-awesome
     pkgs.source-sans
     pkgs.source-sans-pro
-    # pkgs.nerdfonts
+    pkgs.nerdfonts
     pkgs.liberation_ttf
     pkgs.scientifica
 
