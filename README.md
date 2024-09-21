@@ -291,3 +291,13 @@ enableNushellIntegration = true;
 Использовать alvr из основной репы
 
 ### Добавить для .desktop файлов приложений русское описание
+
+
+
+## Команды
+
+Вывод процессора
+
+```bash
+cpufetch -F --accurate-pp --accurate-pp  --measure-max-freq --logo-short -v
+```

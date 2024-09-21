@@ -35,7 +35,5 @@
     Music = "cd ~/media/music";
     # Public   = "~/media/public";
     # Template = "~/media/templates";
-
-    cpufetch = "cpufetch -F --accurate-pp --accurate-pp  --measure-max-freq --logo-short -v";
   };
 }
