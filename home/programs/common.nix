@@ -186,7 +186,7 @@ in
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
 
-    # pkgs.uwufetch
+    pkgs.cpufetch
     # pkgs.neofetch
     # pkgs.nnn # terminal file manager
 
