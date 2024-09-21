@@ -157,6 +157,7 @@ in
     pkgs.remmina
     pkgs.kdePackages.kcalc
     pkgs.kdePackages.kclock
+    pkgs.kdePackages.juk
     # pkgs.flameshot
     (pkgs.chromium.override {
       commandLineArgs = [
@@ -207,7 +208,7 @@ in
     # pkgs.iperf3
     # pkgs.dnsutils # `dig` + `nslookup`
     # pkgs.ldns # replacement of `dig`, it provide the command `drill`
-    # pkgs.aria2 # A lightweight multi-protocol & multi-source command-line download utility
+    pkgs.aria2 # A lightweight multi-protocol & multi-source command-line download utility
     # pkgs.socat # replacement of openbsd-netcat
     # pkgs.nmap # A utility for network discovery and security auditing
     # pkgs.ipcalc # it is a calculator for the IPv4/v6 addresses
