@@ -7,6 +7,14 @@
         "nix-command"
         "flakes"
       ];
+      # system-features = [
+      #   "gccarch-alderlake"
+      #   "gcctune-alderlake"
+      #   "benchmark"
+      #   "big-parallel"
+      #   "kvm"
+      #   "nixos-test"
+      # ];
       auto-optimise-store = true;
     };
 
