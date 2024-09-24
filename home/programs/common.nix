@@ -131,6 +131,7 @@ in
     pkgs.exiftool
 
     pkgs.go
+    pkgs.easyeffects
     pkgs.lazygit
     pkgs.kdenlive
     pkgs.glaxnimate
