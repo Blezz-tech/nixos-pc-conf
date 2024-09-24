@@ -46,6 +46,10 @@
   programs.nh.enable = true;
   programs.nh.flake = "/home/jenya/nixos-pc-conf/";
 
+  # nixpkgs settings
+  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.permittedInsecurePackages = [ ];
+
   # kmail
   # programs.kde-pim = {
   #   # kmail = true;
