@@ -10,6 +10,30 @@
 }
 ```
 
+## Сделать оптимизацию
+
+Непонятна ошибка вылезает, не понятно как пофиксить
+
+error: a 'x86_64-linux' with features {gccarch-alderlake} is required to build '/nix/store/pk96nikxyv1gnjx4yvay91zzm1s17yjr-bootstrap-stage0-glibc-bootstrapFiles.drv', but I am a 'x86_64-linux' with features {benchmark, big-parallel, kvm, nixos-test}
+
+```nix
+{
+  nixpkgs.hostPlatform = lib.mkDefault {
+    gcc.arch = "alderlake";
+    gcc.tune = "alderlake";
+    system = "x86_64-linux";
+  };
+  system-features = [
+    "gccarch-alderlake"
+    "gcctune-alderlake"
+    "benchmark"
+    "big-parallel"
+    "kvm"
+    "nixos-test"
+  ];
+}
+```
+
 ## ГЛАВНОЕ
 
 Добавить kando как его добавят в nixpkgs
