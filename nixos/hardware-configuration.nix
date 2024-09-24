@@ -42,7 +42,15 @@
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp6s0.useDHCP = lib.mkDefault true;
 
-  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+
+  # оптимизация для процессора
+  nixpkgs.hostPlatform = lib.mkDefault {
+    # gcc.arch = "alderlake";
+    # gcc.tune = "alderlake";
+    system = "x86_64-linux";
+  };
+
+
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
   hardware.graphics = {
