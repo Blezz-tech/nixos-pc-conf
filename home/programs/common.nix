@@ -111,6 +111,7 @@ in
     pkgs.imagemagick
     pkgs.crow-translate
     pkgs.zoom-us
+    pkgs.wl-clipboard
 
     pkgs.poppler_utils
     # pkgs.ocrmypdf
