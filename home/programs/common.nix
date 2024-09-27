@@ -173,6 +173,7 @@ in
     pkgs.dbeaver-bin
     pkgs.treefmt2
     pkgs.zeal-qt6
+    pkgs.anki
     pkgs.kdePackages.ksystemlog
     pkgs.rars
     pkgs.freecad-wayland
