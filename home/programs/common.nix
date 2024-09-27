@@ -172,7 +172,7 @@ in
     # pkgs.mysql-workbench
     pkgs.dbeaver-bin
     pkgs.treefmt2
-    pkgs.zeal
+    pkgs.zeal-qt6
     pkgs.kdePackages.ksystemlog
     pkgs.rars
     pkgs.freecad-wayland
