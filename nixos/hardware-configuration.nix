@@ -57,7 +57,11 @@
     enable = true;
     enable32Bit = true;
     extraPackages = [
+      pkgs.amdvlk
       pkgs.rocmPackages.clr.icd # OpenCL
+    ];
+    extraPackages32 = [
+      pkgs.driversi686Linux.amdvlk
     ];
     # extraPackages = with pkgs; [
     #   intel-media-driver # LIBVA_DRIVER_NAME=iHD
@@ -69,18 +73,6 @@
     # extraPackages32 = with pkgs; [
     #   driversi686Linux.amdvlk
     # ];
-  };
-
-  specialisation."with-amdvlk-drivers".configuration = {
-    hardware.graphics = {
-      extraPackages = [
-        pkgs.amdvlk
-        pkgs.rocmPackages.clr.icd # OpenCL
-      ];
-      extraPackages32 = [
-        pkgs.driversi686Linux.amdvlk
-      ];
-    };
   };
 
   environment.variables = {
