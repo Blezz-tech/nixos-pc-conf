@@ -5,6 +5,7 @@
     ./nix-ld.nix
     ./nix.nix
     ./openssh.nix
+    # ./opentablet.nix
     # ./podman.nix
     ./sound.nix
     ./steam.nix
