@@ -149,7 +149,12 @@ in
     pkgs.nufmt
     pkgs.omegat
     pkgs.ghc
+
+    # Rar archive
+    pkgs.rar
     pkgs.unrar-free
+
+
     # pkgs.rustdesk
     pkgs.anilibria-winmaclinux
     pkgs.anime4k
