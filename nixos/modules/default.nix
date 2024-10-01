@@ -20,6 +20,9 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # Сканирование документов
+  hardware.sane.enable = true;
+
   # Чтобы не было ошибок
   programs.dconf.enable = true;
 

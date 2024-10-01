@@ -17,6 +17,8 @@
         "libvirtd"
         "i2c"
         "corectrl"
+        "scanner" # Для сканирования
+        "lp" # Для печати
       ];
       packages = [ ];
     };
