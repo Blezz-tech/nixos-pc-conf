@@ -162,6 +162,7 @@ in
     pkgs.gcc
     pkgs.kdePackages.kolourpaint
     pkgs.iagno
+    pkgs.kdePackages.skanpage
     pkgs.lunarvim
     pkgs.remmina
     pkgs.kdePackages.kcalc
