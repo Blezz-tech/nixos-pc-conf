@@ -1,3 +1,6 @@
+{ pkgs
+, ...
+}:
 {
   imports = [
     ./fonts.nix
@@ -19,6 +22,7 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  services.printing.drivers = [ pkgs.samsung-unified-linux-driver ];
 
   # Сканирование документов
   hardware.sane.enable = true;
