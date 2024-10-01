@@ -61,5 +61,11 @@
         });
       };
     })
+    (self: super: {
+      dabruks = pkgs.callPackage ../home/programs/pkgs/dabruks;
+    })
+    (self: super: {
+      dabkrs = pkgs.callPackage ../home/programs/pkgs/dabkrs;
+    })
   ];
 }
