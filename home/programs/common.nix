@@ -162,8 +162,6 @@ in
     pkgs.gcc
     pkgs.kdePackages.kolourpaint
     pkgs.iagno
-    pkgs.kdePackages.skanpage
-    pkgs.naps2
     pkgs.lunarvim
     pkgs.remmina
     pkgs.kdePackages.kcalc

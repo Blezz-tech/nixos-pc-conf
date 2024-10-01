@@ -1,6 +1,3 @@
-{ pkgs
-, ...
-}:
 {
   imports = [
     ./fonts.nix
@@ -10,6 +7,7 @@
     ./openssh.nix
     # ./opentablet.nix
     # ./podman.nix
+    ./print_and_scan.nix
     ./sound.nix
     ./steam.nix
     ./user.nix
@@ -19,13 +17,6 @@
   # bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-  services.printing.drivers = [ pkgs.samsung-unified-linux-driver ];
-
-  # Сканирование документов
-  hardware.sane.enable = true;
 
   # Чтобы не было ошибок
   programs.dconf.enable = true;
