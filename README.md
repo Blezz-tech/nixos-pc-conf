@@ -4,6 +4,10 @@
 
 Сделайть так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
 
+
+Сделайть пакет stepik-oauth2-videodownloader
+https://github.com/StepicOrg/stepik-oauth2-videodownloader
+
 ## Сделать оптимизацию
 
 Непонятна ошибка вылезает, не понятно как пофиксить
