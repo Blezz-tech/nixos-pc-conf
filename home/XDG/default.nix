@@ -16,8 +16,6 @@
     extraConfig = {
       XDG_PROJECTS_DIR = "${config.home.homeDirectory}/media/projects";
       XDG_GAMES_DIR = "${config.home.homeDirectory}/media/games";
-
-      XDG_MY_OTHERWISE = "${config.home.homeDirectory}/.otherwise";
     };
   };
 }
