@@ -108,6 +108,7 @@ in
     # pkgs.appimage-run
     # pkgs.age
     # pkgs.sops
+    pkgs.bash-language-server
     pkgs.imagemagick
     pkgs.crow-translate
     pkgs.zoom-us
