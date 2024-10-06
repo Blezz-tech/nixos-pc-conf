@@ -2,7 +2,7 @@
   imports = [
     ./fonts.nix
     ./i18n.nix
-    ./nix-ld.nix
+    # ./nix-ld.nix
     ./nix.nix
     ./openssh.nix
     # ./opentablet.nix
