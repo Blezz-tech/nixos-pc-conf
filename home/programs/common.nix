@@ -128,6 +128,7 @@ in
     pkgs.protonup-qt
     pkgs.r2modman
     pkgs.audacity
+    pkgs.xwaylandvideobridge
 
     pkgs.digikam
     pkgs.exiftool
