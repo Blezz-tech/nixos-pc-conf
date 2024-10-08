@@ -2,6 +2,7 @@
   imports = [
     # ./byedpi.nix
     # ./spoofdpi.nix
+    # ./tor.nix
   ];
 
   # services.byedpi = {
