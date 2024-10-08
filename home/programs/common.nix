@@ -129,6 +129,8 @@ in
     pkgs.r2modman
     pkgs.audacity
     pkgs.xwaylandvideobridge
+    pkgs.emacs
+    pkgs.nextcloud-client
 
     pkgs.digikam
     pkgs.exiftool
