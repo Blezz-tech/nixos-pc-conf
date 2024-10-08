@@ -4,6 +4,7 @@
     # ./cloudflare-warp.nix
     # ./spoofdpi.nix
     # ./tor.nix
+    ./wireguard.nix
   ];
 
   # services.byedpi = {
