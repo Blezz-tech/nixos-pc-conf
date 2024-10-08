@@ -1,7 +1,7 @@
 {
   imports = [
     # ./byedpi.nix
-    ./cloudflare-warp.nix
+    # ./cloudflare-warp.nix
     # ./spoofdpi.nix
     # ./tor.nix
   ];
