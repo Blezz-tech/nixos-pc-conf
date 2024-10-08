@@ -113,6 +113,7 @@ in
     pkgs.crow-translate
     pkgs.zoom-us
     pkgs.wl-clipboard
+    pkgs.revolt-desktop
 
     pkgs.poppler_utils
     # pkgs.ocrmypdf
