@@ -179,7 +179,7 @@ in
       commandLineArgs = [
         "--enable-blink-features=MiddleClickAutoscroll"
 
-        "--proxy-server=http://127.0.0.1:3999"
+        # "--proxy-server=http://127.0.0.1:3999"
       ];
     })
     # pkgs.mysql-workbench
