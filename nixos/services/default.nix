@@ -1,5 +1,5 @@
 {
   imports = [
-    ./spoofdpi.nix
+    # ./spoofdpi.nix
   ];
 }
