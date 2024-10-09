@@ -57,7 +57,7 @@ in
     pkgs.musescore
 
     # Месседжеры
-    pkgs.discord
+    # pkgs.discord # т.к. забанен в россии, Неудаётся скачать
     # pkgs.element-desktop
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio
