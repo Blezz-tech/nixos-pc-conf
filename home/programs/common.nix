@@ -174,6 +174,7 @@ in
     pkgs.kdePackages.kclock
     pkgs.kdePackages.juk
     pkgs.goldendict-ng
+    pkgs.nekoray
     # pkgs.flameshot
     (pkgs.chromium.override {
       commandLineArgs = [
