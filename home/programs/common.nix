@@ -61,7 +61,7 @@ in
     # pkgs.element-desktop
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio
-    # pkgs.webcord-vencord
+    pkgs.webcord-vencord
     pkgs.vesktop
     # pkgs.whatsapp-for-linux
 
