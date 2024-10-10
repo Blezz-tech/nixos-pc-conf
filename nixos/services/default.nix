@@ -7,6 +7,8 @@
     ./wireguard.nix
   ];
 
+  # services.v2raya.enable = true;
+
   # services.byedpi = {
   #   enable = true;
   #   openFirewall = true;
