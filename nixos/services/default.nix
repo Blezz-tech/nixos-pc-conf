@@ -4,7 +4,8 @@
     # ./cloudflare-warp.nix
     # ./spoofdpi.nix
     # ./tor.nix
-    ./wireguard.nix
+    # ./wireguard.nix
+    
   ];
 
   # services.v2raya.enable = true;
