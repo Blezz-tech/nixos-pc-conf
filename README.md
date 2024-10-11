@@ -323,3 +323,12 @@ enableNushellIntegration = true;
 ```bash
 cpufetch -F --accurate-pp --accurate-pp  --measure-max-freq --logo-short -v
 ```
+
+
+## Благодарность
+
+Спасибо людям за свои конфиги
+
+Они сильно помогают и облегчают жизнь
+
+- [ReStranger](https://github.com/ReStranger/nixos-config) (За настройку для запрета)

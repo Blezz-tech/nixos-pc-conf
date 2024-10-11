@@ -63,4 +63,6 @@
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
 
+  # openvpn client
+  programs.openvpn3.enable = true;
 }
