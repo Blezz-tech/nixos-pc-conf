@@ -2,11 +2,19 @@
 
 Моя никсось
 
-Сделайть так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
+- [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
+- [ ] Сделать пакет stepik-oauth2-videodownloader
+
+  https://github.com/StepicOrg/stepik-oauth2-videodownloader
+- [ ] Удалить kando из blezz-pkgs когда его добавят в nixpkgs
+- [ ] Сделать отключение звука по hdmi
+  
+  Чтобы с монитора не было звука
+- [ ] проверить, что нет проблем с настройками [tty](./nixos/modules/tty.nix)
 
 
-Сделайть пакет stepik-oauth2-videodownloader
-https://github.com/StepicOrg/stepik-oauth2-videodownloader
+
+## ГЛАВНОЕ
 
 ## Сделать оптимизацию
 
@@ -31,17 +39,6 @@ error: a 'x86_64-linux' with features {gccarch-alderlake} is required to build '
   ];
 }
 ```
-
-## ГЛАВНОЕ
-
-Добавить kando как его добавят в nixpkgs
-
-
-Сделать отключение звука по hdmi
-
-Чтобы с монитора не было звука
-
-## Сделать потом
 
 ```nix
 {
