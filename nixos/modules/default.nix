@@ -58,4 +58,9 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # libinput.enable = true;
+
+  # appimage-run
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
+
 }

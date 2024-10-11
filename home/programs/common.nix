@@ -105,7 +105,6 @@ in
     # pkgs.speechd
     # pkgs.figma-linux
     # pkgs.ventoy-full
-    # pkgs.appimage-run
     # pkgs.age
     # pkgs.sops
     pkgs.bash-language-server
@@ -141,7 +140,6 @@ in
     pkgs.lazygit
     pkgs.kdenlive
     pkgs.glaxnimate
-    pkgs.appimage-run
     pkgs.mdbook
     pkgs.mdbook-epub
     pkgs.mdbook-pdf
