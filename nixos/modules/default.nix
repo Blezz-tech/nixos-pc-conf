@@ -10,6 +10,7 @@
     ./print_and_scan.nix
     ./sound.nix
     ./steam.nix
+    ./tty.nix
     ./user.nix
     ./work
   ];
