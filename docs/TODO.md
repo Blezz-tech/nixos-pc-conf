@@ -43,12 +43,6 @@ error: a 'x86_64-linux' with features {gccarch-alderlake} is required to build '
 
 ## Проблемы
 
-### Таки реши проблему с шрифтами в стиме
-programs.steam.fontPackages
-# Font packages to use in Steam.
-# Defaults to system fonts, but could be overridden to use other fonts — useful for users who would like to customize CJK fonts used in Steam. According to the [upstream issue](https://github.com/ValveSoftware/steam-for-linux/issues/10422#issuecomment-1944396010), Steam only follows the per-user fontconfig configuration.
-
-
 ### Добавить ключи для бинарного кеша HIP (Integrated Haskell Platform)
 nix.settings = {
   trusted-public-keys = [ "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE=" ];
@@ -318,3 +312,17 @@ enableNushellIntegration = true;
 ```bash
 cpufetch -F --accurate-pp --accurate-pp  --measure-max-freq --logo-short -v
 ```
+
+
+## Решенные проблемы
+
+### 2024.10.11 Таки решена проблема с шрифтами (на данный момент работают)
+
+> Таки реши проблему с шрифтами в стиме
+> 
+> ```nix
+> programs.steam.fontPackages
+> ```
+> > Font packages to use in Steam.
+> > 
+> > Defaults to system fonts, but could be overridden to use other fonts — useful for users who would like to customize CJK fonts used in Steam. According to the [upstream issue](https://github.com/ValveSoftware/steam-for-linux/issues/10422#issuecomment-1944396010), Steam only follows the per-user fontconfig configuration.
