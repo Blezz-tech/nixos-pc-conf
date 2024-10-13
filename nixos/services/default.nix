@@ -8,7 +8,7 @@
 #     ./zapret.nix
   ];
 
-  # services.v2raya.enable = true;
+  services.v2raya.enable = true;
 
   # services.byedpi = {
   #   enable = true;
