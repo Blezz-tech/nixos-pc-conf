@@ -4,7 +4,7 @@
     # ./cloudflare-warp.nix
     # ./spoofdpi.nix
     # ./tor.nix
-    ./wireguard.nix
+    # ./wireguard.nix
 #     ./zapret.nix
   ];
 
