@@ -187,6 +187,7 @@ in
     pkgs.zeal-qt6
     pkgs.anki
     pkgs.kdePackages.ksystemlog
+    pkgs.kdePackages.kcharselect
     pkgs.rars
     pkgs.freecad-wayland
     pkgs.openscad

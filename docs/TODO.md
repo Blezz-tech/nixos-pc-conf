@@ -164,7 +164,6 @@ naps2
 ### Попробовать ПОшки от KDE
 # KColorChooser
 # KolourPaint
-# KCharSelect
 # KGpg
 # Kompare
 # KRDC
