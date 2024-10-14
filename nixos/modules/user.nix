@@ -15,7 +15,7 @@
         "video"
         "audio"
         "libvirtd"
-        "i2c"
+        # "i2c"
         "corectrl"
         "scanner" # Для сканирования
         "lp" # Для печати

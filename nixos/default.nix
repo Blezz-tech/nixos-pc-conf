@@ -54,13 +54,13 @@
   powerManagement.cpuFreqGovernor = "performance";
 
   nixpkgs.overlays = [
-    (self: super: {
-      kdePackages = super.kdePackages // {
-        powerdevil = super.kdePackages.powerdevil.overrideAttrs (oldAttrs: {
-          buildInputs = oldAttrs.buildInputs ++ [ self.ddcutil ];
-        });
-      };
-    })
+    # (self: super: {
+    #   kdePackages = super.kdePackages // {
+    #     powerdevil = super.kdePackages.powerdevil.overrideAttrs (oldAttrs: {
+    #       buildInputs = oldAttrs.buildInputs ++ [ self.ddcutil ];
+    #     });
+    #   };
+    # })
     (self: super: {
       dabruks = pkgs.callPackage ../home/programs/pkgs/dabruks;
     })
