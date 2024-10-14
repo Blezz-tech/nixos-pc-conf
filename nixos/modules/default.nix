@@ -66,4 +66,7 @@
 
   # openvpn client
   programs.openvpn3.enable = true;
+
+  # wireshark
+  programs.wireshark.enable = true;
 }

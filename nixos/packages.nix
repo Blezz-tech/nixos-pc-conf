@@ -19,6 +19,7 @@
     pkgs.vscode
     pkgs.pwgen
     pkgs.keepassxc
+    pkgs.wireshark-qt
 
     pkgs.home-manager
 
