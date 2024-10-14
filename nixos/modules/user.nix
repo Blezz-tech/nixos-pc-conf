@@ -19,7 +19,7 @@
         "corectrl"
         "scanner" # Для сканирования
         "lp" # Для печати
-        "wireshark"
+        # "wireshark"
       ];
       packages = [ ];
     };
