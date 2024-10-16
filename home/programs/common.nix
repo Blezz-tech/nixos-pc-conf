@@ -87,6 +87,8 @@ in
     (pkgs.python312.withPackages (python-pkgs: [
       python-pkgs.pyautogui
       python-pkgs.pynput
+      python-pkgs.numpy
+      python-pkgs.matplotlib
     ]))
     # pkgs.nodejs
     pkgs.sqlitebrowser
