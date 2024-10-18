@@ -218,7 +218,7 @@ in
 
     # pkgs.utils
     pkgs.ripgrep # recursively searches directories for a regex pattern
-    # pkgs.jq # A lightweight and flexible command-line JSON processor
+    pkgs.jq # A lightweight and flexible command-line JSON processor
     # pkgs.yq-go # yaml processer https://github.com/mikefarah/yq
 
 
