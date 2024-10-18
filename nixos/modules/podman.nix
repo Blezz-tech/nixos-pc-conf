@@ -9,7 +9,6 @@
     };
   };
 
-
   # Useful other development tools
   environment.systemPackages = [
     pkgs.dive # look into docker image layers
