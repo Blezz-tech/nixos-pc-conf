@@ -12,7 +12,7 @@
   services.mysql.enable = true;
   services.mysql.package = pkgs.mysql84;
 
-  services.postgresql.enable = true;
+  # services.postgresql.enable = true;
 
   # Сервисы кеширования
   services.redis.servers."".enable = true;
