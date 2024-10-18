@@ -14,7 +14,7 @@
         "wheel"
         "video"
         "audio"
-        "libvirtd"
+        # "libvirtd"
         "podman" # Для Podman'а
         # "i2c"
         "corectrl"
