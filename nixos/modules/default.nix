@@ -65,7 +65,7 @@
   programs.appimage.binfmt = true;
 
   # openvpn client
-  programs.openvpn3.enable = true;
+  # programs.openvpn3.enable = true;
 
   # wireshark
   # programs.wireshark.enable = true;
