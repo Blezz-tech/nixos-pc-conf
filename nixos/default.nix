@@ -62,10 +62,10 @@
     #   };
     # })
     (self: super: {
-      dabruks = pkgs.callPackage ../home/programs/pkgs/dabruks;
+      blezz-pkgs.dabruks = pkgs.callPackage ../home/programs/pkgs/dabruks;
     })
     (self: super: {
-      dabkrs = pkgs.callPackage ../home/programs/pkgs/dabkrs;
+      blezz-pkgs.dabkrs = pkgs.callPackage ../home/programs/pkgs/dabkrs;
     })
   ];
 }
