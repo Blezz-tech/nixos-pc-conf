@@ -1,5 +1,11 @@
 # TODO по NixOS (НиксОси)
 
+Временное отключение (т.к. сбой сборки)
+
+goldendict-ng
+calibre
+
+
 - [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
 - [ ] Сделать пакет stepik-oauth2-videodownloader
 

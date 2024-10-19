@@ -145,7 +145,7 @@ in
     pkgs.mdbook
     pkgs.mdbook-epub
     pkgs.mdbook-pdf
-    pkgs.calibre
+    # pkgs.calibre
     pkgs.gpu-viewer
     pkgs.vulkan-tools
     pkgs.pwgen
@@ -173,7 +173,7 @@ in
     pkgs.kdePackages.kcalc
     pkgs.kdePackages.kclock
     pkgs.kdePackages.juk
-    pkgs.goldendict-ng
+    # pkgs.goldendict-ng
     pkgs.nekoray
     # pkgs.flameshot
     (pkgs.chromium.override {
