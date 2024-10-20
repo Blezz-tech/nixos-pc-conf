@@ -26,6 +26,7 @@
   programs.partition-manager.enable = true;
 
   # Сетевой менеждер
+  networking.firewall.enable = true;
   networking.networkmanager.enable = true;
   networking.nftables.enable = true;  
 
