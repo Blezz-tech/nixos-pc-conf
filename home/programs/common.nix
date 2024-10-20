@@ -133,6 +133,7 @@ in
     pkgs.xwaylandvideobridge
     pkgs.emacs
     pkgs.nextcloud-client
+    pkgs.geogebra6
 
     pkgs.digikam
     pkgs.exiftool
