@@ -4,7 +4,7 @@
 }:
 {
   services.zapret = {
-    enable = false;
+    enable = true;
     package = pkgs.zapret-latest;
     params = lib.strings.splitString "\n" ''
       --wf-tcp=443
