@@ -67,15 +67,15 @@
     (self: super: {
       blezz-pkgs.dabkrs = pkgs.callPackage ../home/programs/pkgs/dabkrs;
     })
-    (self: super: {
-      zapret-latest = super.zapret.overrideAttrs (oldAttrs: {
-        src = pkgs.fetchFromGitHub {
-          owner = "bol-van";
-          repo = "zapret";
-          rev = "v65.1";
-          hash = "sha256-Wd9OqbhQwD7Lbi4zBcfgFSPvi8/K4G+xPso3VXtXdAI=";
-        };
-      });
-    })
+    # (self: super: {
+    #   zapret-latest = super.zapret.overrideAttrs (oldAttrs: {
+    #     src = pkgs.fetchFromGitHub {
+    #       owner = "bol-van";
+    #       repo = "zapret";
+    #       rev = "v65.1";
+    #       hash = "sha256-Wd9OqbhQwD7Lbi4zBcfgFSPvi8/K4G+xPso3VXtXdAI=";
+    #     };
+    #   });
+    # })
   ];
 }
