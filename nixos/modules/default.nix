@@ -27,6 +27,7 @@
 
   # Сетевой менеждер
   networking.networkmanager.enable = true;
+  networking.nftables.enable = true;  
 
   # Переменные окружения
   environment.variables.EDITOR = "nvim";
