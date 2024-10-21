@@ -153,7 +153,7 @@ in
     pkgs.github-desktop
     pkgs.nufmt
     pkgs.omegat
-    pkgs.ghc
+    # pkgs.ghc
     pkgs.zotero
 
     # Rar archive
