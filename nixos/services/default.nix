@@ -7,4 +7,8 @@
   ];
 
   services.v2raya.enable = true;
+
+  services.paperless = {
+    enable = true;
+  };
 }
