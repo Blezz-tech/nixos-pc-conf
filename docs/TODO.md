@@ -179,7 +179,6 @@ naps2
 # KTimer
 # KCachegrind
 # Kamoso
-# Kalzium
 # KGeography
 # KMouseTool
 # KGet

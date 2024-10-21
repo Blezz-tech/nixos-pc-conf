@@ -123,7 +123,6 @@ in
     # pkgs.kdePackages.neochat
     # pkgs.fractal
 
-    # pkgs.kalzium
     pkgs.baobab
     pkgs.kdePackages.filelight # For Dolphin Integration
     pkgs.bottles
@@ -174,6 +173,7 @@ in
     pkgs.kdePackages.kcalc
     pkgs.kdePackages.kclock
     pkgs.kdePackages.juk
+    pkgs.kdePackages.kalzium
     # pkgs.goldendict-ng
     pkgs.nekoray
     # pkgs.flameshot
