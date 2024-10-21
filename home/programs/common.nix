@@ -154,6 +154,7 @@ in
     pkgs.nufmt
     pkgs.omegat
     pkgs.ghc
+    pkgs.zotero
 
     # Rar archive
     pkgs.rar
