@@ -11,7 +11,7 @@
     pkgs.ddrescue
     pkgs.ext4magic
 
-    pkgs.xdg_utils
+    pkgs.xdg-utils
     pkgs.git
     pkgs.wget
     pkgs.curl
