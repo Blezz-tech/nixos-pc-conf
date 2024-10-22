@@ -13,7 +13,6 @@
     # Шрифты noto
     pkgs.noto-fonts
     pkgs.noto-fonts-lgc-plus
-    pkgs.noto-fonts-cjk
     pkgs.noto-fonts-cjk-serif
     pkgs.noto-fonts-cjk-sans
     pkgs.noto-fonts-color-emoji
