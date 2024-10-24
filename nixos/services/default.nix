@@ -1,6 +1,9 @@
 {
   imports = [
+    ./mysql.nix
     ./paperless.nix
+    ./postgresql.nix
+    ./redis.nix
     # ./spoofdpi.nix
     # ./tor.nix
     ./v2raya.nix

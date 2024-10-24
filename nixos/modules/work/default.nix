@@ -8,15 +8,6 @@
     ./qsoft.nix
   ];
 
-  # Базы Данных #БД
-  services.mysql.enable = true;
-  services.mysql.package = pkgs.mysql84;
-
-  # services.postgresql.enable = true;
-
-  # Сервисы кеширования
-  services.redis.servers."".enable = true;
-
 
 
   # Обраный прокси сервер
