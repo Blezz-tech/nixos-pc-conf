@@ -1,14 +1,9 @@
 {
   imports = [
+    ./paperless.nix
     # ./spoofdpi.nix
     # ./tor.nix
+    ./v2raya.nix
     # ./wireguard.nix
-    # ./zapret.nix
   ];
-
-  services.v2raya.enable = true;
-
-  services.paperless = {
-    enable = true;
-  };
 }
