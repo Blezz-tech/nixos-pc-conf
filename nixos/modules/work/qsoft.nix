@@ -18,8 +18,6 @@ let
     all.redis # Для Redis
   ]);
 
-  myPHP.composer = myPHP.php.packages.composer;
-
   MURMUR = {
     IDEA = {
       v2022_3_3 = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
@@ -59,7 +57,8 @@ in
     # FOR QSOFT
 
     myPHP.php
-    myPHP.composer
+    myPHP.php.packages.composer
+    myPHP.php.packages.php-codesniffer
 
     pkgs.postman
 
