@@ -38,7 +38,7 @@ in
 
   home.packages = [
     blezz-pkgs.gt-vein-info
-    blezz-pkgs.kando # Использовать до тех пор, пока kando не добавят в nixpkgs
+    # blezz-pkgs.kando # Использовать до тех пор, пока kando не добавят в nixpkgs
 
     # LaTeX
     # pkgs.texlive.combined.scheme-full
