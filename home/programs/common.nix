@@ -72,7 +72,7 @@ in
     # pkgs.gimp
     # pkgs.inkscape
     pkgs.krita
-    pkgs.drawio
+    # pkgs.drawio
 
     # Текстовые редакторы
     pkgs.libreoffice-qt-fresh
