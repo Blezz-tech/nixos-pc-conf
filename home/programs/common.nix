@@ -94,6 +94,7 @@ in
     pkgs.sqlitebrowser
     pkgs.nixpkgs-fmt
     pkgs.nixd
+    pkgs.nil
     # pkgs.gnumake
     # pkgs.tiled
     pkgs.unityhub
