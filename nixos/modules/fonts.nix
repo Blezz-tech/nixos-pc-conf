@@ -19,7 +19,7 @@
     pkgs.noto-fonts-extra
 
     # Шрифты windows
-    # pkgs.corefonts
+    pkgs.corefonts
     pkgs.vistafonts
 
     # Mono
