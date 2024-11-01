@@ -10,6 +10,7 @@
     pkgs.testdisk-qt
     pkgs.ddrescue
     pkgs.ext4magic
+    pkgs.libdecor
 
     pkgs.xdg-utils
     pkgs.git
