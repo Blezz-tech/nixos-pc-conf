@@ -1,9 +1,6 @@
 # TODO по NixOS (НиксОси)
 
-Временное отключение (т.к. сбой сборки)
-
-goldendict-ng
-
+- [ ] Убрать blezz-pkgs.goldendict-ng, когда его исправять в nixpkgs 
 
 - [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
 - [ ] Сделать пакет stepik-oauth2-videodownloader
