@@ -128,6 +128,7 @@ in
 
     pkgs.baobab
     pkgs.kdePackages.filelight # For Dolphin Integration
+    pkgs.kdePackages.kdialog
     pkgs.bottles
     pkgs.protonup-qt
     pkgs.r2modman
