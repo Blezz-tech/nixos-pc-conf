@@ -116,6 +116,7 @@ in
     pkgs.crow-translate
     pkgs.zoom-us
     pkgs.wl-clipboard
+    pkgs.arx-libertatis
     pkgs.revolt-desktop
 
     pkgs.poppler_utils
