@@ -220,7 +220,7 @@ in
     pkgs.zip
     pkgs.xz
     pkgs.unzip
-    pkgs.p7zip
+    pkgs._7zz
 
     # pkgs.utils
     pkgs.ripgrep # recursively searches directories for a regex pattern
