@@ -1,5 +1,6 @@
 {
   imports = [
+    ./ipfs.nix
     ./mysql.nix
     ./paperless.nix
     ./postgresql.nix
