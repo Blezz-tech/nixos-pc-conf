@@ -200,6 +200,8 @@ in
     pkgs.freecad-wayland
     pkgs.openscad
     pkgs.openscad-lsp
+    pkgs.cargo
+    pkgs.rustc
 
     pkgs.typst
     pkgs.typstfmt
