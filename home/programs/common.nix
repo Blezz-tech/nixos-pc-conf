@@ -202,6 +202,7 @@ in
     pkgs.openscad-lsp
     pkgs.cargo
     pkgs.rustc
+    pkgs.zig
 
     pkgs.typst
     pkgs.typstfmt
