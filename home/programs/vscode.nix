@@ -19,6 +19,8 @@
       "git.openRepositoryInParentFolders" = "always";
       "explorer.confirmDragAndDrop" = false;
       "editor.rulers" = [ 80 ];
+      
+      "zig.path" = "zig";
     };
   };
 }
