@@ -38,7 +38,6 @@ in
 
   home.packages = [
     blezz-pkgs.gt-vein-info
-    # blezz-pkgs.kando # Использовать до тех пор, пока kando не добавят в nixpkgs
     pkgs.blezz-pkgs.goldendict-ng
 
     # LaTeX
@@ -125,6 +124,7 @@ in
     # pkgs.nheko
     # pkgs.kdePackages.neochat
     # pkgs.fractal
+    pkgs.kando
 
     pkgs.baobab
     pkgs.kdePackages.filelight # For Dolphin Integration

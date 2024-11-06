@@ -6,7 +6,6 @@
 - [ ] Сделать пакет stepik-oauth2-videodownloader
 
   https://github.com/StepicOrg/stepik-oauth2-videodownloader
-- [ ] Удалить kando из blezz-pkgs когда его добавят в nixpkgs
 - [ ] Сделать отключение звука по hdmi
   
   Чтобы с монитора не было звука
