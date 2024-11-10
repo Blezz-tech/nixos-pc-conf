@@ -48,10 +48,10 @@ in
     pkgs.qbittorrent
 
     # Альтернатива Postman'у
-    pkgs.insomnia
+    # pkgs.insomnia
 
     # 3D редакторы
-    pkgs.blender-hip
+    # pkgs.blender-hip
 
     # Музыкальные редакторы
     pkgs.musescore
@@ -61,7 +61,7 @@ in
     # pkgs.element-desktop
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio
-    pkgs.webcord-vencord
+    # pkgs.webcord-vencord
     pkgs.vesktop
     # pkgs.whatsapp-for-linux
 
@@ -97,7 +97,7 @@ in
     pkgs.nil
     # pkgs.gnumake
     # pkgs.tiled
-    pkgs.unityhub
+    # pkgs.unityhub
     # pkgs.pdfarranger
     # pkgs.ihp-new
     pkgs.cachix
@@ -116,7 +116,7 @@ in
     pkgs.zoom-us
     pkgs.wl-clipboard
     pkgs.arx-libertatis
-    pkgs.revolt-desktop
+    # pkgs.revolt-desktop
 
     pkgs.poppler_utils
     # pkgs.ocrmypdf
