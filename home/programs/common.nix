@@ -134,7 +134,7 @@ in
     pkgs.r2modman
     pkgs.audacity
     pkgs.xwaylandvideobridge
-    pkgs.emacs
+    # pkgs.emacs
     pkgs.nextcloud-client
     pkgs.geogebra6
 
