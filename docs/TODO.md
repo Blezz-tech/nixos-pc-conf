@@ -1,6 +1,25 @@
 # TODO по NixOS (НиксОси)
 
-- [ ] Убрать blezz-pkgs.goldendict-ng, когда его исправять в nixpkgs 
+
+# Дождаться
+
+- [ ] nixos-unstable: kdePackages: Plasma 6.2.2 -> 6.2.3
+  
+  https://nixpk.gs/pr-tracker.html?pr=353866
+
+- [ ] nixos-unstable: blender: fix build; openvdb_11: init at 11.0.0
+
+  Можно будет использовать blender
+
+  https://nixpk.gs/pr-tracker.html?pr=354095
+
+- [ ] nixos-unstable: goldendict-ng: 24.09.0 -> 24.09.1
+  
+  Убрать blezz-pkgs.goldendict-ng, когда его исправять в nixpkgs
+
+  https://nixpk.gs/pr-tracker.html?pr=353721
+
+# 123
 
 - [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
 - [ ] Сделать пакет stepik-oauth2-videodownloader
