@@ -6,16 +6,16 @@
   };
   networking.wg-quick.interfaces = {
     wg0 = {
-      address = [ "10.8.0.82/24" ];
+      address = [ "10.8.0.90/24" ];
       dns = [ "1.1.1.1" ];
-      privateKeyFile = "/run/media/jenya/disk_d/vpn/SHOHOV.PrivateKey";
+      privateKeyFile = "/run/media/jenya/disk_d/vpn/vpn.PrivateKey";
 
       peers = [
         {
-          publicKey = "0fhXUeR2Z1XiaNNvtOT40jZzDJs9FJstr7J+3lRcHTU=";
-          presharedKeyFile = "/run/media/jenya/disk_d/vpn/SHOHOV.PresharedKey";
+          publicKey = "bxG0yI+ML7ljhzFSoH/kp72tv8fukFAx23HXpD2nA00=";
+          presharedKeyFile = "/run/media/jenya/disk_d/vpn/vpn.PresharedKey";
           allowedIPs = [ "0.0.0.0/0" "::/0" ];
-          endpoint = "95.140.159.78:51820";
+          endpoint = "217.25.95.90:51820";
           persistentKeepalive = 0;
         }
       ];

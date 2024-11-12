@@ -7,7 +7,7 @@
     ./redis.nix
     # ./spoofdpi.nix
     # ./tor.nix
-    ./v2raya.nix
-    # ./wireguard.nix
+    # ./v2raya.nix
+    ./wireguard.nix
   ];
 }
