@@ -20,6 +20,8 @@
     pkgs.vscode
     pkgs.pwgen
     pkgs.keepassxc
+    pkgs.wireguard-tools
+    pkgs.vopono
     # pkgs.wireshark-qt
 
     pkgs.home-manager
