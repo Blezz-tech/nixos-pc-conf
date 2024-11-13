@@ -1,9 +1,6 @@
 { pkgs
 , ...
 }:
-let
-  blezz-pkgs = pkgs.callPackage ./pkgs { };
-in
 {
 
   # gtk = {
@@ -37,7 +34,6 @@ in
   };
 
   home.packages = [
-    blezz-pkgs.gt-vein-info
     pkgs.blezz-pkgs.goldendict-ng
 
     # LaTeX
