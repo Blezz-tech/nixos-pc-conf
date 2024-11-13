@@ -15,6 +15,6 @@
     pkgs.podman-tui # status of containers in the terminal
     pkgs.docker-compose # start group of containers for dev
     pkgs.podman-compose # start group of containers for dev
-    pkgs.podman-desktop
+    # pkgs.podman-desktop
   ];
 }
