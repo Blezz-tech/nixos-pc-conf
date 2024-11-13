@@ -20,7 +20,6 @@
         "corectrl"
         "scanner" # Для сканирования
         "lp" # Для печати
-        # "wireshark"
         # config.services.kubo.group
       ];
       packages = [ ];
