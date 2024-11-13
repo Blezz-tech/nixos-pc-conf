@@ -122,9 +122,9 @@
     # pkgs.fractal
     pkgs.kando
 
-    pkgs.baobab
+    # pkgs.baobab
     pkgs.kdePackages.filelight # For Dolphin Integration
-    pkgs.kdePackages.kdialog
+    pkgs.kdePackages.kdialog # Для arx libertatis
     pkgs.bottles
     pkgs.protonup-qt
     pkgs.r2modman
@@ -132,16 +132,16 @@
     pkgs.xwaylandvideobridge
     # pkgs.emacs
     pkgs.nextcloud-client
-    pkgs.geogebra6
+    # pkgs.geogebra6
 
-    pkgs.digikam
-    pkgs.exiftool
+    # pkgs.digikam
+    # pkgs.exiftool # Для digikam
 
     pkgs.go
-    pkgs.easyeffects
+    # pkgs.easyeffects
     pkgs.lazygit
     pkgs.kdenlive
-    pkgs.glaxnimate
+    # pkgs.glaxnimate
     pkgs.mdbook
     pkgs.mdbook-epub
     pkgs.mdbook-pdf
@@ -149,8 +149,8 @@
     pkgs.gpu-viewer
     pkgs.vulkan-tools
     pkgs.pwgen
-    pkgs.coppwr
-    pkgs.github-desktop
+    # pkgs.coppwr
+    # pkgs.github-desktop
     pkgs.nufmt
     pkgs.omegat
     # pkgs.ghc
@@ -176,7 +176,7 @@
     pkgs.kdePackages.juk
     pkgs.kdePackages.kalzium
     # pkgs.goldendict-ng
-    pkgs.nekoray
+    # pkgs.nekoray
     # pkgs.flameshot
     (pkgs.chromium.override {
       commandLineArgs = [
@@ -190,13 +190,13 @@
     pkgs.treefmt2
     pkgs.zeal-qt6
     pkgs.anki
-    pkgs.kdePackages.ksystemlog
-    pkgs.kdePackages.kio-gdrive
+    # pkgs.kdePackages.ksystemlog
+    # pkgs.kdePackages.kio-gdrive
     pkgs.kdePackages.kcharselect
-    pkgs.rars
+    # pkgs.rars
     pkgs.freecad-wayland
-    pkgs.openscad
-    pkgs.openscad-lsp
+    # pkgs.openscad
+    # pkgs.openscad-lsp
     pkgs.cargo
     pkgs.rustc
     pkgs.zig
