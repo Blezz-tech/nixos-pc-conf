@@ -62,21 +62,21 @@
     #   };
     # })
     (self: super: {
-      blezz-pkgs.dabruks = pkgs.callPackage ../home/programs/pkgs/dabruks;
-    })
-    (self: super: {
-      blezz-pkgs.dabkrs = pkgs.callPackage ../home/programs/pkgs/dabkrs;
-    })
-
-    (self: super: {
-      blezz-pkgs.goldendict-ng = super.goldendict-ng.overrideAttrs (oldAttrs: {
-        src = super.fetchFromGitHub {
-          owner = "xiaoyifang";
-          repo = "goldendict-ng";
-          rev = "v24.11.0-alpha.870ff080";
-          hash = "sha256-/myO1tDdE3/yiMSmGiGfKqBhZekIsGheJ/VExyhQ+mg=";
-        };
-      });
+      blezz-pkgs = {
+        dabruks = pkgs.callPackage ./pkgs/dabruks { };
+        dabkrs = pkgs.callPackage ./pkgs/dabkrs { };
+        goldendict-ng = super.goldendict-ng.overrideAttrs (oldAttrs: {
+          src = super.fetchFromGitHub {
+            owner = "xiaoyifang";
+            repo = "goldendict-ng";
+            rev = "v24.11.0-alpha.870ff080";
+            hash = "sha256-/myO1tDdE3/yiMSmGiGfKqBhZekIsGheJ/VExyhQ+mg=";
+          };
+        });
+        alvr = pkgs.callPackage ./pkgs/alvr { };
+        gt-vein-info = pkgs.callPackage ./pkgs/gt-vein-info { };
+        voxelengine-cpp = pkgs.callPackage ./pkgs/voxelengine-cpp { };
+      };
     })
   ];
 }
