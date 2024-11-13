@@ -1,4 +1,3 @@
 {
-  # База данных
-  # services.postgresql.enable = true;
+  services.postgresql.enable = true;
 }

@@ -3,7 +3,7 @@
     # ./ipfs.nix
     ./mysql.nix
     ./paperless.nix
-    ./postgresql.nix
+    # ./postgresql.nix
     ./redis.nix
     # ./spoofdpi.nix
     # ./tor.nix
