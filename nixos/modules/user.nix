@@ -17,7 +17,6 @@
         "audio"
         # "libvirtd"
         "podman" # Для Podman'а
-        # "i2c"
         "corectrl"
         "scanner" # Для сканирования
         "lp" # Для печати
