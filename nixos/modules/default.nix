@@ -12,7 +12,7 @@
     ./steam.nix
     ./tty.nix
     ./user.nix
-    # ./vr.nix
+    ./vr.nix
     ./work
   ];
 
