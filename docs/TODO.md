@@ -3,10 +3,6 @@
 
 # Дождаться
 
-- [ ] nixos-unstable: kdePackages: Plasma 6.2.2 -> 6.2.3
-  
-  https://nixpk.gs/pr-tracker.html?pr=353866
-
 - [ ] nixos-unstable: blender: fix build; openvdb_11: init at 11.0.0
 
   Можно будет использовать blender
