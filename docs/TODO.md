@@ -3,11 +3,6 @@
 
 # Дождаться
 
-- [ ] nixos-unstable: blender: fix build; openvdb_11: init at 11.0.0
-
-  Можно будет использовать blender
-
-  https://nixpk.gs/pr-tracker.html?pr=354095
 
 - [ ] nixos-unstable: goldendict-ng: 24.09.0 -> 24.09.1
   
