@@ -3,13 +3,6 @@
 
 # Дождаться
 
-
-- [ ] nixos-unstable: goldendict-ng: 24.09.0 -> 24.09.1
-  
-  Убрать blezz-pkgs.goldendict-ng, когда его исправять в nixpkgs
-
-  https://nixpk.gs/pr-tracker.html?pr=353721
-
 # 123
 
 - [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/

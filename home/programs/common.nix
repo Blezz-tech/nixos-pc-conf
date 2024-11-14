@@ -34,8 +34,6 @@
   };
 
   home.packages = [
-    pkgs.blezz-pkgs.goldendict-ng
-
     # LaTeX
     # pkgs.texlive.combined.scheme-full
     pkgs.pdf2svg
@@ -175,7 +173,7 @@
     pkgs.kdePackages.kclock
     pkgs.kdePackages.juk
     pkgs.kdePackages.kalzium
-    # pkgs.goldendict-ng
+    pkgs.goldendict-ng
     # pkgs.nekoray
     # pkgs.flameshot
     (pkgs.chromium.override {
