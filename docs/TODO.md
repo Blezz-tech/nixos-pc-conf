@@ -3,6 +3,14 @@
 
 # Дождаться
 
+- [ ] Добавление alvr build from source в nixos-unstable
+
+  https://nixpk.gs/pr-tracker.html?pr=308097
+
+- [ ] onlyoffice-desktopeditors: 8.1.1 -> 8.2.0, cleanup
+
+  https://nixpk.gs/pr-tracker.html?pr=351906
+
 # 123
 
 - [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
