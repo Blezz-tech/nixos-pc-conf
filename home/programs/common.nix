@@ -199,7 +199,7 @@
     # pkgs.openscad-lsp
     pkgs.cargo
     pkgs.rustc
-    pkgs.kicad
+    # pkgs.kicad
     pkgs.zig
 
     pkgs.typst

@@ -135,7 +135,6 @@ kdenlive
 
 stirling-pdf
 naps2
-kicad
 glaxnimate # Для kdenlive (проверить, без и с этип пакетом, чтобы не было ошибки)
 # Словари для libreoffice
 hunspell
