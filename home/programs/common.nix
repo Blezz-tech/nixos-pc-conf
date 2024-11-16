@@ -174,6 +174,8 @@
     pkgs.kdePackages.juk
     pkgs.kdePackages.kalzium
     pkgs.goldendict-ng
+    pkgs.nix-search
+    pkgs.ffmpeg-full
     # pkgs.nekoray
     # pkgs.flameshot
     (pkgs.chromium.override {
