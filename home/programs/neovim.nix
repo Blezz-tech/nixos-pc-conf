@@ -4,7 +4,7 @@
     viAlias = true;
     vimAlias = true;
 
-    defaultEditor = true;
+    # defaultEditor = true;
     # plugins = [
 
     # ];
