@@ -13,9 +13,12 @@
       signing.key = "78E9CCD7CF92CD8F";
       extraConfig = {
         init.defaultBranch = "master";
-        core.quotepath = false;
-        core.autocrlf = "input";
-        core.filemode = false;
+        core = {
+          quotepath = false;
+          autocrlf = "input";
+          filemode = false;
+          editor = "code --wait";
+        };
         commit.gpgsign = true;
         tag.gpgsign = true;
         credential.helper = "store";
