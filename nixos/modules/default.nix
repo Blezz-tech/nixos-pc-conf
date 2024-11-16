@@ -32,7 +32,7 @@
   networking.nftables.enable = true;  
 
   # Переменные окружения
-  environment.variables.EDITOR = "code";
+  environment.variables.EDITOR = "nvim";
   # environment.sessionVariables.NIXOS_OZONE_WL = "1"; # wayland для electron приложений
 
   # Для ГПУ AMD 
