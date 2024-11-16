@@ -17,7 +17,7 @@
     pkgs.git
     pkgs.wget
     pkgs.curl
-    pkgs.firefox
+    pkgs.firefox-wayland
     pkgs.vscode
     pkgs.pwgen
     pkgs.keepassxc
