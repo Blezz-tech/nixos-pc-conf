@@ -11,6 +11,10 @@
 
   https://nixpk.gs/pr-tracker.html?pr=351906
 
+- [ ] calibre: 7.20.0 -> 7.21.0
+
+  https://nixpk.gs/pr-tracker.html?pr=355885
+
 # 123
 
 - [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
