@@ -9,6 +9,8 @@
 
 - [ ] calibre: 7.20.0 -> 7.21.0
 
+  Иcправление сборки
+
   https://nixpk.gs/pr-tracker.html?pr=355885
 
 # 123

@@ -143,7 +143,7 @@
     pkgs.mdbook
     pkgs.mdbook-epub
     pkgs.mdbook-pdf
-    pkgs.calibre
+    # pkgs.calibre
     pkgs.gpu-viewer
     pkgs.vulkan-tools
     pkgs.pwgen
