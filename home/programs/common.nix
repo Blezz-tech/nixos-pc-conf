@@ -132,8 +132,8 @@
     pkgs.nextcloud-client
     # pkgs.geogebra6
 
-    # pkgs.digikam
-    # pkgs.exiftool # Для digikam
+    pkgs.digikam
+    pkgs.exiftool # Для digikam
 
     pkgs.go
     # pkgs.easyeffects
