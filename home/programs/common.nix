@@ -73,7 +73,7 @@
     pkgs.onlyoffice-bin_latest
 
     # Браузеры
-    # pkgs.google-chrome
+    pkgs.google-chrome
     pkgs.tor-browser
 
     # На сортировку
