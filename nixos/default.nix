@@ -58,7 +58,6 @@
       blezz-pkgs = {
         dabruks = pkgs.callPackage ./pkgs/dabruks { };
         dabkrs = pkgs.callPackage ./pkgs/dabkrs { };
-        alvr = pkgs.callPackage ./pkgs/alvr { };
         gt-vein-info = pkgs.callPackage ./pkgs/gt-vein-info { };
         voxelengine-cpp = pkgs.callPackage ./pkgs/voxelengine-cpp { };
       };

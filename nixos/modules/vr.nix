@@ -1,11 +1,7 @@
-{ pkgs
-, ...
-}:
 {
   programs.alvr = {
     enable = true;
     openFirewall = true;
-    package = pkgs.blezz-pkgs.alvr;
   };
 
   # services.monado = {
