@@ -77,9 +77,9 @@
 
   environment.variables = {
     # Use radv
-    AMD_VULKAN_ICD = "RADV";
+    # AMD_VULKAN_ICD = "RADV";
 
     # USE amdvlk
-    # VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/radeon_icd.x86_64.json";
+    VK_ICD_FILENAMES = "/run/opengl-driver/share/vulkan/icd.d/radeon_icd.x86_64.json";
   };
 }
