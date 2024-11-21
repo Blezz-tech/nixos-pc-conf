@@ -36,6 +36,8 @@
     pkgs.nerdfonts
     pkgs.liberation_ttf
     pkgs.scientifica
+    
+    pkgs.roboto
 
     # A (mainly) Chinese Unicode font
     pkgs.wqy_microhei
