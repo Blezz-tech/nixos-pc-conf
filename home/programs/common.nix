@@ -153,6 +153,8 @@
     pkgs.omegat
     # pkgs.ghc
     pkgs.zotero
+    pkgs.just
+    pkgs.oxipng
 
     # Rar archive
     pkgs.rar
