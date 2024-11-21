@@ -178,6 +178,7 @@
     pkgs.goldendict-ng
     pkgs.nix-search
     pkgs.ffmpeg-full
+    pkgs.gh
     # pkgs.nekoray
     # pkgs.flameshot
     (pkgs.chromium.override {
