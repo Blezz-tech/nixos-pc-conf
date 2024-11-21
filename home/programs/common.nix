@@ -79,9 +79,13 @@
     # На сортировку
     # pkgs.python3
     (pkgs.python312.withPackages (python-pkgs: [
+      python-pkgs.jupyter
+      python-pkgs.ipykernel
       python-pkgs.pyautogui
+      python-pkgs.scipy
       python-pkgs.pynput
       python-pkgs.numpy
+      python-pkgs.pandas
       python-pkgs.matplotlib
     ]))
     # pkgs.nodejs
