@@ -76,6 +76,8 @@
     # Браузеры
     pkgs.google-chrome
     pkgs.tor-browser
+    # pkgs.yandex-browser-corporate
+    # pkgs.brave
 
     # На сортировку
     # pkgs.python3
