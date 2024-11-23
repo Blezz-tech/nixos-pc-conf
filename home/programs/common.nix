@@ -133,7 +133,7 @@
     pkgs.r2modman
     pkgs.audacity
     pkgs.xwaylandvideobridge
-    pkgs.cura
+    # pkgs.cura
     # pkgs.emacs
     pkgs.nextcloud-client
     # pkgs.geogebra6

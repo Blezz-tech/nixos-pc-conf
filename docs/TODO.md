@@ -1,19 +1,16 @@
 # TODO по NixOS (НиксОси)
 
 
-# Дождаться
+## Сломаннное ПО, обновление и т.д.
 
-- [ ] onlyoffice-desktopeditors: 8.1.1 -> 8.2.0, cleanup
+| Название                                           | Описание              | Ссылка                                                   |
+| -------------------------------------------------- | --------------------- | -------------------------------------------------------- |
+| ultimaker cura                                     | Сборка cura сломана   |                                                          |
+| onlyoffice-desktopeditors: 8.1.1 -> 8.2.0, cleanup | Обновление onlyoffice | [PR tracker](https://nixpk.gs/pr-tracker.html?pr=351906) |
+| calibre: 7.20.0 -> 7.21.0                          | Иcправление сборки    | [PR tracker](https://nixpk.gs/pr-tracker.html?pr=355885) |
+|                                                    |                       |                                                          |
 
-  https://nixpk.gs/pr-tracker.html?pr=351906
-
-- [ ] calibre: 7.20.0 -> 7.21.0
-
-  Иcправление сборки
-
-  https://nixpk.gs/pr-tracker.html?pr=355885
-
-# 123
+## 123
 
 - [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
 - [ ] Сделать пакет stepik-oauth2-videodownloader
