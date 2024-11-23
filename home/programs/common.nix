@@ -67,6 +67,7 @@
     # pkgs.inkscape
     pkgs.krita
     pkgs.drawio
+    # pkgs.aseprite
 
     # Текстовые редакторы
     pkgs.libreoffice-qt-fresh
@@ -132,6 +133,7 @@
     pkgs.r2modman
     pkgs.audacity
     pkgs.xwaylandvideobridge
+    pkgs.cura
     # pkgs.emacs
     pkgs.nextcloud-client
     # pkgs.geogebra6
