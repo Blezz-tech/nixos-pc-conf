@@ -6,7 +6,6 @@
 | Название                                           | Описание              | Ссылка                                                   |
 | -------------------------------------------------- | --------------------- | -------------------------------------------------------- |
 | ultimaker cura                                     | Сборка cura сломана   |                                                          |
-| onlyoffice-desktopeditors: 8.1.1 -> 8.2.0, cleanup | Обновление onlyoffice | [PR tracker](https://nixpk.gs/pr-tracker.html?pr=351906) |
 | calibre: 7.20.0 -> 7.21.0                          | Иcправление сборки    | [PR tracker](https://nixpk.gs/pr-tracker.html?pr=355885) |
 |                                                    |                       |                                                          |
 
