@@ -19,6 +19,7 @@
       "git.openRepositoryInParentFolders" = "always";
       "explorer.confirmDragAndDrop" = false;
       "editor.rulers" = [ 80 ];
+      # "html.format.wrapLineLength" = 0; # убрать авто перенос текста
       
       "zig.path" = "zig";
     };
