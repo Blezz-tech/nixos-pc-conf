@@ -137,6 +137,7 @@
     # pkgs.geogebra6
 
     pkgs.digikam
+    pkgs.rawtherapee
     pkgs.exiftool # Для digikam
 
     pkgs.go
@@ -174,6 +175,8 @@
     pkgs.kdePackages.kolourpaint
     pkgs.iagno
     # pkgs.lunarvim
+    pkgs.zbar
+    pkgs.parsec-bin
     pkgs.remmina
     pkgs.kdePackages.kcalc
     pkgs.kdePackages.kclock
