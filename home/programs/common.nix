@@ -49,6 +49,7 @@
 
     # Музыкальные редакторы
     pkgs.musescore
+    # pkgs.obsidian
 
     # Месседжеры
     # pkgs.discord # т.к. забанен в россии, Неудаётся скачать
@@ -57,6 +58,8 @@
     # pkgs.discord-screenaudio
     # pkgs.webcord-vencord
     pkgs.vesktop
+    # pkgs.wpsoffice
+    # pkgs.rstudio
     # pkgs.whatsapp-for-linux
 
     # Редакторы epub
