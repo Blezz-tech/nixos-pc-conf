@@ -216,6 +216,7 @@
     # pkgs.openscad-lsp
     pkgs.cargo
     pkgs.rustc
+    pkgs.rust-analyzer
     # pkgs.kicad
     pkgs.zig
 
