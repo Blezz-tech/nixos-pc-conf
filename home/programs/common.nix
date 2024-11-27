@@ -125,6 +125,7 @@
 
     pkgs.poppler_utils
     # pkgs.ocrmypdf
+    pkgs.tesseract
     # pkgs.stack
     # pkgs.nheko
     # pkgs.kdePackages.neochat
