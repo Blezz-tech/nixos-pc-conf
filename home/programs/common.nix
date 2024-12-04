@@ -132,6 +132,11 @@
     # pkgs.fractal
     pkgs.kando
 
+    # Словари для libreoffice
+    pkgs.hunspell
+    pkgs.hunspellDicts.ru_RU
+    pkgs.hunspellDicts.en_US
+
     # pkgs.baobab
     pkgs.kdePackages.filelight # For Dolphin Integration
     pkgs.kdePackages.kdialog # Для arx libertatis

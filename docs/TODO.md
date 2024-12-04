@@ -133,10 +133,7 @@ kdenlive
 stirling-pdf
 naps2
 glaxnimate # Для kdenlive (проверить, без и с этип пакетом, чтобы не было ошибки)
-# Словари для libreoffice
-hunspell
-hunspellDicts.ru_RU
-hunspellDicts.en_US
+
 kdePackages.kate
 kdePackages.yakuake
 # Для KDE (Информация о система)
