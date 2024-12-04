@@ -157,7 +157,7 @@
     pkgs.go
     # pkgs.easyeffects
     pkgs.lazygit
-    pkgs.kdenlive
+    pkgs.kdePackages.kdenlive
     # pkgs.glaxnimate # Для kdenlive (проверить, без и с этип пакетом, чтобы не было ошибки)
     pkgs.mdbook
     pkgs.mdbook-epub
