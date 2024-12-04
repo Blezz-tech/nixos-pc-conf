@@ -33,7 +33,6 @@
     pkgs.source-code-pro
     pkgs.source-sans
     pkgs.source-sans-pro
-    pkgs.nerdfonts
     pkgs.liberation_ttf
     pkgs.scientifica
     
@@ -41,5 +40,5 @@
 
     # A (mainly) Chinese Unicode font
     pkgs.wqy_microhei
-  ];
+  ] ++ (builtins.filter builtins.isPath (builtins.attrValues pkgs.nerd-fonts));
 }
