@@ -123,12 +123,8 @@ wechat-uos # license.tar.gz можно взять с репозиторя archli
 qqwing
 smassh
 p7zip
-aria2
 media-downloader
 kdePackages.krdc
-libreoffice-qt6-fresh # Заменить обычный libreoffice на qt6
-onlyoffice-bin_latest # Заменить обычный onlyoffice на latest
-kdenlive
 
 stirling-pdf
 
@@ -138,8 +134,6 @@ kdePackages.yakuake
 aha
 clinfo
 # eglinfo
-glxinfo
-vulkan-tools
 wayland-utils
 # ЯП nim
 nim
@@ -166,7 +160,6 @@ nimlsp
 # KolourPaint
 # KGpg
 # Kompare
-# KRDC
 # Skanlite
 # Sweeper
 # Elisa
