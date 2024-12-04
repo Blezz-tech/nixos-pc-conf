@@ -73,7 +73,7 @@
     # pkgs.aseprite
 
     # Текстовые редакторы
-    pkgs.libreoffice-qt-fresh
+    pkgs.libreoffice-qt6-fresh
     pkgs.onlyoffice-bin_latest
 
     # Браузеры
