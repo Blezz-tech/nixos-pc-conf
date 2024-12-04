@@ -131,7 +131,6 @@ onlyoffice-bin_latest # Заменить обычный onlyoffice на latest
 kdenlive
 
 stirling-pdf
-naps2
 
 kdePackages.kate
 kdePackages.yakuake
@@ -145,9 +144,6 @@ wayland-utils
 # ЯП nim
 nim
 nimlsp
-
-### Найти ПО для сканирования от KDE и добавить naps2
-naps2
 
 ### сделать перенос всякого мусора из ~ в папку ~/.uwucache
 # Например, ~/.cargo -> ~/.uwucache/.cargo
