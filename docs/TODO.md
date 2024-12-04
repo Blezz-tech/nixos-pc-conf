@@ -132,7 +132,6 @@ kdenlive
 
 stirling-pdf
 naps2
-glaxnimate # Для kdenlive (проверить, без и с этип пакетом, чтобы не было ошибки)
 
 kdePackages.kate
 kdePackages.yakuake
