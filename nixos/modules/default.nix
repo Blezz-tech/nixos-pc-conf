@@ -29,7 +29,7 @@
   # Сетевой менеждер
   networking.firewall.enable = true;
   networking.networkmanager.enable = true;
-  networking.nftables.enable = true;  
+  networking.nftables.enable = true;
 
   # Переменные окружения
   environment.variables.EDITOR = "nvim";
@@ -69,4 +69,10 @@
 
   # openvpn client
   # programs.openvpn3.enable = true;
+
+  # MIME TYPE
+  # xdg.mime.enable = true;
+  # xdg.mime.addedAssociations = {
+  #   "application/drawio" = "drawio.desktop";
+  # };
 }
