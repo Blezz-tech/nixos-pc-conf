@@ -6,7 +6,7 @@
     ./nix.nix
     ./openssh.nix
     # ./opentablet.nix
-    ./podman.nix
+    # ./podman.nix
     # ./print_and_scan.nix
     ./sound.nix
     ./steam.nix
@@ -29,7 +29,7 @@
   # Сетевой менеждер
   networking.firewall.enable = true;
   networking.networkmanager.enable = true;
-  networking.nftables.enable = true;
+  # networking.nftables.enable = true;
 
   # Переменные окружения
   environment.variables.EDITOR = "nvim";
