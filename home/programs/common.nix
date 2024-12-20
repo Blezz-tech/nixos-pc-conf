@@ -174,6 +174,7 @@
     pkgs.zotero
     pkgs.just
     pkgs.oxipng
+    pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
 
     # Rar archive
     pkgs.rar
