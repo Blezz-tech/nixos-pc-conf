@@ -7,6 +7,7 @@
     pkgs.prismlauncher
     pkgs.cataclysm-dda
     pkgs.ryujinx
+    # pkgs.superTuxKart
     # pkgs.cmatrix
     # pkgs.keeperrl
     # pkgs.minetest
