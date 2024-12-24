@@ -6,6 +6,6 @@
     pkgs.kotlin
     pkgs.kotlin-language-server
     pkgs.kotlin-interactive-shell
-    pkgs.jetbrains.idea-community
+    # pkgs.jetbrains.idea-community
   ];
 }
