@@ -11,7 +11,7 @@
     pkgs.ddrescue
     pkgs.ext4magic
     pkgs.libdecor
-    pkgs.jetbrains.pycharm-community
+    # pkgs.jetbrains.pycharm-community
 
     pkgs.xdg-utils
     pkgs.git
