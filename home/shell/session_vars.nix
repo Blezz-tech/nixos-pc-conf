@@ -9,7 +9,7 @@
     # ~/.java/.userPrefs ~/.java/fonts
     # -Djava.util.prefs.userRoot=\"$XDG_CONFIG_HOME\"/java
 
-    _JAVA_OPTIONS = "-Dawt.useSystemAAFontSettings=lcd,-Djava.util.prefs.userRoot=\"$XDG_CONFIG_HOME\"/java";
+    _JAVA_OPTIONS = "-Dawt.useSystemAAFontSettings=lcd";
 
     # Исправление пути для приложений на соответствие со стандартом XDG Base Directory
     CARGO_HOME = "$XDG_DATA_HOME/cargo"; # ~/.cargo
