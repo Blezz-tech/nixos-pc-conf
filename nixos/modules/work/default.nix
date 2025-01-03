@@ -4,7 +4,7 @@
 {
   imports = [
     ./blockchain.nix
-    ./kotlin.nix
+    # ./kotlin.nix
     ./qsoft.nix
   ];
 
