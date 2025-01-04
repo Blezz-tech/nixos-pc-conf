@@ -2,12 +2,15 @@
 , ...
 }: {
   home.packages = [
-    # Игры
-    pkgs.nexusmods-app-unfree
+    ## Лаунчеры
 
-    pkgs.prismlauncher
-    pkgs.cataclysm-dda
+    pkgs.nexusmods-app-unfree
     pkgs.ryujinx
+    pkgs.prismlauncher
+
+    ## Игры
+
+    pkgs.cataclysm-dda
     # pkgs.ruffle
     # pkgs.superTuxKart
     # pkgs.cmatrix
