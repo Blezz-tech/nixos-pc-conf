@@ -3,6 +3,7 @@
 }: {
   home.packages = [
     # Игры
+    pkgs.nexusmods-app-unfree
 
     pkgs.prismlauncher
     pkgs.cataclysm-dda
