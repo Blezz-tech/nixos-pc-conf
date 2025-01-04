@@ -1,7 +1,6 @@
 # TODO по NixOS (НиксОси)
 
-
-## Сломаннное ПО, обновление и т.д.
+## Сломаннное ПО, обновление и так далее
 
 | Название                    | Описание            | Ссылка |
 | --------------------------- | ------------------- | ------ |
@@ -15,13 +14,12 @@
 - [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
 - [ ] Сделать пакет stepik-oauth2-videodownloader
 
-  https://github.com/StepicOrg/stepik-oauth2-videodownloader
+  <https://github.com/StepicOrg/stepik-oauth2-videodownloader>
 - [ ] Сделать отключение звука по hdmi
   
   Чтобы с монитора не было звука
 - [ ] проверить, что нет проблем с настройками [tty](./nixos/modules/tty.nix)
 - [ ] Удалить модуль zapret, когда его добавят в nixpkgs
-
 
 ## ГЛАВНОЕ
 
@@ -292,8 +290,6 @@ enableNushellIntegration = true;
 
 ### Добавить для .desktop файлов приложений русское описание
 
-
-
 ## Команды
 
 Вывод процессора
@@ -302,16 +298,16 @@ enableNushellIntegration = true;
 cpufetch -F --accurate-pp --accurate-pp  --measure-max-freq --logo-short -v
 ```
 
-
 ## Решенные проблемы
 
 ### 2024.10.11 Таки решена проблема с шрифтами (на данный момент работают)
 
 > Таки реши проблему с шрифтами в стиме
-> 
+>
 > ```nix
 > programs.steam.fontPackages
 > ```
+>
 > > Font packages to use in Steam.
-> > 
+> >
 > > Defaults to system fonts, but could be overridden to use other fonts — useful for users who would like to customize CJK fonts used in Steam. According to the [upstream issue](https://github.com/ValveSoftware/steam-for-linux/issues/10422#issuecomment-1944396010), Steam only follows the per-user fontconfig configuration.
