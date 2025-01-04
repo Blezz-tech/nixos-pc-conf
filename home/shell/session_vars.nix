@@ -1,4 +1,8 @@
 {
+  config,
+  ...
+}:
+{
   # Use Arch Wiki for fix app (use XDG Base Directory)
   # <https://wiki.archlinux.org/title/XDG_Base_Directory>
 
@@ -14,20 +18,20 @@
     # Исправление пути для приложений на соответствие со стандартом XDG Base Directory
 
     ## XDG_DATA_HOME
-    CARGO_HOME = "$XDG_DATA_HOME/cargo"; # ~/.cargo
-    NODE_REPL_HISTORY = "$XDG_DATA_HOME/node_repl_history"; # ~/.node_repl_history
-    REDISCLI_HISTFILE = "$XDG_DATA_HOME/redis/rediscli_history"; # ~/.rediscli_history
+    CARGO_HOME = "${config.xdg.dataHome}/cargo"; # ~/.cargo
+    NODE_REPL_HISTORY = "${config.xdg.dataHome}/node_repl_history"; # ~/.node_repl_history
+    REDISCLI_HISTFILE = "${config.xdg.dataHome}/redis/rediscli_history"; # ~/.rediscli_history
 
     ## XDG_CONFIG_HOME
-    XCOMPOSEFILE = "$XDG_CONFIG_HOME/X11/xcompose"; # ~/.XCompose
-    NPM_CONFIG_USERCONFIG = "$XDG_CONFIG_HOME/npm/npmrc"; # for npm
-    REDISCLI_RCFILE = "$XDG_CONFIG_HOME/redis/redisclirc"; # ~/.redisclirc
+    XCOMPOSEFILE = "${config.xdg.configHome}/X11/xcompose"; # ~/.XCompose
+    NPM_CONFIG_USERCONFIG = "${config.xdg.configHome}/npm/npmrc"; # for npm
+    REDISCLI_RCFILE = "${config.xdg.configHome}/redis/redisclirc"; # ~/.redisclirc
 
     ## XDG_CACHE_HOME
-    XCOMPOSECACHE = "$XDG_CACHE_HOME/X11/xcompose"; # ~/.compose-cache
+    XCOMPOSECACHE = "${config.xdg.cacheHome}/X11/xcompose"; # ~/.compose-cache
 
     ## XDG_STATE_HOME
-    PYTHON_HISTORY="$XDG_STATE_HOME/python/history"; # ~/.python_history
+    PYTHON_HISTORY="${config.xdg.stateHome}/python/history"; # ~/.python_history
   };
 
   xdg.configFile."npm/npmrc" = {
