@@ -107,7 +107,7 @@
     # pkgs.ihp-new
     pkgs.cachix
     # pkgs.vengi-tools
-    # pkgs.ldtk
+    pkgs.ldtk
     # pkgs.easyocr
     # pkgs.rhvoice
     # pkgs.speechd
