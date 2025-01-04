@@ -222,12 +222,16 @@
     pkgs.freecad-wayland
     # pkgs.openscad
     # pkgs.openscad-lsp
-    pkgs.cargo
-    pkgs.rustc
-    pkgs.rust-analyzer
     # pkgs.kicad
     pkgs.zig
 
+    ## Rust
+    pkgs.cargo
+    pkgs.rustc
+    pkgs.rust-analyzer
+    pkgs.rustfmt
+
+    ## Typst
     pkgs.typst
     pkgs.typstfmt
     pkgs.typst-lsp
