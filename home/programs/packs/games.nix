@@ -10,7 +10,7 @@
 
     ## Игры
 
-    pkgs.cataclysm-dda
+    # pkgs.cataclysm-dda
     # pkgs.ruffle
     # pkgs.superTuxKart
     # pkgs.cmatrix
