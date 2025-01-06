@@ -1,6 +1,3 @@
-{ pkgs
-, ...
-}:
 {
   imports = [
     ./blockchain.nix
