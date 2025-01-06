@@ -9,6 +9,7 @@
       "50000:50099"
       "443"
     ];
+    # Если не будет работать, то попробовать исполдьзовать конфиг из https://github.com/Flowseal/zapret-discord-youtube
     params = [
         "--filter-udp=50000-50099"
         "--dpi-desync=fake"
