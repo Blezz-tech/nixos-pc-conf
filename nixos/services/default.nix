@@ -9,5 +9,6 @@
     # ./tor.nix
     # ./v2raya.nix
     # ./wireguard.nix
+    ./zapret.nix
   ];
 }

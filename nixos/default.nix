@@ -60,6 +60,12 @@
         dabkrs = pkgs.callPackage ./pkgs/dabkrs { };
         gt-vein-info = pkgs.callPackage ./pkgs/gt-vein-info { };
         voxelengine-cpp = pkgs.callPackage ./pkgs/voxelengine-cpp { };
+        zapret = pkgs.zapret.overrideAttrs (prev: {
+          postInstall = (prev.postInstall or "") + ''
+            mkdir -p $out/files/
+            cp -r $src/files/fake/ $out/files/
+          '';
+        }); 
       };
     })
   ];
