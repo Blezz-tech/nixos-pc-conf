@@ -57,7 +57,10 @@
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio
     # pkgs.webcord-vencord
-    pkgs.vesktop
+
+    # https://www.reddit.com/r/linux_gaming/comments/qv9n40/fix_for_the_lag_on_discord_on_linux_after_the/
+    pkgs.vesktop # add flags --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
+
     # pkgs.wpsoffice
     # pkgs.rstudio
     # pkgs.whatsapp-for-linux
