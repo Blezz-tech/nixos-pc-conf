@@ -8,6 +8,6 @@
     # ./spoofdpi.nix
     # ./tor.nix
     # ./v2raya.nix
-    ./wireguard.nix
+    # ./wireguard.nix
   ];
 }
