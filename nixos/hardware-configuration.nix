@@ -90,6 +90,7 @@
     enable32Bit = true;
     extraPackages = [
       pkgs.amdvlk
+      pkgs.intel-media-driver
       # pkgs.rocmPackages.clr.icd # OpenCL
     ];
     extraPackages32 = [
@@ -101,6 +102,9 @@
     #   vaapiVdpau
     #   libvdpau-va-gl
     # ];
+  };
+  environment.sessionVariables = {
+    LIBVA_DRIVER_NAME = "iHD";
   };
 
   environment.variables = {
