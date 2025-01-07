@@ -22,7 +22,7 @@
     pkgs.pwgen
     pkgs.keepassxc
     pkgs.wireguard-tools
-    pkgs.vopono
+    # pkgs.vopono
 
     pkgs.home-manager
 
