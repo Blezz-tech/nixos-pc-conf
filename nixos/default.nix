@@ -5,6 +5,7 @@
   imports = [
     ./modules
     ./services
+    ./programs
     ./packages.nix
     ./hardware-configuration.nix
   ];
