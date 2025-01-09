@@ -193,6 +193,7 @@
     pkgs.kdePackages.kolourpaint
     pkgs.iagno
     # pkgs.lunarvim
+    # pkgs.treesheets
     pkgs.zbar
     pkgs.parsec-bin
     pkgs.remmina
