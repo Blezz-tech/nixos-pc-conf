@@ -85,7 +85,7 @@
 
   hardware.amdgpu = {
     initrd.enable = true;
-    # opencl.enable = true;
+    opencl.enable = true;
   };
 
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
@@ -95,7 +95,6 @@
     enable32Bit = true;
     extraPackages = [
       # pkgs.amdvlk
-      # pkgs.rocmPackages.clr.icd # OpenCL
     ];
     # extraPackages32 = [
     #   pkgs.driversi686Linux.amdvlk
