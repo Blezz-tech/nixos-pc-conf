@@ -5,8 +5,6 @@
 | Название                    | Описание            | Ссылка |
 | --------------------------- | ------------------- | ------ |
 | ultimaker cura              | Сборка cura сломана |        |
-| blender-hip                 |                     |        |
-| rocmPackages.clr.icd        |                     |        |
 | jetbrains.pycharm-community |                     |        |
 
 ## 123
