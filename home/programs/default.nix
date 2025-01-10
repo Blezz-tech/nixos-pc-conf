@@ -1,6 +1,6 @@
 {
   imports = [
-    ./browser.nix
+    ./chromium.nix
     ./common.nix
     ./direnv.nix
     ./eza.nix
