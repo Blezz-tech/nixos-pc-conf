@@ -86,6 +86,8 @@
   hardware.amdgpu = {
     initrd.enable = true;
     opencl.enable = true;
+    # amdvlk.enable = true;
+    # amdvlk.support32Bit = true;
   };
 
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
@@ -93,12 +95,6 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    extraPackages = [
-      # pkgs.amdvlk
-    ];
-    # extraPackages32 = [
-    #   pkgs.driversi686Linux.amdvlk
-    # ];
   };
 
   # environment.variables = {
