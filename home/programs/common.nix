@@ -206,6 +206,7 @@
     pkgs.nix-search
     pkgs.ffmpeg-full
     pkgs.gh
+    # pkgs.dig
     # pkgs.nekoray
     # pkgs.flameshot
     (pkgs.chromium.override {
