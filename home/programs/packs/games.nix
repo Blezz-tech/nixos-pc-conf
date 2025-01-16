@@ -7,6 +7,7 @@
     pkgs.nexusmods-app-unfree
     pkgs.ryujinx
     pkgs.prismlauncher
+    pkgs.shadps4
 
     ## Игры
 
