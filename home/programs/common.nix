@@ -35,7 +35,7 @@
 
   home.packages = [
     # LaTeX
-    # pkgs.texlive.combined.scheme-full
+    pkgs.texlive.combined.scheme-full
     pkgs.pdf2svg
 
     # Torrent
