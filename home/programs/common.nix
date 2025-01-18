@@ -162,6 +162,7 @@
     # pkgs.easyeffects
     pkgs.lazygit
     pkgs.kdePackages.kdenlive
+    pkgs.davinci-resolve
 
     pkgs.mdbook
     pkgs.mdbook-epub
