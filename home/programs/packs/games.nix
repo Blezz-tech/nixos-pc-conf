@@ -11,6 +11,7 @@
 
     ## Игры
 
+    # pkgs.opengothic
     # pkgs.cataclysm-dda
     # pkgs.ruffle
     # pkgs.superTuxKart
