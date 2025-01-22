@@ -34,6 +34,9 @@
   };
 
   home.packages = [
+    # LSP
+    pkgs.marksman
+
     # LaTeX
     pkgs.texlive.combined.scheme-full
     pkgs.pdf2svg
