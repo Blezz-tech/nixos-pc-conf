@@ -9,6 +9,10 @@
     pkgs.prismlauncher
     pkgs.shadps4
 
+    ## Мод манагеры
+
+    pkgs.limo
+
     ## Игры
 
     # pkgs.opengothic
