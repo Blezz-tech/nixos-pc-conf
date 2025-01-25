@@ -1,9 +1,11 @@
 { pkgs
+# , nur
 , ...
 }:
 {
 
   environment.systemPackages = [
+    # pkgs.nur.repos.ataraxiasjel.waydroid-script
     pkgs.alacritty
     pkgs.telegram-desktop
 
