@@ -4,7 +4,7 @@
   home.packages = [
     ## Лаунчеры
 
-    pkgs.nexusmods-app-unfree
+    # pkgs.nexusmods-app-unfree
     pkgs.ryujinx
     pkgs.prismlauncher
     pkgs.shadps4
