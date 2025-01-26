@@ -2,7 +2,7 @@
   imports = [
     # ./ipfs.nix
     ./mysql.nix
-    ./ollama.nix
+    # ./ollama.nix
     # ./paperless.nix
     # ./postgresql.nix
     # ./redis.nix
