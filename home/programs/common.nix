@@ -244,7 +244,6 @@
     ## Typst
     pkgs.typst
     pkgs.typstfmt
-    pkgs.typst-lsp
     pkgs.typst-live
     pkgs.tinymist
 
