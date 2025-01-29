@@ -2,12 +2,18 @@
 , ...
 }: {
   home.packages = [
+    ## wine & proton
+    pkgs.protonup-qt
+
     ## Лаунчеры
 
     # pkgs.nexusmods-app-unfree
     pkgs.ryujinx
     pkgs.prismlauncher
     pkgs.shadps4
+    pkgs.bottles
+    pkgs.r2modman
+    # pkgs.lutris
 
     ## Мод манагеры
 
@@ -15,6 +21,7 @@
 
     ## Игры
 
+    # pkgs.arx-libertatis
     # pkgs.opengothic
     # pkgs.cataclysm-dda
     # pkgs.ruffle

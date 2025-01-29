@@ -28,7 +28,6 @@
     pkgs.home-manager
 
     pkgs.steam-run
-    # pkgs.lutris
     pkgs.lzip # for waydroid
 
     # Аудио видео проигрыватели

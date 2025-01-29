@@ -126,7 +126,6 @@
     # pkgs.crow-translate
     pkgs.zoom-us
     pkgs.wl-clipboard
-    # pkgs.arx-libertatis
     # pkgs.revolt-desktop
 
     pkgs.poppler_utils
@@ -146,9 +145,6 @@
     # pkgs.baobab
     pkgs.kdePackages.filelight # For Dolphin Integration
     pkgs.kdePackages.kdialog # Для arx libertatis
-    pkgs.bottles
-    pkgs.protonup-qt
-    pkgs.r2modman
     pkgs.audacity
     pkgs.xwaylandvideobridge
     # pkgs.cura
