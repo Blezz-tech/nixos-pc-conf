@@ -183,6 +183,7 @@
     pkgs.just
     pkgs.oxipng
     pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
+    pkgs.kdePackages.kompare
 
     # Rar archive
     pkgs.rar
