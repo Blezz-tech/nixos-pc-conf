@@ -75,7 +75,7 @@
     # pkgs.gimp
     # pkgs.inkscape
     pkgs.krita
-    pkgs.drawio
+    # pkgs.drawio
     # pkgs.aseprite
 
     # Текстовые редакторы
@@ -123,10 +123,10 @@
     # pkgs.sops
     pkgs.bash-language-server
     pkgs.imagemagick
-    pkgs.crow-translate
+    # pkgs.crow-translate
     pkgs.zoom-us
     pkgs.wl-clipboard
-    pkgs.arx-libertatis
+    # pkgs.arx-libertatis
     # pkgs.revolt-desktop
 
     pkgs.poppler_utils
@@ -136,7 +136,7 @@
     # pkgs.nheko
     # pkgs.kdePackages.neochat
     # pkgs.fractal
-    pkgs.kando
+    # pkgs.kando
 
     # Словари для libreoffice
     pkgs.hunspell
@@ -165,7 +165,7 @@
     # pkgs.easyeffects
     pkgs.lazygit
     pkgs.kdePackages.kdenlive
-    pkgs.davinci-resolve
+    # pkgs.davinci-resolve
 
     pkgs.mdbook
     pkgs.mdbook-epub
@@ -182,7 +182,7 @@
     pkgs.zotero
     pkgs.just
     pkgs.oxipng
-    pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
+    # pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
     pkgs.kdePackages.kompare
 
     # Rar archive
@@ -224,7 +224,7 @@
     # pkgs.mysql-workbench
     pkgs.dbeaver-bin
     pkgs.treefmt2
-    pkgs.zeal-qt6
+    # pkgs.zeal-qt6
     pkgs.anki
     # pkgs.kdePackages.ksystemlog
     # pkgs.kdePackages.kio-gdrive
@@ -234,7 +234,7 @@
     # pkgs.openscad
     # pkgs.openscad-lsp
     # pkgs.kicad
-    pkgs.zig
+    # pkgs.zig
 
     ## Rust
     pkgs.cargo
