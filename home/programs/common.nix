@@ -127,6 +127,7 @@
     pkgs.zoom-us
     pkgs.wl-clipboard
     # pkgs.revolt-desktop
+    pkgs.zim
 
     pkgs.poppler_utils
     # pkgs.ocrmypdf
