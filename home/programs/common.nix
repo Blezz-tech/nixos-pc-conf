@@ -149,7 +149,6 @@
     pkgs.audacity
     pkgs.xwaylandvideobridge
     # pkgs.cura
-    # pkgs.emacs
     pkgs.nextcloud-client
     # pkgs.geogebra6
 

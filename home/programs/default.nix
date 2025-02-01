@@ -3,6 +3,7 @@
     ./chromium.nix
     ./common.nix
     ./direnv.nix
+    ./emacs.nix
     ./eza.nix
     ./fzf.nix
     ./git.nix
