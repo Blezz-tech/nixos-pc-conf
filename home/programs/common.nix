@@ -35,8 +35,14 @@
 
   home.packages = [
     # LSP
-    pkgs.marksman
-    pkgs.typescript-language-server
+    pkgs.marksman # markdown
+    pkgs.typescript-language-server # js/typescript
+    pkgs.nixd # nix
+    pkgs.nil # nix
+
+    # formattiers
+    pkgs.black # python
+    pkgs.nixpkgs-fmt # nix
 
     # LaTeX
     pkgs.texlive.combined.scheme-full
@@ -104,9 +110,7 @@
     ]))
     # pkgs.nodejs
     pkgs.sqlitebrowser
-    pkgs.nixpkgs-fmt
-    pkgs.nixd
-    pkgs.nil
+
     # pkgs.gnumake
     # pkgs.tiled
     # pkgs.unityhub
@@ -245,7 +249,7 @@
     pkgs.typst-live
     pkgs.tinymist
 
-    pkgs.black # python formattier
+    
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
