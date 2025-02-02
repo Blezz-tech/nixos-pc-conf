@@ -36,6 +36,7 @@
   home.packages = [
     # LSP
     pkgs.marksman
+    pkgs.typescript-language-server
 
     # LaTeX
     pkgs.texlive.combined.scheme-full
