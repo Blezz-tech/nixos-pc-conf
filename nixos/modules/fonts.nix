@@ -35,6 +35,7 @@
     pkgs.source-sans-pro
     pkgs.liberation_ttf
     pkgs.scientifica
+    pkgs.sarasa-gothic
     
     pkgs.roboto
 
