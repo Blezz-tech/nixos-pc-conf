@@ -17,18 +17,19 @@
     #   LC_TELEPHONE = "ru_RU.UTF-8";
     #   LC_TIME = "ru_RU.UTF-8";
     # };
-    inputMethod = {
-      enable = true;
-      type = "fcitx5";
-      fcitx5 = {
-        addons = [
-          pkgs.kdePackages.fcitx5-qt
-          pkgs.fcitx5-rime
-          pkgs.fcitx5-chinese-addons
-          pkgs.rime-data
-        ];
-        plasma6Support = true;
-      };
-    };
+
+    # inputMethod = {
+    #   enable = true;
+    #   type = "fcitx5";
+    #   fcitx5 = {
+    #     addons = [
+    #       pkgs.kdePackages.fcitx5-qt
+    #       pkgs.fcitx5-rime
+    #       pkgs.fcitx5-chinese-addons
+    #       pkgs.rime-data
+    #     ];
+    #     plasma6Support = true;
+    #   };
+    # };
   };
 }
