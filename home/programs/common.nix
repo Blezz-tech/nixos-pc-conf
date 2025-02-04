@@ -155,6 +155,7 @@
     pkgs.xwaylandvideobridge
     # pkgs.cura
     pkgs.nextcloud-client
+    pkgs.nextcloud-talk-desktop
     # pkgs.geogebra6
 
     pkgs.digikam
