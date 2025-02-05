@@ -209,6 +209,7 @@
     pkgs.kdePackages.kclock
     pkgs.kdePackages.juk
     pkgs.kdePackages.kalzium
+    pkgs.kdePackages.kfind
     pkgs.goldendict-ng
     pkgs.nix-search
     pkgs.ffmpeg-full
