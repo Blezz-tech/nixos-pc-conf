@@ -39,6 +39,7 @@
     pkgs.typescript-language-server # js/typescript
     pkgs.nixd # nix
     pkgs.nil # nix
+    pkgs.vscode-langservers-extracted # css eslint html json markdown
 
     # formattiers
     pkgs.black # python
