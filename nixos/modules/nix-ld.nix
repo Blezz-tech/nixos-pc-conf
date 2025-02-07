@@ -5,14 +5,10 @@
   programs.nix-ld = {
     enable = true;
     libraries = [
-      pkgs.SDL
       pkgs.SDL2
       pkgs.SDL2_image
       pkgs.SDL2_mixer
       pkgs.SDL2_ttf
-      pkgs.SDL_image
-      pkgs.SDL_mixer
-      pkgs.SDL_ttf
       pkgs.alsa-lib
       pkgs.at-spi2-atk
       pkgs.at-spi2-core
