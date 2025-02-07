@@ -155,7 +155,7 @@
     pkgs.audacity
     pkgs.xwaylandvideobridge
     # pkgs.cura
-    pkgs.cura-appimage
+    # pkgs.cura-appimage
     pkgs.nextcloud-client
     pkgs.nextcloud-talk-desktop
     # pkgs.geogebra6
