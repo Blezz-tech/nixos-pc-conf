@@ -16,9 +16,13 @@
         # "--proxy-server=http://127.0.0.1:3999"
         # "--proxy-server=http://45.82.15.225:17200"
 
-        "--enable-features=VaapiVideoDecodeLinuxGL"
+        "--use-gl=angle"
+        "--use-angle=vulkan"
         "--ignore-gpu-blocklist"
+        "--enable-gpu-rasterization"
         "--enable-zero-copy"
+        "--enable-accelerated-video-decode"
+        "--enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,VaapiVideoDecodeLinuxGL"
       ];
     }));
   };
