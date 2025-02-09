@@ -20,7 +20,8 @@
       "explorer.confirmDragAndDrop" = false;
       "editor.rulers" = [ 80 ];
       # "html.format.wrapLineLength" = 0; # убрать авто перенос текста
-      
+      "git.blame.editorDecoration.enabled" = true;
+
       "zig.path" = "zig";
     };
   };
