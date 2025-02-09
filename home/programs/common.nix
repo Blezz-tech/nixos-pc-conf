@@ -235,9 +235,9 @@
         "--enable-gpu-rasterization"
         "--enable-zero-copy"
         "--enable-accelerated-video-decode"
-        "--enable-features=AcceleratedVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE"
-        "--enable-features=VaapiIgnoreDriverChecks,VaapiVideoDecoder,PlatformHEVCDecoderSupport"
-        "--enable-features=UseMultiPlaneFormatForHardwareVideo"
+        "--enable-features=UseOzonePlatform"
+        "--ozone-platform-hint=wayland"
+        "--enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport"
       ];
     })
     # pkgs.mysql-workbench
