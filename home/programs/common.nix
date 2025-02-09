@@ -237,6 +237,10 @@
         "--enable-accelerated-video-decode"
         "--ozone-platform-hint=wayland"
         "--enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport,UseOzonePlatform"
+
+        # For Fcitx5
+        "--enable-wayland-ime"
+        "--wayland-text-input-version=3"
       ];
     })
     # pkgs.mysql-workbench
