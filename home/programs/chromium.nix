@@ -24,4 +24,16 @@
       "--enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport"
     ];
   };
+
+  xdg.configFile."chromium-flags.conf".text = ''
+    --use-gl=angle
+    --use-angle=vulkan
+    --ignore-gpu-blocklist
+    --enable-gpu-rasterization
+    --enable-zero-copy
+    --enable-accelerated-video-decode
+    --enable-features=UseOzonePlatform
+    --ozone-platform-hint=wayland
+    --enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport
+  '';
 }
