@@ -12,7 +12,7 @@
       "editor.rulers" = [ 80 ];
 
       "explorer.confirmDragAndDrop" = false;
-  
+
       "git.enableSmartCommit" = true;
       "git.openRepositoryInParentFolders" = "always";
       "git.confirmSync" = false;
@@ -26,6 +26,7 @@
       "workbench.startupEditor" = "none";
 
       "zig.path" = "zig";
+      "window.titleBarStyle" = "custom";
 
       # "html.format.wrapLineLength" = 0; # убрать авто перенос текста
     };
