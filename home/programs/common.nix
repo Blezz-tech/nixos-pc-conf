@@ -63,7 +63,7 @@
     # pkgs.obsidian
 
     # Месседжеры
-    pkgs.discord
+    pkgs.discord-canary
     # pkgs.element-desktop
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio
