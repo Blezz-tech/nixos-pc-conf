@@ -153,7 +153,7 @@
     pkgs.kdePackages.filelight # For Dolphin Integration
     pkgs.kdePackages.kdialog # Для arx libertatis
     pkgs.audacity
-    pkgs.xwaylandvideobridge
+    pkgs.kdePackages.xwaylandvideobridge
     # pkgs.cura
     pkgs.cura-appimage
     pkgs.nextcloud-client
