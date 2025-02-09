@@ -201,6 +201,7 @@
     pkgs.haruna
     pkgs.gcc
     pkgs.kdePackages.kolourpaint
+    pkgs.kdePackages.kasts
     pkgs.iagno
     # pkgs.lunarvim
     # pkgs.treesheets
