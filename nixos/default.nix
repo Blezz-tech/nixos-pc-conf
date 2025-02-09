@@ -80,10 +80,8 @@
                 "F405" # name may be undefined, or defined from star imports: module
               ];
             }
-            (builtins.readFile (pkgs.fetchurl {
-              url = "https://pastebin.com/raw/8tQDsMVd";
-              sha256 = "sha256-IdXv0MfRG1/1pAAwHLS2+1NESFEz2uXrbSdvU9OvdJ8=";
-            }));
+            (builtins.readFile ./pkgs/discord-krisp-patcher/main.py);
+            # Script get from: https://pastebin.com/raw/8tQDsMVd
       };
     })
   ];
