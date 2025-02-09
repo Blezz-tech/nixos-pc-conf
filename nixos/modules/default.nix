@@ -54,11 +54,11 @@
   # nixpkgs.config.rocmSupport = true;
 
   # kmail
-  # programs.kde-pim = {
-  #   # kmail = true;
-  #   # kontact = true;
-  #   merkuro = true;
-  # };
+  programs.kde-pim = {
+    kmail = true;
+    kontact = true;
+    merkuro = true;
+  };
 
   # Enable touchpad support (enabled default in most desktopManager).
   # libinput.enable = true;
