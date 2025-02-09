@@ -1,9 +1,9 @@
 {
   programs = {
-    # gamescope = {
-    #   enable = true;
-    #   capSysNice = true;
-    # };
+    gamescope = {
+      enable = true;
+      capSysNice = true;
+    };
 
     steam = {
       enable = true;
