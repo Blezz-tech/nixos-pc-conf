@@ -34,6 +34,8 @@
   };
 
   home.packages = [
+    pkgs.blezz-pkgs.discord-krisp-patcher
+
     # LSP
     pkgs.marksman # markdown
     pkgs.typescript-language-server # js/typescript
