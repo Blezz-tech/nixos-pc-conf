@@ -8,20 +8,22 @@
       dontPatchELF = true;
       nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ pkgs.kdePackages.wrapQtAppsHook ];
       # version = "6.9.3447.41";
-
-      commandLineArgs = [
-        "--enable-blink-features=MiddleClickAutoscroll"
-
-        # "--proxy-server=http://127.0.0.1:3999"
-
-        "--use-gl=angle"
-        "--use-angle=vulkan"
-        "--ignore-gpu-blocklist"
-        "--enable-gpu-rasterization"
-        "--enable-zero-copy"
-        "--enable-accelerated-video-decode"
-        "--enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,VaapiVideoDecodeLinuxGL"
-      ];
     }));
+    commandLineArgs = [
+      "--enable-blink-features=MiddleClickAutoscroll"
+
+      # "--proxy-server=http://127.0.0.1:3999"
+
+
+      # "--use-gl=angle"
+      # "--use-angle=vulkan"
+      "--ignore-gpu-blocklist"
+      "--enable-gpu-rasterization"
+      "--enable-zero-copy"
+      "--enable-accelerated-video-decode"
+      "--enable-features=AcceleratedVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE"
+      "--enable-features=VaapiIgnoreDriverChecks,VaapiVideoDecoder,PlatformHEVCDecoderSupport"
+      "--enable-features=UseMultiPlaneFormatForHardwareVideo"
+    ];
   };
 }
