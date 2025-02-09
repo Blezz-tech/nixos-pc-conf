@@ -63,7 +63,7 @@
     # pkgs.obsidian
 
     # Месседжеры
-    # pkgs.discord # т.к. забанен в россии, Неудаётся скачать
+    pkgs.discord
     # pkgs.element-desktop
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio
