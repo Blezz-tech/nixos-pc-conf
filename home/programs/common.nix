@@ -228,6 +228,16 @@
         "--enable-blink-features=MiddleClickAutoscroll"
 
         # "--proxy-server=http://127.0.0.1:3999"
+
+        "--use-gl=angle"
+        "--use-angle=vulkan"
+        "--ignore-gpu-blocklist"
+        "--enable-gpu-rasterization"
+        "--enable-zero-copy"
+        "--enable-accelerated-video-decode"
+        "--enable-features=AcceleratedVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE"
+        "--enable-features=VaapiIgnoreDriverChecks,VaapiVideoDecoder,PlatformHEVCDecoderSupport"
+        "--enable-features=UseMultiPlaneFormatForHardwareVideo"
       ];
     })
     # pkgs.mysql-workbench
@@ -257,7 +267,7 @@
     pkgs.typst-live
     pkgs.tinymist
 
-    
+
 
     # here is some command line tools I use frequently
     # feel free to add your own or remove some of them
