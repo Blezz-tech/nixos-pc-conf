@@ -55,7 +55,7 @@
 
   # kmail
   programs.kde-pim = {
-    kmail = true;
+    # kmail = true;
     kontact = true;
     merkuro = true;
   };
