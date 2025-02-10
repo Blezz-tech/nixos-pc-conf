@@ -168,7 +168,6 @@
     pkgs.traceroute
 
     pkgs.go
-    pkgs.easyeffects
     pkgs.lazygit
     pkgs.kdePackages.kdenlive
     # pkgs.davinci-resolve
