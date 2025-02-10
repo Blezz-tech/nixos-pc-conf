@@ -18,14 +18,14 @@
       # "--use-gl=angle"
       # "--use-angle=vulkan"
       "--ignore-gpu-blocklist"
-      "--enable-gpu-rasterization"
+      # "--enable-gpu-rasterization"
       "--enable-zero-copy"
-      "--enable-accelerated-video-decode"
-      "--enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport"
+      # "--enable-accelerated-video-decode"
+      # "--enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport"
 
         # For Fcitx5
-        "--enable-wayland-ime"
-        "--wayland-text-input-version=3"
+        # "--enable-wayland-ime"
+        # "--wayland-text-input-version=3"
     ];
   };
 
