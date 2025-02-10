@@ -1,5 +1,5 @@
 {
-  programs.easyeffects = {
+  services.easyeffects = {
     enable = true;
   };
 }
