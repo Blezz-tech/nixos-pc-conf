@@ -28,6 +28,10 @@
       "zig.path" = "zig";
       "window.titleBarStyle" = "custom";
 
+      # https://code.visualstudio.com/docs/remote/troubleshooting
+      # "remote.SSH.showLoginTerminal" =  true;
+      # "remote.SSH.useLocalServer" = false;
+
       # "html.format.wrapLineLength" = 0; # убрать авто перенос текста
     };
   };
