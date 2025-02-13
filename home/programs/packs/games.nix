@@ -31,7 +31,7 @@
     # pkgs.minetest
     # pkgs.wesnoth
     # pkgs.openspades
-    # pkgs.airshipper
+    pkgs.airshipper
 
     # pkgs.unciv
     # pkgs.endless-sky
