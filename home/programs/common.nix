@@ -258,6 +258,7 @@
     # pkgs.zig
     # pkgs.sfxr
     # pkgs.sfxr-qt
+    # pkgs.archivebox
 
     ## Rust
     pkgs.cargo
