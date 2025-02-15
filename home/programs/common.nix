@@ -256,6 +256,8 @@
     # pkgs.openscad-lsp
     # pkgs.kicad
     # pkgs.zig
+    # pkgs.sfxr
+    # pkgs.sfxr-qt
 
     ## Rust
     pkgs.cargo
