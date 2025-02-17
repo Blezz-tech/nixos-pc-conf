@@ -35,5 +35,31 @@
     Music = "cd ~/media/music";
     # Public   = "~/media/public";
     # Template = "~/media/templates";
+
+    sshToCSV = ''
+      echo "Host,HostName,Port,User"
+
+      awk '
+      /^Host / {
+          # If we encounter a new Host, reset variables
+          if (host) {
+              printf "%s,%s,%s,%s\n", host, hostname, port, user
+          }
+          host = $2
+          hostname = ""
+          port = ""
+          user = ""
+      }
+      /^  HostName / { hostname = $2 }
+      /^  Port / { port = $2 }
+      /^  User / { user = $2 }
+      END {
+          # Print the last entry if it exists
+          if (host) {
+              printf "%s,%s,%s,%s\n", host, hostname, port, user
+          }
+      }
+      ' ~/.ssh/config
+    '';
   };
 }
