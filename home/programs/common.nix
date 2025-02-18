@@ -259,7 +259,7 @@
     # pkgs.sfxr
     # pkgs.sfxr-qt
     # pkgs.archivebox
-    # pkgs.openapi-python-client
+    pkgs.openapi-generator-cli
 
     ## Rust
     pkgs.cargo
