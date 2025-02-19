@@ -42,6 +42,7 @@
     pkgs.nixd # nix
     pkgs.nil # nix
     pkgs.vscode-langservers-extracted # css eslint html json markdown
+    pkgs.yaml-language-server # yaml
 
     # formattiers
     pkgs.black # python
