@@ -28,6 +28,10 @@
       "zig.path" = "zig";
       "window.titleBarStyle" = "custom";
 
+      # telemetry
+      "redhat.telemetry.enabled" = false;
+      "telemetry.telemetryLevel" = "crash";
+
       # https://code.visualstudio.com/docs/remote/troubleshooting
       # "remote.SSH.showLoginTerminal" =  true;
       # "remote.SSH.useLocalServer" = false;
