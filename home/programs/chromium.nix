@@ -30,6 +30,11 @@
   };
 
   xdg.configFile."chromium-flags.conf".text = ''
+    --enable-blink-features=MiddleClickAutoscroll
+    
+
+    # "--proxy-server=http://127.0.0.1:3999"
+    
     --use-gl=angle
     --use-angle=vulkan
     --ignore-gpu-blocklist
