@@ -18,6 +18,7 @@
     pkgs.xdg-utils
     pkgs.git
     pkgs.wget
+    pkgs.wget2
     pkgs.curl
     pkgs.vscode
     pkgs.pwgen
