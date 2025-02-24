@@ -21,7 +21,7 @@
 
     ## Игры
 
-    pkgs.arx-libertatis
+    # pkgs.arx-libertatis
     # pkgs.opengothic
     # pkgs.cataclysm-dda
     # pkgs.ruffle
