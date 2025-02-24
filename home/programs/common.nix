@@ -151,6 +151,13 @@
     pkgs.hunspell
     pkgs.hunspellDicts.ru_RU
     pkgs.hunspellDicts.en_US
+    
+    # Словари
+    pkgs.aspell
+    pkgs.aspellDicts.en
+    pkgs.aspellDicts.en-computers
+    pkgs.aspellDicts.en-science
+    pkgs.aspellDicts.ru
 
     # pkgs.baobab
     pkgs.kdePackages.filelight # For Dolphin Integration
