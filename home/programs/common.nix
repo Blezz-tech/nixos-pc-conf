@@ -223,6 +223,7 @@
     pkgs.kdePackages.juk
     pkgs.kdePackages.kalzium
     pkgs.kdePackages.kfind
+    pkgs.kdePackages.kaccounts-providers
     pkgs.goldendict-ng
     pkgs.nix-search
     pkgs.ffmpeg-full
