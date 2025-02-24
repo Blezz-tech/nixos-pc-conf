@@ -223,6 +223,8 @@
     pkgs.kdePackages.juk
     pkgs.kdePackages.kalzium
     pkgs.kdePackages.kfind
+    pkgs.kdePackages.kio-gdrive
+    pkgs.kdePackages.kaccounts-integration
     pkgs.kdePackages.kaccounts-providers
     pkgs.goldendict-ng
     pkgs.nix-search
