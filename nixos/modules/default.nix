@@ -42,7 +42,7 @@
   programs.virt-manager.enable = true;
 
   # Эмулятор Android
-  virtualisation.waydroid.enable = true;
+  # virtualisation.waydroid.enable = true;
 
   # nix helper
   programs.nh.enable = true;
