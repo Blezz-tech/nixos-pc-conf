@@ -7,6 +7,10 @@
       enable = true;
       lfs.enable = true;
       package = pkgs.gitFull;
+      difftastic = {
+        enable = true;
+        # display = "inline";
+      };
 
       userName = "blezz-tech";
       userEmail = "markus.jenya04@yandex.ru";
