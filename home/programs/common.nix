@@ -205,6 +205,7 @@
 
     # pkgs.rustdesk
     pkgs.anilibria-winmaclinux
+    pkgs.difftastic
     pkgs.anime4k
     pkgs.fd
     pkgs.haruna
