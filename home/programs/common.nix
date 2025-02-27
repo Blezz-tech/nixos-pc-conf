@@ -211,7 +211,7 @@
     pkgs.haruna
     pkgs.gcc
     pkgs.kdePackages.kolourpaint
-    # pkgs.kdePackages.kleopatra
+    pkgs.kdePackages.kleopatra
     pkgs.kdePackages.kasts
     pkgs.iagno
     # pkgs.lunarvim
