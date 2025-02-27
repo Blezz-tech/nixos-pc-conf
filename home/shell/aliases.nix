@@ -29,6 +29,12 @@
     # myPasswordGenerator = "date +%s | sha256sum | base64 | head -c 32 ; echo";
     myPasswordGenerator = "pwgen -c 30";
 
+    # gpg
+    myGpgEdit = "gpg --edit-key markus.jenya04@yandex.ru";
+    myGpgList = "gpg --list-keys --with-keygrip";
+    myGpgSshExport = "gpg --export-ssh-key blezz-tech";
+    mySshCurrent = "ssh-add -l";
+
     Desktop = "cd ~/media/desktop";
     Downloads = "cd ~/downloads";
     Images = "cd ~/media/images";
