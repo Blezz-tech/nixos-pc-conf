@@ -38,6 +38,20 @@
         "node_modules"
         ".direnv"
       ];
+
+      aliases = {
+        # View abbreviated SHA, description, and history graph of the commits
+        l = "log --pretty=oneline --graph --abbrev-commit";
+        # View the current working tree status using the short format
+        s = "status -s";
+        ss = "status";
+        # show verbose output about tags, branches or remotes
+        tags = "tag -l";
+        branches = "branch -a";
+        remotes = "remote -v";
+        # Fetch all remotes and remove stale references
+        fa = "fetch --all --prune";
+      };
     };
 
     git-cliff = {
