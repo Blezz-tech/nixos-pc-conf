@@ -12,6 +12,7 @@
     ./tty.nix
     ./user.nix
     ./vr.nix
+    ./xserver.nix
     ./work
   ];
 

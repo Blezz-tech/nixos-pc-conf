@@ -25,15 +25,6 @@
     xdgOpenUsePortal = true;
   };
 
-  services.xserver = {
-    enable = true;
-    # videoDrivers = [ "amdgpu" ];
-
-    # Configure keymap in X11
-    xkb.layout = "us,ru";
-    xkb.variant = "";
-  };
-
   services.desktopManager.plasma6.enable = true;
 
   services.displayManager = {
