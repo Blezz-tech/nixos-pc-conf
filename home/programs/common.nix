@@ -216,6 +216,7 @@
     pkgs.iagno
     # pkgs.lunarvim
     # pkgs.treesheets
+    pkgs.openai-whisper # транскрибация аудио в текст
     pkgs.zbar
     pkgs.parsec-bin
     pkgs.remmina
