@@ -35,6 +35,6 @@
     pkgs.vlc
 
     # Диспеер раздеов дисков
-    pkgs.partition-manager
+    pkgs.kdePackages.partitionmanager
   ];
 }
