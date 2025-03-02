@@ -38,10 +38,6 @@
         "node_modules"
         ".direnv"
       ];
-
-      hooks = {
-        pre-rebase = ./git/pre-rebase;
-      };
     };
 
     git-cliff = {

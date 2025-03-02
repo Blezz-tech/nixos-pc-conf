@@ -1,8 +1,0 @@
-
-# Получаем имя текущей ветки
-BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
-
-# Создаем резервную копию ветки
-git branch "$BRANCH_NAME.rebase.bak"
-
-echo "Create backup branch: $BRANCH_NAME.rebase.bak"
