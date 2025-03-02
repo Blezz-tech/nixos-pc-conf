@@ -23,9 +23,40 @@
           autocrlf = "input";
           filemode = false;
           editor = "code --wait";
+
+          # хз зачем нужно
+          # fsmonitor = true;
+          # untrackedCache = true;
         };
-        commit.gpgsign = true;
-        tag.gpgsign = true;
+        tag = {
+          sort = "version:refname";
+        };
+        diff = {
+          algorithm = "histogram";
+          colorMoved = "plain";
+          mnemonicPrefix = true;
+          renames = true;
+        };
+        push = {
+          autoSetupRemote = true;
+          followTags = true;
+        };
+        fetch = {
+          prune = true;
+          pruneTags = true;
+          all = true;
+        };
+        rebase = {
+          autoSquash = true;
+          autoStash = true;
+          updateRefs = true;
+        };
+        pull = {
+          rebase = true;
+        };
+        merge = {
+          conflictstyle = "zdiff3";
+        };
         credential.helper = "store";
         # TODO: Нужно попробоавть использовать Git Credential Manager
         # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
