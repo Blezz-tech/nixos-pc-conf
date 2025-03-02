@@ -29,8 +29,6 @@
     enable = true;
     # videoDrivers = [ "amdgpu" ];
 
-    # desktopManager.plasma5.enable = true;
-
     # Configure keymap in X11
     xkb.layout = "us,ru";
     xkb.variant = "";
