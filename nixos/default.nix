@@ -54,6 +54,11 @@
   powerManagement.enable = true;
   powerManagement.cpuFreqGovernor = "performance";
 
+  # add tmpfile for user HIP: https://wiki.nixos.org/wiki/AMD_GPU
+  systemd.tmpfiles.rules = [
+    "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
+  ];
+
   nixpkgs.overlays = [
     (self: super: {
       blezz-pkgs = {
@@ -81,7 +86,7 @@
               ];
             }
             (builtins.readFile ./pkgs/discord-krisp-patcher/main.py);
-            # Script get from: https://pastebin.com/raw/8tQDsMVd
+        # Script get from: https://pastebin.com/raw/8tQDsMVd
       };
     })
   ];
