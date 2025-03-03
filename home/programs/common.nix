@@ -229,7 +229,7 @@
     pkgs.kdePackages.kio-gdrive
     pkgs.kdePackages.kaccounts-integration
     pkgs.kdePackages.kaccounts-providers
-    pkgs.goldendict-ng
+    # pkgs.goldendict-ng
     pkgs.nix-search
     pkgs.ffmpeg-full
     pkgs.gh
