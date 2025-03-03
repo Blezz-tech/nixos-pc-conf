@@ -1,42 +1,44 @@
 {
   programs.vscode = {
     enable = true;
-    keybindings = [
-      {
-        key = "ctrl+[Backquote]";
-        command = "workbench.action.terminal.toggleTerminal";
-      }
-    ];
-    userSettings = {
-      "editor.minimap.enabled" = false;
-      "editor.rulers" = [ 80 ];
+    profiles.default = {
+      keybindings = [
+        {
+          key = "ctrl+[Backquote]";
+          command = "workbench.action.terminal.toggleTerminal";
+        }
+      ];
+      userSettings = {
+        "editor.minimap.enabled" = false;
+        "editor.rulers" = [ 80 ];
 
-      "explorer.confirmDragAndDrop" = false;
+        "explorer.confirmDragAndDrop" = false;
 
-      "git.enableSmartCommit" = true;
-      "git.openRepositoryInParentFolders" = "always";
-      "git.confirmSync" = false;
-      "git.autofetch" = true;
-      "git.blame.editorDecoration.enabled" = true;
+        "git.enableSmartCommit" = true;
+        "git.openRepositoryInParentFolders" = "always";
+        "git.confirmSync" = false;
+        "git.autofetch" = true;
+        "git.blame.editorDecoration.enabled" = true;
 
-      "window.customTitleBarVisibility" = "auto";
+        "window.customTitleBarVisibility" = "auto";
 
-      "workbench.sideBar.location" = "right";
-      "workbench.activityBar.location" = "top";
-      "workbench.startupEditor" = "none";
+        "workbench.sideBar.location" = "right";
+        "workbench.activityBar.location" = "top";
+        "workbench.startupEditor" = "none";
 
-      "zig.path" = "zig";
-      "window.titleBarStyle" = "custom";
+        "zig.path" = "zig";
+        "window.titleBarStyle" = "custom";
 
-      # telemetry
-      "redhat.telemetry.enabled" = false;
-      "telemetry.telemetryLevel" = "crash";
+        # telemetry
+        "redhat.telemetry.enabled" = false;
+        "telemetry.telemetryLevel" = "crash";
 
-      # https://code.visualstudio.com/docs/remote/troubleshooting
-      # "remote.SSH.showLoginTerminal" =  true;
-      # "remote.SSH.useLocalServer" = false;
+        # https://code.visualstudio.com/docs/remote/troubleshooting
+        # "remote.SSH.showLoginTerminal" =  true;
+        # "remote.SSH.useLocalServer" = false;
 
-      # "html.format.wrapLineLength" = 0; # убрать авто перенос текста
+        # "html.format.wrapLineLength" = 0; # убрать авто перенос текста
+      };
     };
   };
 }
