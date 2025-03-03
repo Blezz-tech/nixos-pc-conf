@@ -139,6 +139,7 @@
     # pkgs.zim
 
     pkgs.poppler_utils
+    pkgs.pdftk
     # pkgs.ocrmypdf
     # pkgs.tesseract
     # pkgs.stack
