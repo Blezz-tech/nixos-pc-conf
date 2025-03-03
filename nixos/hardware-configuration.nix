@@ -18,6 +18,8 @@
     kernelModules = [ "kvm-intel" ];
     kernelPackages = pkgs.linuxPackages_latest;
     extraModulePackages = [ ];
+
+    loader.timeout = 5;
   };
 
   fileSystems."/" = {
