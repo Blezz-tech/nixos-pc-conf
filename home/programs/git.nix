@@ -8,7 +8,7 @@
       lfs.enable = true;
       package = pkgs.gitFull;
       difftastic = {
-        enable = true;
+        enable = false;
         # display = "inline";
       };
 
