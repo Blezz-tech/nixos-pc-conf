@@ -239,7 +239,7 @@
     pkgs.chromium
     # pkgs.mysql-workbench
     pkgs.dbeaver-bin
-    pkgs.treefmt2
+    pkgs.treefmt
     # pkgs.zeal-qt6
     pkgs.anki
     # pkgs.kdePackages.ksystemlog
