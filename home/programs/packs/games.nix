@@ -32,6 +32,7 @@
     # pkgs.wesnoth
     # pkgs.openspades
     pkgs.airshipper
+    pkgs.taisei
 
     # pkgs.unciv
     # pkgs.endless-sky
