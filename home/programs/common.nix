@@ -179,7 +179,7 @@
     pkgs.go
     pkgs.lazygit
     pkgs.kdePackages.kdenlive
-    # pkgs.davinci-resolve
+    pkgs.davinci-resolve
 
     pkgs.mdbook
     pkgs.mdbook-epub
