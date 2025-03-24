@@ -114,6 +114,7 @@
     ]))
     # pkgs.nodejs
     pkgs.sqlitebrowser
+    pkgs.code-cursor
 
     # pkgs.gnumake
     # pkgs.tiled
