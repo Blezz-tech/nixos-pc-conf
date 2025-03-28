@@ -1,6 +1,8 @@
 {
   services.pulseaudio.enable = false;
 
+  hardware.bluetooth.enable = true;
+
   security.rtkit.enable = true;
 
   services.pipewire = {
