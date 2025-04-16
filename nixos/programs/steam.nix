@@ -5,6 +5,8 @@
       capSysNice = true;
     };
 
+    gamemode.enable = true;
+
     steam = {
       enable = true;
 
