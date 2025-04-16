@@ -147,6 +147,7 @@
     # pkgs.nheko
     # pkgs.kdePackages.neochat
     # pkgs.fractal
+    pkgs.mangohud
     # pkgs.kando
 
     # Словари для libreoffice
