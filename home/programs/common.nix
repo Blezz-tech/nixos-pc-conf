@@ -59,7 +59,7 @@
     # pkgs.insomnia
 
     # 3D редакторы
-    # pkgs.blender-hip
+    pkgs.blender-hip
 
     # Музыкальные редакторы
     pkgs.musescore
@@ -173,7 +173,7 @@
     pkgs.nextcloud-talk-desktop
     # pkgs.geogebra6
 
-    pkgs.digikam
+    # pkgs.digikam
     pkgs.rawtherapee
     pkgs.exiftool # Для digikam
     pkgs.traceroute
