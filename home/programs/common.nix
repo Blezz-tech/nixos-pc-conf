@@ -182,6 +182,23 @@
     pkgs.go
     pkgs.lazygit
     pkgs.kdePackages.kdenlive
+    # (pkgs.davinci-resolve-studio.overrideAttrs (old: {
+    #   postInstall = ''
+    #     ${old.postInstall or ""}
+    #     # perl -pi -e 's/\x74\x11\xe8\x21\x23\x00\x00/\xeb\x11\xe8\x21\x23\x00\x00/g' $out/bin/resolve
+    #     # perl -pi -e 's/\x74\x11\x48\x8B\x45\xC8\x8B\x55\xFC\x89\x50\x58\xB8\x00\x00\x00/\xEB\x11\x48\x8B\x45\xC8\x8B\x55\xFC\x89\x50\x58\xB8\x00\x00\x00/g' $out/bin/resolve
+    #     # perl -pi -e 's/\x03\x00\x89\x45\xFC\x83\x7D\xFC\x00\x74\x11\x48\x8B\x45\xC8\x8B/\x03\x00\x89\x45\xFC\x83\x7D\xFC\x00\xEB\x11\x48\x8B\x45\xC8\x8B/g' $out/bin/resolve
+
+    #     # echo -e "LICENSE blackmagic davinciresolvestudio 009599 permanent uncounted\nhostid=ANY issuer=AHH customer=AHH issued=03-Apr-2024\n akey=3148-9267-1853-4920-8173_ck=00 sig=\"00\"\n" > $out/.license/blackmagic.lic
+    #   '';
+    # }))
+    # (pkgs.davinci-resolve-studio.overrideAttrs (old: {
+    #   postFixup = ''
+    #     ${old.postFixup or ""}
+    #     ${pkgs.perl}/bin/perl -pi -e 's/\x74\x11\xe8\x21\x23\x00\x00/\xeb\x11\xe8\x21\x23\x00\x00/g' $out/bin/resolve
+    #   '';
+    # }))
+    pkgs.davinci-resolve-studio
     pkgs.davinci-resolve
 
     pkgs.mdbook
