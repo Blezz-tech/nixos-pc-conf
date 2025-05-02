@@ -71,6 +71,10 @@
             }
             (builtins.readFile ./pkgs/discord-krisp-patcher/main.py);
         # Script get from: https://pastebin.com/raw/8tQDsMVd
+
+        davinci-resolve = pkgs.callPackage ./pkgs/davinci {
+          studioVariant = true;
+        };
       };
     })
   ];

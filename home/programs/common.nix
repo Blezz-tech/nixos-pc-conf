@@ -35,6 +35,7 @@
 
   home.packages = [
     pkgs.blezz-pkgs.discord-krisp-patcher
+    pkgs.blezz-pkgs.davinci-resolve
 
     # LSP
     pkgs.marksman # markdown
@@ -198,8 +199,6 @@
     #     ${pkgs.perl}/bin/perl -pi -e 's/\x74\x11\xe8\x21\x23\x00\x00/\xeb\x11\xe8\x21\x23\x00\x00/g' $out/bin/resolve
     #   '';
     # }))
-    pkgs.davinci-resolve-studio
-    pkgs.davinci-resolve
 
     pkgs.mdbook
     pkgs.mdbook-epub
