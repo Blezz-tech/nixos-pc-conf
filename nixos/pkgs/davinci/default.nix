@@ -24,6 +24,7 @@
   makeDesktopItem,
   copyDesktopItems,
   jq,
+  perl,
 
   studioVariant ? false,
 
@@ -42,6 +43,7 @@ let
         addDriverRunpath
         copyDesktopItems
         unzip
+        perl
       ];
 
       # Pretty sure, there are missing dependencies ...
@@ -151,6 +153,9 @@ let
           appimage-run ${lib.escapeShellArg appimageName} -i -y -n -C $out
 
           mkdir -p $out/{configs,DolbyVision,easyDCP,Fairlight,GPUCache,logs,Media,"Resolve Disk Database",.crashreport,.license,.LUT}
+          
+          perl -pi -e 's/\x74\x11\xe8\x21\x23\x00\x00/\xeb\x11\xe8\x21\x23\x00\x00/g' $out/bin/resolve
+          
           runHook postInstall
         '';
 
