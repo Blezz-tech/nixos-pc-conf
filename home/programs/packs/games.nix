@@ -21,6 +21,10 @@
 
     ## Игры
 
+    # Герои меча и магии
+    pkgs.vcmi
+    # pkgs.fheroes2
+
     # pkgs.arx-libertatis
     # pkgs.opengothic
     # pkgs.cataclysm-dda
