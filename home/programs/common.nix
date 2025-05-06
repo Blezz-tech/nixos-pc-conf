@@ -113,7 +113,7 @@
       python-pkgs.matplotlib
       python-pkgs.sympy
     ]))
-    # pkgs.nodejs
+    pkgs.nodejs_latest
     pkgs.sqlitebrowser
     pkgs.code-cursor
     pkgs.graphviz
@@ -275,7 +275,6 @@
     # pkgs.archivebox
     # pkgs.openapi-generator-cli
     pkgs.postman
-    pkgs.nodejs_22
 
     ## Rust
     pkgs.cargo
