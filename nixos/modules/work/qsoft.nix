@@ -59,10 +59,6 @@ in
     myPHP.php
     myPHP.php.packages.composer
     myPHP.php.packages.php-codesniffer
-
-    pkgs.postman
-
-    pkgs.nodejs_22
   ];
 
   # nixpkgs.overlays = [
