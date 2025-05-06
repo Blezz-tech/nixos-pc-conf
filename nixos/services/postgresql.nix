@@ -1,3 +1,6 @@
 {
-  services.postgresql.enable = true;
+  services.postgresql = {
+    enable = true;
+    enableJIT = true;
+  };
 }
