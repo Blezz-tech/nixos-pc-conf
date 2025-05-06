@@ -6,6 +6,7 @@
 | ------------- | -------------- | ---------------------------------------------- |
 | goldendict-ng | Сломана сборка | <https://github.com/NixOS/nixpkgs/pull/385849> |
 | digikam       | Сломана сборка | <https://nixpk.gs/pr-tracker.html?pr=399446>   |
+| zoom-us | Сделать overrite xdg-portals (убрать лишние) | <https://github.com/NixOS/nixpkgs/pull/403064> |
 
 ## 123
 
