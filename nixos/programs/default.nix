@@ -4,6 +4,6 @@
     ./firefox.nix
     ./kdeconnect.nix
     # ./nvf.nix
-    ./steam.nix
+    # ./steam.nix
   ];
 }
