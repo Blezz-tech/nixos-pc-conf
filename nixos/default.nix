@@ -15,7 +15,7 @@
   time.timeZone = "Europe/Moscow";
 
 
-  system.stateVersion = "24.05";
+  system.stateVersion = "24.11";
 
 
   # xdg_open should work in steam_run this way… well it’s not 
