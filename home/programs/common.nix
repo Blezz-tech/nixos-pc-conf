@@ -232,19 +232,19 @@
     pkgs.gcc
     pkgs.kdePackages.kolourpaint
     pkgs.kdePackages.kleopatra
-    pkgs.kdePackages.kasts
+    # pkgs.kdePackages.kasts
     pkgs.iagno
     # pkgs.lunarvim
     # pkgs.treesheets
-    pkgs.openai-whisper # транскрибация аудио в текст
+    # pkgs.openai-whisper # транскрибация аудио в текст
     pkgs.zbar
     pkgs.parsec-bin
     pkgs.remmina
     pkgs.kdePackages.kcalc
     pkgs.kdePackages.kclock
-    pkgs.kdePackages.juk
-    pkgs.kdePackages.kalzium
-    pkgs.kdePackages.kfind
+    # pkgs.kdePackages.juk
+    # pkgs.kdePackages.kalzium
+    # pkgs.kdePackages.kfind
     pkgs.kdePackages.kio-gdrive
     pkgs.kdePackages.kaccounts-integration
     pkgs.kdePackages.kaccounts-providers
@@ -260,10 +260,10 @@
     pkgs.dbeaver-bin
     pkgs.treefmt
     # pkgs.zeal-qt6
-    pkgs.anki
+    # pkgs.anki
     # pkgs.kdePackages.ksystemlog
     # pkgs.kdePackages.kio-gdrive
-    pkgs.kdePackages.kcharselect
+    # pkgs.kdePackages.kcharselect
     # pkgs.rars
     pkgs.freecad-wayland
     # pkgs.openscad
