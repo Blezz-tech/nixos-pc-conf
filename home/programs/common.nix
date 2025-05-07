@@ -28,7 +28,6 @@
     java.enable = true;
     fastfetch.enable = true;
     freetube.enable = true;
-    obs-studio.enable = true;
     pandoc.enable = true;
     yt-dlp.enable = true;
   };
