@@ -111,7 +111,7 @@
       python-pkgs.pandas
       python-pkgs.matplotlib
       python-pkgs.sympy
-      python-pkgs.plotly
+      python-pkgs.plotly # NOTE: Долго билдится
     ]))
     pkgs.nodejs_latest
     pkgs.sqlitebrowser
