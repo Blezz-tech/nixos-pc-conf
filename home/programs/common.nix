@@ -209,7 +209,7 @@
     pkgs.gpu-viewer
     pkgs.vulkan-tools
     pkgs.pwgen
-    # pkgs.coppwr
+    pkgs.coppwr
     # pkgs.github-desktop
     pkgs.nufmt
     pkgs.omegat
