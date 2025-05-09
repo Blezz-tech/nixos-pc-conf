@@ -1,5 +1,6 @@
 {
   programs.nvf.enable = true;
+  programs.nvf.enableManpages = true;
   programs.nvf.settings = {
     vim = {
       viAlias = true;
