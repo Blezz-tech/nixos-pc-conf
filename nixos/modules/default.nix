@@ -35,7 +35,7 @@
 
   # Переменные окружения
   environment.variables.EDITOR = "nvim";
-  # environment.sessionVariables.NIXOS_OZONE_WL = "1"; # wayland для electron приложений
+  environment.sessionVariables.NIXOS_OZONE_WL = "1"; # wayland для electron приложений
 
   # Для ГПУ AMD 
   programs.corectrl.enable = true;
