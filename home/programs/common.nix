@@ -119,6 +119,7 @@
     pkgs.code-cursor
     pkgs.graphviz
     pkgs.nodePackages_latest.prettier
+    pkgs.cmake
 
     # pkgs.gnumake
     # pkgs.tiled
