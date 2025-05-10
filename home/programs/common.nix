@@ -258,6 +258,13 @@
     # pkgs.nekoray
     # pkgs.flameshot
     pkgs.chromium
+    (pkgs.vivaldi.overrideAttrs (oldAttrs: {
+      dontWrapQtApps = false;
+      dontPatchELF = true;
+      nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ pkgs.kdePackages.wrapQtAppsHook ];
+      # version = "6.9.3447.41";
+    }))
+
     # pkgs.mysql-workbench
     pkgs.dbeaver-bin
     pkgs.treefmt
