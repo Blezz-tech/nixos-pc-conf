@@ -10,15 +10,16 @@
     viAlias = true;
     vimAlias = true;
 
-    colorschemes.gruvbox.enable = true;
+    colorschemes.vscode.enable = true;
 
     plugins = {
       # lightline.enable = true;
       barbar.enable = true;
       gitsigns.enable = true;
       nvim-autopairs.enable = true;
-      nvim-colorizer.enable = true;
+      colorizer.enable = true;
       fzf-lua.enable = true;
+      web-devicons.enable = true;
       lsp = {
         enable = true;
       };
