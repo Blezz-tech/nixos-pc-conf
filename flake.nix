@@ -10,8 +10,8 @@
     # nixvim.url = "github:nix-community/nixvim";
     # nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
-    nvf.url = "github:notashelf/nvf";
-    nvf.inputs.nixpkgs.follows = "nixpkgs";
+    # nvf.url = "github:notashelf/nvf";
+    # nvf.inputs.nixpkgs.follows = "nixpkgs";
 
     # nur.url = "github:nix-community/NUR";
     # nur.inputs.nixpkgs.follows = "nixpkgs";
@@ -20,9 +20,9 @@
   outputs =
     { nixpkgs
     , home-manager
-    , nvf
-    , # nur,
-      ...
+      # , nvf
+      # , nur
+    , ...
     }@inputs:
     let
       username = "jenya";
@@ -31,7 +31,7 @@
       nixosConfigurations."nixos-jenya" = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username; };
         modules = [
-          nvf.nixosModules.default        
+          # nvf.nixosModules.default        
           # nur.modules.nixos.default
           ./nixos
           home-manager.nixosModules.home-manager
