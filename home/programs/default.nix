@@ -4,7 +4,7 @@
     ./common.nix
     ./direnv.nix
     ./easyeffects.nix
-    ./emacs.nix
+    # ./emacs.nix
     ./eza.nix
     ./fzf.nix
     ./git.nix
