@@ -2,7 +2,7 @@
 , ...
 }: {
   imports = [
-    inputs.nixvim.homeManagerModules.nixvim
+    inputs.nixvim.nixosModules.nixvim
   ];
 
   programs.nixvim = {

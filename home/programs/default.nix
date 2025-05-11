@@ -14,7 +14,6 @@
 
     ./packs
 
-    # ./nixvim.nix
     # ./browsers.nix
     # ./media.nix
     # ./xdg.nix
