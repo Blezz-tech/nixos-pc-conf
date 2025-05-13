@@ -148,7 +148,7 @@
     pkgs.pdftk
     # pkgs.ocrmypdf
     # pkgs.tesseract
-    # pkgs.stack
+    pkgs.stack
     # pkgs.nheko
     # pkgs.kdePackages.neochat
     # pkgs.fractal
