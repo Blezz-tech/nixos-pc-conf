@@ -29,6 +29,9 @@
     # myPasswordGenerator = "date +%s | sha256sum | base64 | head -c 32 ; echo";
     myPasswordGenerator = "pwgen -c 30";
 
+    # fix zip archives
+    fixFileCP866 = "runzip -s CP866 -t utf-8 $1";
+
     # gpg
     myGpgEdit = "gpg --edit-key markus.jenya04@yandex.ru";
     myGpgList = "gpg --list-keys --with-keygrip";
