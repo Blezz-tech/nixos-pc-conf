@@ -10,8 +10,6 @@
     ./hardware-configuration.nix
   ];
 
-  networking.hostName = "nixos-jenya";
-
   time.timeZone = "Europe/Moscow";
 
 
