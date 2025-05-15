@@ -105,6 +105,13 @@
                 sha256 = "sha256:00f0n80wazyqilmdi26zfa7xhjsq8c1lyjrjcmdx0p41fnc53px9";
               };
             }));
+
+            v2025_2_1 = (pkgs.jetbrains.phpstorm.overrideAttrs (oldAttrs: {
+              src = builtins.fetchurl {
+                url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-PHP-2025.2.1.tar.gz";
+                sha256 = "sha256:076fwkfdyi7v3ng9fy4cx479kdvza5s54g5c6cdxqinf380vp1qh";
+              };
+            }));
           };
         };
         # MURMUR_TOOLBOX = super.jetbrains-toolbox.overrideAttrs (oldAttrs: {
