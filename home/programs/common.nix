@@ -1,6 +1,22 @@
 { pkgs
 , ...
 }:
+let
+  myPHP.php = pkgs.php83.withExtensions ({ enabled, all }: enabled ++ [
+    all.bcmath
+    all.tokenizer
+    all.curl
+    all.gd
+    all.intl
+    # all.xml
+    all.mbstring
+    all.zip
+    all.sqlite3
+    all.pdo_mysql
+    all.mysqli
+    all.redis # Для Redis
+  ]);
+in
 {
 
   # gtk = {
@@ -35,6 +51,9 @@
   home.packages = [
     pkgs.blezz-pkgs.discord-krisp-patcher
     pkgs.blezz-pkgs.davinci-resolve
+    myPHP.php
+    myPHP.php.packages.composer
+    myPHP.php.packages.php-codesniffer
 
     # LSP
     pkgs.marksman # markdown

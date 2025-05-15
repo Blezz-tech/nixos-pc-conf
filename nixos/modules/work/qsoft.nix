@@ -1,23 +1,7 @@
 { pkgs
 , ...
 }:
-
 let
-  myPHP.php = pkgs.php83.withExtensions ({ enabled, all }: enabled ++ [
-    all.bcmath
-    all.tokenizer
-    all.curl
-    all.gd
-    all.intl
-    # all.xml
-    all.mbstring
-    all.zip
-    all.sqlite3
-    all.pdo_mysql
-    all.mysqli
-    all.redis # Для Redis
-  ]);
-
   MURMUR = {
     IDEA = {
       v2022_3_3 = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
@@ -53,14 +37,6 @@ let
   };
 in
 {
-  environment.systemPackages = [
-    # FOR QSOFT
-
-    myPHP.php
-    myPHP.php.packages.composer
-    myPHP.php.packages.php-codesniffer
-  ];
-
   # nixpkgs.overlays = [
   #   (self: super: {
   #     MURMUR_TOOLBOX = super.jetbrains-toolbox.overrideAttrs (oldAttrs: {
