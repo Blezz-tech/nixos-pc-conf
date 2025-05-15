@@ -106,6 +106,13 @@
               };
             }));
 
+            v2025_1_1 = (pkgs.jetbrains.phpstorm.overrideAttrs (oldAttrs: {
+              src = builtins.fetchurl {
+                url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-PHP-2025.1.1.tar.gz";
+                sha256 = "sha256:18znpgjlk8740p7j2dfs5jmdw5k0f4bzd2lpaikmdf2xf7m24ixn";
+              };
+            }));
+
             v2025_2_1 = (pkgs.jetbrains.phpstorm.overrideAttrs (oldAttrs: {
               src = builtins.fetchurl {
                 url = "file:///run/media/jenya/disk_d/binfiles/MURMUR-PHP-2025.2.1.tar.gz";
