@@ -1,4 +1,5 @@
 { pkgs
+, lib
 , ...
 }: {
   fonts.packages = [
@@ -41,5 +42,5 @@
 
     # A (mainly) Chinese Unicode font
     pkgs.wqy_microhei
-  ] ++ (builtins.filter builtins.isPath (builtins.attrValues pkgs.nerd-fonts));
+  ] ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
 }
