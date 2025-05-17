@@ -100,7 +100,7 @@ in
     # pkgs.whatsapp-for-linux
 
     # Редакторы epub
-    # pkgs.sigil
+    pkgs.sigil
 
     # Графические редакторы
     # pkgs.gimp
