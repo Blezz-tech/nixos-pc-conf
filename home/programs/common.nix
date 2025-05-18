@@ -87,7 +87,7 @@ in
 
     # Месседжеры
     pkgs.discord-canary
-    pkgs.element-desktop
+    # pkgs.element-desktop
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio
     # pkgs.webcord-vencord
