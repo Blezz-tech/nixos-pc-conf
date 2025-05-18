@@ -291,6 +291,7 @@ in
     # pkgs.zeal-qt6
     # pkgs.anki
     # pkgs.kdePackages.ksystemlog
+    pkgs.kdePackages.kjournald
     # pkgs.kdePackages.kio-gdrive
     # pkgs.kdePackages.kcharselect
     # pkgs.rars
