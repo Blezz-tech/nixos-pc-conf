@@ -104,7 +104,7 @@ in
 
     # Графические редакторы
     # pkgs.gimp
-    pkgs.inkscape
+    # pkgs.inkscape
     pkgs.krita
     # pkgs.drawio
     # pkgs.aseprite
