@@ -199,7 +199,7 @@ in
     # pkgs.geogebra6
 
     # pkgs.digikam
-    pkgs.rawtherapee
+    # pkgs.rawtherapee
     pkgs.exiftool # Для digikam
     pkgs.traceroute
 
@@ -221,7 +221,7 @@ in
     pkgs.omegat
     pkgs.ghc
     pkgs.zotero
-    pkgs.just
+    # pkgs.just
     pkgs.oxipng
     # pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
     pkgs.kdePackages.kompare
@@ -232,13 +232,13 @@ in
 
 
     # pkgs.rustdesk
-    pkgs.anilibria-winmaclinux
+    # pkgs.anilibria-winmaclinux
     pkgs.difftastic
     pkgs.anime4k
     pkgs.fd
     pkgs.haruna
     pkgs.gcc
-    pkgs.kdePackages.kolourpaint
+    # pkgs.kdePackages.kolourpaint
     pkgs.kdePackages.kleopatra
     # pkgs.kdePackages.kasts
     pkgs.iagno
@@ -246,8 +246,8 @@ in
     # pkgs.treesheets
     # pkgs.openai-whisper # транскрибация аудио в текст
     pkgs.zbar
-    pkgs.parsec-bin
-    pkgs.remmina
+    # pkgs.parsec-bin
+    # pkgs.remmina
     pkgs.kdePackages.kcalc
     pkgs.kdePackages.kclock
     # pkgs.kdePackages.juk
@@ -287,7 +287,7 @@ in
     }))
 
     # pkgs.mysql-workbench
-    pkgs.dbeaver-bin
+    # pkgs.dbeaver-bin
     pkgs.treefmt
     # pkgs.zeal-qt6
     # pkgs.anki
@@ -296,7 +296,7 @@ in
     # pkgs.kdePackages.kio-gdrive
     # pkgs.kdePackages.kcharselect
     # pkgs.rars
-    pkgs.freecad-wayland
+    # pkgs.freecad-wayland
     # pkgs.openscad
     # pkgs.openscad-lsp
     # pkgs.kicad
