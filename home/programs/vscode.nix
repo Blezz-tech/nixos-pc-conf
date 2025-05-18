@@ -29,6 +29,9 @@
         "zig.path" = "zig";
         "window.titleBarStyle" = "custom";
 
+        # Python
+        "python.analysis.typeCheckingMode" = "strict";
+
         # telemetry
         "redhat.telemetry.enabled" = false;
         "telemetry.telemetryLevel" = "crash";
