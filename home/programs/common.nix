@@ -203,9 +203,9 @@ in
     pkgs.exiftool # Для digikam
     pkgs.traceroute
 
-    pkgs.go
-    pkgs.lazygit
-    pkgs.kdePackages.kdenlive
+    # pkgs.go
+    # pkgs.lazygit
+    # pkgs.kdePackages.kdenlive
 
     pkgs.mdbook
     pkgs.mdbook-epub
