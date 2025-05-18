@@ -207,9 +207,10 @@ in
     # pkgs.lazygit
     # pkgs.kdePackages.kdenlive
 
-    pkgs.mdbook
-    pkgs.mdbook-epub
-    pkgs.mdbook-pdf
+    # pkgs.mdbook
+    # pkgs.mdbook-epub
+    # pkgs.mdbook-pdf
+    
     # pkgs.calibre
     pkgs.gpu-viewer
     pkgs.vulkan-tools
