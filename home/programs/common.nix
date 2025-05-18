@@ -135,7 +135,7 @@ in
     ]))
     pkgs.kdePackages.wallpaper-engine-plugin
     pkgs.nodejs_latest
-    pkgs.sqlitebrowser
+    # pkgs.sqlitebrowser
     pkgs.code-cursor
     pkgs.graphviz
     pkgs.nodePackages_latest.prettier
@@ -146,9 +146,9 @@ in
     # pkgs.unityhub
     # pkgs.pdfarranger
     # pkgs.ihp-new
-    pkgs.cachix
+    # pkgs.cachix
     # pkgs.vengi-tools
-    pkgs.ldtk
+    # pkgs.ldtk
     # pkgs.easyocr
     # pkgs.rhvoice
     # pkgs.speechd
