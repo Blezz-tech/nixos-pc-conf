@@ -23,7 +23,7 @@
         "nixos-test"
       ];
       auto-optimise-store = true;
-      max-jobs = 4;
+      max-jobs = 3;
     };
 
     gc = {
