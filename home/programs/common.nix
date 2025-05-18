@@ -210,12 +210,12 @@ in
     # pkgs.mdbook
     # pkgs.mdbook-epub
     # pkgs.mdbook-pdf
-    
+
     # pkgs.calibre
-    pkgs.gpu-viewer
+    # pkgs.gpu-viewer
     pkgs.vulkan-tools
     pkgs.pwgen
-    pkgs.coppwr
+    # pkgs.coppwr
     # pkgs.github-desktop
     pkgs.nufmt
     pkgs.omegat
@@ -227,8 +227,8 @@ in
     pkgs.kdePackages.kompare
 
     # Rar archive
-    pkgs.rar
-    pkgs.unrar-free
+    # pkgs.rar
+    # pkgs.unrar-free
 
 
     # pkgs.rustdesk
