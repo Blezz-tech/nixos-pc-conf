@@ -134,7 +134,7 @@ in
       # python-pkgs.plotly # NOTE: Долго билдится
     ]))
     pkgs.kdePackages.wallpaper-engine-plugin
-    pkgs.nodejs_latest
+    # pkgs.nodejs_latest
     # pkgs.sqlitebrowser
     pkgs.code-cursor
     pkgs.graphviz
