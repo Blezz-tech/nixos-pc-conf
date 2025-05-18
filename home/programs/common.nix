@@ -122,16 +122,16 @@ in
     # На сортировку
     # pkgs.python3
     (pkgs.python312.withPackages (python-pkgs: [
-      python-pkgs.jupyter
-      python-pkgs.ipykernel
-      python-pkgs.pyautogui
+      # python-pkgs.jupyter
+      # python-pkgs.ipykernel
+      # python-pkgs.pyautogui
       python-pkgs.scipy
-      python-pkgs.pynput
+      # python-pkgs.pynput
       python-pkgs.numpy
       python-pkgs.pandas
       python-pkgs.matplotlib
       python-pkgs.sympy
-      python-pkgs.plotly # NOTE: Долго билдится
+      # python-pkgs.plotly # NOTE: Долго билдится
     ]))
     pkgs.kdePackages.wallpaper-engine-plugin
     pkgs.nodejs_latest
