@@ -200,7 +200,6 @@ in
 
     # pkgs.digikam
     # pkgs.rawtherapee
-    pkgs.exiftool # Для digikam
     pkgs.traceroute
 
     # pkgs.go
