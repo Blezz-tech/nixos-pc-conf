@@ -197,6 +197,7 @@ in
     pkgs.nextcloud-client
     pkgs.nextcloud-talk-desktop
     # pkgs.geogebra6
+    pkgs.okteta
 
     # pkgs.digikam
     # pkgs.rawtherapee
