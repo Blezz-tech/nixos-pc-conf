@@ -51,12 +51,6 @@ error: a 'x86_64-linux' with features {gccarch-alderlake} is required to build '
 
 ## Проблемы
 
-### Добавить ключи для бинарного кеша HIP (Integrated Haskell Platform)
-nix.settings = {
-  trusted-public-keys = [ "digitallyinduced.cachix.org-1:y+wQvrnxQ+PdEsCt91rmvv39qRCYzEgGQaldK26hCKE=" ];
-  trusted-substituters = [ "https://digitallyinduced.cachix.org" ];
-};
-
 ### Убрать
 extraPackages = with pkgs; [
   intel-media-driver # LIBVA_DRIVER_NAME=iHD
