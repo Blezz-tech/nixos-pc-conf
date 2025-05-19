@@ -292,3 +292,19 @@ cpufetch -F --accurate-pp --accurate-pp  --measure-max-freq --logo-short -v
 > > Font packages to use in Steam.
 > >
 > > Defaults to system fonts, but could be overridden to use other fonts — useful for users who would like to customize CJK fonts used in Steam. According to the [upstream issue](https://github.com/ValveSoftware/steam-for-linux/issues/10422#issuecomment-1944396010), Steam only follows the per-user fontconfig configuration.
+
+### shell.nix with gcc optimizations
+
+```nix
+let
+  pkgs = import <nixpkgs> {
+    localSystem = {
+      gcc.arch = "alderlake";
+      gcc.tune = "alderlake";
+      system = "x86_64-linux";
+    };
+  };
+in pkgs.mkShell {
+  buildInputs = [ pkgs.nodejs ];
+}
+```
