@@ -51,14 +51,6 @@ error: a 'x86_64-linux' with features {gccarch-alderlake} is required to build '
 
 ## Проблемы
 
-### Убрать
-extraPackages = with pkgs; [
-  intel-media-driver # LIBVA_DRIVER_NAME=iHD
-  vaapiIntel # LIBVA_DRIVER_NAME=i965 (older but works better for Firefox/Chromium)
-  vaapiVdpau
-  libvdpau-va-gl
-];
-
 ### Может быть добавить
 services.fwupd.enable = true; # Нужна для просмотра информации о системе kde
 
