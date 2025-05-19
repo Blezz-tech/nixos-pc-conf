@@ -8,8 +8,8 @@
     ./openssh.nix
     ./opentablet.nix
     ./podman.nix
-    # ./print_and_scan.nix
     ./sound.nix
+    ./specialisation.nix
     ./tty.nix
     ./user.nix
     ./vr.nix

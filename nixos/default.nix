@@ -38,10 +38,6 @@
     };
   };
 
-  specialisation."no-sddm".configuration = {
-    services.displayManager.sddm.enable = false;
-  };
-
   powerManagement.enable = true;
   powerManagement.cpuFreqGovernor = "performance";
 
