@@ -1,5 +1,6 @@
 {
   imports = [
+    ./hoogle.nix
     # ./ipfs.nix
     ./mysql.nix
     # ./ollama.nix
