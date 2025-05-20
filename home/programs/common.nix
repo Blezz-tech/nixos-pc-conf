@@ -131,6 +131,9 @@ in
       python-pkgs.pandas
       python-pkgs.matplotlib
       python-pkgs.sympy
+      python-pkgs.scikit-learn
+      python-pkgs.nltk
+      python-pkgs.pymorphy3
       # python-pkgs.plotly # NOTE: Долго билдится
     ]))
     pkgs.kdePackages.wallpaper-engine-plugin
