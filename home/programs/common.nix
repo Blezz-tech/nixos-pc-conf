@@ -79,9 +79,6 @@ in
     pkgs.haskellPackages.ghc
     pkgs.haskellPackages.ghcid
 
-    # Perl
-    pkgs.perl
-
     # Torrent
     pkgs.qbittorrent
 
