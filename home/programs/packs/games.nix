@@ -13,7 +13,7 @@
     pkgs.shadps4
     pkgs.bottles
     pkgs.r2modman
-    # pkgs.lutris
+    pkgs.lutris
 
     ## Мод манагеры
 
