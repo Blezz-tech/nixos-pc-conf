@@ -72,6 +72,13 @@ in
     # pkgs.texlive.combined.scheme-full
     pkgs.pdf2svg
 
+    # Haskell
+    pkgs.haskellPackages.cabal-install
+    pkgs.haskellPackages.haskell-language-server
+    pkgs.haskellPackages.hlint
+    pkgs.haskellPackages.ghc
+    pkgs.haskellPackages.ghcid
+
     # Torrent
     pkgs.qbittorrent
 
@@ -222,7 +229,6 @@ in
     # pkgs.github-desktop
     pkgs.nufmt
     pkgs.omegat
-    pkgs.ghc
     pkgs.zotero
     # pkgs.just
     pkgs.oxipng
