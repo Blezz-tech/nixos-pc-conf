@@ -236,8 +236,8 @@ in
     pkgs.kdePackages.kompare
 
     # Rar archive
-    # pkgs.rar
-    # pkgs.unrar-free
+    pkgs.rar
+    pkgs.unrar-free
 
 
     # pkgs.rustdesk
