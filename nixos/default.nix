@@ -8,7 +8,11 @@
     ./programs
     ./packages.nix
     ./hardware-configuration.nix
+    ./config.nix
   ];
+
+  programs.plasma-systemmonitor.enable = true;
+
 
   time.timeZone = "Europe/Moscow";
 
