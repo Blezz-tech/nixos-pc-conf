@@ -4,8 +4,6 @@
 
 | Название      | Описание       | Ссылка                                         |
 | ------------- | -------------- | ---------------------------------------------- |
-| goldendict-ng | Сломана сборка | <https://github.com/NixOS/nixpkgs/pull/385849> |
-| digikam       | Сломана сборка | <https://nixpk.gs/pr-tracker.html?pr=399446>   |
 | zoom-us | Сделать overrite xdg-portals (убрать лишние) | <https://nixpk.gs/pr-tracker.html?pr=403064> |
 
 ## 123
