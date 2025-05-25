@@ -242,6 +242,7 @@ in
     pkgs.oxipng # multithreaded lossless PNG/APNG compression optimizer
     # pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
     pkgs.kdePackages.kompare
+    # pkgs.helix
 
     # Rar archive
     pkgs.rar
