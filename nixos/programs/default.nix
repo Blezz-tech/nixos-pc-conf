@@ -8,4 +8,6 @@
     ./obs-studio.nix
     ./steam.nix
   ];
+
+  programs.zoom-us.enable = true;
 }
