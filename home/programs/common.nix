@@ -155,6 +155,7 @@ in
     pkgs.nodePackages_latest.prettier
     pkgs.cmake
     # pkgs.notepad-next
+    # pkgs.distrobox
 
     # pkgs.gnumake
     # pkgs.tiled
