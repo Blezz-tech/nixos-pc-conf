@@ -156,6 +156,7 @@ in
     pkgs.cmake
     # pkgs.notepad-next
     # pkgs.distrobox
+    # pkgs.auto-editor
 
     # pkgs.gnumake
     # pkgs.tiled
