@@ -164,7 +164,7 @@ in
     # pkgs.pdfarranger
     # pkgs.ihp-new
     # pkgs.cachix
-    # pkgs.vengi-tools
+    pkgs.vengi-tools
     # pkgs.ldtk
     # pkgs.easyocr
     # pkgs.rhvoice
