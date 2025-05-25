@@ -243,6 +243,7 @@ in
     # pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
     pkgs.kdePackages.kompare
     # pkgs.helix
+    pkgs.gitoxide
 
     # Rar archive
     pkgs.rar
