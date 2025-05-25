@@ -154,6 +154,7 @@ in
     pkgs.graphviz
     pkgs.nodePackages_latest.prettier
     pkgs.cmake
+    # pkgs.notepad-next
 
     # pkgs.gnumake
     # pkgs.tiled
