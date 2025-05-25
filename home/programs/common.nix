@@ -191,6 +191,7 @@ in
     # pkgs.fractal
     pkgs.mangohud
     # pkgs.kando
+    # pkgs.activate-linux
 
     # Словари для libreoffice
     pkgs.hunspell
