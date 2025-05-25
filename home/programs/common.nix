@@ -56,6 +56,9 @@ in
     myPHP.php.packages.composer
     myPHP.php.packages.php-codesniffer
 
+    # TODO add config got Home manager
+    pkgs.git-sim
+
     # LSP
     pkgs.marksman # markdown
     pkgs.typescript-language-server # js/typescript
