@@ -3,12 +3,12 @@
     optimise.automatic = true;
 
     settings = {
-      trusted-public-keys = [
-        # "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=" # haskell.nix
-      ];
-      substituters = [
-        # "https://cache.iog.io" # haskell.nix
-      ];
+      # trusted-public-keys = [
+      #   "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=" # haskell.nix
+      # ];
+      # substituters = [
+      #   "https://cache.iog.io" # haskell.nix
+      # ];
 
       experimental-features = [
         "nix-command"
