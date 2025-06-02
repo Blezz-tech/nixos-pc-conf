@@ -248,6 +248,9 @@ in
     pkgs.rar
     pkgs.unrar-free
 
+    # analize count of line
+    pkgs.scc
+    pkgs.cloc
 
     # pkgs.rustdesk
     # pkgs.anilibria-winmaclinux
