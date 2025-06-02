@@ -9,7 +9,7 @@
     ./opentablet.nix
     ./podman.nix
     ./sound.nix
-    ./specialisation.nix
+    # ./specialisation.nix
     ./tty.nix
     ./user.nix
     ./vr.nix
