@@ -334,7 +334,7 @@ in
     # pkgs.sfxr-qt
     # pkgs.archivebox
     # pkgs.openapi-generator-cli
-    pkgs.postman
+    # pkgs.postman
 
     ## Rust
     pkgs.cargo
