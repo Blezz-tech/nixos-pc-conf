@@ -148,6 +148,7 @@ in
       python-pkgs.torch
       python-pkgs.python-lsp-server
     ]))
+    pkgs.uv
     pkgs.kdePackages.wallpaper-engine-plugin
     pkgs.nodejs_latest
     pkgs.sqlitebrowser
