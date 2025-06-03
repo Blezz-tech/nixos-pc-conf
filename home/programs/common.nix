@@ -154,7 +154,7 @@ in
     pkgs.sqlitebrowser
     pkgs.code-cursor
     pkgs.graphviz
-    pkgs.nodePackages_latest.prettier
+    # pkgs.nodePackages_latest.prettier
     pkgs.cmake
     # pkgs.notepad-next
     # pkgs.distrobox
@@ -288,9 +288,10 @@ in
     # pkgs.flameshot
     pkgs.chromium
     (pkgs.vivaldi.overrideAttrs (oldAttrs: {
-      dontWrapQtApps = false;
-      dontPatchELF = true;
-      nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ pkgs.kdePackages.wrapQtAppsHook ];
+      # dontWrapQtApps = false;
+      # dontPatchELF = true;
+      # nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [ pkgs.kdePackages.wrapQtAppsHook ];
+
       # version = "6.9.3447.41";
       # commandLineArgs = [
       #   "--enable-blink-features=MiddleClickAutoscroll"
