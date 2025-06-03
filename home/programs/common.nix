@@ -218,7 +218,7 @@ in
     # pkgs.geogebra6
     pkgs.okteta
 
-    # pkgs.digikam
+    pkgs.digikam
     # pkgs.rawtherapee
     pkgs.traceroute
 
