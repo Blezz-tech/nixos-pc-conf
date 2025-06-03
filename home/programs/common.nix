@@ -82,6 +82,10 @@ in
     pkgs.haskell.packages.ghc9122.ghc
     pkgs.ghciwatch
 
+    # Agda and coq (rocq)
+    pkgs.agda
+    pkgs.coq
+
     # Torrent
     pkgs.qbittorrent
 
