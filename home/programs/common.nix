@@ -146,6 +146,7 @@ in
       python-pkgs.pymorphy3
       # python-pkgs.plotly # NOTE: Долго билдится
       python-pkgs.torch
+      python-pkgs.python-lsp-server
     ]))
     pkgs.kdePackages.wallpaper-engine-plugin
     pkgs.nodejs_latest
