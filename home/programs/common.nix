@@ -228,7 +228,10 @@ in
     pkgs.traceroute
 
     # pkgs.go
-    # pkgs.lazygit
+    pkgs.lazygit
+    # pkgs.git-spice
+    pkgs.ast-grep
+    pkgs.luarocks
     # pkgs.kdePackages.kdenlive
 
     # pkgs.mdbook
