@@ -42,7 +42,7 @@
     # pkgs.unciv
     # pkgs.endless-sky
     # pkgs.openra
-    # pkgs.osu-lazer
+    pkgs.osu-lazer
     # pkgs.the-powder-toy
     # pkgs.crawlTiles
     # pkgs.hedgewars
