@@ -42,5 +42,8 @@
 
     # A (mainly) Chinese Unicode font
     pkgs.wqy_microhei
+
+    # other
+    pkgs.lmodern
   ] ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
 }
