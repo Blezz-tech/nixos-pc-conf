@@ -11,6 +11,7 @@
     # ./tor.nix
     # ./v2raya.nix
     # ./wireguard.nix
+    ./wivrn.nix
     ./zapret.nix
   ];
 }
