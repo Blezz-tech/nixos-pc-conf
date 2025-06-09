@@ -45,5 +45,7 @@
 
     # other
     pkgs.lmodern
+    pkgs.monocraft
+    pkgs.miracode
   ] ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
 }
