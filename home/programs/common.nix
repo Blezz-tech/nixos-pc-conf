@@ -16,6 +16,16 @@ let
     all.mysqli
     all.redis # Для Redis
   ]);
+  tex = (pkgs.texlive.combine {
+    inherit (pkgs.texlive)
+      scheme-small
+      fontspec
+      polyglossia
+      amsmath
+      xetex
+      hyphen-russian
+      ;
+  });
 in
 {
 
@@ -72,7 +82,8 @@ in
     pkgs.nixpkgs-fmt # nix
 
     # LaTeX
-    pkgs.texlive.combined.scheme-full
+    # pkgs.texlive.combined.scheme-full
+    tex
     pkgs.pdf2svg
 
     # Haskell
