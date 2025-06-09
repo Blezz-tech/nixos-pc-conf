@@ -16,15 +16,14 @@ let
     all.mysqli
     all.redis # Для Redis
   ]);
-  tex = (pkgs.texlive.combine {
-    inherit (pkgs.texlive)
-      scheme-small
+  tex = (pkgs.texliveSmall.withPackages (
+    ps: with ps; [
       fontspec
       polyglossia
       amsmath
       hyphen-russian
-      ;
-  });
+    ]
+  ));
 in
 {
 
@@ -213,7 +212,7 @@ in
     pkgs.hunspell
     pkgs.hunspellDicts.ru_RU
     pkgs.hunspellDicts.en_US
-    
+
     # Словари
     pkgs.aspell
     pkgs.aspellDicts.en
