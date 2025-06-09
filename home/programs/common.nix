@@ -24,6 +24,7 @@ let
       amsmath
       xetex
       hyphen-russian
+      xecjk
       ;
   });
 in
