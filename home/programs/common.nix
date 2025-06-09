@@ -22,9 +22,7 @@ let
       fontspec
       polyglossia
       amsmath
-      xetex
       hyphen-russian
-      xecjk
       ;
   });
 in
