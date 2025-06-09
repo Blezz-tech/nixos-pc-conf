@@ -47,5 +47,6 @@
     pkgs.lmodern
     pkgs.monocraft
     pkgs.miracode
+    pkgs.dejavu_fonts
   ] ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
 }
