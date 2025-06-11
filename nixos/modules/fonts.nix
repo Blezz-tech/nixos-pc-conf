@@ -48,5 +48,6 @@
     pkgs.monocraft
     pkgs.miracode
     pkgs.dejavu_fonts
+    pkgs.eb-garamond
   ] ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
 }
