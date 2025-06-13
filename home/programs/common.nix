@@ -22,6 +22,7 @@ let
       polyglossia
       amsmath
       hyphen-russian
+      standalone
     ]
   ));
 in
