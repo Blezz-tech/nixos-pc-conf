@@ -1,11 +1,11 @@
 {
   imports = [
-    ./hoogle.nix
+    # ./hoogle.nix
     # ./ipfs.nix
-    ./mysql.nix
+    # ./mysql.nix
     # ./ollama.nix
     # ./paperless.nix
-    ./postgresql.nix
+    # ./postgresql.nix
     # ./redis.nix
     # ./spoofdpi.nix
     # ./tor.nix
