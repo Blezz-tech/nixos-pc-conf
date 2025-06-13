@@ -58,7 +58,7 @@ in
 
   home.packages = [
     pkgs.blezz-pkgs.discord-krisp-patcher
-    pkgs.blezz-pkgs.davinci-resolve
+    # pkgs.blezz-pkgs.davinci-resolve
     # pkgs.blezz-pkgs.MURMUR.PHP.v2025_1_1
     myPHP.php
     myPHP.php.packages.composer
