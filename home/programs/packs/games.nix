@@ -61,6 +61,7 @@
     # pkgs.widelands
     # pkgs.warsow
     # pkgs.urbanterror
+    # pkgs.iagno
 
     ## pixel dungeons
 

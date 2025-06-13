@@ -163,13 +163,13 @@ in
       python-pkgs.python-lsp-server
     ]))
     pkgs.uv
-    pkgs.kdePackages.wallpaper-engine-plugin
-    pkgs.nodejs_latest
+    # pkgs.kdePackages.wallpaper-engine-plugin
+    # pkgs.nodejs_latest
     pkgs.sqlitebrowser
     pkgs.code-cursor
-    pkgs.graphviz
+    # pkgs.graphviz
     # pkgs.nodePackages_latest.prettier
-    pkgs.cmake
+    # pkgs.cmake
     # pkgs.notepad-next
     # pkgs.distrobox
     # pkgs.auto-editor
@@ -180,7 +180,7 @@ in
     # pkgs.pdfarranger
     # pkgs.ihp-new
     # pkgs.cachix
-    pkgs.vengi-tools
+    # pkgs.vengi-tools
     # pkgs.ldtk
     # pkgs.easyocr
     # pkgs.rhvoice
@@ -200,11 +200,11 @@ in
     pkgs.pdftk
     # pkgs.ocrmypdf
     # pkgs.tesseract
-    pkgs.stack
+    # pkgs.stack
     # pkgs.nheko
     # pkgs.kdePackages.neochat
     # pkgs.fractal
-    pkgs.mangohud
+    # pkgs.mangohud
     # pkgs.kando
     # pkgs.activate-linux
 
@@ -226,7 +226,7 @@ in
     pkgs.audacity
     pkgs.kdePackages.xwaylandvideobridge
     # pkgs.cura
-    pkgs.cura-appimage
+    # pkgs.cura-appimage
     pkgs.nextcloud-client
     pkgs.nextcloud-talk-desktop
     # pkgs.geogebra6
@@ -268,20 +268,19 @@ in
     pkgs.unrar-free
 
     # analize count of line
-    pkgs.scc
-    pkgs.cloc
+    # pkgs.scc
+    # pkgs.cloc
 
     # pkgs.rustdesk
     # pkgs.anilibria-winmaclinux
     pkgs.difftastic
-    pkgs.anime4k
+    # pkgs.anime4k
     pkgs.fd
-    pkgs.haruna
-    pkgs.gcc
+    # pkgs.haruna
+    # pkgs.gcc
     # pkgs.kdePackages.kolourpaint
     pkgs.kdePackages.kleopatra
     # pkgs.kdePackages.kasts
-    pkgs.iagno
     # pkgs.lunarvim
     # pkgs.treesheets
     # pkgs.openai-whisper # транскрибация аудио в текст
@@ -299,7 +298,7 @@ in
     # pkgs.goldendict-ng
     pkgs.nix-search
     pkgs.ffmpeg-full
-    pkgs.gh
+    # pkgs.gh
     # pkgs.dig
     # pkgs.nekoray
     # pkgs.flameshot
