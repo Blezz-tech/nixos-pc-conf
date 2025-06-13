@@ -6,7 +6,7 @@
     ./nix-ld.nix
     ./nix.nix
     ./openssh.nix
-    ./opentablet.nix
+    # ./opentablet.nix
     # ./podman.nix
     ./sound.nix
     # ./specialisation.nix
