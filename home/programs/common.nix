@@ -93,9 +93,9 @@ in
     pkgs.ghciwatch
 
     # Agda and coq (rocq)
-    pkgs.agda
-    pkgs.coq
-    pkgs.coqPackages.vscoq-language-server
+    # pkgs.agda
+    # pkgs.coq
+    # pkgs.coqPackages.vscoq-language-server
 
     # Torrent
     pkgs.qbittorrent
