@@ -263,6 +263,7 @@ in
     pkgs.kdePackages.kompare
     # pkgs.helix
     pkgs.gitoxide
+    pkgs.lm_sensors # for information
 
     # Rar archive
     pkgs.rar
