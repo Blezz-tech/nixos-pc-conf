@@ -282,7 +282,6 @@ in
     # pkgs.kdePackages.kolourpaint
     pkgs.kdePackages.kleopatra
     # pkgs.kdePackages.kasts
-    # pkgs.lunarvim
     # pkgs.treesheets
     # pkgs.openai-whisper # транскрибация аудио в текст
     pkgs.zbar
