@@ -1,5 +1,6 @@
 {
   imports = [
+    ./fwupd.nix
     # ./hoogle.nix
     # ./ipfs.nix
     # ./mysql.nix
