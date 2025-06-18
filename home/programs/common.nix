@@ -272,7 +272,7 @@ in
     # pkgs.scc
     # pkgs.cloc
 
-    # pkgs.rustdesk
+    pkgs.rustdesk-flutter
     # pkgs.anilibria-winmaclinux
     pkgs.difftastic
     # pkgs.anime4k
