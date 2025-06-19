@@ -11,9 +11,6 @@
         enable = false;
         # display = "inline";
       };
-      attributes = [
-        "*.sqlite diff=sqlite3"
-      ];
 
       userName = "blezz-tech";
       userEmail = "markus.jenya04@yandex.ru";
@@ -39,10 +36,6 @@
           colorMoved = "plain";
           mnemonicPrefix = true;
           renames = true;
-          "sqlite3" = {
-            binary = true;
-            textconv = "echo .dump | sqlite3";
-          };
         };
         push = {
           autoSetupRemote = true;
