@@ -167,6 +167,7 @@ in
     # pkgs.kdePackages.wallpaper-engine-plugin
     # pkgs.nodejs_latest
     pkgs.sqlitebrowser
+    pkgs.sqlite
     pkgs.code-cursor
     # pkgs.graphviz
     # pkgs.nodePackages_latest.prettier
