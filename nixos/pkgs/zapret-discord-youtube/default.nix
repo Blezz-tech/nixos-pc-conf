@@ -1,17 +1,20 @@
 { stdenv
 , fetchFromGitHub
 , lib
+
+, zdy_version
+, zdy_hash
 }:
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "zapret-discord-youtube";
-  version = "1.8.0";
+  version = zdy_version;
 
   src = fetchFromGitHub {
     owner = "Flowseal";
     repo = "zapret-discord-youtube";
     rev = finalAttrs.version;
-    sha256 = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk=";
+    sha256 = zdy_hash;
   };
 
   installPhase = ''

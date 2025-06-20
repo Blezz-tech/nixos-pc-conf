@@ -1,7 +1,8 @@
 { pkgs
 , lib
 , ...
-}: {
+}:
+{
   imports = [
     ./modules
     ./services
@@ -58,7 +59,23 @@
             cp -r $src/files/fake/ $out/files/
           '';
         });
-        zapret-discord-youtube = pkgs.callPackage ./pkgs/zapret-discord-youtube { }; 
+        zdyPackages =
+          let
+            versions = [
+              { name = "1_7_2b"; zdy_version = "1.7.2b"; zdy_hash = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk="; }
+              { name = "1_8_0";  zdy_version = "1.8.0"; zdy_hash = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk="; }
+            ];
+          in
+          builtins.listToAttrs (map
+            (v: {
+              name = v.name;
+              value = pkgs.callPackage ./pkgs/zapret-discord-youtube {
+                zdy_version = v.zdy_version;
+                zdy_hash = v.zdy_hash;
+              };
+            })
+            versions);
+
         discord-krisp-patcher =
           pkgs.writers.writePython3Bin "discord-krisp-patcher"
             {
