@@ -62,8 +62,8 @@
         zdyPackages =
           let
             versions = [
-              { name = "1_7_2b"; zdy_version = "1.7.2b"; zdy_hash = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk="; }
-              { name = "1_8_0";  zdy_version = "1.8.0"; zdy_hash = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk="; }
+              { name = "1_7_2b"; zdy_version = "1.7.2b"; zdy_hash = "sha256-59kG0UA+zUkpL/ZOwjSEpOlGJspgI8bQapxdv/FvzX8="; }
+              { name = "1_8_0";  zdy_version = "1.8.0";  zdy_hash = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk="; }
             ];
           in
           builtins.listToAttrs (map
