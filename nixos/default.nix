@@ -58,6 +58,7 @@
             cp -r $src/files/fake/ $out/files/
           '';
         });
+        zapret-discord-youtube = pkgs.callPackage ./pkgs/zapret-discord-youtube { }; 
         discord-krisp-patcher =
           pkgs.writers.writePython3Bin "discord-krisp-patcher"
             {
