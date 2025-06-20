@@ -29,6 +29,10 @@ in
     #   "--dpi-desync=fake,multidisorder"
     #   "--dpi-desync-ttl=3"
     # ];
+
+
+    # https://github.com/Flowseal/zapret-discord-youtube/discussions/3279
+    # general (ALT6)v2
     params = [
       "--comment Discord(Calls)"
       "--filter-udp=50000-50099"
