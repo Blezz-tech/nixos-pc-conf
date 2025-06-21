@@ -1,6 +1,5 @@
-{
-  config,
-  ...
+{ config
+, ...
 }:
 {
   # Use Arch Wiki for fix app (use XDG Base Directory)
@@ -17,21 +16,35 @@
 
     # Исправление пути для приложений на соответствие со стандартом XDG Base Directory
 
-    ## XDG_DATA_HOME
-    CARGO_HOME = "${config.xdg.dataHome}/cargo"; # ~/.cargo
-    NODE_REPL_HISTORY = "${config.xdg.dataHome}/node_repl_history"; # ~/.node_repl_history
-    REDISCLI_HISTFILE = "${config.xdg.dataHome}/redis/rediscli_history"; # ~/.rediscli_history
+    ## cataclysm-dda
+    CALCHISTFILE="${config.xdg.cacheHome}/calc_history";
 
-    ## XDG_CONFIG_HOME
-    XCOMPOSEFILE = "${config.xdg.configHome}/X11/xcompose"; # ~/.XCompose
+    ## Rust#Cargo
+    CARGO_HOME = "${config.xdg.dataHome}/cargo"; # ~/.cargo
+
+    ## Node.js
+    NODE_REPL_HISTORY = "${config.xdg.dataHome}/node_repl_history"; # ~/.node_repl_history
+
+    ## npm
     NPM_CONFIG_USERCONFIG = "${config.xdg.configHome}/npm/npmrc"; # for npm
+
+    ## redis
+    REDISCLI_HISTFILE = "${config.xdg.dataHome}/redis/rediscli_history"; # ~/.rediscli_history
     REDISCLI_RCFILE = "${config.xdg.configHome}/redis/redisclirc"; # ~/.redisclirc
 
-    ## XDG_CACHE_HOME
+    ## libx11
+    XCOMPOSEFILE = "${config.xdg.configHome}/X11/xcompose"; # ~/.XCompose
     XCOMPOSECACHE = "${config.xdg.cacheHome}/X11/xcompose"; # ~/.compose-cache
 
-    ## XDG_STATE_HOME
-    PYTHON_HISTORY="${config.xdg.stateHome}/python/history"; # ~/.python_history
+    ## python
+    PYTHON_HISTORY = "${config.xdg.stateHome}/python_history";
+    PYTHONPYCACHEPREFIX = "${config.xdg.cacheHome}/python";
+    PYTHONUSERBASE = "${config.xdg.dataHome}/python";
+
+    ## Local TeX Live TeXmf tree, TeXmf caches and config
+    TEXMFHOME = "${config.xdg.dataHome}/texmf";
+    TEXMFVAR = "${config.xdg.cacheHome}/texlive/texmf-var";
+    TEXMFCONFIG = "${config.xdg.configHome}/texlive/texmf-config";
   };
 
   xdg.configFile."npm/npmrc" = {
