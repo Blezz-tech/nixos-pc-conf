@@ -23,6 +23,8 @@ let
       amsmath
       hyphen-russian
       standalone
+      luatex85
+      pgfplots
     ]
   ));
 in
