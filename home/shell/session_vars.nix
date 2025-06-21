@@ -16,8 +16,11 @@
 
     # Исправление пути для приложений на соответствие со стандартом XDG Base Directory
 
+    ## luanti (minetest)
+    MINETEST_USER_PATH = "${config.xdg.dataHome}/luanti";
+
     ## cataclysm-dda
-    CALCHISTFILE="${config.xdg.cacheHome}/calc_history";
+    CALCHISTFILE = "${config.xdg.cacheHome}/calc_history";
 
     ## Rust#Cargo
     CARGO_HOME = "${config.xdg.dataHome}/cargo"; # ~/.cargo
