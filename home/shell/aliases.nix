@@ -33,7 +33,7 @@
     fixFileCP866 = "runzip -s CP866 -t utf-8 $1";
 
     # yt-dlp
-    saveYoutubeMusic = "yt-dlp -x --audio-format best -o \"%(title)s.%(ext)s\" --restrict-filenames --sleep-requests 1.5 --min-sleep-interval 60 --max-sleep-interval 90 --download-archive archive.txt $1";
+    saveYoutubeMusic = "yt-dlp -x --audio-format best -o \"%(title)s.%(ext)s\" --sleep-requests 1.5 --min-sleep-interval 60 --max-sleep-interval 90 --download-archive archive.txt $1";
 
     # gpg
     myGpgEdit = "gpg --edit-key markus.jenya04@yandex.ru";
