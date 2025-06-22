@@ -133,7 +133,7 @@ in
     # pkgs.gimp
     # pkgs.inkscape
     pkgs.krita
-    # pkgs.drawio
+    pkgs.drawio
     pkgs.aseprite
 
     # Текстовые редакторы
