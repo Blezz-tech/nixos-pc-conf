@@ -85,6 +85,7 @@ in
     # LaTeX
     # pkgs.texlive.combined.scheme-full
     tex
+    pkgs.ghostscript
     pkgs.pdf2svg
 
     # Haskell
