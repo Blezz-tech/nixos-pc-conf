@@ -14,6 +14,7 @@
     pkgs.bottles
     pkgs.r2modman
     pkgs.lutris
+    # pkgs.itch
 
     ## Мод манагеры
 
