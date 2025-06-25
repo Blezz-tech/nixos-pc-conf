@@ -6,7 +6,7 @@
     # ./nixvim.nix
     # ./nvf.nix
     ./obs-studio.nix
-    ./steam.nix
+    # ./steam.nix
   ];
 
   programs.zoom-us.enable = true;
