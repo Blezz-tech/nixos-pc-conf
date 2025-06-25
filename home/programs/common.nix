@@ -43,6 +43,7 @@ let
     # python-pkgs.plotly # NOTE: Долго билдится
     python-pkgs.torch
     python-pkgs.python-lsp-server
+    python-pkgs.beautifulsoup4
   ]));
 in
 {
