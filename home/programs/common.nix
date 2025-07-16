@@ -27,7 +27,7 @@ let
       pgfplots
     ]
   ));
-  python-custom = (pkgs.python312.withPackages (python-pkgs: [
+  python-custom = (pkgs.python313.withPackages (python-pkgs: [
     # python-pkgs.jupyter
     # python-pkgs.ipykernel
     # python-pkgs.pyautogui
@@ -44,6 +44,7 @@ let
     python-pkgs.torch
     python-pkgs.python-lsp-server
     python-pkgs.beautifulsoup4
+    python-pkgs.black # python formattier
   ]));
 in
 {
@@ -97,7 +98,6 @@ in
     pkgs.yaml-language-server # yaml
 
     # formattiers
-    pkgs.black # python
     pkgs.nixpkgs-fmt # nix
 
     # LaTeX
