@@ -107,7 +107,7 @@ in
     pkgs.pdf2svg
 
     # Haskell
-    pkgs.haskell.packages.ghc9102.cabal-install
+    pkgs.haskell.packages.ghc9122.cabal-install
     pkgs.haskell.packages.ghc9122.haskell-language-server
     pkgs.haskell.packages.ghc9122.hlint
     pkgs.haskell.packages.ghc9122.ghc
