@@ -19,7 +19,7 @@
     kernelPackages = pkgs.linuxPackages_latest;
     extraModulePackages = [ ];
 
-    loader.timeout = null;
+    # loader.timeout = null;
   };
 
   fileSystems."/" = {
