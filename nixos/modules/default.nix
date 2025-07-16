@@ -1,5 +1,6 @@
 {
   imports = [
+    # ./documentation.nix
     ./fonts.nix
     ./i18n.nix
     ./networking.nix
