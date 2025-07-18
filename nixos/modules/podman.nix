@@ -21,4 +21,9 @@
   environment.variables = {
     DOCKER_HOST = "unix:///run/user/1000/podman/podman.sock";
   };
+
+  environment.shellAliases = {
+    docker = "podman";
+    docker-compose = "podman-compose";
+  };
 }

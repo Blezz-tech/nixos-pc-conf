@@ -1,6 +1,5 @@
 {
   home.shellAliases = {
-    docker = "podman";
 
     myZ = "cd ~/nixos-pc-conf; code .; exit";
     # myViewConf = "cd myConf && nvim .";
