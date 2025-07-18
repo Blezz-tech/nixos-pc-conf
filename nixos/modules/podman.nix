@@ -17,4 +17,8 @@
     pkgs.podman-compose # start group of containers for dev
     pkgs.podman-desktop
   ];
+
+  environment.variables = {
+    DOCKER_HOST = "unix:///run/user/1000/podman/podman.sock";
+  };
 }
