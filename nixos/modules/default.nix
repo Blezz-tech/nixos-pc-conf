@@ -8,7 +8,7 @@
     ./nix.nix
     ./openssh.nix
     ./opentablet.nix
-    # ./podman.nix
+    ./podman.nix
     ./sound.nix
     # ./specialisation.nix
     ./tty.nix
