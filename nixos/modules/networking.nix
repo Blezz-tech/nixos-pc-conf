@@ -6,7 +6,7 @@
     hostName = "nixos-jenya";
   };
   networking.extraHosts = ''
-    mc.yandex.ru 127.0.0.1
+    127.0.0.1 mc.yandex.ru
   '';
   # networking.extraHosts = ''
   #   0.0.0.0 advertising.yandex.ru
