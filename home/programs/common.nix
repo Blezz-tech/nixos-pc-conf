@@ -233,8 +233,8 @@ in
     pkgs.kdePackages.xwaylandvideobridge
     # pkgs.cura
     # pkgs.cura-appimage
-    pkgs.nextcloud-client
-    pkgs.nextcloud-talk-desktop
+    # pkgs.nextcloud-client
+    # pkgs.nextcloud-talk-desktop
     # pkgs.geogebra6
     pkgs.okteta
 
