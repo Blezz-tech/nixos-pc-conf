@@ -284,7 +284,7 @@ in
     # pkgs.anime4k
     pkgs.fd
     # pkgs.haruna
-    # pkgs.gcc
+    pkgs.gcc
     # pkgs.kdePackages.kolourpaint
     pkgs.kdePackages.kleopatra
     # pkgs.kdePackages.kasts
