@@ -5,6 +5,9 @@
     # nftables.enable = true;
     hostName = "nixos-jenya";
   };
+  networking.extraHosts = ''
+    mc.yandex.ru 127.0.0.1
+  '';
   # networking.extraHosts = ''
   #   0.0.0.0 advertising.yandex.ru
 
