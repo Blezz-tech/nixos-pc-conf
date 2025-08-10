@@ -8,7 +8,7 @@
     ## Лаунчеры
 
     # pkgs.nexusmods-app-unfree
-    pkgs.ryujinx
+    pkgs.ryubing
     pkgs.prismlauncher
     pkgs.shadps4
     pkgs.bottles
