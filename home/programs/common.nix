@@ -172,7 +172,7 @@ in
     # pkgs.kdePackages.wallpaper-engine-plugin
     # pkgs.nodejs_latest
     pkgs.sqlitebrowser
-    pkgs.code-cursor
+    # pkgs.code-cursor
     # pkgs.graphviz
     # pkgs.nodePackages_latest.prettier
     # pkgs.cmake
