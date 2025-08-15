@@ -332,6 +332,7 @@ in
     # pkgs.mysql-workbench
     # pkgs.dbeaver-bin
     pkgs.treefmt
+    pkgs.imhex
     # pkgs.zeal-qt6
     # pkgs.anki
     # pkgs.kdePackages.ksystemlog
