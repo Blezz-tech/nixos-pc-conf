@@ -11,7 +11,7 @@
     pkgs.ryubing
     pkgs.prismlauncher
     pkgs.shadps4
-    pkgs.bottles
+    (pkgs.bottles.override { removeWarningPopup = true; })
     pkgs.r2modman
     pkgs.lutris
     # pkgs.itch
