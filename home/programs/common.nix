@@ -301,7 +301,7 @@ in
     # pkgs.goldendict-ng
     pkgs.nix-search
     pkgs.ffmpeg-full
-    # pkgs.gh
+    pkgs.gh
     # pkgs.dig
     # pkgs.nekoray
     # pkgs.flameshot
