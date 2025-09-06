@@ -153,5 +153,6 @@
         # });
       };
     })
+    (import ./overlays/envvar.nix)
   ];
 }
