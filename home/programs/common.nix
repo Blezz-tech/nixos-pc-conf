@@ -249,7 +249,8 @@ in
     pkgs.luarocks
     # pkgs.kdePackages.kdenlive
 
-    # pkgs.mdbook
+    pkgs.mdbook
+    pkgs.mdbook-admonish
     # pkgs.mdbook-epub
     # pkgs.mdbook-pdf
 
