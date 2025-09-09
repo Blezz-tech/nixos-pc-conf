@@ -11,7 +11,7 @@
     --enable-zero-copy
     --enable-accelerated-video-decode
     --ozone-platform-hint=wayland
-    --enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport,UseOzonePlatform
+    --enable-features=VaapiVideoDecoder,AcceleratedVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport,UseOzonePlatform,AcceleratedVideoDecodeLinuxZeroCopyGL
 
     # For Fcitx5
     --enable-wayland-ime=true

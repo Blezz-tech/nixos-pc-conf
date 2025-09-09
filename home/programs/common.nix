@@ -306,7 +306,18 @@ in
     # pkgs.dig
     # pkgs.nekoray
     # pkgs.flameshot
-    pkgs.chromium
+    (pkgs.chromium.overrideAttrs (oldAttrs: {
+      commandLineArgs = [
+        "--use-gl=angle"
+        "--use-angle=vulkan"
+        "--ignore-gpu-blocklist"
+        "--enable-gpu-rasterization"
+        "--enable-zero-copy"
+        "--enable-accelerated-video-decode"
+        "--ozone-platform-hint=wayland"
+        "--enable-features=VaapiVideoDecoder,AcceleratedVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport,UseOzonePlatform,AcceleratedVideoDecodeLinuxZeroCopyGL"
+      ];
+    }))
     (pkgs.vivaldi.overrideAttrs (oldAttrs: {
       # dontWrapQtApps = false;
       # dontPatchELF = true;
