@@ -14,6 +14,7 @@
     (pkgs.bottles.override { removeWarningPopup = true; })
     pkgs.r2modman
     pkgs.lutris
+    pkgs.ftb-app
     # pkgs.itch
 
     ## Мод манагеры
