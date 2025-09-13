@@ -25,6 +25,7 @@ let
       standalone
       luatex85
       pgfplots
+      cancel
     ]
   ));
   python-custom = (pkgs.python313.withPackages (python-pkgs: [
