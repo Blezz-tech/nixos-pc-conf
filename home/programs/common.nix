@@ -204,6 +204,7 @@ in
 
     pkgs.poppler_utils
     pkgs.pdftk
+    pkgs.mupdf
     # pkgs.ocrmypdf
     # pkgs.tesseract
     # pkgs.stack
