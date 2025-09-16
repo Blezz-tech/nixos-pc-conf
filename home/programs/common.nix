@@ -267,6 +267,7 @@ in
     pkgs.zotero
     # pkgs.just
     pkgs.oxipng # multithreaded lossless PNG/APNG compression optimizer
+    pkgs.colorized-logs # ansi2txt
     # pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
     pkgs.kdePackages.kompare
     # pkgs.helix
