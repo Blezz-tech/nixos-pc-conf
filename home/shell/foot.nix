@@ -13,6 +13,9 @@ in
       colors = {
         alpha = 0.8;
       };
+      scrollback = {
+        lines = 100000;
+      };
     };
   };
 }
