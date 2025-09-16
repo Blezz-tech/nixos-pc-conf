@@ -28,7 +28,7 @@
     # pkgs.fheroes2
     pkgs.vangers
 
-    pkgs.openxray
+    # pkgs.openxray
     # pkgs.arx-libertatis
     # pkgs.opengothic
     # pkgs.cataclysm-dda
