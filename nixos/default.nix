@@ -145,13 +145,13 @@
           };
 
           CLION = {
-            v2025_2_2 = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
+            v2025_2_2 = (pkgs.jetbrains.clion.overrideAttrs (oldAttrs: {
               src = builtins.fetchurl {
                 url = "file:///home/jenya/CLion-2025.2.2.tar.gz";
                 sha256 = "sha256:01h6fd8yz9q7b51nfyha7cpnfjdrsvgk925j8dkmhqrshlf4zf27";
               };
             }));
-            v2025_2_1 = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
+            v2025_2_1 = (pkgs.jetbrains.clion.overrideAttrs (oldAttrs: {
               src = builtins.fetchurl {
                 url = "file:///home/jenya/CLion-2025.2.1.tar.gz";
                 sha256 = "sha256:0j06cdb8r9na0f5hqfwqf535c8k25a6dqwkxvgpm5xkja4g1l3pm";
