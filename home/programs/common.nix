@@ -289,8 +289,8 @@ in
     pkgs.fd
     # pkgs.haruna
     pkgs.gcc
-    pkgs.clang
-    pkgs.clang-analyzer
+    # pkgs.clang
+    # pkgs.clang-analyzer
     # pkgs.kdePackages.kolourpaint
     pkgs.kdePackages.kleopatra
     # pkgs.kdePackages.kasts
