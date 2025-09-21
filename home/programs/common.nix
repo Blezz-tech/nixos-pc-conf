@@ -288,9 +288,9 @@ in
     # pkgs.anime4k
     pkgs.fd
     # pkgs.haruna
-    pkgs.gcc
-    # pkgs.clang
-    # pkgs.clang-analyzer
+    # pkgs.gcc
+    pkgs.clang
+    pkgs.clang-analyzer
     # pkgs.kdePackages.kolourpaint
     pkgs.kdePackages.kleopatra
     # pkgs.kdePackages.kasts
