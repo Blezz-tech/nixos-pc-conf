@@ -82,7 +82,7 @@ in
   home.packages = [
     pkgs.blezz-pkgs.discord-krisp-patcher
     # pkgs.blezz-pkgs.davinci-resolve
-    # pkgs.blezz-pkgs.MURMUR.PHP.v2025_1_1
+    # pkgs.blezz-pkgs.MURMUR.CLION.v2025_2_2
     myPHP.php
     myPHP.php.packages.composer
     myPHP.php.packages.php-codesniffer
@@ -289,6 +289,8 @@ in
     pkgs.fd
     # pkgs.haruna
     pkgs.gcc
+    pkgs.clang
+    pkgs.clang-analyzer
     # pkgs.kdePackages.kolourpaint
     pkgs.kdePackages.kleopatra
     # pkgs.kdePackages.kasts

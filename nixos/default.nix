@@ -143,6 +143,15 @@
               };
             }));
           };
+
+          CLION = {
+            v2025_2_2 = (pkgs.jetbrains.idea-ultimate.overrideAttrs (oldAttrs: {
+              src = builtins.fetchurl {
+                url = "file:///home/jenya/CLion-2025.2.2.tar.gz";
+                sha256 = "sha256:01h6fd8yz9q7b51nfyha7cpnfjdrsvgk925j8dkmhqrshlf4zf27";
+              };
+            }));
+          };
         };
         # MURMUR_TOOLBOX = super.jetbrains-toolbox.overrideAttrs (oldAttrs: {
         #   src = self.fetchzip {
