@@ -7,6 +7,10 @@
   };
   networking.extraHosts = ''
     127.0.0.1 mc.yandex.ru
+
+
+    127.0.0.1 jetbrains.com
+    127.0.0.1 account.jetbrains.com
   '';
   # networking.extraHosts = ''
   #   0.0.0.0 advertising.yandex.ru
