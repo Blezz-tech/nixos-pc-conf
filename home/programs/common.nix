@@ -130,7 +130,7 @@ in
 
     # Музыкальные редакторы
     pkgs.musescore
-    # pkgs.obsidian
+    pkgs.obsidian
 
     # Месседжеры
     pkgs.discord-canary
