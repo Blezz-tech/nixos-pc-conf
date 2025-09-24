@@ -27,6 +27,7 @@ let
       pgfplots
       cancel
       lualatex-math
+      enumitem
     ]
   ));
   python-custom = (pkgs.python313.withPackages (python-pkgs: [
