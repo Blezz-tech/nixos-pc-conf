@@ -26,6 +26,7 @@ let
       luatex85
       pgfplots
       cancel
+      lualatex-math
     ]
   ));
   python-custom = (pkgs.python313.withPackages (python-pkgs: [
