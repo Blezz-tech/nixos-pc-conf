@@ -49,6 +49,5 @@
     pkgs.miracode
     pkgs.dejavu_fonts
     pkgs.eb-garamond
-    pkgs.lmodern
   ] ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
 }
