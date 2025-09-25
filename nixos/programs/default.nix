@@ -2,6 +2,7 @@
   imports = [
     ./chromium.nix
     ./firefox.nix
+    # ./hyprland.nix
     ./kdeconnect.nix
     # ./nixvim.nix
     # ./nvf.nix
