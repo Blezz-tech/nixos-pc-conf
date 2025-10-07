@@ -48,6 +48,8 @@ let
     python-pkgs.python-lsp-server
     python-pkgs.beautifulsoup4
     python-pkgs.black # python formattier
+    python-pkgs.jupyter
+    python-pkgs.notebook
   ]));
 in
 {
