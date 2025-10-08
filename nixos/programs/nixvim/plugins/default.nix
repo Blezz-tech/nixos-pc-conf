@@ -67,7 +67,7 @@
     # ./util/debugprint.nix
     # ./util/kulala.nix
     # ./util/mini.nix
-    # ./util/nvim-autopairs.nix
+    ./util/nvim-autopairs.nix
     # ./util/nvim-surround.nix
     # ./util/plenary.nix
     # ./util/persistence.nix
