@@ -19,8 +19,6 @@
 
   # programs.nixvim = {
 
-  #   colorschemes.vscode.enable = true;
-
   #   plugins = {
   #     # lightline.enable = true;
   #     barbar.enable = true;

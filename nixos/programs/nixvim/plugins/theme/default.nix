@@ -9,7 +9,7 @@
         };
         flavour = "macchiato"; # “latte”, “mocha”, “frappe”, “macchiato”, “auto”
         transparent_background = true;
-        integrations = {
+        integrations = { # TODO: Разобраться с итнеграциями
           cmp = true;
           flash = true;
           fidget = true;
