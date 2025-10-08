@@ -1,5 +1,5 @@
 {
-  programs.nixvim.colorschemes = {
+  colorschemes = {
     catppuccin = {
       enable = true;
       settings = {
@@ -9,7 +9,7 @@
         };
         flavour = "macchiato"; # “latte”, “mocha”, “frappe”, “macchiato”, “auto”
         transparent_background = true;
-        integrations = { #TODO: Разобраться в интеграциях
+        integrations = {
           cmp = true;
           flash = true;
           fidget = true;
