@@ -158,7 +158,7 @@ in
     # pkgs.inkscape
     pkgs.krita
     pkgs.drawio
-    pkgs.aseprite
+    # pkgs.aseprite
 
     # Текстовые редакторы
     pkgs.libreoffice-qt6-fresh
