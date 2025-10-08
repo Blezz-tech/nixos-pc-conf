@@ -11,3 +11,4 @@
 Они сильно помогают и облегчают жизнь
 
 - [ReStranger](https://github.com/ReStranger/nixos-config) (За настройку для запрета)
+- [spector700](https://github.com/spector700/Akari) (За настройку для neovim'а)
