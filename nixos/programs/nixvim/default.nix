@@ -3,9 +3,7 @@
 }:
 {
   imports = [
-    ./keymaps.nix
-    ./config.nix
-    ./plugins
+
   ];
 
   programs.nixvim = {
