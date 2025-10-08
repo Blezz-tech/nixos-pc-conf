@@ -10,7 +10,7 @@
     # pkgs.nexusmods-app-unfree
     pkgs.ryubing
     pkgs.prismlauncher
-    pkgs.shadps4
+    # pkgs.shadps4
     (pkgs.bottles.override { removeWarningPopup = true; })
     pkgs.r2modman
     pkgs.lutris
