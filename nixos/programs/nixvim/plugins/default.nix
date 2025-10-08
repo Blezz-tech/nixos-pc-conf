@@ -18,7 +18,7 @@
     # ./editor/yanky.nix
     # ./editor/yazi.nix
 
-    # ./theme
+    ./theme
     # ./luasnip
 
     # ./snacks
