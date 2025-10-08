@@ -268,6 +268,7 @@ in
     # pkgs.github-desktop
     pkgs.nufmt
     pkgs.omegat
+    pkgs.lua
     pkgs.zotero
     # pkgs.just
     pkgs.oxipng # multithreaded lossless PNG/APNG compression optimizer
