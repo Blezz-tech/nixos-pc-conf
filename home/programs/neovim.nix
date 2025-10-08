@@ -5,8 +5,6 @@
     vimAlias = true;
 
     defaultEditor = true;
-    # plugins = [
-
-    # ];
+    # plugins = [];
   };
 }

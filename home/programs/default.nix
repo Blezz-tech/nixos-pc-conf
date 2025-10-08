@@ -8,7 +8,7 @@
     ./eza.nix
     ./fzf.nix
     ./git.nix
-    # ./neovim.nix
+    ./neovim.nix
     ./nushell.nix
     ./vscode.nix
 

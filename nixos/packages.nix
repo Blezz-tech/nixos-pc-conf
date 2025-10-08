@@ -25,7 +25,6 @@
     pkgs.keepassxc
     pkgs.wireguard-tools
     # pkgs.vopono
-    pkgs.neovim
     pkgs.ntfs3g
 
     pkgs.home-manager
