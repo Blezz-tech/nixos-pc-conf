@@ -26,7 +26,7 @@
     # Герои меча и магии
     pkgs.vcmi
     # pkgs.fheroes2
-    pkgs.vangers
+    # pkgs.vangers
 
     # pkgs.openxray
     # pkgs.arx-libertatis
