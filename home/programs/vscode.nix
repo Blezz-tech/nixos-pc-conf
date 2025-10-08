@@ -11,6 +11,7 @@
       userSettings = {
         "editor.minimap.enabled" = false;
         "editor.rulers" = [ 80 ];
+        "editor.fontFamily"= "'Hack', 'monospace', monospace";
 
         "explorer.confirmDragAndDrop" = false;
 
