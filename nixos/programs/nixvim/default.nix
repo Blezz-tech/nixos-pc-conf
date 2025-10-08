@@ -2,21 +2,20 @@
 , ...
 }:
 {
-  imports = [
 
+  enable = true;
+  viAlias = true;
+  vimAlias = true;
+  extraPackages = with pkgs; [
+    ripgrep
+    lazygit
+    fzf
+    fd
   ];
 
-  programs.nixvim = {
-    enable = true;
-    viAlias = true;
-    vimAlias = true;
-    extraPackages = with pkgs; [
-      ripgrep
-      lazygit
-      fzf
-      fd
-    ];
-  };
+  imports = [
+    ./plugins
+  ];
 
   # programs.nixvim = {
 

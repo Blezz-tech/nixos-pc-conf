@@ -4,7 +4,7 @@
     ./firefox.nix
     # ./hyprland.nix
     ./kdeconnect.nix
-    ./nixvim
+    ./nixvim.nix
     # ./nvf.nix
     ./obs-studio.nix
     ./steam.nix
