@@ -4,7 +4,7 @@
 # Один из конфигов
 # https://github.com/Flowseal/zapret-discord-youtube/discussions/3279#discussioncomment-14616172
 let
-  zdy = pkgs.blezz-pkgs.zdyPackages."1_8_3";
+  zdy = pkgs.blezz-pkgs.zdyPackages."1_8_5";
   zapret = pkgs.blezz-pkgs.zapret;
 in
 {
