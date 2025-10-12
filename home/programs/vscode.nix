@@ -11,9 +11,11 @@
       userSettings = {
         "editor.minimap.enabled" = false;
         "editor.rulers" = [ 80 ];
-        "editor.fontFamily"= "'Hack', 'monospace', monospace";
+        "editor.fontFamily" = "'Hack', 'monospace', monospace";
 
         "explorer.confirmDragAndDrop" = false;
+
+        "terminal.integrated.enableMultiLinePasteWarning" = "never";
 
         "git.enableSmartCommit" = true;
         "git.openRepositoryInParentFolders" = "always";
