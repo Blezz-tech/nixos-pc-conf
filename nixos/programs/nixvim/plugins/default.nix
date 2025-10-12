@@ -62,7 +62,7 @@
     # ./ui/toggleterm.nix
     # ./ui/ufo.nix
 
-    # ./util/colorizer.nix
+    ./util/colorizer.nix
     # ./util/compiler.nix
     # ./util/debugprint.nix
     # ./util/kulala.nix

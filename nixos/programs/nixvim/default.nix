@@ -23,7 +23,6 @@
   #     # lightline.enable = true;
   #     barbar.enable = true;
   #     gitsigns.enable = true;
-  #     colorizer.enable = true;
   #     fzf-lua.enable = true;
   #     web-devicons.enable = true;
   #     lsp = {
