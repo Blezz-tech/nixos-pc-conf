@@ -185,7 +185,7 @@ in
     # pkgs.distrobox
     # pkgs.auto-editor
 
-    # pkgs.gnumake
+    pkgs.gnumake
     # pkgs.tiled
     # pkgs.unityhub
     # pkgs.pdfarranger
