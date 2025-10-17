@@ -13,6 +13,9 @@
     steam = {
       enable = true;
 
+      # Proton
+      protontricks.enable = true;
+
       # Enable Game Scope
       # gamescopeSession.enable = true;
 
