@@ -5,7 +5,10 @@
       capSysNice = true;
     };
 
-    gamemode.enable = true;
+    gamemode = {
+      enable = true;
+      # enableRenice = true;
+    };
 
     steam = {
       enable = true;
