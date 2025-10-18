@@ -76,19 +76,19 @@ in
         "--dpi-desync-badseq-increment=2"
         "--new"
 
-        "--filter-tcp=443,%GameFilter%"
-        "--ipset=${zdy}/lists/ipset-all.txt"
-        "--dpi-desync=syndata"
-        "--new"
+        # "--filter-tcp=443,%GameFilter%"
+        # "--ipset=${zdy}/lists/ipset-all.txt"
+        # "--dpi-desync=syndata"
+        # "--new"
 
-        "--filter-udp=%GameFilter%"
-        "--ipset=${zdy}/lists/ipset-all.txt"
-        "--dpi-desync=fake"
-        "--dpi-desync-autottl=2"
-        "--dpi-desync-repeats=12"
-        "--dpi-desync-any-protocol=1"
-        "--dpi-desync-fake-unknown-udp=${zapret}/files/fake/quic_initial_www_google_com.bin"
-        "--dpi-desync-cutoff=n2"
+        # "--filter-udp=%GameFilter%"
+        # "--ipset=${zdy}/lists/ipset-all.txt"
+        # "--dpi-desync=fake"
+        # "--dpi-desync-autottl=2"
+        # "--dpi-desync-repeats=12"
+        # "--dpi-desync-any-protocol=1"
+        # "--dpi-desync-fake-unknown-udp=${zapret}/files/fake/quic_initial_www_google_com.bin"
+        # "--dpi-desync-cutoff=n2"
       ];
   };
 }
