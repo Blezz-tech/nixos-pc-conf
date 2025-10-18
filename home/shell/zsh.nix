@@ -5,7 +5,7 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
-    envExtra = ''
+    initContent = ''
       # Возращение НОРМАЛЬНОГО поведения в zsh для Ctrl + Arrow Left/Right
       bindkey "^[[1;5C" forward-word
       bindkey "^[[1;5D" backward-word
