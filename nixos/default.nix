@@ -13,8 +13,6 @@
     ./config.nix
   ];
 
-  programs.plasma-systemmonitor.enable = true;
-
   time.timeZone = "Europe/Moscow";
 
   system.stateVersion = "25.05";

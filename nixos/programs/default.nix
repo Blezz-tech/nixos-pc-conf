@@ -38,4 +38,7 @@
 
   # openvpn client
   # programs.openvpn3.enable = true;
+
+  # plasma-systemmonitor
+  programs.plasma-systemmonitor.enable = true;
 }
