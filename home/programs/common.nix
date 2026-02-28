@@ -112,11 +112,11 @@ in
     pkgs.pdf2svg
 
     # Haskell
-    pkgs.haskell.packages.ghc9122.cabal-install
-    pkgs.haskell.packages.ghc9122.haskell-language-server
-    pkgs.haskell.packages.ghc9122.hlint
-    pkgs.haskell.packages.ghc9122.ghc
-    pkgs.ghciwatch
+    # pkgs.haskell.packages.ghc9122.cabal-install
+    # pkgs.haskell.packages.ghc9122.haskell-language-server
+    # pkgs.haskell.packages.ghc9122.hlint
+    # pkgs.haskell.packages.ghc9122.ghc
+    # pkgs.ghciwatch
 
     # Agda and coq (rocq)
     # pkgs.agda
@@ -137,7 +137,7 @@ in
     pkgs.obsidian
 
     # Месседжеры
-    pkgs.discord-canary
+    # pkgs.discord-canary
     # pkgs.element-desktop
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio
@@ -156,13 +156,13 @@ in
     # Графические редакторы
     # pkgs.gimp
     # pkgs.inkscape
-    pkgs.krita
+    # pkgs.krita
     pkgs.drawio
     # pkgs.aseprite
 
     # Текстовые редакторы
     pkgs.libreoffice-qt6-fresh
-    pkgs.onlyoffice-bin_latest
+    pkgs.onlyoffice-desktopeditors
 
     # Браузеры
     pkgs.google-chrome
@@ -200,6 +200,7 @@ in
     # pkgs.ventoy-full
     # pkgs.age
     # pkgs.sops
+    # pkgs.far2l
     pkgs.bash-language-server
     pkgs.imagemagick
     # pkgs.crow-translate
@@ -207,7 +208,7 @@ in
     # pkgs.revolt-desktop
     # pkgs.zim
 
-    pkgs.poppler_utils
+    pkgs.poppler-utils
     pkgs.pdftk
     pkgs.mupdf
     # pkgs.ocrmypdf
@@ -236,13 +237,12 @@ in
     pkgs.kdePackages.filelight # For Dolphin Integration
     pkgs.kdePackages.kdialog # Для arx libertatis
     pkgs.audacity
-    pkgs.kdePackages.xwaylandvideobridge
     # pkgs.cura
     # pkgs.cura-appimage
     # pkgs.nextcloud-client
     # pkgs.nextcloud-talk-desktop
     # pkgs.geogebra6
-    pkgs.okteta
+    # pkgs.okteta
 
     # pkgs.digikam
     # pkgs.rawtherapee
@@ -381,7 +381,7 @@ in
 
     ## Typst
     pkgs.typst
-    pkgs.typstfmt
+    pkgs.typstyle
     pkgs.typst-live
     pkgs.tinymist
 

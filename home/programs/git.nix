@@ -7,16 +7,26 @@
       enable = true;
       lfs.enable = true;
       package = pkgs.gitFull;
-      difftastic = {
-        enable = false;
-        # display = "inline";
-      };
 
-      userName = "blezz-tech";
-      userEmail = "markus.jenya04@yandex.ru";
       signing.key = "78E9CCD7CF92CD8F";
       signing.signByDefault = true;
-      extraConfig = {
+      settings = {
+
+        user.name = "blezz-tech";
+        user.email = "markus.jenya04@yandex.ru";
+        aliases = {
+          # View abbreviated SHA, description, and history graph of the commits
+          l = "log --pretty=oneline --graph --abbrev-commit";
+          # View the current working tree status using the short format
+          s = "status -s";
+          ss = "status";
+          # show verbose output about tags, branches or remotes
+          tags = "tag -l";
+          branches = "branch -a";
+          remotes = "remote -v";
+          # Fetch all remotes and remove stale references
+          fa = "fetch --all --prune";
+        };
         init.defaultBranch = "master";
         core = {
           quotepath = false;
@@ -63,6 +73,7 @@
 
       };
 
+
       ignores = [
         "venv"
         ".venv"
@@ -71,19 +82,6 @@
         ".direnv"
       ];
 
-      aliases = {
-        # View abbreviated SHA, description, and history graph of the commits
-        l = "log --pretty=oneline --graph --abbrev-commit";
-        # View the current working tree status using the short format
-        s = "status -s";
-        ss = "status";
-        # show verbose output about tags, branches or remotes
-        tags = "tag -l";
-        branches = "branch -a";
-        remotes = "remote -v";
-        # Fetch all remotes and remove stale references
-        fa = "fetch --all --prune";
-      };
     };
 
     git-cliff = {

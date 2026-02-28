@@ -17,11 +17,10 @@
     pkgs.noto-fonts-cjk-serif
     pkgs.noto-fonts-cjk-sans
     pkgs.noto-fonts-color-emoji
-    pkgs.noto-fonts-extra
 
     # Шрифты windows
     pkgs.corefonts
-    pkgs.vistafonts
+    pkgs.vista-fonts
 
     # Mono
     pkgs.hack-font
