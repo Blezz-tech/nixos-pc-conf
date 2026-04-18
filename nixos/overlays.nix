@@ -1,7 +1,7 @@
 { pkgs
 , ...
-}:{
-  
+}: {
+
   nixpkgs.overlays = [
     (self: super: {
       blezz-pkgs = {
@@ -19,10 +19,10 @@
           let
             versions = [
               { name = "1_7_2b"; zdy_version = "1.7.2b"; zdy_hash = "sha256-59kG0UA+zUkpL/ZOwjSEpOlGJspgI8bQapxdv/FvzX8="; }
-              { name = "1_8_0";  zdy_version = "1.8.0";  zdy_hash = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk="; }
-              { name = "1_8_3";  zdy_version = "1.8.3";  zdy_hash = "sha256-xpq/I9oOhgl7i7tRMsj9P/ka6rvdMfGt88VxGwOPDLM="; }
-              { name = "1_8_5";  zdy_version = "1.8.5";  zdy_hash = "sha256-paT29uftOnbViXM1X5aX7p6cKNrFDUCRX7Pjp/+TyO8="; }
-              { name = "1_9_7";  zdy_version = "1.9.7";  zdy_hash = "sha256-n+V3/jE4L2fUKognR/LOssMELWAY+9tguP/TZX6TOCE="; }
+              { name = "1_8_0"; zdy_version = "1.8.0"; zdy_hash = "sha256-GgDxB2GFnQizvY2kiBs7E9lgvxn4KwxRcOZBAeUXCPk="; }
+              { name = "1_8_3"; zdy_version = "1.8.3"; zdy_hash = "sha256-xpq/I9oOhgl7i7tRMsj9P/ka6rvdMfGt88VxGwOPDLM="; }
+              { name = "1_8_5"; zdy_version = "1.8.5"; zdy_hash = "sha256-paT29uftOnbViXM1X5aX7p6cKNrFDUCRX7Pjp/+TyO8="; }
+              { name = "1_9_7"; zdy_version = "1.9.7"; zdy_hash = "sha256-n+V3/jE4L2fUKognR/LOssMELWAY+9tguP/TZX6TOCE="; }
             ];
           in
           builtins.listToAttrs (map
@@ -127,5 +127,15 @@
       };
     })
     (import ./overlays/envvar.nix)
+    (final: prev: {
+      prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (old: {
+        patches = (old.patches or [ ]) ++ [
+          (final.fetchpatch {
+            url = "https://gist.githubusercontent.com/Blezz-tech/bc9acc9d02e4eb77c4a0b407f589da26/raw/a413cb08d722bda5b91a1d6ace78c9699ce86588/0001-fix-online-account.patch";
+            sha256 = "sha256-tB4AA4qiMI4sirTnBI857uS2ZfhiinpOZ3p2/jQ6dCc=";
+          })
+        ];
+      });
+    })
   ];
 }
