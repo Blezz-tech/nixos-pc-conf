@@ -1,6 +1,6 @@
 {
   services.xserver = {
-    enable = true;
+    enable = false;
     # videoDrivers = [ "amdgpu" ];
 
     # Configure keymap in X11
