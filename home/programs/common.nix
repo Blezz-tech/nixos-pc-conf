@@ -133,6 +133,7 @@ in
         })
       ];
     })
+    pkgs.recoll
 
     # Альтернатива Postman'у
     # pkgs.insomnia
