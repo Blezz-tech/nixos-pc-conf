@@ -424,7 +424,7 @@ in
     pkgs.socat # replacement of openbsd-netcat
     pkgs.nmap # A utility for network discovery and security auditing
     # pkgs.ipcalc # it is a calculator for the IPv4/v6 addresses
-    pkgs.runzip # Fixing zip archives
+    # pkgs.runzip # Fixing zip archives
 
     # misc
     pkgs.cowsay
