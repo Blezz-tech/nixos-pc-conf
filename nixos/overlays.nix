@@ -23,6 +23,7 @@
               { name = "1_8_3"; zdy_version = "1.8.3"; zdy_hash = "sha256-xpq/I9oOhgl7i7tRMsj9P/ka6rvdMfGt88VxGwOPDLM="; }
               { name = "1_8_5"; zdy_version = "1.8.5"; zdy_hash = "sha256-paT29uftOnbViXM1X5aX7p6cKNrFDUCRX7Pjp/+TyO8="; }
               { name = "1_9_7"; zdy_version = "1.9.7"; zdy_hash = "sha256-n+V3/jE4L2fUKognR/LOssMELWAY+9tguP/TZX6TOCE="; }
+              { name = "1_10_1"; zdy_version = "1.10.1"; zdy_hash = "sha256-LPV9ruCAznU8LL7wT+KMt0fECGMUP+8qo1r5PxqMYxs="; }
             ];
           in
           builtins.listToAttrs (map

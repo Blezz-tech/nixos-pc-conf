@@ -4,7 +4,7 @@
 # Используется конфиг zarpet-youtube-discord general (Dronatar)/general (ALT6)
 # https://github.com/Flowseal/zapret-discord-youtube/discussions/3279
 let
-  zdy = pkgs.blezz-pkgs.zdyPackages."1_9_7";
+  zdy = pkgs.blezz-pkgs.zdyPackages."1_10_1";
   zapret = pkgs.blezz-pkgs.zapret;
 in
 {
