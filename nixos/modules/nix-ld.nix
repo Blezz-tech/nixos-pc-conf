@@ -42,7 +42,7 @@
       pkgs.keyutils.lib
       pkgs.libGL
       pkgs.libGLU
-      pkgs.libappindicator-gtk2
+      pkgs.libappindicator-gtk3
       pkgs.libcaca
       pkgs.libcanberra
       pkgs.libcap
