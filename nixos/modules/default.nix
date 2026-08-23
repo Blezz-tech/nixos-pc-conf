@@ -1,4 +1,6 @@
-{
+{ pkgs
+, ...
+}: {
   imports = [
     # ./documentation.nix
     ./fonts.nix
@@ -35,8 +37,13 @@
   # programs.virt-manager.enable = true;
 
   # Эмулятор Android
-  # virtualisation.waydroid.enable = true;
+  virtualisation.waydroid.enable = true;
 
+  virtualisation.waydroid.package = pkgs.waydroid-nftables;
+
+  # Enable clipboard sharing
+  environment.systemPackages = [ pkgs.wl-clipboard ];
+  
   # nixpkgs settings
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [ ];

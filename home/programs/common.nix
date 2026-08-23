@@ -220,7 +220,7 @@ in
     # pkgs.nheko
     # pkgs.kdePackages.neochat
     # pkgs.fractal
-    # pkgs.mangohud
+    pkgs.mangohud
     # pkgs.kando
     # pkgs.activate-linux
 
