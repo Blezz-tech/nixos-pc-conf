@@ -175,7 +175,7 @@ in
     # На сортировку
     # pkgs.python3
     python-custom
-    # pkgs.v2rayn
+    pkgs.v2rayn
     pkgs.uv
     # pkgs.kdePackages.wallpaper-engine-plugin
     # pkgs.nodejs_latest

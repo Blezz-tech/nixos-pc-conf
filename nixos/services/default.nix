@@ -10,7 +10,7 @@
     # ./redis.nix
     # ./spoofdpi.nix
     # ./tor.nix
-    ./v2raya.nix
+    # ./v2raya.nix
     # ./wireguard.nix
     # ./wivrn.nix
     ./zapret.nix
