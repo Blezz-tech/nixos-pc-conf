@@ -37,9 +37,8 @@
   # programs.virt-manager.enable = true;
 
   # Эмулятор Android
-  virtualisation.waydroid.enable = true;
-
-  virtualisation.waydroid.package = pkgs.waydroid-nftables;
+  # virtualisation.waydroid.enable = true;
+  # virtualisation.waydroid.package = pkgs.waydroid-nftables;
 
   # Enable clipboard sharing
   environment.systemPackages = [ pkgs.wl-clipboard ];
