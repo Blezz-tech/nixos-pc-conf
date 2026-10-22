@@ -13,7 +13,7 @@
     # pkgs.shadps4
     (pkgs.bottles.override { removeWarningPopup = true; })
     pkgs.r2modman
-    pkgs.lutris
+    # pkgs.lutris
     pkgs.ftb-app
     # pkgs.itch
 
