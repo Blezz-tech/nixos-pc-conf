@@ -24,6 +24,6 @@
 
   environment.systemPackages = [
     pkgs.kdePackages.skanpage
-    pkgs.naps2
+    # pkgs.naps2
   ];
 }
