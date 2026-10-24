@@ -38,6 +38,21 @@
   #   fsType = "ext4";
   # };
 
+  fileSystems."/run/media/jenya/kotik" = {
+    device = "/dev/disk/by-uuid/550E7D00221D261C";
+    fsType = "ntfs-3g";
+    options = [
+      "user"
+      "nofail"
+      "x-gvfs-show"
+      "uid=1000"
+      "gid=100"
+      "dmask=022"
+      "fmask=133"
+      "windows_names"
+    ];
+  };
+
   # swapDevices = [
   #   {
   #     device = "/dev/disk/by-uuid/f7c4cded-465d-45d5-8636-f8087b603c12";
