@@ -135,11 +135,11 @@ in
     # pkgs.blender-hip
 
     # Музыкальные редакторы
-    pkgs.musescore
+    # pkgs.musescore
     pkgs.obsidian
 
     # Месседжеры
-    pkgs.discord-canary
+    # pkgs.discord-canary
     # pkgs.element-desktop
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio
@@ -232,14 +232,12 @@ in
     # Словари
     pkgs.aspell
     pkgs.aspellDicts.en
-    pkgs.aspellDicts.en-computers
-    pkgs.aspellDicts.en-science
     pkgs.aspellDicts.ru
 
     # pkgs.baobab
     pkgs.kdePackages.filelight # For Dolphin Integration
     pkgs.kdePackages.kdialog # Для arx libertatis
-    pkgs.audacity
+    # pkgs.audacity
     # pkgs.cura
     # pkgs.cura-appimage
     # pkgs.nextcloud-client
@@ -272,7 +270,7 @@ in
     pkgs.nufmt
     pkgs.omegat
     pkgs.lua
-    pkgs.zotero
+    # pkgs.zotero
     # pkgs.just
     pkgs.oxipng # multithreaded lossless PNG/APNG compression optimizer
     pkgs.colorized-logs # ansi2txt

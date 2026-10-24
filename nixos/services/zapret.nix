@@ -4,7 +4,7 @@
 # Используется конфиг zarpet-youtube-discord general (Dronatar)/general (ALT6)
 # https://github.com/Flowseal/zapret-discord-youtube/discussions/3279
 let
-  zdy = pkgs.blezz-pkgs.zdyPackages."1_10_1";
+  zdy = pkgs.blezz-pkgs.zdyPackages."1_10_4";
   zapret = pkgs.blezz-pkgs.zapret;
 in
 {
@@ -60,7 +60,7 @@ in
       "--dpi-desync-fake-tls=${zdy}/bin/tls_clienthello_www_google_com.bin"
       "--new"
       "--filter-tcp=80,443"
-      "--hostlist=${zdy}/lists/list-google.txt"
+      "--hostlist=${zdy}/lists/list-general.txt"
       # "--hostlist="%LISTS%list-general-user.txt""
       "--hostlist-exclude=${zdy}/lists/list-exclude.txt"
       # "--hostlist-exclude="%LISTS%list-exclude-user.txt""
@@ -71,10 +71,10 @@ in
       "--dpi-desync-split-pos=1"
       "--dpi-desync-fooling=ts"
       "--dpi-desync-repeats=8"
-      "--dpi-desync-split-seqovl-pattern=${zdy}/bin/tls_clienthello_max_ru.bin"
+      "--dpi-desync-split-seqovl-pattern=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
       "--dpi-desync-fake-tls=${zdy}/bin/stun2.bin"
-      "--dpi-desync-fake-tls=${zdy}/bin/tls_clienthello_max_ru.bin"
-      "--dpi-desync-fake-http=${zdy}/bin/tls_clienthello_max_ru.bin"
+      "--dpi-desync-fake-tls=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
+      "--dpi-desync-fake-http=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
       "--new"
       "--filter-udp=443"
       "--ipset=${zdy}/lists/ipset-all.txt"
@@ -97,11 +97,11 @@ in
       "--dpi-desync-split-pos=1"
       "--dpi-desync-fooling=ts"
       "--dpi-desync-repeats=8"
-      "--dpi-desync-split-seqovl-pattern=${zdy}/bin/tls_clienthello_max_ru.bin"
+      "--dpi-desync-split-seqovl-pattern=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
       "--dpi-desync-fake-tls=${zdy}/bin/stun2.bin"
-      "--dpi-desync-fake-tls=${zdy}/bin/tls_clienthello_max_ru.bin"
-      "--dpi-desync-fake-http=${zdy}/bin/tls_clienthello_max_ru.bin"
-      "--new"
+      "--dpi-desync-fake-tls=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
+      "--dpi-desync-fake-http=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
+      # "--new"
       # "--filter-tcp=%GameFilterTCP%"
       # "--ipset=${zdy}/lists/ipset-all.txt"
       # "--ipset-exclude=${zdy}/lists/ipset-exclude.txt"
@@ -113,12 +113,12 @@ in
       # "--dpi-desync-split-pos=1"
       # "--dpi-desync-fooling=ts"
       # "--dpi-desync-repeats=8"
-      # "--dpi-desync-split-seqovl-pattern=${zdy}/bin/tls_clienthello_max_ru.bin"
+      # "--dpi-desync-split-seqovl-pattern=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
       # "--dpi-desync-fake-tls=${zdy}/bin/stun2.bin"
-      # "--dpi-desync-fake-tls=${zdy}/bin/tls_clienthello_max_ru.bin"
-      # "--dpi-desync-fake-http=${zdy}/bin/tls_clienthello_max_ru.bin"
+      # "--dpi-desync-fake-tls=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
+      # "--dpi-desync-fake-http=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
       # "--dpi-desync-fake-unknown=${zdy}/bin/stun2.bin"
-      # "--dpi-desync-fake-unknown=${zdy}/bin/tls_clienthello_max_ru.bin"
+      # "--dpi-desync-fake-unknown=${zdy}/bin/tls_clienthello_www_sferum_ru.bin"
       # "--new"
       # "--filter-udp=%GameFilterUDP%"
       # "--ipset=${zdy}/lists/ipset-all.txt"
@@ -127,9 +127,8 @@ in
       # "--dpi-desync=fake"
       # "--dpi-desync-repeats=10"
       # "--dpi-desync-any-protocol=1"
-      # "--dpi-desync-fake-unknown-udp=${zdy}/bin/ACTIVE_GAME_UDP.bin"
+      # "--dpi-desync-fake-unknown-udp="%BIN%ACTIVE_GAME_UDP.bin""
       # "--dpi-desync-cutoff=n4"
-
     ];
   };
 }

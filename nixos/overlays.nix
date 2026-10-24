@@ -24,6 +24,7 @@
               { name = "1_8_5"; zdy_version = "1.8.5"; zdy_hash = "sha256-paT29uftOnbViXM1X5aX7p6cKNrFDUCRX7Pjp/+TyO8="; }
               { name = "1_9_7"; zdy_version = "1.9.7"; zdy_hash = "sha256-n+V3/jE4L2fUKognR/LOssMELWAY+9tguP/TZX6TOCE="; }
               { name = "1_10_1"; zdy_version = "1.10.1"; zdy_hash = "sha256-LPV9ruCAznU8LL7wT+KMt0fECGMUP+8qo1r5PxqMYxs="; }
+              { name = "1_10_4"; zdy_version = "1.10.4"; zdy_hash = "sha256-5qKg2BvW4XcjY+Az9ocvwACcfsfBpG4I3Xh6SCPksIM="; }
             ];
           in
           builtins.listToAttrs (map
@@ -132,8 +133,8 @@
       prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (old: {
         patches = (old.patches or [ ]) ++ [
           (final.fetchpatch {
-            url = "https://gist.githubusercontent.com/Blezz-tech/bc9acc9d02e4eb77c4a0b407f589da26/raw/a413cb08d722bda5b91a1d6ace78c9699ce86588/0001-fix-online-account.patch";
-            sha256 = "sha256-tB4AA4qiMI4sirTnBI857uS2ZfhiinpOZ3p2/jQ6dCc=";
+            url = "https://gist.githubusercontent.com/Blezz-tech/bc9acc9d02e4eb77c4a0b407f589da26/raw/20c720242c6677ea30646d0fd4f01d514021bf1c/0001-fix-online-account.patch";
+            sha256 = "sha256-ttSZQj6GLMSzfvaoSkrSZwavRRtneCn/rvO2QNOOWhA=";
           })
         ];
       });
