@@ -11,6 +11,7 @@
     ./hardware-configuration.nix
     ./overlays.nix
     ./config.nix
+    ./proxy-suite.nix
   ];
 
   time.timeZone = "Europe/Moscow";

@@ -139,7 +139,7 @@ in
     pkgs.obsidian
 
     # Месседжеры
-    # pkgs.discord-canary
+    pkgs.discord-canary
     # pkgs.element-desktop
     pkgs.telegram-desktop
     # pkgs.discord-screenaudio

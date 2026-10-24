@@ -7,6 +7,9 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
+    proxy-suite.url = "github:FUFSoB/proxy-suite-flake";
+    proxy-suite.inputs.nixpkgs.follows = "nixpkgs";
+
     # nixvim.url = "github:nix-community/nixvim";
     # nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -20,6 +23,7 @@
   outputs =
     { nixpkgs
     , home-manager
+    , proxy-suite
     # , nixvim
       # , nvf
       # , nur
@@ -35,6 +39,7 @@
           # nixvim.nixosModules.nixvim
           # nvf.nixosModules.default        
           # nur.modules.nixos.default
+          proxy-suite.nixosModules.default
           ./nixos
           home-manager.nixosModules.home-manager
           {
