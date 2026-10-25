@@ -1,20 +1,21 @@
 {
-  xdg.configFile."chromium-flags.conf".text = ''
-    --enable-blink-features=MiddleClickAutoscroll
-    
-    # "--proxy-server=http://127.0.0.1:3999"
-    
-    --use-gl=angle
-    --use-angle=vulkan
-    --ignore-gpu-blocklist
-    --enable-gpu-rasterization
-    --enable-zero-copy
-    --enable-accelerated-video-decode
-    --ozone-platform-hint=wayland
-    --enable-features=VaapiVideoDecoder,AcceleratedVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport,UseOzonePlatform,AcceleratedVideoDecodeLinuxZeroCopyGL
+  programs.chromium = {
+    enable = true;
+    commandLineArgs = [
+      "--enable-blink-features=MiddleClickAutoscroll"
 
-    # For Fcitx5
-    --enable-wayland-ime=true
-    --wayland-text-input-version=3
-  '';
+      "--use-gl=angle"
+      "--use-angle=vulkan"
+      "--ignore-gpu-blocklist"
+      "--enable-gpu-rasterization"
+      "--enable-zero-copy"
+      "--enable-accelerated-video-decode"
+      "--ozone-platform-hint=wayland"
+      "--enable-features=VaapiVideoDecoder,AcceleratedVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport,UseOzonePlatform,AcceleratedVideoDecodeLinuxZeroCopyGL"
+
+      # For Fcitx5
+      "--enable-wayland-ime=true"
+      "--wayland-text-input-version=3"
+    ];
+  };
 }
