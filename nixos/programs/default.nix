@@ -25,12 +25,13 @@
   programs.nh.enable = true;
   programs.nh.flake = "/home/jenya/nixos-pc-conf/";
 
-  # kmail
-  # programs.kde-pim = {
-  #   # kmail = true;
-  #   kontact = true;
-  #   merkuro = true;
-  # };
+  # akonadi services disabled
+  programs.kde-pim = {
+    enable = false;
+    kmail = false;
+    merkuro = false;
+    kontact = false;
+  };
 
   # appimage-run
   programs.appimage.enable = true;
