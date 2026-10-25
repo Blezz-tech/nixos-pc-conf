@@ -2,7 +2,7 @@
   programs.chromium = {
     enable = true;
     commandLineArgs = [
-      "--enable-blink-features=MiddleClickAutoscroll"
+      # "--enable-blink-features=MiddleClickAutoscroll"
 
       "--use-gl=angle"
       "--use-angle=vulkan"
