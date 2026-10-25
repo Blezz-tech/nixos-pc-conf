@@ -318,6 +318,7 @@ in
     # pkgs.dig
     # pkgs.nekoray
     # pkgs.flameshot
+    pkgs.thunderbird
     (pkgs.chromium.override {
       commandLineArgs = [
         "--use-gl=angle"
