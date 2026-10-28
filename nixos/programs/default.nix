@@ -15,7 +15,7 @@
   #   tunMode.enable = true;
   # };
 
-  programs.zoom-us.enable = true;
+  # programs.zoom-us.enable = true;
 
   # Чтобы не было ошибок
   programs.dconf.enable = true;
