@@ -19,7 +19,6 @@
     ./user.nix
     ./vr.nix
     ./xserver.nix
-    ./work
   ];
 
   # specialisation."printing".configuration = {

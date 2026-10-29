@@ -2,20 +2,6 @@
 , ...
 }:
 let
-  myPHP.php = pkgs.php83.withExtensions ({ enabled, all }: enabled ++ [
-    all.bcmath
-    all.tokenizer
-    all.curl
-    all.gd
-    all.intl
-    # all.xml
-    all.mbstring
-    all.zip
-    all.sqlite3
-    all.pdo_mysql
-    all.mysqli
-    all.redis # Для Redis
-  ]);
   tex = (pkgs.texliveSmall.withPackages (
     ps: with ps; [
       fontspec
@@ -30,27 +16,7 @@ let
       enumitem
     ]
   ));
-  python-custom = (pkgs.python313.withPackages (python-pkgs: [
-    # python-pkgs.jupyter
-    # python-pkgs.ipykernel
-    # python-pkgs.pyautogui
-    python-pkgs.scipy
-    # python-pkgs.pynput
-    python-pkgs.numpy
-    python-pkgs.pandas
-    python-pkgs.matplotlib
-    python-pkgs.sympy
-    # python-pkgs.scikit-learn
-    # python-pkgs.nltk
-    # python-pkgs.pymorphy3
-    # python-pkgs.plotly # NOTE: Долго билдится
-    # python-pkgs.torch
-    python-pkgs.python-lsp-server
-    python-pkgs.beautifulsoup4
-    python-pkgs.black # python formattier
-    # python-pkgs.jupyter
-    # python-pkgs.notebook
-  ]));
+
 in
 {
 
@@ -88,23 +54,9 @@ in
     pkgs.blezz-pkgs.tg-ws-proxy
     # pkgs.blezz-pkgs.davinci-resolve
     # pkgs.blezz-pkgs.MURMUR.CLION.v2025_2_2
-    myPHP.php
-    myPHP.php.packages.composer
-    myPHP.php.packages.php-codesniffer
 
     # TODO add config got Home manager
     # pkgs.git-sim
-
-    # LSP
-    pkgs.marksman # markdown
-    pkgs.typescript-language-server # js/typescript
-    pkgs.nixd # nix
-    pkgs.nil # nix
-    pkgs.vscode-langservers-extracted # css eslint html json markdown
-    pkgs.yaml-language-server # yaml
-
-    # formattiers
-    pkgs.nixpkgs-fmt # nix
 
     # LaTeX
     # pkgs.texlive.combined.scheme-full
@@ -119,10 +71,6 @@ in
     # pkgs.haskell.packages.ghc9122.ghc
     # pkgs.ghciwatch
 
-    # Agda and coq (rocq)
-    # pkgs.agda
-    # pkgs.coq
-    # pkgs.coqPackages.vscoq-language-server
 
     # Torrent
     pkgs.qbittorrent
@@ -174,22 +122,17 @@ in
     # pkgs.brave
 
     # На сортировку
-    # pkgs.python3
-    python-custom
     pkgs.v2rayn
-    pkgs.uv
     # pkgs.kdePackages.wallpaper-engine-plugin
     # pkgs.nodejs_latest
     pkgs.sqlitebrowser
     # pkgs.code-cursor
     # pkgs.graphviz
     # pkgs.nodePackages_latest.prettier
-    # pkgs.cmake
     # pkgs.notepad-next
     # pkgs.distrobox
     # pkgs.auto-editor
 
-    pkgs.gnumake
     # pkgs.tiled
     # pkgs.unityhub
     # pkgs.pdfarranger
@@ -205,7 +148,6 @@ in
     # pkgs.age
     # pkgs.sops
     # pkgs.far2l
-    pkgs.bash-language-server
     pkgs.imagemagick
     # pkgs.crow-translate
     # pkgs.revolt-desktop
@@ -253,7 +195,6 @@ in
     pkgs.lazygit
     # pkgs.git-spice
     pkgs.ast-grep
-    pkgs.luarocks
     # pkgs.kdePackages.kdenlive
 
     pkgs.mdbook
@@ -267,9 +208,7 @@ in
     pkgs.pwgen
     pkgs.coppwr
     # pkgs.github-desktop
-    pkgs.nufmt
     pkgs.omegat
-    pkgs.lua
     # pkgs.zotero
     # pkgs.just
     pkgs.oxipng # multithreaded lossless PNG/APNG compression optimizer
@@ -294,9 +233,6 @@ in
     # pkgs.anime4k
     pkgs.fd
     # pkgs.haruna
-    # pkgs.gcc
-    pkgs.clang
-    pkgs.clang-analyzer
     # pkgs.kdePackages.kolourpaint
     pkgs.kdePackages.kleopatra
     # pkgs.kdePackages.kasts
@@ -311,28 +247,13 @@ in
     # pkgs.kdePackages.kalzium
     # pkgs.kdePackages.kfind
     # pkgs.goldendict-ng
-    pkgs.nix-search
     pkgs.ffmpeg-full
     pkgs.gh
     # pkgs.dig
     # pkgs.nekoray
     # pkgs.flameshot
     pkgs.thunderbird
-    (pkgs.vivaldi.overrideAttrs (oldAttrs: {
-      # commandLineArgs = [
-      #   "--use-gl=angle"
-      #   "--use-angle=vulkan"
-      #   "--ignore-gpu-blocklist"
-      #   "--enable-gpu-rasterization"
-      #   "--enable-zero-copy"
-      #   "--enable-features=Vulkan,VulkanFromANGLE,DefaultANGLEVulkan,VaapiIgnoreDriverChecks,VaapiVideoDecoder,AcceleratedVideoEncoder,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport"
-      #   "--ozone-platform=x11"
-
-      #   # For Fcitx5
-      #   "--enable-wayland-ime=true"
-      #   "--wayland-text-input-version=3"
-      # ];
-    }))
+    pkgs.vivaldi
 
     # pkgs.mysql-workbench
     # pkgs.dbeaver-bin
@@ -356,11 +277,6 @@ in
     # pkgs.openapi-generator-cli
     # pkgs.postman
 
-    ## Rust
-    pkgs.cargo
-    pkgs.rustc
-    pkgs.rust-analyzer
-    pkgs.rustfmt
 
     ## Typst
     pkgs.typst

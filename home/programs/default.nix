@@ -12,9 +12,5 @@
     ./vscode.nix
 
     ./packs
-
-    # ./browsers.nix
-    # ./media.nix
-    # ./xdg.nix
   ];
 }

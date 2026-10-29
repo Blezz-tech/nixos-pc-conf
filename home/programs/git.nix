@@ -67,7 +67,7 @@
         merge = {
           conflictstyle = "zdiff3";
         };
-        # credential.helper = "libsecret";
+        credential.helper = "libsecret";
         # TODO: Нужно попробоавть использовать Git Credential Manager
         # https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage
 
