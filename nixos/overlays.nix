@@ -8,7 +8,6 @@
         dabruks = pkgs.callPackage ./pkgs/dabruks { };
         dabkrs = pkgs.callPackage ./pkgs/dabkrs { };
         gt-vein-info = pkgs.callPackage ./pkgs/gt-vein-info { };
-        voxelengine-cpp = pkgs.callPackage ./pkgs/voxelengine-cpp { };
         tg-ws-proxy = pkgs.callPackage ./pkgs/tg-ws-proxy { };
 
         zapret = pkgs.zapret.overrideAttrs (prev: {
