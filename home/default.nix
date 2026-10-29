@@ -7,10 +7,7 @@
     ./shell
     ./XDG
     # ./fcitx5
-    # ./i3
-    # ./rofi
 
-    # Other
   ];
 
   home = {

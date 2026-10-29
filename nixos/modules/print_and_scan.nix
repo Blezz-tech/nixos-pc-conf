@@ -4,7 +4,9 @@
   # Enable CUPS to print documents.
   services.printing = {
     enable = true;
-    drivers = [ pkgs.samsung-unified-linux-driver ];
+    drivers = [
+      pkgs.samsung-unified-linux-driver
+    ];
     # openFirewall = true;
     # defaultShared = true;
   };

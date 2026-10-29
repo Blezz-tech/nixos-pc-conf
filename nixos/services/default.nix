@@ -1,17 +1,12 @@
 {
   imports = [
     ./fwupd.nix
-    # ./hoogle.nix
-    # ./ipfs.nix
-    # ./mysql.nix
-    # ./ollama.nix
-    # ./paperless.nix
     # ./postgresql.nix
-    # ./redis.nix
-    # ./spoofdpi.nix
+    # ./sunshine.nix
     # ./tor.nix
     # ./v2raya.nix
-    # ./wireguard.nix
+    # ./weblate.nix
+    # ./whoogle-search.nix
     # ./wivrn.nix
     # ./zapret.nix
   ];

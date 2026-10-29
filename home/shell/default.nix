@@ -3,12 +3,12 @@
 }:
 {
   imports = [
-    ./starship.nix
     ./alacritty.nix
-    ./zsh.nix
+    ./aliases.nix
     ./foot.nix
     ./session_vars.nix
-    ./aliases.nix
+    ./starship.nix
+    ./zsh.nix
   ];
 
   xdg.dataFile = {
