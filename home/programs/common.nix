@@ -208,7 +208,6 @@ in
     pkgs.bash-language-server
     pkgs.imagemagick
     # pkgs.crow-translate
-    pkgs.wl-clipboard
     # pkgs.revolt-desktop
     # pkgs.zim
 

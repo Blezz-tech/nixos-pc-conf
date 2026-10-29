@@ -22,6 +22,12 @@
     ./work
   ];
 
+  # specialisation."printing".configuration = {
+  #   imports = [
+  #     ./path/to/file.nix
+  #   ];
+  # };
+
   # bootloader
   boot.loader = {
     systemd-boot.enable = true;

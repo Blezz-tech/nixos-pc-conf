@@ -6,8 +6,6 @@
 
   environment.systemPackages = [
     # pkgs.nur.repos.ataraxiasjel.waydroid-script
-    pkgs.alacritty
-    pkgs.telegram-desktop
 
     pkgs.testdisk-qt
     pkgs.ddrescue
@@ -20,7 +18,6 @@
     pkgs.wget
     pkgs.wget2
     pkgs.curl
-    pkgs.pwgen
     pkgs.keepassxc
     pkgs.wireguard-tools
     # pkgs.vopono
