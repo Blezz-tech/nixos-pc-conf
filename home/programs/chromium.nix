@@ -4,14 +4,20 @@
     commandLineArgs = [
       # "--enable-blink-features=MiddleClickAutoscroll"
 
-      "--use-gl=angle"
-      "--use-angle=vulkan"
-      "--ignore-gpu-blocklist"
+      # ANGLE over Vulkan
+      # "--use-gl=angle"
+      # "--use-angle=vulkan"
+
+      # GPU raster / zero-copy
       "--enable-gpu-rasterization"
       "--enable-zero-copy"
+
+      # VA-API decode + encode
       "--enable-accelerated-video-decode"
+      "--enable-features=VaapiVideoDecoder,AcceleratedVideoEncoder"
+
+      # Wayland
       "--ozone-platform-hint=wayland"
-      "--enable-features=VaapiVideoDecoder,AcceleratedVideoEncoder,VaapiIgnoreDriverChecks,Vulkan,DefaultANGLEVulkan,VulkanFromANGLE,UseMultiPlaneFormatForHardwareVideo,PlatformHEVCDecoderSupport,UseOzonePlatform,AcceleratedVideoDecodeLinuxZeroCopyGL"
 
       # For Fcitx5
       "--enable-wayland-ime=true"
