@@ -41,9 +41,9 @@ in
 {
   home.packages = [
     ## PHP
-    myPHP.php
-    myPHP.php.packages.composer
-    myPHP.php.packages.php-codesniffer
+    # myPHP.php
+    # myPHP.php.packages.composer
+    # myPHP.php.packages.php-codesniffer
 
     ## Python
     python-custom
