@@ -8,7 +8,7 @@
     ## Лаунчеры
 
     # pkgs.nexusmods-app-unfree
-    pkgs.ryubing
+    # pkgs.ryubing
     pkgs.prismlauncher
     # pkgs.shadps4
     # (pkgs.bottles.override { removeWarningPopup = true; })
@@ -24,7 +24,7 @@
     ## Игры
 
     # Герои меча и магии
-    pkgs.vcmi
+    # pkgs.vcmi
     # pkgs.fheroes2
     # pkgs.vangers
 
@@ -39,13 +39,13 @@
     # pkgs.minetest
     # pkgs.wesnoth
     # pkgs.openspades
-    pkgs.airshipper
-    pkgs.taisei
+    # pkgs.airshipper
+    # pkgs.taisei
 
     # pkgs.unciv
     # pkgs.endless-sky
     # pkgs.openra
-    pkgs.osu-lazer-bin
+    # pkgs.osu-lazer-bin
     # pkgs.the-powder-toy
     # pkgs.crawlTiles
     # pkgs.hedgewars
