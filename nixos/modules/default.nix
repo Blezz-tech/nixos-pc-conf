@@ -2,6 +2,7 @@
 , ...
 }: {
   imports = [
+    ./bluetooth.nix
     # ./documentation.nix
     ./fonts.nix
     ./i18n.nix

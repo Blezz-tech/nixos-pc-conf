@@ -20,7 +20,6 @@
     pkgs.wget
     pkgs.wget2
     pkgs.curl
-    pkgs.vscode
     pkgs.pwgen
     pkgs.keepassxc
     pkgs.wireguard-tools

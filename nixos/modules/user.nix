@@ -14,7 +14,7 @@
         "wheel"
         "video"
         "audio"
-        "libvirtd"
+        # "libvirtd"
         "podman"
         "corectrl"
         "scanner" # Для сканирования

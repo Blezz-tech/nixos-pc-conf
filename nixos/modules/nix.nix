@@ -17,14 +17,13 @@
         "flakes"
       ];
       system-features = [
-        "gccarch-alderlake"
-        "gcctune-alderlake"
+        # "gccarch-alderlake"
+        # "gcctune-alderlake"
         "benchmark"
         "big-parallel"
         "kvm"
         "nixos-test"
       ];
-      auto-optimise-store = true;
       # max-jobs = 4;
     };
 

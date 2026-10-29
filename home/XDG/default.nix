@@ -30,5 +30,5 @@
 #  PUBLICSHARE=media/public
 #  DOCUMENTS=media/documents
 #  MUSIC=media/music
-#  PICTURES=media/photos
+#  PICTURES=media/images
 #  VIDEOS=media/video

@@ -40,16 +40,16 @@ let
     python-pkgs.pandas
     python-pkgs.matplotlib
     python-pkgs.sympy
-    python-pkgs.scikit-learn
-    python-pkgs.nltk
-    python-pkgs.pymorphy3
+    # python-pkgs.scikit-learn
+    # python-pkgs.nltk
+    # python-pkgs.pymorphy3
     # python-pkgs.plotly # NOTE: Долго билдится
-    python-pkgs.torch
+    # python-pkgs.torch
     python-pkgs.python-lsp-server
     python-pkgs.beautifulsoup4
     python-pkgs.black # python formattier
-    python-pkgs.jupyter
-    python-pkgs.notebook
+    # python-pkgs.jupyter
+    # python-pkgs.notebook
   ]));
 in
 {
