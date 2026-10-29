@@ -9,5 +9,6 @@
       $env.PROMPT_COMMAND_RIGHT = ""
       $env.config.show_banner = false
     '';
+    loadSessionVariables = false;
   };
 }

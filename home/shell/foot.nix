@@ -10,8 +10,8 @@ in
         term = "xterm-256color";
         font = "${font}:size=10";
       };
-      colors = {
-        alpha = 0.8;
+      colors-dark = {
+        alpha = "0.8";
       };
       scrollback = {
         lines = 100000;
