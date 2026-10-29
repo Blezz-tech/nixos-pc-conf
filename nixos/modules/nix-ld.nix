@@ -56,7 +56,6 @@
       pkgs.libjpeg
       pkgs.libmikmod
       pkgs.libogg
-      pkgs.libpng12
       pkgs.libpulseaudio
       pkgs.librsvg
       pkgs.libsamplerate
