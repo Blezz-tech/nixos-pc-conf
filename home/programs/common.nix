@@ -74,11 +74,7 @@ in
 
     # Torrent
     pkgs.qbittorrent
-    (pkgs.kdePackages.spectacle.override { tesseractLanguages = null; })
     pkgs.recoll
-
-    # Альтернатива Postman'у
-    # pkgs.insomnia
 
     # 3D редакторы
     # pkgs.blender-hip
@@ -115,6 +111,16 @@ in
     pkgs.libreoffice-qt-stable
     pkgs.onlyoffice-desktopeditors
 
+    ## Словари для libreoffice
+    pkgs.hunspell
+    pkgs.hunspellDicts.ru_RU
+    pkgs.hunspellDicts.en_US
+
+    ## Словари
+    pkgs.aspell
+    pkgs.aspellDicts.en
+    pkgs.aspellDicts.ru
+
     # Браузеры
     pkgs.google-chrome
     pkgs.tor-browser
@@ -123,7 +129,6 @@ in
 
     # На сортировку
     pkgs.v2rayn
-    # pkgs.kdePackages.wallpaper-engine-plugin
     # pkgs.nodejs_latest
     pkgs.sqlitebrowser
     # pkgs.code-cursor
@@ -132,7 +137,6 @@ in
     # pkgs.notepad-next
     # pkgs.distrobox
     # pkgs.auto-editor
-
     # pkgs.tiled
     # pkgs.unityhub
     # pkgs.pdfarranger
@@ -152,7 +156,6 @@ in
     # pkgs.crow-translate
     # pkgs.revolt-desktop
     # pkgs.zim
-
     pkgs.poppler-utils
     pkgs.pdftk
     pkgs.mupdf
@@ -160,25 +163,13 @@ in
     # pkgs.tesseract
     # pkgs.stack
     # pkgs.nheko
-    # pkgs.kdePackages.neochat
     # pkgs.fractal
     pkgs.mangohud
     # pkgs.kando
     # pkgs.activate-linux
 
-    # Словари для libreoffice
-    pkgs.hunspell
-    pkgs.hunspellDicts.ru_RU
-    pkgs.hunspellDicts.en_US
-
-    # Словари
-    pkgs.aspell
-    pkgs.aspellDicts.en
-    pkgs.aspellDicts.ru
 
     # pkgs.baobab
-    pkgs.kdePackages.filelight # For Dolphin Integration
-    pkgs.kdePackages.kdialog # Для arx libertatis
     # pkgs.audacity
     # pkgs.cura
     # pkgs.cura-appimage
@@ -195,7 +186,6 @@ in
     pkgs.lazygit
     # pkgs.git-spice
     pkgs.ast-grep
-    # pkgs.kdePackages.kdenlive
 
     pkgs.mdbook
     pkgs.mdbook-admonish
@@ -214,7 +204,6 @@ in
     pkgs.oxipng # multithreaded lossless PNG/APNG compression optimizer
     pkgs.colorized-logs # ansi2txt
     # pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
-    pkgs.kdePackages.kompare
     # pkgs.helix
     pkgs.gitoxide
     pkgs.lm_sensors # for information
@@ -233,19 +222,11 @@ in
     # pkgs.anime4k
     pkgs.fd
     # pkgs.haruna
-    # pkgs.kdePackages.kolourpaint
-    pkgs.kdePackages.kleopatra
-    # pkgs.kdePackages.kasts
     # pkgs.treesheets
     # pkgs.openai-whisper # транскрибация аудио в текст
     pkgs.zbar
     # pkgs.parsec-bin
     # pkgs.remmina
-    pkgs.kdePackages.kcalc
-    pkgs.kdePackages.kclock
-    # pkgs.kdePackages.juk
-    # pkgs.kdePackages.kalzium
-    # pkgs.kdePackages.kfind
     # pkgs.goldendict-ng
     pkgs.ffmpeg-full
     pkgs.gh
@@ -261,10 +242,6 @@ in
     pkgs.imhex
     # pkgs.zeal-qt6
     # pkgs.anki
-    # pkgs.kdePackages.ksystemlog
-    pkgs.kdePackages.kjournald
-    # pkgs.kdePackages.kio-gdrive
-    # pkgs.kdePackages.kcharselect
     # pkgs.rars
     # pkgs.freecad-wayland
     # pkgs.openscad
