@@ -73,6 +73,7 @@ in
     pkgs.nix-search
     pkgs.nufmt # nushell
     pkgs.nixpkgs-fmt # nix
+    # pkgs.nodePackages_latest.prettier
 
     ### LSP
     pkgs.marksman # markdown
