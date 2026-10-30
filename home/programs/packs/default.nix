@@ -1,5 +1,6 @@
 {
   imports = [
+    ./archive.nix
     ./browsers.nix
     ./custom.nix
     ./dev.nix

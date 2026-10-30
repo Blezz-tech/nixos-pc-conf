@@ -68,7 +68,7 @@
     # pkgs.rhvoice
     # pkgs.speechd
     # pkgs.figma-linux
-    # pkgs.ventoy-full
+
     # pkgs.age
     # pkgs.sops
     # pkgs.far2l
@@ -119,10 +119,6 @@
     # pkgs.helix
     pkgs.gitoxide
     pkgs.lm_sensors # for information
-
-    # Rar archive
-    pkgs.rar
-    pkgs.unrar-free
 
     # analize count of line
     # pkgs.scc
@@ -180,12 +176,6 @@
     # pkgs.neofetch
     # pkgs.nnn # terminal file manager
 
-    # pkgs.archives
-    pkgs.zip
-    pkgs.xz
-    pkgs.unzip
-    pkgs._7zz
-
     # pkgs.utils
     pkgs.ripgrep # recursively searches directories for a regex pattern
     pkgs.jq # A lightweight and flexible command-line JSON processor
@@ -201,7 +191,7 @@
     pkgs.socat # replacement of openbsd-netcat
     pkgs.nmap # A utility for network discovery and security auditing
     # pkgs.ipcalc # it is a calculator for the IPv4/v6 addresses
-    # pkgs.runzip # Fixing zip archives
+
 
     # misc
     pkgs.cowsay
@@ -211,7 +201,6 @@
     pkgs.gnused
     pkgs.gnutar
     pkgs.gawk
-    pkgs.zstd
     pkgs.gnupg
 
     # nix related
