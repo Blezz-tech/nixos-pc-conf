@@ -34,15 +34,6 @@
     # pkgs.musescore
     pkgs.obsidian
 
-    # Месседжеры
-    pkgs.discord-canary
-    # pkgs.element-desktop
-    pkgs.telegram-desktop
-    # pkgs.discord-screenaudio
-    # pkgs.webcord-vencord
-
-    # https://www.reddit.com/r/linux_gaming/comments/qv9n40/fix_for_the_lag_on_discord_on_linux_after_the/
-    pkgs.vesktop # add flags --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
 
     # pkgs.wpsoffice
     # pkgs.rstudio
@@ -57,12 +48,6 @@
     # pkgs.krita
     pkgs.drawio
     # pkgs.aseprite
-
-    # Браузеры
-    pkgs.google-chrome
-    pkgs.tor-browser
-    # pkgs.yandex-browser-corporate
-    # pkgs.brave
 
     # На сортировку
     pkgs.v2rayn
@@ -90,7 +75,6 @@
     # pkgs.far2l
     pkgs.imagemagick
     # pkgs.crow-translate
-    # pkgs.revolt-desktop
     # pkgs.zim
     pkgs.poppler-utils
     pkgs.pdftk
@@ -98,8 +82,6 @@
     # pkgs.ocrmypdf
     # pkgs.tesseract
     # pkgs.stack
-    # pkgs.nheko
-    # pkgs.fractal
     pkgs.mangohud
     # pkgs.kando
     # pkgs.activate-linux
@@ -169,8 +151,6 @@
     # pkgs.dig
     # pkgs.nekoray
     # pkgs.flameshot
-    pkgs.thunderbird
-    pkgs.vivaldi
 
     # pkgs.mysql-workbench
     # pkgs.dbeaver-bin
