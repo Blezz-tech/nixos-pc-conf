@@ -48,6 +48,7 @@
     pkgs.mangohud
     # pkgs.kando
     # pkgs.activate-linux
+    pkgs.distrobox
 
 
     # pkgs.baobab
