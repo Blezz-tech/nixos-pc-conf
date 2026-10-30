@@ -2,15 +2,6 @@
 , ...
 }:
 {
-  programs = {
-    bun.enable = true;
-    java.enable = true;
-    fastfetch.enable = true;
-    freetube.enable = true;
-    pandoc.enable = true;
-    yt-dlp.enable = true;
-  };
-
   home.packages = [
     # TODO add config got Home manager
     # pkgs.git-sim
