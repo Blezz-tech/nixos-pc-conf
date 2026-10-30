@@ -1,5 +1,12 @@
 {
   home.shellAliases = {
+    yandex-browser = "distrobox enter yandex -- yandex-browser --ozone-platform=wayland --no-sandbox";
+    yandex-browser-create = ''
+      distrobox create --name yandex --image registry.fedoraproject.org/fedora:latest --yes \
+        && RPM=$(curl -fsSL https://repo.yandex.ru/yandex-browser/rpm/stable/x86_64/ | grep -oE 'yandex-browser-stable-[^"]+\.rpm' | head -1) \
+        && distrobox enter yandex -- bash -lc "sudo dnf clean all && sudo dnf install -y --exclude=openh264 --setopt=install_weak_deps=False --setopt=strict=0 https://repo.yandex.ru/yandex-browser/rpm/stable/x86_64/$RPM && yandex-browser --version"
+    '';
+    yandex-browser-clean = "distrobox rm yandex";
 
     myZ = "cd ~/nixos-pc-conf; code .; exit";
     # myViewConf = "cd myConf && nvim .";
