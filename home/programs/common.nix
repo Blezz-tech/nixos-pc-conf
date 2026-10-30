@@ -1,45 +1,7 @@
 { pkgs
 , ...
 }:
-let
-  tex = (pkgs.texliveSmall.withPackages (
-    ps: with ps; [
-      fontspec
-      polyglossia
-      amsmath
-      hyphen-russian
-      standalone
-      luatex85
-      pgfplots
-      cancel
-      lualatex-math
-      enumitem
-    ]
-  ));
-
-in
 {
-
-  # gtk = {
-  #   enable = true;
-  #   font = {
-  #     name = "Roboto";
-  #     size = 8;
-  #   };
-  #   theme = {
-  #     name = "Breeze-Dark";
-  #     package = pkgs.kdePackages.breeze-gtk;
-  #   };
-  #   iconTheme = {
-  #     name = "Papirus-Dark";
-  #     package = pkgs.papirus-icon-theme;
-  #   };
-  #   cursorTheme = {
-  #     name = "breeze_cursors";
-  #     size = 24;
-  #   };
-  # };
-
   programs = {
     bun.enable = true;
     java.enable = true;
@@ -57,12 +19,6 @@ in
 
     # TODO add config got Home manager
     # pkgs.git-sim
-
-    # LaTeX
-    # pkgs.texlive.combined.scheme-full
-    tex
-    pkgs.ghostscript
-    pkgs.pdf2svg
 
     # Haskell
     # pkgs.haskell.packages.ghc9122.cabal-install
