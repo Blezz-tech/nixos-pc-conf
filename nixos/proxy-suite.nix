@@ -10,6 +10,7 @@
           "protondb.com"
           "www.protondb.com"
           "steamdb.info"
+          "click.redditmail.com"
         ]; # more sites to unblock
       };
     };
