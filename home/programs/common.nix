@@ -12,11 +12,6 @@
   };
 
   home.packages = [
-    pkgs.blezz-pkgs.discord-krisp-patcher
-    pkgs.blezz-pkgs.tg-ws-proxy
-    # pkgs.blezz-pkgs.davinci-resolve
-    # pkgs.blezz-pkgs.MURMUR.CLION.v2025_2_2
-
     # TODO add config got Home manager
     # pkgs.git-sim
 
@@ -62,20 +57,6 @@
     # pkgs.krita
     pkgs.drawio
     # pkgs.aseprite
-
-    # Текстовые редакторы
-    pkgs.libreoffice-qt-stable
-    pkgs.onlyoffice-desktopeditors
-
-    ## Словари для libreoffice
-    pkgs.hunspell
-    pkgs.hunspellDicts.ru_RU
-    pkgs.hunspellDicts.en_US
-
-    ## Словари
-    pkgs.aspell
-    pkgs.aspellDicts.en
-    pkgs.aspellDicts.ru
 
     # Браузеры
     pkgs.google-chrome
