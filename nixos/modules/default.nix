@@ -11,7 +11,7 @@
     ./nix.nix
     ./openssh.nix
     ./opentablet.nix
-    # ./podman.nix
+    ./podman.nix
     ./print_and_scan.nix
     ./sound.nix
     # ./specialisation.nix
