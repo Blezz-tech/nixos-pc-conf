@@ -60,7 +60,6 @@
     # pkgs.auto-editor
     # pkgs.tiled
     # pkgs.unityhub
-    # pkgs.pdfarranger
     # pkgs.ihp-new
     # pkgs.cachix
     # pkgs.vengi-tools
@@ -76,11 +75,6 @@
     pkgs.imagemagick
     # pkgs.crow-translate
     # pkgs.zim
-    pkgs.poppler-utils
-    pkgs.pdftk
-    pkgs.mupdf
-    # pkgs.ocrmypdf
-    # pkgs.tesseract
     # pkgs.stack
     pkgs.mangohud
     # pkgs.kando

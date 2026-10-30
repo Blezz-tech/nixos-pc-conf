@@ -21,5 +21,11 @@ in
     tex
     pkgs.ghostscript
     pkgs.pdf2svg
+    pkgs.poppler-utils
+    pkgs.pdftk
+    pkgs.mupdf
+    # pkgs.ocrmypdf
+    # pkgs.tesseract
+    # pkgs.pdfarranger
   ];
 }
