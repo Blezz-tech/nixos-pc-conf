@@ -6,6 +6,7 @@
     ./dev.nix
     ./games.nix
     ./kde.nix
+    ./media.nix
     ./messengers.nix
     ./office.nix
     ./tex.nix

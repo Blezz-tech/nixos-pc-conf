@@ -14,31 +14,11 @@
     # pkgs.ghciwatch
 
 
-    # Torrent
-    pkgs.qbittorrent
-    pkgs.recoll
 
-    # 3D редакторы
-    # pkgs.blender-hip
-
-    # Музыкальные редакторы
-    # pkgs.musescore
     pkgs.obsidian
-
-
     # pkgs.wpsoffice
     # pkgs.rstudio
     # pkgs.whatsapp-for-linux
-
-    # Редакторы epub
-    pkgs.sigil
-
-    # Графические редакторы
-    # pkgs.gimp
-    # pkgs.inkscape
-    # pkgs.krita
-    pkgs.drawio
-    # pkgs.aseprite
 
     # На сортировку
     pkgs.v2rayn
@@ -48,7 +28,6 @@
     # pkgs.graphviz
     # pkgs.notepad-next
     # pkgs.distrobox
-    # pkgs.auto-editor
     # pkgs.tiled
     # pkgs.unityhub
     # pkgs.ihp-new
@@ -63,7 +42,6 @@
     # pkgs.age
     # pkgs.sops
     # pkgs.far2l
-    pkgs.imagemagick
     # pkgs.crow-translate
     # pkgs.zim
     # pkgs.stack
@@ -73,7 +51,6 @@
 
 
     # pkgs.baobab
-    # pkgs.audacity
     # pkgs.cura
     # pkgs.cura-appimage
     # pkgs.nextcloud-client
@@ -104,7 +81,6 @@
     pkgs.omegat
     # pkgs.zotero
     # pkgs.just
-    pkgs.oxipng # multithreaded lossless PNG/APNG compression optimizer
     pkgs.colorized-logs # ansi2txt
     # pkgs.eaglemode # Весёлый файловый менеджер с разными минииграми
     # pkgs.helix
@@ -118,16 +94,13 @@
     pkgs.rustdesk-flutter
     # pkgs.anilibria-winmaclinux
     pkgs.difftastic
-    # pkgs.anime4k
     pkgs.fd
     # pkgs.haruna
     # pkgs.treesheets
-    # pkgs.openai-whisper # транскрибация аудио в текст
     pkgs.zbar
     # pkgs.parsec-bin
     # pkgs.remmina
     # pkgs.goldendict-ng
-    pkgs.ffmpeg-full
     pkgs.gh
     # pkgs.dig
     # pkgs.nekoray
@@ -150,6 +123,7 @@
     # pkgs.archivebox
     # pkgs.openapi-generator-cli
     # pkgs.postman
+    pkgs.recoll
 
 
     ## Typst
