@@ -42,7 +42,6 @@
     device = "/dev/disk/by-uuid/550E7D00221D261C";
     fsType = "ntfs-3g";
     options = [
-      "user"
       "nofail"
       "x-gvfs-show"
       "uid=1000"
@@ -50,6 +49,9 @@
       "dmask=022"
       "fmask=133"
       "windows_names"
+      "exec"
+      "nosuid"
+      "nodev"
     ];
   };
 
