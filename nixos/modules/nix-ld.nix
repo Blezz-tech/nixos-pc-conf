@@ -3,7 +3,7 @@
 }:
 {
   programs.nix-ld = {
-    enable = true;
+    enable = false;
     libraries = [
       pkgs.SDL2
       pkgs.SDL2_image
