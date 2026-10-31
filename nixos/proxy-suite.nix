@@ -4,7 +4,7 @@
     zapret = {
       enable = true;
       zapret-discord-youtube = {
-        configName = "general(ALT11)"; # the default; try others if it does not work
+        configName = "general(FAKE_TLS_AUTO_ALT3)"; # the default; try others if it does not work
         domains = [
           "rutracker.org"
           "protondb.com"
