@@ -7,10 +7,10 @@
     ./steam.nix
   ];
 
-  # programs.throne = {
-  #   enable = true;
-  #   tunMode.enable = true;
-  # };
+  programs.throne = {
+    enable = true;
+    tunMode.enable = true;
+  };
 
   # programs.zoom-us.enable = true;
 
