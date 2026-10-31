@@ -3,20 +3,20 @@
 }: {
 
   nixpkgs.overlays = [
-    (self: super:
-      let
-        # Получаем исходный код PR (или конкретный коммит)
-        prSrc = super.fetchFromGitHub {
-          owner = "NixOS";
-          repo = "nixpkgs";
-          rev = "pull/579758/head"; # или конкретный хеш коммита
-          hash = "sha256-UdiYSbM2QD65P5MtdAaKlb800DfpWR6izy5ldgmNMeM="; # первый запуск выдаст хеш
-        };
-      in
-      {
-        dorion = self.callPackage "${prSrc}/pkgs/by-name/do/dorion/package.nix" { };
-        cef-binary = self.callPackage "${prSrc}/pkgs/by-name/ce/cef-binary/package.nix" { };
-      })
+    # (self: super:
+    #   let
+    #     # Получаем исходный код PR (или конкретный коммит)
+    #     prSrc = super.fetchFromGitHub {
+    #       owner = "NixOS";
+    #       repo = "nixpkgs";
+    #       rev = "pull/579758/head"; # или конкретный хеш коммита
+    #       hash = "sha256-UdiYSbM2QD65P5MtdAaKlb800DfpWR6izy5ldgmNMeM="; # первый запуск выдаст хеш
+    #     };
+    #   in
+    #   {
+    #     dorion = self.callPackage "${prSrc}/pkgs/by-name/do/dorion/package.nix" { };
+    #     cef-binary = self.callPackage "${prSrc}/pkgs/by-name/ce/cef-binary/package.nix" { };
+    #   })
     (self: super: {
       blezz-pkgs = {
         dabruks = pkgs.callPackage ./pkgs/dabruks { };
