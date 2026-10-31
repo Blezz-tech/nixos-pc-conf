@@ -21,7 +21,7 @@
     # pkgs.whatsapp-for-linux
 
     # На сортировку
-    # pkgs.dorion
+    pkgs.dorion
     pkgs.v2rayn
     # pkgs.nodejs_latest
     pkgs.sqlitebrowser
