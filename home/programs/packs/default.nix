@@ -32,13 +32,13 @@
     settings = {
       devices = {
         "pc-nixos-jenya" = { id = "343V63H-VVN5ALI-JMVIYP4-B7QIGHL-UVMDCYJ-P3IQ2RU-NUDFBSW-RX3UOAA"; };
+        "poco-x3-pro" = { id = "RU33CWR-HPTNESJ-6DELDQQ-FZ2ERPA-W3TYRJH-N64ELRJ-YXUFKG6-ABSHRAX"; };
       };
       folders = {
         "/home/jenya/media/documents/" = {
           id = "5jyjs-qxyvz";
           label = "документы";
-          # path = "/home/jenya/media/documents/";
-          # devices = [ "bigbox" ];
+          devices = [ "poco-x3-pro" ];
           versioning = {
             type = "simple";
             params.keep = "50";
