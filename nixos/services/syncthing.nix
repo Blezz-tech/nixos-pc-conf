@@ -1,6 +1,11 @@
 {
+  # Open ports for home manager options
+  networking.firewall.allowedTCPPorts = [ 22000 ];
+  networking.firewall.allowedUDPPorts = [ 22000 21027 ];
+
+
   services.syncthing = {
-    enable = true;
+    enable = false;
     openDefaultPorts = true; # Open ports in the firewall for Syncthing. (NOTE: this will not open syncthing gui port)
     settings = {
       devices = {
