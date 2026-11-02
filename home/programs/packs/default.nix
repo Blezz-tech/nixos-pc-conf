@@ -29,9 +29,10 @@
     enable = true;
     overrideDevices = true;
     overrideFolders = true;
+    tray.enable = true;
     settings = {
       devices = {
-        # "pc-nixos-jenya" = { id = "JHDYZX7-3T6D53O-5XH5VO6-ASLUYIO-5KMGYO7-6JRYWPH-LFUDSBW-SLVLUAY"; };
+        "pc-nixos-jenya" = { id = "JHDYZX7-3T6D53O-5XH5VO6-ASLUYIO-5KMGYO7-6JRYWPH-LFUDSBW-SLVLUAY"; };
         "poco-x3-pro" = { id = "RU33CWR-HPTNESJ-6DELDQQ-FZ2ERPA-W3TYRJH-N64ELRJ-YXUFKG6-ABSHRAX"; };
       };
       folders = {
