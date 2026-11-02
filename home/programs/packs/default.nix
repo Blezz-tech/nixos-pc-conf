@@ -31,7 +31,7 @@
     overrideFolders = true;
     settings = {
       devices = {
-        "pc-nixos-jenya" = { id = "343V63H-VVN5ALI-JMVIYP4-B7QIGHL-UVMDCYJ-P3IQ2RU-NUDFBSW-RX3UOAA"; };
+        # "pc-nixos-jenya" = { id = "JHDYZX7-3T6D53O-5XH5VO6-ASLUYIO-5KMGYO7-6JRYWPH-LFUDSBW-SLVLUAY"; };
         "poco-x3-pro" = { id = "RU33CWR-HPTNESJ-6DELDQQ-FZ2ERPA-W3TYRJH-N64ELRJ-YXUFKG6-ABSHRAX"; };
       };
       folders = {
