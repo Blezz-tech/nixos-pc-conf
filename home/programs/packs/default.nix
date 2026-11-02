@@ -24,4 +24,28 @@
       autostart = true;
     };
   };
+
+  services.syncthing = {
+    enable = true;
+    overrideDevices = true;
+    overrideFolders = true;
+    settings = {
+      devices = {
+        "pc-nixos-jenya" = { id = "343V63H-VVN5ALI-JMVIYP4-B7QIGHL-UVMDCYJ-P3IQ2RU-NUDFBSW-RX3UOAA"; };
+      };
+      folders = {
+        "/home/jenya/media/documents/" = {
+          id = "5jyjs-qxyvz";
+          label = "документы";
+          # path = "/home/jenya/media/documents/";
+          # devices = [ "bigbox" ];
+          versioning = {
+            type = "simple";
+            params.keep = "50";
+          };
+        };
+      };
+    };
+  };
+
 }
