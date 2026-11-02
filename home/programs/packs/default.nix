@@ -19,5 +19,8 @@
     freetube.enable = true;
     pandoc.enable = true;
     yt-dlp.enable = true;
+    keepassxc = {
+      enable = true;
+    };
   };
 }

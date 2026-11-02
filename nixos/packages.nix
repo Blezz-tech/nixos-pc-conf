@@ -18,7 +18,6 @@
     pkgs.wget
     pkgs.wget2
     pkgs.curl
-    pkgs.keepassxc
     pkgs.wireguard-tools
     # pkgs.vopono
     pkgs.ntfs3g
