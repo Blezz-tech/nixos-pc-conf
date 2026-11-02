@@ -46,6 +46,13 @@
           };
         };
       };
+      # options = {
+      #   listenAddresses = [
+      #     "tcp://0.0.0.0:22000"
+      #     "quic://0.0.0.0:22000"
+      #     "dynamic+https://relays.syncthing.net/endpoint"
+      #   ];
+      # };
     };
   };
 
