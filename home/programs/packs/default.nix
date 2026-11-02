@@ -21,6 +21,7 @@
     yt-dlp.enable = true;
     keepassxc = {
       enable = true;
+      autostart = true;
     };
   };
 }
