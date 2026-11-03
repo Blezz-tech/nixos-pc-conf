@@ -11,7 +11,9 @@
           "www.protondb.com"
           "steamdb.info"
           "click.redditmail.com"
-          "discovery-announce-v4.syncthing.net"
+          # "discovery-announce-v4.syncthing.net"
+          # "relays.syncthing.net"
+          # "forum.syncthing.net"
         ]; # more sites to unblock
       };
     };
