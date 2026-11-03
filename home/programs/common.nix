@@ -19,6 +19,7 @@
     # pkgs.wpsoffice
     # pkgs.rstudio
     # pkgs.whatsapp-for-linux
+    pkgs.python3Packages.mutagen
 
     # На сортировку
     # pkgs.dorion

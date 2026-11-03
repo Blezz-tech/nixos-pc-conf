@@ -40,6 +40,8 @@
     # fix zip archives
     fixFileCP866 = "runzip -s CP866 -t utf-8 $1";
 
+    fixRussainTextInMP3 = "find . -iname '*.mp3' -print0 | xargs -0 mid3iconv -eCP1251 --remove-v1";
+
     # yt-dlp
     saveYoutubeMusic = "yt-dlp -x --audio-format best -o \"%(title)s.%(ext)s\" --sleep-requests 1.5 --min-sleep-interval 60 --max-sleep-interval 90 --download-archive archive.txt $1";
 
