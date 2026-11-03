@@ -19,6 +19,15 @@
             params.keep = "50";
           };
         };
+        "/home/jenya/media/music/" = {
+          id = "llhyz-w9zai";
+          label = "музыка";
+          devices = [ "poco-x3-pro" ];
+          versioning = {
+            type = "simple";
+            params.keep = "50";
+          };
+        };
       };
       # options = {
       #   listenAddresses = [
