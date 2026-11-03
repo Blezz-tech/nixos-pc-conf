@@ -9,6 +9,7 @@
     ./git.nix
     ./neovim.nix
     ./nushell.nix
+    ./syncthing.nix
     ./vscode.nix
 
     ./packs
