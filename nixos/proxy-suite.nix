@@ -17,5 +17,9 @@
         ]; # more sites to unblock
       };
     };
+    tgWsProxy = {
+      enable = true;
+      secretFile = "/run/secrets/tg-ws-proxy-secret";
+    };
   };
 }
