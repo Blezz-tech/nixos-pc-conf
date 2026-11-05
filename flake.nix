@@ -18,16 +18,12 @@
 
     # nur.url = "github:nix-community/NUR";
     # nur.inputs.nixpkgs.follows = "nixpkgs";
-
-    anime-games-launcher.url = "github:an-anime-team/anime-games-launcher/v2.2.1";
-    anime-games-launcher.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
     { nixpkgs
     , home-manager
     , proxy-suite
-    , anime-games-launcher
       # , nixvim
       # , nvf
       # , nur
@@ -43,7 +39,6 @@
           # nixvim.nixosModules.nixvim
           # nvf.nixosModules.default        
           # nur.modules.nixos.default
-          anime-games-launcher.nixosModules.anime-games-launcher
           proxy-suite.nixosModules.default
           ./nixos
           home-manager.nixosModules.home-manager
