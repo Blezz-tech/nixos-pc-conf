@@ -19,7 +19,7 @@
     };
     tgWsProxy = {
       enable = true;
-      secretFile = "/run/secrets/tg-ws-proxy-secret";
+      secretFile = "/home/jenya/tg-ws-proxy-secret";
     };
   };
 }

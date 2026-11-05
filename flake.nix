@@ -18,12 +18,16 @@
 
     # nur.url = "github:nix-community/NUR";
     # nur.inputs.nixpkgs.follows = "nixpkgs";
+
+    aagl.url = "github:ezKEa/aagl-gtk-on-nix";
+    aagl.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
     { nixpkgs
     , home-manager
     , proxy-suite
+    , aagl
     # , nixvim
       # , nvf
       # , nur
@@ -39,6 +43,7 @@
           # nixvim.nixosModules.nixvim
           # nvf.nixosModules.default        
           # nur.modules.nixos.default
+          aagl.nixosModules.default
           proxy-suite.nixosModules.default
           ./nixos
           home-manager.nixosModules.home-manager
