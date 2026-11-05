@@ -1,6 +1,6 @@
 {
   imports = [
-    # ./aagl.nix 
+    ./aagl.nix
     ./modules
     ./services
     ./programs

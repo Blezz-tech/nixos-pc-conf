@@ -19,7 +19,7 @@
     # nur.url = "github:nix-community/NUR";
     # nur.inputs.nixpkgs.follows = "nixpkgs";
 
-    anime-games-launcher.url = "github:an-anime-team/anime-games-launcher";
+    anime-games-launcher.url = "github:an-anime-team/anime-games-launcher/v2.2.1";
     anime-games-launcher.inputs.nixpkgs.follows = "nixpkgs";
   };
 

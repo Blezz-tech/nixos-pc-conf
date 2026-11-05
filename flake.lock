@@ -9,15 +9,16 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1793480434,
-        "narHash": "sha256-VBAtvGD57YhbPTYfwoF893IaEKLjOSe1HZRJl3TYVXc=",
+        "lastModified": 1792597766,
+        "narHash": "sha256-gUwH9osEKCwm6GdgCOvF73qLtHg4pan3xJU3Zxcihr8=",
         "owner": "an-anime-team",
         "repo": "anime-games-launcher",
-        "rev": "2db09882429379eca404f14681886575169e888b",
+        "rev": "e02fa3b09bf68a45f6f302e86692732231059844",
         "type": "github"
       },
       "original": {
         "owner": "an-anime-team",
+        "ref": "v2.2.1",
         "repo": "anime-games-launcher",
         "type": "github"
       }
