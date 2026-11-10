@@ -10,7 +10,6 @@
     # ./v2raya.nix
     # ./weblate.nix
     # ./whoogle-search.nix
-    # ./wivrn.nix
     # ./zapret.nix
   ];
 }

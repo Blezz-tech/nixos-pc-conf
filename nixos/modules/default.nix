@@ -17,7 +17,7 @@
     # ./specialisation.nix
     ./tty.nix
     ./user.nix
-    ./vr.nix
+    # ./vr.nix
   ];
 
   # specialisation."printing".configuration = {
