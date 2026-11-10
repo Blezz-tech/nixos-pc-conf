@@ -1,5 +1,0 @@
-{
-  services.weblate = {
-    enable = true;
-  };
-}

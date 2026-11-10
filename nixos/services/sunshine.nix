@@ -1,5 +1,0 @@
-{
-  services.sunshine = {
-    enable = true;
-  };
-}
