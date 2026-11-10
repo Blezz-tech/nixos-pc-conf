@@ -36,7 +36,6 @@
       pkgs.gst_all_1.gst-plugins-base
       pkgs.gst_all_1.gst-plugins-ugly
       pkgs.gst_all_1.gstreamer
-      pkgs.gtk2
       pkgs.harfbuzz
       pkgs.icu
       pkgs.keyutils.lib

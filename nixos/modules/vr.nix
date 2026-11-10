@@ -1,6 +1,6 @@
 {
   programs.alvr = {
-    enable = true;
+    enable = false;
     openFirewall = true;
   };
 

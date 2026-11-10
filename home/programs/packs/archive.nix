@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = [
-    pkgs.rar
+    # pkgs.rar
     pkgs.unrar-free
     pkgs.zip
     pkgs.xz

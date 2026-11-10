@@ -94,7 +94,7 @@
     # pkgs.scc
     # pkgs.cloc
 
-    pkgs.rustdesk-flutter
+    # pkgs.rustdesk-flutter
     # pkgs.anilibria-winmaclinux
     pkgs.difftastic
     pkgs.fd
