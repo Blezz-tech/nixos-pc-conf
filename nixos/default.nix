@@ -1,8 +1,8 @@
 {
   imports = [
     ./modules
-    ./services.nix
-    ./programs.nix
+    ./services
+    ./programs
     ./packages.nix
     ./hardware-configuration.nix
     ./overlays.nix
