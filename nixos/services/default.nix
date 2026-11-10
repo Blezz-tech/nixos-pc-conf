@@ -13,9 +13,4 @@
     # ./wivrn.nix
     # ./zapret.nix
   ];
-
-  services.ollama = {
-    enable = false;
-    package = pkgs.ollama-rocm;
-  };
 }
