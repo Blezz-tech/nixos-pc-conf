@@ -6,15 +6,6 @@
     # TODO add config got Home manager
     # pkgs.git-sim
 
-    # Haskell
-    # pkgs.haskell.packages.ghc9122.cabal-install
-    # pkgs.haskell.packages.ghc9122.haskell-language-server
-    # pkgs.haskell.packages.ghc9122.hlint
-    # pkgs.haskell.packages.ghc9122.ghc
-    # pkgs.ghciwatch
-
-
-
     pkgs.obsidian
     # pkgs.wpsoffice
     # pkgs.rstudio
