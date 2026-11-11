@@ -11,6 +11,7 @@
           "www.protondb.com"
           "steamdb.info"
           "click.redditmail.com"
+          "forgejo.org"
           # "discovery-announce-v4.syncthing.net"
           # "relays.syncthing.net"
           # "forum.syncthing.net"
