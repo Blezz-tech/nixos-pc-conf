@@ -118,6 +118,7 @@
     # pkgs.openapi-generator-cli
     # pkgs.postman
     pkgs.recoll
+    pkgs.profile-sync-daemon
 
 
     ## Typst
