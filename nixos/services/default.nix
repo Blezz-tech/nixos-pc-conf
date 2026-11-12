@@ -12,4 +12,8 @@
     # ./whoogle-search.nix
     # ./zapret.nix
   ];
+
+  services.psd = {
+    enable = true;
+  };
 }
