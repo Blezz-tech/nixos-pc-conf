@@ -2,6 +2,7 @@
 {
   home.packages = [
     pkgs.discord-canary
+    pkgs.discord
     pkgs.telegram-desktop
     pkgs.vesktop
     # pkgs.element-desktop
