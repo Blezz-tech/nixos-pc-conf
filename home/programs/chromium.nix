@@ -1,4 +1,6 @@
-{
+{ pkgs
+, ...
+}: {
   programs.chromium = {
     enable = true;
     commandLineArgs = [
@@ -23,5 +25,16 @@
       "--enable-wayland-ime=true"
       "--wayland-text-input-version=3"
     ];
+    nativeMessagingHosts = [
+      pkgs.keepassxc
+    ];
   };
+
+  programs.vivaldi.nativeMessagingHosts = [
+    pkgs.keepassxc
+  ];
+
+  programs.google-chrome.nativeMessagingHosts = [
+    pkgs.keepassxc
+  ];
 }
