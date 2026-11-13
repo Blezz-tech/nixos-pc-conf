@@ -1,6 +1,6 @@
 {
   home.shellAliases = {
-    yandex-browser = "distrobox enter yandex -- yandex-browser --ozone-platform=wayland --no-sandbox";
+    yandex-browser = "distrobox enter yandex -- yandex-browser --ozone-platform=wayland";
     yandex-browser-create = ''
       distrobox create --name yandex --image registry.fedoraproject.org/fedora:latest --yes \
         && RPM=$(curl -fsSL https://repo.yandex.ru/yandex-browser/rpm/stable/x86_64/ | grep -oE 'yandex-browser-stable-[^"]+\.rpm' | head -1) \
