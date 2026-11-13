@@ -2,8 +2,6 @@
 , ...
 }:
 {
-  security.chromiumSuidSandbox.enable = true;
-
   programs.chromium = {
     enable = true;
     extraOpts = {
