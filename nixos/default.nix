@@ -3,10 +3,10 @@
     ./modules
     ./services
     ./programs
-    ./packages.nix
+    ./config.nix
     ./hardware-configuration.nix
     ./overlays.nix
-    ./config.nix
+    ./packages.nix
     ./proxy-suite.nix
   ];
 
