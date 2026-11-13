@@ -7,9 +7,31 @@
 , pkgs
 , ...
 }:
+let
+  # Только тема "lone" — без скачивания всего набора (~500+ МБ из 50+ тем)
+  loneTheme = pkgs.adi1090x-plymouth-themes.override {
+    selected_themes = [ "lone" ];
+  };
+in
 {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
+  ];
+
+
+  boot.plymouth = {
+    enable = true;
+    theme = "lone";
+    themePackages = [ loneTheme ];
+    showDelay = 0;
+  };
+
+  boot.consoleLogLevel = 0;
+  boot.kernelParams = [
+    "quiet" "splash" "loglevel=3"
+    "rd.systemd.show_status=false"
+    # "rd.udev.log_level=3"
+    # "udev.log_priority=3"
   ];
 
   boot = {
