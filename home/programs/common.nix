@@ -20,7 +20,6 @@
     # pkgs.code-cursor
     # pkgs.graphviz
     # pkgs.notepad-next
-    # pkgs.distrobox
     # pkgs.tiled
     # pkgs.unityhub
     # pkgs.ihp-new
@@ -41,7 +40,7 @@
     pkgs.mangohud
     # pkgs.kando
     # pkgs.activate-linux
-    pkgs.distrobox
+    # pkgs.distrobox
 
 
     # pkgs.baobab
