@@ -92,11 +92,11 @@ in
 
 
   # оптимизация для процессора
-  nixpkgs.hostPlatform = lib.mkDefault {
-    # gcc.arch = "alderlake";
-    # gcc.tune = "alderlake";
-    system = "x86_64-linux";
-  };
+  # nixpkgs.hostPlatform = lib.mkDefault {
+  #   # gcc.arch = "alderlake";
+  #   # gcc.tune = "alderlake";
+  #   system = "x86_64-linux";
+  # };
 
 
   hardware.amdgpu = {
