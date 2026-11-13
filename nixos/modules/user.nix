@@ -15,7 +15,6 @@
         "video"
         "audio"
         # "libvirtd"
-        "podman"
         "corectrl"
         "scanner" # Для сканирования
         "lp" # Для печати
