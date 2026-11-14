@@ -15,7 +15,7 @@
     # На сортировку
     # pkgs.dorion
     pkgs.v2rayn
-    # pkgs.nodejs_latest
+    pkgs.nodejs_latest
     pkgs.sqlitebrowser
     # pkgs.code-cursor
     # pkgs.graphviz
