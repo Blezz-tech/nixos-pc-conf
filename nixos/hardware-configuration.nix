@@ -69,7 +69,7 @@ in
       "uid=1000"
       "gid=100"
       "dmask=022"
-      "fmask=133"
+      "fmask=111"
       "windows_names"
       "exec"
       "nosuid"
@@ -92,11 +92,11 @@ in
 
 
   # оптимизация для процессора
-  # nixpkgs.hostPlatform = lib.mkDefault {
-  #   # gcc.arch = "alderlake";
-  #   # gcc.tune = "alderlake";
-  #   system = "x86_64-linux";
-  # };
+  nixpkgs.hostPlatform = lib.mkDefault {
+    # gcc.arch = "alderlake";
+    # gcc.tune = "alderlake";
+    system = "x86_64-linux";
+  };
 
 
   hardware.amdgpu = {
