@@ -1,9 +1,10 @@
-{ stdenv
-, fetchFromGitHub
-, lib
+{
+  stdenv,
+  fetchFromGitHub,
+  lib,
 
-, zdy_version
-, zdy_hash
+  zdy_version,
+  zdy_hash,
 }:
 
 stdenv.mkDerivation (finalAttrs: {

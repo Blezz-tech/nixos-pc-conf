@@ -1,308 +1,94 @@
-# TODO по NixOS (НиксОси)
+# TODO
 
-## Сломаннное ПО, обновление и так далее
+Только задачи, которые можно взять и сделать. Разборы, ссылки и «когда-нибудь
+попробовать» — в `docs/notes/` и `docs/snippets/`, чтобы этот файл оставался
+списком дел, а не свалкой.
 
-| Название    | Описание                                   | Ссылка |
-| ----------- | ------------------------------------------ | ------ |
-| Сломана clr | disable blender and hardware.amdgpu.opencl |  <https://github.com/NixOS/nixpkgs/issues/417992>      |
+## Инфраструктура
 
-## 123
+- [ ] **Локальные пакеты → `nixos/pkgs/<name>/package.nix`.** Сейчас `dabruks`,
+      `dabkrs`, `gt-vein-info`, `tg-ws-proxy`, `davinci-resolve`, `MURMUR`,
+      `zapret-discord-youtube` описаны через `callPackage` внутри
+      `nixos/overlays.nix` (157 строк вместе с оверрайдами). Формат
+      `pkgs/by-name` даёт автозагрузку и убирает ручной список.
 
-- [ ] Сделать так, чтобы файлы dabkrs и dabruks добавлялись в папку пользователя ~/dicts/
-- [ ] Сделать пакет stepik-oauth2-videodownloader
+- [ ] **`dabkrs`/`dabruks`: убрать `builtins.currentTime`.** Сейчас версия
+      вычисляется в момент сборки (`nixos/pkgs/*/default.nix`), из-за чего
+      конфигурация не вычисляется в чистом режиме. Нужно вынести версию и `hash`
+      в параметры пакета. Заодно: словари сейчас раскладываются в store, а
+      приложение ждёт их в `~/dicts` — добавить симлинк через `home.file`.
 
-  <https://github.com/StepicOrg/stepik-oauth2-videodownloader>
-- [ ] Сделать отключение звука по hdmi
-  
-  Чтобы с монитора не было звука
-- [ ] проверить, что нет проблем с настройками [tty](./nixos/modules/tty.nix)
-- [ ] Удалить модуль zapret, когда его добавят в nixpkgs
+- [ ] **Секреты через `sops-nix`.** `tgWsProxy.secretFile` указывает на открытый
+      файл `/home/jenya/tg-ws-proxy-secret` (`nixos/proxy-suite.nix`). Через
+      sops секрет становится `config.sops.secrets`, права 0400, и не лежит в
+      домашнем каталоге открытым.
 
-## ГЛАВНОЕ
+- [ ] **`programs.nh.clean.enable = true`.** `nh` установлен, но автоочистки
+      store нет (`nixos/programs/system.nix`). Даёт `nh clean all` по таймеру:
+      раз в неделю, с сохранением последних поколений.
 
-## Сделать оптимизацию
+## Настройки
 
-Непонятна ошибка вылезает, не понятно как пофиксить
+- [ ] **Звук по HDMI.** Сейчас вывод переключается на монитор вместе с
+      подключением. Нужно либо отключать HDMI-профиль в PipeWire при
+      подключении, либо закрепить аналоговый выход как default.
 
-error: a 'x86_64-linux' with features {gccarch-alderlake} is required to build '/nix/store/pk96nikxyv1gnjx4yvay91zzm1s17yjr-bootstrap-stage0-glibc-bootstrapFiles.drv', but I am a 'x86_64-linux' with features {benchmark, big-parallel, kvm, nixos-test}
+- [ ] **Проверить консоль.** `nixos/modules/tty.nix` задаёт шрифт `ter-v32n` и
+      `keyMap = "ru"`. Убедиться, что при загрузке шрифт подхватывается и
+      раскладка ожидаемая. Альтернативы — `docs/snippets/kmscon.nix` (юникод,
+      KMS-рендер) и `docs/snippets/keyd.nix` (ремап на уровне демона).
 
-```nix
-{
-  nixpkgs.hostPlatform = lib.mkDefault {
-    gcc.arch = "alderlake";
-    gcc.tune = "alderlake";
-    system = "x86_64-linux";
-  };
-  system-features = [
-    "gccarch-alderlake"
-    "gcctune-alderlake"
-    "benchmark"
-    "big-parallel"
-    "kvm"
-    "nixos-test"
-  ];
-}
-```
+- [ ] **`chromium` включён дважды.** В `nixos/programs/chromium.nix` — политики
+      (`extraOpts`, `enablePlasmaBrowserIntegration`), в
+      `home/programs/chromium.nix` — флаги командной строки (`commandLineArgs`,
+      `nativeMessagingHosts` для keepassxc). Это разные опции разных модулей,
+      так что обе нужны. Проверить: не ставится ли при этом два пакета
+      chromium — в `systemPackages` и в профиле пользователя.
 
-```nix
-{
+- [ ] **`zapret` уже есть в nixpkgs.** В закреплённой ревизии появился
+      `nixos/modules/services/networking/zapret.nix` (`services.zapret` с
+      `params`, `whitelist`, `blacklist`). Сейчас используется
+      `services.proxy-suite.zapret` из отдельного флейка плюс свой пакет
+      `zapret-discord-youtube` в `nixos/pkgs/`. Посмотреть, хватает ли опций
+      nixpkgs-модуля: если да — минус внешняя зависимость и минус 60 строк
+      оверлея.
 
-## Проблемы
+- [ ] **Включить `statix` в проверки.** В `flake.nix` он пока не в `checks`:
+      в дереве около двадцати предупреждений (повторяющиеся ключи, пустые
+      паттерны, `x = y;` вместо `inherit y;`), а `nixos/hardware-configuration.nix`
+      генерируется и править его нельзя — его придётся исключать из проверки.
+      Почистить и добавить `checks.statix` обратно.
 
-### Может быть добавить
-services.fwupd.enable = true; # Нужна для просмотра информации о системе kde
+## Мелочи
 
-### Добавить пакет обоев
-# { stdenv
-# , fetchFromGitHub
-# }:
-# stdenv.mkDerivation (finalAttrs: {
-#   name = "blezz-tech-wallpapers";
-#   version = "v0.1";
-# 
-#   src = fetchFromGitHub {
-#     owner = "Blezz-tech";
-#     repo = "wallpapers";
-#     rev = finalAttrs.version;
-#     hash = "sha256-AUH32T5mH6bXtwGXv/vuuYK5BDgOQ1SMjZKXh6WDPqw=";
-#   };
-# 
-#   buildPhase = ''cp -pr $src/ $out/'';
-# 
-#   meta = {
-#     description = ''
-#       My wallpapers
-#     '';
-#   };
-# })
+- [ ] **Мусор в домашнем каталоге → `~/.uwucache`.** `~/.cargo`, `~/.npm`,
+      `~/.cache`-подобные каталоги лежат в корне `$HOME`. Для большинства есть
+      переменные (`CARGO_HOME`, `npm_config_cache`), которые можно выставить в
+      `home/shell/session_vars.nix`. Оговорка: часть инструментов путь прибивает
+      гвоздями — см. <https://stackoverflow.com/questions/38050995>.
 
-### сделать пакет обоев доступным для пользователя
-# Чтобы home manager делал симлинк в xdg.userDirs.pictures/pkgs/
+- [ ] **Русские описания в `.desktop`.** У части приложений `Comment` на
+      английском. Либо через `environment.etc`, либо через `home.file` для
+      нужных `.desktop`.
 
-### Добавить пакеты для nix-ld
-# Добавить пакеты для wayland 
+- [ ] **`yakuake`.** Решить, нужен ли выпадающий терминал: сейчас его нет, а
+      `foot`/`alacritty` закрывают задачу. Если нужен — добавить в
+      `home/programs/packs/kde.nix`.
 
-### Перенести gt-vein-info
-# /nixos/modules/gt-vein-info -> /nixos/pkgs/gt-vein-info
-# перенести callPackages для gt-vein-info из /nixos/modules/user.nix -> /nixos/packages.nix
+- [ ] **`stepik-oauth2-videodownloader`.** Сделать пакет:
+      <https://github.com/StepicOrg/stepik-oauth2-videodownloader>. Python,
+      проще всего через `buildPythonApplication` в `nixos/pkgs/`.
 
-### Разнести конфиги из /nixos/default
-# Разнести соответствующие сервисы в файлы
-# xserver.nix desktopManagerv displayManager.nix nix-conf.nix
+- [ ] **MURMUR зависит от съёмного диска.** Сборки IDEA/PHPStorm/CLion
+      переопределены в `nixos/overlays.nix` через `builtins.fetchurl` с
+      `file:///run/media/jenya/disk_d/binfiles/...` и `file:///home/jenya/CLion-...`.
+      Если диск не смонтирован, ломается не сборка конкретного пакета, а
+      **вычисление всей конфигурации**. Перенести архивы на постоянный путь
+      (например `~/binfiles`) или в локальный кэш.
 
-### yakuake
-# Подумать, нужен ли yakuake
+## Не задачи, а заметки
 
-## Пакеты
-
-### Добавить ПО
-bilibili
-qq
-wechat-uos # license.tar.gz можно взять с репозиторя archlinux 
-qqwing
-smassh
-p7zip
-media-downloader
-kdePackages.krdc
-
-stirling-pdf
-
-kdePackages.kate
-kdePackages.yakuake
-# Для KDE (Информация о система)
-aha
-clinfo
-# eglinfo
-wayland-utils
-# ЯП nim
-nim
-nimlsp
-
-### сделать перенос всякого мусора из ~ в папку ~/.uwucache
-# Например, ~/.cargo -> ~/.uwucache/.cargo
-# сделать для всего мусора, что скапливается в системе (если конечно не прибито гвоздями)
-# https://stackoverflow.com/questions/38050995/how-can-the-location-of-cargos-configuration-directory-be-overridden
-
-### попробовать использовать keyd
-
-### Загрузочный экран (boot splash screen.)
-# И его настройка. Или найти альтернативу
-# boot.plymouth.enable = true;
-
-### Попробовать САПРы
-# cadzinho
-# librecad
-# kompass3d
-
-### Попробовать ПОшки от KDE
-# KColorChooser
-# KolourPaint
-# KGpg
-# Kompare
-# Skanlite
-# Sweeper
-# Elisa
-# KTimer
-# KCachegrind
-# Kamoso
-# KGeography
-# KMouseTool
-# KGet
-# Marble
-# KDiamond
-# Kookbook
-
-### Сначала закомментировать модуль xdg и проверить, нормально ли работают вещи, потом попробовать ещё что-то. Попробовать добавить к конфигурации 
-# xdg.portal = {
-#   enable = true;
-#   extraPortals = [ pkgs.kdePackages.xdg-desktop-portal-kde ];
-#   configPackages = mkDefault [ pkgs.kdePackages.xdg-desktop-portal-kde ];
-# };
-
-### Проверить, что за хренотень
-
-system.activationScripts.diff = {
-  supportsDryActivation = true;
-  text = ''
-    if [[ -e /run/current-system ]]; then
-      ${pkgs.nix}/bin/nix store diff-closures /run/current-system "$systemConfig"
-    fi
-  '';
-};
-
-
-## Home Manager
-
-### Включить где можно
-enableBashIntegration = true;
-enableZshIntegration = true;
-enableNushellIntegration = true;
-}
-
-## попробовать использовать kmscon
-# services.kmscon = {
-#   enable = true;
-#   hwRender = true;
-# };
-
-## Сделать конфигурацию для neofetch/fastfetch с выводом тянки
-#
-# ⡏⠉⠉⠉⠉⠉⠉⠋⠉⠉⠉⠉⠉⠉⠋⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠙⠉⠉⠉⠹
-# ⡇⢸⣿⡟⠛⢿⣷⠀⢸⣿⡟⠛⢿⣷⡄⢸⣿⡇⠀⢸⣿⡇⢸⣿⡇⠀⢸⣿⡇⠀
-# ⡇⢸⣿⣧⣤⣾⠿⠀⢸⣿⣇⣀⣸⡿⠃⢸⣿⡇⠀⢸⣿⡇⢸⣿⣇⣀⣸⣿⡇⠀
-# ⡇⢸⣿⡏⠉⢹⣿⡆⢸⣿⡟⠛⢻⣷⡄⢸⣿⡇⠀⢸⣿⡇⢸⣿⡏⠉⢹⣿⡇⠀
-# ⡇⢸⣿⣧⣤⣼⡿⠃⢸⣿⡇⠀⢸⣿⡇⠸⣿⣧⣤⣼⡿⠁⢸⣿⡇⠀⢸⣿⡇⠀
-# ⣇⣀⣀⣀⣀⣀⣀⣄⣀⣀⣀⣀⣀⣀⣀⣠⣀⡈⠉⣁⣀⣄⣀⣀⣀⣠⣀⣀⣀⣰
-# ⣇⣿⠘⣿⣿⣿⡿⡿⣟⣟⢟⢟⢝⠵⡝⣿⡿⢂⣼⣿⣷⣌⠩⡫⡻⣝⠹⢿⣿⣷
-# ⡆⣿⣆⠱⣝⡵⣝⢅⠙⣿⢕⢕⢕⢕⢝⣥⢒⠅⣿⣿⣿⡿⣳⣌⠪⡪⣡⢑⢝⣇
-# ⡆⣿⣿⣦⠹⣳⣳⣕⢅⠈⢗⢕⢕⢕⢕⢕⢈⢆⠟⠋⠉⠁⠉⠉⠁⠈⠼⢐⢕⢽
-# ⡗⢰⣶⣶⣦⣝⢝⢕⢕⠅⡆⢕⢕⢕⢕⢕⣴⠏⣠⡶⠛⡉⡉⡛⢶⣦⡀⠐⣕⢕
-# ⡝⡄⢻⢟⣿⣿⣷⣕⣕⣅⣿⣔⣕⣵⣵⣿⣿⢠⣿⢠⣮⡈⣌⠨⠅⠹⣷⡀⢱⢕
-# ⡝⡵⠟⠈⢀⣀⣀⡀⠉⢿⣿⣿⣿⣿⣿⣿⣿⣼⣿⢈⡋⠴⢿⡟⣡⡇⣿⡇⡀⢕
-# ⡝⠁⣠⣾⠟⡉⡉⡉⠻⣦⣻⣿⣿⣿⣿⣿⣿⣿⣿⣧⠸⣿⣦⣥⣿⡇⡿⣰⢗⢄
-# ⠁⢰⣿⡏⣴⣌⠈⣌⠡⠈⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣬⣉⣉⣁⣄⢖⢕⢕⢕
-# ⡀⢻⣿⡇⢙⠁⠴⢿⡟⣡⡆⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣵⣵⣿
-# ⡻⣄⣻⣿⣌⠘⢿⣷⣥⣿⠇⣿⣿⣿⣿⣿⣿⠛⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-# ⣷⢄⠻⣿⣟⠿⠦⠍⠉⣡⣾⣿⣿⣿⣿⣿⣿⢸⣿⣦⠙⣿⣿⣿⣿⣿⣿⣿⣿⠟
-# ⡕⡑⣑⣈⣻⢗⢟⢞⢝⣻⣿⣿⣿⣿⣿⣿⣿⠸⣿⠿⠃⣿⣿⣿⣿⣿⣿⡿⠁⣠
-# ⡝⡵⡈⢟⢕⢕⢕⢕⣵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣿⠿⠋⣀⣈⠙
-# ⡝⡵⡕⡀⠑⠳⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⢉⡠⡲⡫⡪⡪⡣
-#
-# ⣿⣯⣿⣟⣟⡼⣿⡼⡿⣷⣿⣿⣿⠽⡟⢋⣿⣿⠘⣼⣷⡟⠻⡿⣷⡼⣝⡿⡾⣿
-# ⣿⣿⣿⣿⢁⣵⡇⡟⠀⣿⣿⣿⠇⠀⡇⣴⣿⣿⣧⣿⣿⡇⠀⢣⣿⣷⣀⡏⢻⣿
-# ⣿⣿⠿⣿⣿⣿⠷⠁⠀⠛⠛⠋⠀⠂⠹⠿⠿⠿⠿⠿⠉⠁⠀⠘⠛⠛⠛⠃⢸⣯
-# ⣿⡇⠀⣄⣀⣀⣈⣁⠈⠉⠃⠀⠀⠀⠀⠀⠀⠀⠀⠠⠎⠈⠀⣀⣁⣀⣀⡠⠈⠉
-# ⣿⣯⣽⡿⢟⡿⠿⠛⠛⠿⣶⣄⠀⠀⠀⠀⠀⠀⠈⢠⣴⣾⠛⠛⠿⠻⠛⠿⣷⣶
-# ⣿⣿⣿⠀⠀⠀⣿⡿⣶⣿⣫⠉⠀⠀⠀⠀⠀⠀⠀⠈⠰⣿⠿⠾⣿⡇⠀⠀⢺⣿
-# ⣿⣿⠻⡀⠀⠀⠙⠏⠒⡻⠃⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠐⡓⢚⠟⠁⠀⠀⡾⢫
-# ⣿⣿⠀⠀⡀⠀⠀⡈⣉⡀⡠⣐⣅⣽⣺⣿⣯⡡⣴⣴⣔⣠⣀⣀⡀⢀⡀⡀⠀⣸
-# ⣿⣿⣷⣿⣟⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢻⢾⣷⣿
-# ⣿⣿⣟⠫⡾⠟⠫⢾⠯⡻⢟⡽⢶⢿⣿⣿⡛⠕⠎⠻⠝⠪⢖⠝⠟⢫⠾⠜⢿⣿
-# ⣿⣿⣿⠉⠀⠀⠀⠀⠈⠀⠀⠀⠀⣰⣋⣀⣈⣢⠀⠀⠀⠀⠀⠀⠀⠀⠀⣐⢸⣿
-# ⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿
-# ⣿⣿⣿⣿⣦⡔⠀⠀⠀⠀⠀⠀⢻⣿⡿⣿⣿⢽⣿⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿
-# ⣿⣿⣿⣿⣿⣿⣶⣤⣀⠀⠀⠀⠘⠛⢅⣙⣙⠿⠉⠀⠀⠀⢀⣠⣴⣿⣿⣿⣿⣿
-# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣄⣅⠀⠓⠀⠀⣀⣠⣴⣺⣿⣿⣿⣿⣿⣿⣿⣿
-
-## Сделать команды для изоюражений выше ^^^
-# 
-# function ahegao() {
-#     echo "⣿⣯⣿⣟⣟⡼⣿⡼⡿⣷⣿⣿⣿⠽⡟⢋⣿⣿⠘⣼⣷⡟⠻⡿⣷⡼⣝⡿⡾⣿"
-#     echo "⣿⣿⣿⣿⢁⣵⡇⡟⠀⣿⣿⣿⠇⠀⡇⣴⣿⣿⣧⣿⣿⡇⠀⢣⣿⣷⣀⡏⢻⣿"
-#     echo "⣿⣿⠿⣿⣿⣿⠷⠁⠀⠛⠛⠋⠀⠂⠹⠿⠿⠿⠿⠿⠉⠁⠀⠘⠛⠛⠛⠃⢸⣯"
-#     echo "⣿⡇⠀⣄⣀⣀⣈⣁⠈⠉⠃⠀⠀⠀⠀⠀⠀⠀⠀⠠⠎⠈⠀⣀⣁⣀⣀⡠⠈⠉"
-#     echo "⣿⣯⣽⡿⢟⡿⠿⠛⠛⠿⣶⣄⠀⠀⠀⠀⠀⠀⠈⢠⣴⣾⠛⠛⠿⠻⠛⠿⣷⣶"
-#     echo "⣿⣿⣿⠀⠀⠀⣿⡿⣶⣿⣫⠉⠀⠀⠀⠀⠀⠀⠀⠈⠰⣿⠿⠾⣿⡇⠀⠀⢺⣿"
-#     echo "⣿⣿⠻⡀⠀⠀⠙⠏⠒⡻⠃⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠐⡓⢚⠟⠁⠀⠀⡾⢫"
-#     echo "⣿⣿⠀⠀⡀⠀⠀⡈⣉⡀⡠⣐⣅⣽⣺⣿⣯⡡⣴⣴⣔⣠⣀⣀⡀⢀⡀⡀⠀⣸"
-#     echo "⣿⣿⣷⣿⣟⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢻⢾⣷⣿"
-#     echo "⣿⣿⣟⠫⡾⠟⠫⢾⠯⡻⢟⡽⢶⢿⣿⣿⡛⠕⠎⠻⠝⠪⢖⠝⠟⢫⠾⠜⢿⣿"
-#     echo "⣿⣿⣿⠉⠀⠀⠀⠀⠈⠀⠀⠀⠀⣰⣋⣀⣈⣢⠀⠀⠀⠀⠀⠀⠀⠀⠀⣐⢸⣿"
-#     echo "⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿"
-#     echo "⣿⣿⣿⣿⣦⡔⠀⠀⠀⠀⠀⠀⢻⣿⡿⣿⣿⢽⣿⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿"
-#     echo "⣿⣿⣿⣿⣿⣿⣶⣤⣀⠀⠀⠀⠘⠛⢅⣙⣙⠿⠉⠀⠀⠀⢀⣠⣴⣿⣿⣿⣿⣿"
-#     echo "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣄⣅⠀⠓⠀⠀⣀⣠⣴⣺⣿⣿⣿⣿⣿⣿⣿⣿"
-# }
-# 
-# alias myBuildSystem='
-# 
-# sudo nixos-rebuild ...
-# 
-# ahegao
-# '
-
-## Найти как включить отпимизациюю
-# мой гайд: https://gist.github.com/Blezz-tech/07db8fc68ab57ff844ae795bcf0c28f8
-
-## Astrovim vs Lunarvim
-# Сравнить и выбрать
-
-### Создать репо с гайдиками
-
-#  git Не нужно подписывать все репо ключем gpg, достаточно подписать последний коммит
-# > Since commits contain cryptographic hashes of their parents all the way back to the beginning of the repo history, signing the last commit is equivalent to signing all of the commits.
-```
-
-### js-netfilter
-
-<https://github.com/NixOS/nixpkgs/issues/194114#issuecomment-1859954277>
-
-### Добавить для .desktop файлов приложений русское описание
-
-## Команды
-
-Вывод процессора
-
-```bash
-cpufetch -F --accurate-pp --accurate-pp  --measure-max-freq --logo-short -v
-```
-
-## Решенные проблемы
-
-### 2024.10.11 Таки решена проблема с шрифтами (на данный момент работают)
-
-> Таки реши проблему с шрифтами в стиме
->
-> ```nix
-> programs.steam.fontPackages
-> ```
->
-> > Font packages to use in Steam.
-> >
-> > Defaults to system fonts, but could be overridden to use other fonts — useful for users who would like to customize CJK fonts used in Steam. According to the [upstream issue](https://github.com/ValveSoftware/steam-for-linux/issues/10422#issuecomment-1944396010), Steam only follows the per-user fontconfig configuration.
-
-### shell.nix with gcc optimizations
-
-```nix
-let
-  pkgs = import <nixpkgs> {
-    localSystem = {
-      gcc.arch = "alderlake";
-      gcc.tune = "alderlake";
-      system = "x86_64-linux";
-    };
-  };
-in pkgs.mkShell {
-  buildInputs = [ pkgs.nodejs ];
-}
-```
+- «Попробовать» пакеты — `docs/notes/packages-wishlist.md` (216 позиций).
+- Как собирать, `gcc.arch`, порталы, hosts — `docs/notes/reference.md`.
+- Что уже решено — `docs/notes/solved.md`.
+- Выключенные модули и заготовки — `docs/snippets/`.

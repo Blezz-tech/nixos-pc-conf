@@ -1,6 +1,27 @@
-# One CLI to format the code tree - https://git.numtide.com/numtide/treefmt
+# One CLI to format the whole tree: `nix fmt` (или `treefmt`)
+# https://treefmt.com/latest/
 
-[formatter.nix]
-command = "nixpkgs-fmt"
+[global]
+# docs/snippets — архивы кода: форматировать их незачем, а диффы они шумят.
+# hardware-configuration.nix сгенерирован nixos-generate-config и помечен
+# "Do not modify this file" — форматтер его не трогает.
+excludes = [
+  "flake.lock",
+  "docs/**",
+  "nixos/hardware-configuration.nix",
+]
+
+# Здесь только те форматтеры, которые меняют разметку, а не смысл.
+# statix и deadnix переписывают код (удаляют аргументы, схлопывают выражения):
+# их место в checks/CI, где дифф видно в PR, а не в тихом `nix fmt`.
+# Плюс `statix fix` внутри treefmt конфликтует с остальными форматтерами —
+# treefmt ловит "file has changed" и падает.
+
+[formatter.nixfmt]
+command = "nixfmt"
 includes = ["*.nix"]
 
+[formatter.shfmt]
+command = "shfmt"
+options = ["-i", "2", "-s", "-w"]
+includes = ["*.sh"]

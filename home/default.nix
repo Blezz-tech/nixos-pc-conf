@@ -1,13 +1,12 @@
-{ username
-, ...
+{
+  username,
+  ...
 }:
 {
   imports = [
     ./programs
     ./shell
-    ./XDG
-    # ./fcitx5
-
+    ./xdg
   ];
 
   home = {

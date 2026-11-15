@@ -1,33 +1,13 @@
-{ pkgs, ... }:
-{
+# Медиа, графика и торренты.
+{ pkgs, ... }: {
   home.packages = [
-    # Torrent
-    pkgs.qbittorrent
+    pkgs.qbittorrent # торрент-клиент
 
-    # 3D
-    # pkgs.blender-hip
+    pkgs.drawio # диаграммы
+    pkgs.sigil # редактор epub
 
-    # Музыка
-    # pkgs.musescore
-
-    # Редакторы epub
-    pkgs.sigil
-
-    # Графика
-    # pkgs.gimp
-    # pkgs.inkscape
-    # pkgs.krita
-    pkgs.drawio
-    # pkgs.aseprite
-
-    pkgs.imagemagick
-    pkgs.oxipng # multithreaded lossless PNG/APNG compression optimizer
-    pkgs.ffmpeg-full
-    # pkgs.anime4k
-
-    # Видео/аудио
-    # pkgs.audacity
-    # pkgs.openai-whisper # транскрибация аудио в текст
-    # pkgs.auto-editor
+    pkgs.imagemagick # convert: конвертация и пакетная обработка картинок
+    pkgs.oxipng # lossless-сжатие PNG
+    pkgs.ffmpeg-full # все кодеки для конвертации видео и аудио
   ];
 }

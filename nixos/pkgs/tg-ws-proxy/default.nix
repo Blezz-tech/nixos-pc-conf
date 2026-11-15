@@ -1,11 +1,11 @@
-{ lib
-, python3Packages
-, fetchFromGitHub
-, gobject-introspection
-, gtk3
-, libappindicator-gtk3
-, wrapGAppsHook3
-,
+{
+  lib,
+  python3Packages,
+  fetchFromGitHub,
+  gobject-introspection,
+  gtk3,
+  libappindicator-gtk3,
+  wrapGAppsHook3,
 }:
 
 python3Packages.buildPythonApplication rec {

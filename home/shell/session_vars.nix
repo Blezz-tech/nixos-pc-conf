@@ -1,5 +1,6 @@
-{ config
-, ...
+{
+  config,
+  ...
 }:
 {
   # Use Arch Wiki for fix app (use XDG Base Directory)

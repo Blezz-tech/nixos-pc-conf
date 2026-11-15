@@ -1,64 +1,7 @@
-{ pkgs
-, ...
-}: {
-  imports = [
-    ./bluetooth.nix
-    # ./documentation.nix
-    ./fonts.nix
-    ./i18n.nix
-    ./networking.nix
-    ./nix-ld.nix
-    ./nix.nix
-    ./openssh.nix
-    ./opentablet.nix
-    ./podman.nix
-    ./print_and_scan.nix
-    ./sound.nix
-    # ./specialisation.nix
-    ./tty.nix
-    ./user.nix
-    # ./vr.nix
-  ];
-
-  # specialisation."printing".configuration = {
-  #   imports = [
-  #     ./path/to/file.nix
-  #   ];
-  # };
-
-  # bootloader
-  boot.loader = {
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
-  };
-
-  # Переменные окружения
-  environment.variables.EDITOR = "nvim";
-  environment.sessionVariables.NIXOS_OZONE_WL = "1"; # wayland для electron приложений
-
-
-  # Менеджер виртуальный машин
-  # virtualisation.libvirtd.enable = true;
-  # programs.virt-manager.enable = true;
-
-  # Эмулятор Android
-  virtualisation.waydroid.enable = true;
-  virtualisation.waydroid.package = pkgs.waydroid-nftables;
-
-  # Enable clipboard sharing
-  environment.systemPackages = [ pkgs.wl-clipboard ];
-  
-  # nixpkgs settings
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = [ ];
-  # nixpkgs.config.rocmSupport = true;
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # libinput.enable = true;
-
-  # MIME TYPE
-  # xdg.mime.enable = true;
-  # xdg.mime.addedAssociations = {
-  #   "application/drawio" = "drawio.desktop";
-  # };
+# Модули NixOS по одному файлу на тему. Подключаются автоматически
+# (libx.allModules): новый файл в этом каталоге попадает в конфигурацию сам,
+# дописывать список не нужно.
+{ libx, ... }:
+{
+  imports = libx.allModules ./.;
 }

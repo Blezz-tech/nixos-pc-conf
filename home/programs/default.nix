@@ -1,17 +1,7 @@
+# Домашние программы: по файлу на приложение, плюс тематические наборы в
+# packs/. Подключается всё рекурсивно (libx.allModules), поэтому и этот
+# каталог, и packs/ — просто папки с файлами, без оглавлений.
+{ libx, ... }:
 {
-  imports = [
-    ./chromium.nix
-    ./common.nix
-    ./direnv.nix
-    ./easyeffects.nix
-    ./eza.nix
-    ./fzf.nix
-    ./git.nix
-    ./neovim.nix
-    ./nushell.nix
-    ./syncthing.nix
-    ./vscode.nix
-
-    ./packs
-  ];
+  imports = libx.allModules ./.;
 }

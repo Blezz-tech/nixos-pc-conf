@@ -1,0 +1,50 @@
+name: check
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+# Новый пуш в ту же ветку отменяет старый прогон: проверки быстрые.
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  flake-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: DeterminateSystems/nix-installer-action@main
+
+      # Кэш для nixpkgs: без него каждый прогон тянет дерево заново.
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+
+      # checks из flake.nix: formatting (treefmt) и deadnix. Полную сборку
+      # системы не запускаем — это десятки гигабайт и часы, а ловят ошибки
+      # именно эти проверки.
+      #
+      # Хвост вывода уходит в аннотации: причина видна в PR, не открывая лог.
+      # `set -o pipefail` нужен, иначе tee съест код возврата nix.
+      - name: nix flake check
+        shell: bash
+        run: |
+          set -o pipefail
+          if nix flake check -L --keep-going 2>&1 | tee check.log; then
+            echo "проверки прошли"
+          else
+            echo "::error title=nix flake check::проверка не прошла"
+            # строки про копирование из кэша забивают весь лимит аннотаций
+            grep -v -e '^[[:space:]]*$' -e 'copying path' check.log | tail -40 | while IFS= read -r line; do
+              printf '::error::%s\n' "${line//'%'/'%25'}"
+            done
+            exit 1
+          fi
+
+      # Инстанцирование всей системы: ловит ошибки модулей и опций, которых
+      # не видит линтер. Без --impure — если появится builtins.currentTime
+      # (см. docs/TODO.md) или file://-путь со съёмного диска, шаг это покажет.
+      - name: конфигурация инстанцируется
+        run: nix eval --raw .#nixosConfigurations.nixos-jenya.config.system.build.toplevel.drvPath

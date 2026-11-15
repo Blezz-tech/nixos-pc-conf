@@ -1,6 +1,8 @@
-{ pkgs
-, ...
-}: {
+{
+  pkgs,
+  ...
+}:
+{
   programs = {
     gamescope = {
       enable = true;

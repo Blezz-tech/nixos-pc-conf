@@ -1,26 +1,15 @@
-{ pkgs
-, ...
-}: {
-
+# KDE-приложения. Plasma ставится отдельным модулем, здесь только утилиты.
+{ pkgs, ... }: {
   home.packages = with pkgs.kdePackages; [
-    # pkgs.kdePackages.kolourpaint
-    pkgs.kdePackages.kleopatra
-    # pkgs.kdePackages.kasts
-    pkgs.kdePackages.kcalc
-    pkgs.kdePackages.kclock
-    # pkgs.kdePackages.juk
-    # pkgs.kdePackages.kalzium
-    # pkgs.kdePackages.kfind
-    # pkgs.kdePackages.ksystemlog
-    pkgs.kdePackages.kjournald
-    # pkgs.kdePackages.kio-gdrive
-    # pkgs.kdePackages.kcharselect
-    pkgs.kdePackages.kompare
-    (pkgs.kdePackages.spectacle.override { tesseractLanguages = null; })
-    # pkgs.kdePackages.wallpaper-engine-plugin
-    # pkgs.kdePackages.neochat
-    pkgs.kdePackages.filelight # For Dolphin Integration
-    pkgs.kdePackages.kdialog # Для arx libertatis
-    # pkgs.kdePackages.kdenlive
+    kleopatra # сертификаты и ключи GPG
+    kcalc
+    kclock
+    kjournald # просмотр журнала systemd
+    kompare # сравнение файлов в графике
+    filelight # занятое место на диске, интеграция с Dolphin
+    kdialog # диалоги из скриптов (нужен arx-libertatis)
+
+    # Скриншоты. tesseractLanguages = null: без OCR-моделей, они весят сотни МБ
+    (spectacle.override { tesseractLanguages = null; })
   ];
 }

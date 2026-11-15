@@ -1,16 +1,21 @@
-{ stdenv,
-runCommand
+{
+  stdenv,
+  runCommand,
 }:
 stdenv.mkDerivation (finalAttrs: {
   name = "bruks-nightly";
   # version = "v93";
   date = "241001";
-  
-  date-nightly = builtins.readFile (runCommand "timestamp" {
-    when = builtins.currentTime;
-  } ''
-    echo -n `date -d @$when '+%y%m%d'` > $out
-  '');
+
+  date-nightly = builtins.readFile (
+    runCommand "timestamp"
+      {
+        when = builtins.currentTime;
+      }
+      ''
+        echo -n `date -d @$when '+%y%m%d'` > $out
+      ''
+  );
 
   src = builtins.fetchurl {
     url = "https://bkrs.info/downloads/daily/dabruks_${finalAttrs.date-nightly}.gz";
@@ -35,7 +40,6 @@ stdenv.mkDerivation (finalAttrs: {
     runHook postInstall
   '';
 
-
   meta = {
     description = ''
       Russian-Chinese Dictionary 
@@ -45,4 +49,3 @@ stdenv.mkDerivation (finalAttrs: {
     # maintainers = with maintainers; [ bbigras rafaelrc ];
   };
 })
-

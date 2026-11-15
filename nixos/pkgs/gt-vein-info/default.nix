@@ -1,10 +1,11 @@
-{ stdenv
-, makeWrapper
-, fetchFromGitHub
-, jre
-, jdk
-, copyDesktopItems
-, makeDesktopItem
+{
+  stdenv,
+  makeWrapper,
+  fetchFromGitHub,
+  jre,
+  jdk,
+  copyDesktopItems,
+  makeDesktopItem,
 }:
 stdenv.mkDerivation (finalAttrs: {
   name = "gt-vein-info";
@@ -60,10 +61,9 @@ stdenv.mkDerivation (finalAttrs: {
 
     makeWrapper ${jre}/bin/java $out/bin/gt-vein-info \
       --add-flags "-jar $out/share/java/$PROGRAM_NAME"
-    
+
     runHook postInstall
   '';
-
 
   meta = {
     description = ''

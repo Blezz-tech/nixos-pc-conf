@@ -1,14 +1,11 @@
-{ pkgs, ... }:
-{
+# Архиваторы.
+{ pkgs, ... }: {
   home.packages = [
-    # pkgs.rar
-    pkgs.unrar-free
+    pkgs.unrar-free # распаковка rar; для упаковки нужен несвободный pkgs.rar
     pkgs.zip
-    pkgs.xz
     pkgs.unzip
     pkgs._7zz
+    pkgs.xz
     pkgs.zstd
-    # pkgs.runzip # Fixing zip archives
-    # pkgs.ventoy-full
   ];
 }

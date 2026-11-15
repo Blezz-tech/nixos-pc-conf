@@ -2,14 +2,14 @@ find . -maxdepth 1 -type f -print0 | while IFS= read -r -d '' file; do
   filename="${file#./}"
 
   # Проверяем, есть ли точка в имени файла
-  if [[ "$filename" == *.* ]]; then
+  if [[ $filename == *.* ]]; then
     ext="${filename##*.}"
   else
     ext="no_extension"
   fi
 
   # Пропускаем файлы, которые уже в папке с расширением
-  if [[ "$filename" == "$ext/"* ]]; then
+  if [[ $filename == "$ext/"* ]]; then
     continue
   fi
 

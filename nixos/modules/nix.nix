@@ -9,7 +9,7 @@
       #   # "ghc-nix.cachix.org-1:ziC/I4BPqeA4VbtOFpFpu6D1t6ymFvRWke/lc2+qjcg=" # GHC
       # ];
       # substituters = [
-      #   # "https://ezkea.cachix.org" 
+      #   # "https://ezkea.cachix.org"
       #   # "https://cache.iog.io" # haskell.nix
       #   # "https://ghc-nix.cachix.org" # GHC
       # ];

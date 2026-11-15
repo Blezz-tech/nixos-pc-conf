@@ -1,7 +1,9 @@
-{ pkgs
-, lib
-, ...
-}: {
+{
+  pkgs,
+  lib,
+  ...
+}:
+{
   fonts.packages = [
     # Шрифты paratype
     pkgs.paratype-pt-sans
@@ -36,7 +38,7 @@
     pkgs.liberation_ttf
     pkgs.scientifica
     pkgs.sarasa-gothic
-    
+
     pkgs.roboto
 
     # A (mainly) Chinese Unicode font
@@ -48,5 +50,6 @@
     pkgs.miracode
     pkgs.dejavu_fonts
     pkgs.eb-garamond
-  ] ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
+  ]
+  ++ (builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts));
 }

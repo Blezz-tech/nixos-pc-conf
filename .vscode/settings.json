@@ -1,14 +1,13 @@
 {
-    "nix.enableLanguageServer": true,
-    "nix.serverPath": "nixd",
-    "nix.serverSettings": {
-        // settings for 'nixd' LSP
-        "nixd": {
-            "formatting": {
-                "command": [
-                    "nixpkgs-fmt"
-                ]
-            }
-        }
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nixd",
+  "nix.serverSettings": {
+    // settings for 'nixd' LSP
+    "nixd": {
+      "formatting": {
+        "command": ["nixfmt"]
+      }
     }
+  },
+  "nix.formatterPath": "nixfmt"
 }

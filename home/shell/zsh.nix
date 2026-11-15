@@ -13,7 +13,10 @@
 
     oh-my-zsh = {
       enable = false;
-      plugins = [ "git" "sudo" ];
+      plugins = [
+        "git"
+        "sudo"
+      ];
       theme = "agnoster";
     };
   };
