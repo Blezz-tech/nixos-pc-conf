@@ -1,4 +1,8 @@
-{ ... }: {
+{
+  username,
+  ...
+}:
+{
   # Без dconf часть приложений (KDE-виджеты, gnome-части) ругается на отсутствие
   # хранилища настроек
   programs.dconf.enable = true;
@@ -13,8 +17,9 @@
   # nix helper: nh os switch / nh clean all вместо ручного nixos-rebuild
   programs.nh = {
     enable = true;
-    # Значение уходит в NH_FLAKE. Путь оставлен как был, с завершающим слэшем
-    flake = "/home/jenya/nixos-pc-conf/";
+    # Значение уходит в NH_FLAKE. Завершающий слэш нужен: nh склеивает путь
+    # с именем флейка. Домашний каталог берём из username, а не из константы
+    flake = "/home/${username}/nixos-pc-conf/";
   };
 
   # plasma6 ставит programs.kde-pim.enable = mkDefault true (nixpkgs/nixos/modules/

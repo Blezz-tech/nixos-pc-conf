@@ -13,9 +13,9 @@
 
 ## Шаги
 
-Прогресс: **01–26** смержены, плюс догон **24a**.
+Прогресс: **01–28** смержены, плюс догон **24a**.
 
-Осталось 1 PR: 27–28 (этот), 29–30.
+Остался 1 PR: 29–30 (этот).
 
 | № | Шаг | Что меняется | Зачем |
 |---|-----|--------------|-------|
@@ -48,8 +48,8 @@
 | 26 | refactor: `hosts.nix` + `lib/mkHost` | `hosts.nix`, `lib/default.nix`, `flake.nix`, `nixos/{default,modules/user,modules/networking}.nix` | `username` объявлен, но `users.jenya`, `user = "jenya"` и `hostName` — хардкод |
 | 27 | refactor: автоимпорт NixOS | `lib/default.nix` (`libx.allModules`), `nixos/{modules,programs,services}/default.nix` | 3 ручных списка импортов (26 строк) → одна строка в каждом; файл рядом с другими подключается сам |
 | 28 | refactor: автоимпорт home-manager | `home/{programs,shell}/default.nix`, удалён `home/programs/packs/default.nix` | рекурсия делает оглавление packs/ лишним: 12 + 11 строк списков → 3 строки |
-| 29 | refactor: overlays по файлам | `overlays/{default,blezz-pkgs,prismlauncher}.nix` | 158 строк в одном файле, `pkgs.callPackage` → `final.callPackage` |
-| 30 | refactor: пути и алиасы | syncthing-папки, `nh`, secret, `home/shell/aliases.nix`, `README.md` | `/home/jenya` в 12 местах + алиасы, указывающие на несуществующий `#pc` |
+| 29 | refactor: overlays по файлам | `nixos/overlays/{default,blezz-pkgs,prismlauncher}.nix`, закомментированный оверлей → `docs/snippets/overlay-dorion.nix` | 182 строки в одном файле, `pkgs.callPackage` → `final.callPackage`, пути от `username` |
+| 30 | refactor: пути и алиасы | syncthing-папки, `nh`, secret, `home/shell/aliases.nix`, `README.md` | `/home/jenya` в 8 местах + алиасы на несуществующий `#pc` |
 
 ## Что НЕ входит в серию
 

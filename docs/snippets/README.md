@@ -29,6 +29,9 @@
 | `activation-diff.nix` | `system.activationScripts` с `nix store diff-closures` | показывает изменения пакетов при переключении; в конфиге не включён |
 | `wallpapers.nix` | пакет с обоями из GitHub | заготовка пакета, hash надо обновлять вручную |
 | `ascii-art.md` | ASCII-арт и функция для fastfetch | не конфиг, а банк картинок |
+| `aliases-disabled.nix` | выключенные алиасы из `home/shell/aliases.nix` | часть ссылалась на несуществующий `#pc`, часть опасна (`nix store gc`), часть — хлам |
+| `overlay-dorion.nix` | оверлей `dorion` и `cef-binary` из PR nixpkgs (pull/579758) | PR не влит; пакеты появятся в nixpkgs сами |
 
-Вернуть в работу: скопировать файл обратно в исходный каталог (`nixos/modules/`, `nixos/services/`
-или `nixos/programs/`) и добавить импорт в соответствующий `default.nix`.
+Вернуть в работу: скопировать файл обратно в исходный каталог (`nixos/modules/`, `nixos/services/`,
+`nixos/programs/` или `nixos/overlays/`) и добавить импорт в соответствующий `default.nix`
+(в `nixos/modules`, `nixos/programs` и `nixos/services` импорт подхватывается сам — см. `libx.allModules`).

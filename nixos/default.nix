@@ -8,7 +8,7 @@
     ./services
     ./programs
     ./hardware-configuration.nix
-    ./overlays.nix
+    ./overlays
     ./packages.nix
     ./proxy-suite.nix
   ];

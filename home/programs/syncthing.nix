@@ -1,4 +1,8 @@
 {
+  config,
+  ...
+}:
+{
   services.syncthing = {
     enable = true;
     overrideDevices = true;
@@ -14,7 +18,7 @@
         };
       };
       folders = {
-        "/home/jenya/media/documents/" = {
+        "${config.home.homeDirectory}/media/documents/" = {
           id = "5jyjs-qxyvz";
           label = "документы";
           devices = [ "poco-x3-pro" ];
@@ -23,7 +27,7 @@
             params.keep = "50";
           };
         };
-        "/home/jenya/media/music/" = {
+        "${config.home.homeDirectory}/media/music/" = {
           id = "llhyz-w9zai";
           label = "музыка";
           devices = [ "poco-x3-pro" ];

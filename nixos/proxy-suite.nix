@@ -1,4 +1,8 @@
 {
+  username,
+  ...
+}:
+{
   services.proxy-suite = {
     enable = true;
     zapret = {
@@ -20,7 +24,9 @@
     };
     tgWsProxy = {
       enable = true;
-      secretFile = "/home/jenya/tg-ws-proxy-secret";
+      # Секрет лежит в домашнем каталоге вручную: в репозиторий он не попадает.
+      # TODO: переехать на sops-nix (docs/TODO.md)
+      secretFile = "/home/${username}/tg-ws-proxy-secret";
     };
   };
 }

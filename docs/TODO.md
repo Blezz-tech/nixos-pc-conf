@@ -19,7 +19,7 @@
       приложение ждёт их в `~/dicts` — добавить симлинк через `home.file`.
 
 - [ ] **Секреты через `sops-nix`.** `tgWsProxy.secretFile` указывает на открытый
-      файл `/home/jenya/tg-ws-proxy-secret` (`nixos/proxy-suite.nix`). Через
+      файл `~/tg-ws-proxy-secret` (`nixos/proxy-suite.nix`). Через
       sops секрет становится `config.sops.secrets`, права 0400, и не лежит в
       домашнем каталоге открытым.
 
@@ -80,8 +80,8 @@
       проще всего через `buildPythonApplication` в `nixos/pkgs/`.
 
 - [ ] **MURMUR зависит от съёмного диска.** Сборки IDEA/PHPStorm/CLion
-      переопределены в `nixos/overlays.nix` через `builtins.fetchurl` с
-      `file:///run/media/jenya/disk_d/binfiles/...` и `file:///home/jenya/CLion-...`.
+      переопределены в `nixos/overlays/blezz-pkgs.nix` через `builtins.fetchurl` с
+      `file:///run/media/<user>/disk_d/binfiles/...` и `file://~/CLion-...`.
       Если диск не смонтирован, ломается не сборка конкретного пакета, а
       **вычисление всей конфигурации**. Перенести архивы на постоянный путь
       (например `~/binfiles`) или в локальный кэш.

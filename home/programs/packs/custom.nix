@@ -1,4 +1,4 @@
-# Пакеты из своего оверлея blezz-pkgs (см. nixos/overlays.nix).
+# Пакеты из своего оверлея blezz-pkgs (см. nixos/overlays/blezz-pkgs.nix).
 { pkgs, ... }: {
   home.packages = [
     pkgs.blezz-pkgs.discord-krisp-patcher
