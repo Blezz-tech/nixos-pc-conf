@@ -4,7 +4,7 @@
 }:
 {
   services.proxy-suite = {
-    enable = false;
+    enable = true;
     gui.enable = true;
     zapret = {
       enable = true;
