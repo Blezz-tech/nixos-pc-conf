@@ -4,23 +4,28 @@
 }:
 {
   services.proxy-suite = {
-    enable = true;
+    enable = false;
+    gui.enable = true;
     zapret = {
       enable = true;
-      zapret-discord-youtube = {
-        configName = "general(FAKE_TLS_AUTO_ALT3)"; # the default; try others if it does not work
-        domains = [
-          "rutracker.org"
-          "protondb.com"
-          "www.protondb.com"
-          "steamdb.info"
-          "click.redditmail.com"
-          "forgejo.org"
-          # "discovery-announce-v4.syncthing.net"
-          # "relays.syncthing.net"
-          # "forum.syncthing.net"
-        ]; # more sites to unblock
+      engine = "zapret2";
+      zapret2 = {
+        domains = [ "rutracker.org" ]; # always treated as blocked
       };
+      # zapret-discord-youtube = {
+      #   configName = "general(FAKE_TLS_AUTO_ALT3)"; # the default; try others if it does not work
+      #   domains = [
+      #     "rutracker.org"
+      #     "protondb.com"
+      #     "www.protondb.com"
+      #     "steamdb.info"
+      #     "click.redditmail.com"
+      #     "forgejo.org"
+      #     # "discovery-announce-v4.syncthing.net"
+      #     # "relays.syncthing.net"
+      #     # "forum.syncthing.net"
+      #   ]; # more sites to unblock
+      # };
     };
     tgWsProxy = {
       enable = true;
