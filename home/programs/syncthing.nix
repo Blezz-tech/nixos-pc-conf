@@ -16,12 +16,18 @@
         "poco-x3-pro" = {
           id = "RU33CWR-HPTNESJ-6DELDQQ-FZ2ERPA-W3TYRJH-N64ELRJ-YXUFKG6-ABSHRAX";
         };
+        "xiaomi-17t" = {
+          id = "BMHMTVI-VI6XKOZ-GTIY5V3-5FIIFHO-2ZSICTS-IIFBAMH-CXVZJWO-JU565AJ";
+        };
       };
       folders = {
         "${config.home.homeDirectory}/media/documents/" = {
           id = "5jyjs-qxyvz";
           label = "документы";
-          devices = [ "poco-x3-pro" ];
+          devices = [
+            "poco-x3-pro"
+            "xiaomi-17t"
+          ];
           versioning = {
             type = "simple";
             params.keep = "50";
@@ -30,7 +36,10 @@
         "${config.home.homeDirectory}/media/music/" = {
           id = "llhyz-w9zai";
           label = "музыка";
-          devices = [ "poco-x3-pro" ];
+          devices = [
+            "poco-x3-pro"
+            "xiaomi-17t"
+          ];
           versioning = {
             type = "simple";
             params.keep = "50";
