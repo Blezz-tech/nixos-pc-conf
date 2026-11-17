@@ -3,6 +3,10 @@
 # в docs/notes/packages-wishlist.md.
 { pkgs, ... }: {
   home.packages = [
+    ## for sort
+    pkgs.godot
+    pkgs.unityhub
+
     ## Приложения
     pkgs.obsidian # заметки в markdown
     pkgs.sqlitebrowser # GUI для SQLite
