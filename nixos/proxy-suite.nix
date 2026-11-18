@@ -10,9 +10,8 @@
       enable = true;
       engine = "zapret2";
       zapret2 = {
-        strategySource = "z2k";         # дефолт "nfqws2-keenetic"
-        # excludeDomains = [ "rutracker.org" ];   # дефолт []
-        # cutoff.proxyFallback = false;   # дефолт true
+        strategySource = "z2k";
+        # domains = [ "rutracker.org" ];
       };
       # zapret-discord-youtube = {
       #   configName = "general(FAKE_TLS_AUTO_ALT3)"; # the default; try others if it does not work
