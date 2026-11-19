@@ -3,7 +3,7 @@
 let
   # Интерпретатор с нужными библиотеками: ставятся одной деривацией, чтобы
   # не тянуть весь nixpkgs-набор python.
-  python-custom = pkgs.python313.withPackages (ps: [
+  python-custom = pkgs.python314.withPackages (ps: [
     ps.numpy
     ps.scipy
     ps.pandas
