@@ -91,6 +91,14 @@ in
     };
 
     MURMUR = {
+      PYCHARM = (
+          final.pycharm.overrideAttrs (_oldAttrs: {
+            src = builtins.fetchurl {
+              url = "file://${home}/pycharm-2026.3.tar.gz";
+              sha256 = "sha256:04xqyq3fxk47sl9n2i163ilzn0v4mzwpwnqklqs059m23bp4im3h";
+            };
+          })
+        );
       IDEA = {
         v2022_3_3 = (
           final.jetbrains.idea-ultimate.overrideAttrs (_oldAttrs: {

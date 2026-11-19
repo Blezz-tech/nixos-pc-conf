@@ -6,6 +6,7 @@
     ## for sort
     pkgs.godot
     pkgs.unityhub
+    pkgs.blezz-pkgs.MURMUR.PYCHARM
 
     ## Приложения
     pkgs.obsidian # заметки в markdown

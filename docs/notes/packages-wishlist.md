@@ -19,7 +19,6 @@ nix shell nixpkgs#vopono -c vopono --help
 | Пакет | Комментарий |
 |-------|-------------|
 | `nur.repos.ataraxiasjel.waydroid-script` | нужен вход `nur` во flake, которого нет |
-| `jetbrains.pycharm-community` | IDE PyCharm |
 | `vopono` | запуск приложений через VPN-неймспейсы |
 
 ## home/programs/common.nix — 92 шт.
@@ -79,15 +78,11 @@ C/C++: `pkgs.gcc`, `pkgs.cmake` (сейчас стоят только `clang` и
 `pkgs.coqPackages.vscoq-language-server`, `pkgs.nodePackages_latest.prettier`.
 
 Python — библиотеки, которые были закомментированы в `python-custom`:
-`python-pkgs.jupyter`, `python-pkgs.ipykernel`, `python-pkgs.pyautogui`,
+`python-pkgs.ipykernel`, `python-pkgs.pyautogui`,
 `python-pkgs.pynput`, `python-pkgs.scikit-learn`, `python-pkgs.nltk`,
 `python-pkgs.pymorphy3`, `python-pkgs.plotly` (долго собирается),
 `python-pkgs.torch`, `python-pkgs.notebook`.
 
-Стоят сейчас (не трогали): `numpy`, `scipy`, `pandas`, `matplotlib`, `sympy`,
-`beautifulsoup4`, `python-lsp-server`, `black`. В новом файле параметр
-`withPackages` называется `ps`, то есть добавлять надо `ps.jupyter`, а не
-`python-pkgs.jupyter`.
 
 ## home/programs/packs/games.nix — 62 шт.
 
