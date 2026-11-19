@@ -12,6 +12,7 @@ let
     ps.beautifulsoup4
     ps.python-lsp-server
     ps.black # форматтер
+    ps.jupyter
   ]);
 in
 {
