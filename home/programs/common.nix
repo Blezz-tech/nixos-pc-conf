@@ -8,6 +8,7 @@
     pkgs.unityhub
     pkgs.blezz-pkgs.MURMUR.PYCHARM
     pkgs.blezz-pkgs.totk-pc-recomp
+    pkgs.asciinema
 
     ## Приложения
     pkgs.obsidian # заметки в markdown
