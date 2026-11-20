@@ -19,6 +19,9 @@
         "xiaomi-17t" = {
           id = "BMHMTVI-VI6XKOZ-GTIY5V3-5FIIFHO-2ZSICTS-IIFBAMH-CXVZJWO-JU565AJ";
         };
+        "huawei-matepad-12x" = {
+          id = "Y2OZWPB-G4W22WD-433CQ4G-NMFWUQA-5JYGFSA-YWKUQTA-5RH7I4E-OXH4VAN";
+        };
       };
       folders = {
         "${config.home.homeDirectory}/media/documents/" = {
@@ -27,6 +30,7 @@
           devices = [
             "poco-x3-pro"
             "xiaomi-17t"
+            "huawei-matepad-12x"
           ];
           versioning = {
             type = "simple";
@@ -39,6 +43,7 @@
           devices = [
             "poco-x3-pro"
             "xiaomi-17t"
+            "huawei-matepad-12x"
           ];
           versioning = {
             type = "simple";
