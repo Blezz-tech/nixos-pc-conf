@@ -16,6 +16,7 @@ in
     dabkrs = final.callPackage ../pkgs/dabkrs { };
     gt-vein-info = final.callPackage ../pkgs/gt-vein-info { };
     tg-ws-proxy = final.callPackage ../pkgs/tg-ws-proxy { };
+    totk-pc-recomp = final.callPackage ../pkgs/totk-pc-recomp { };
 
     zapret = final.zapret.overrideAttrs (prev: {
       postInstall = (prev.postInstall or "") + ''
