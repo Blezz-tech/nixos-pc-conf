@@ -9,6 +9,7 @@
     pkgs.blezz-pkgs.MURMUR.PYCHARM
     pkgs.blezz-pkgs.totk-pc-recomp
     pkgs.asciinema
+    pkgs.blezz-pkgs.chromium-gost
 
     ## Приложения
     pkgs.obsidian # заметки в markdown
