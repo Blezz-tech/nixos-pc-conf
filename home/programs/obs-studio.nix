@@ -7,6 +7,7 @@
       wlrobs
       obs-backgroundremoval
       obs-pipewire-audio-capture
+      obs-backgroundremoval
     ];
     # enableVirtualCamera = true;
   };
