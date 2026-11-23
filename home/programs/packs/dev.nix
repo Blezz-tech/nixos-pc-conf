@@ -21,8 +21,9 @@ in
     python-custom
 
     ## C/C++
-    pkgs.clang
-    pkgs.clang-analyzer
+    # pkgs.clang
+    # pkgs.clang-analyzer
+    pkgs.gcc
 
     ## Lua
     pkgs.lua
