@@ -10,6 +10,7 @@
     pkgs.blezz-pkgs.totk-pc-recomp
     pkgs.asciinema
     pkgs.blezz-pkgs.chromium-gost
+    pkgs.distrobox
 
     ## Приложения
     pkgs.obsidian # заметки в markdown
