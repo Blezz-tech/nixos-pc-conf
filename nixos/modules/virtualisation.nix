@@ -8,4 +8,10 @@
   # (nixos/modules/services/networking/nftables.nix), хотя брандмауэр у нас
   # iptables. Без этой строки nixpkgs подставит pkgs.waydroid (iptables-вариант).
   virtualisation.waydroid.package = pkgs.waydroid-nftables;
+
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu.vhostUserPackages = with pkgs; [ virtiofsd ];
+  };
+  programs.virt-manager.enable = true;
 }

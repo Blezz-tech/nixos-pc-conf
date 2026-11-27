@@ -17,7 +17,7 @@
         "wheel"
         "video"
         "audio"
-        # "libvirtd"
+        "libvirtd"
         "corectrl"
         "scanner" # Для сканирования
         "lp" # Для печати
